@@ -1,0 +1,11 @@
+﻿.page { overflow: hidden; }
+.contentWidth { width: min(100% - 3rem, 920px); margin-inline: auto; }
+.header { padding: clamp(3.5rem, 7vw, 6rem) 0; background: radial-gradient(ellipse at 85% 10%, var(--fluence-hero-glow), transparent 46%); border-bottom: 1px solid var(--fluence-line); }
+.header h1 { margin: 0; color: var(--fluence-ink); font-size: clamp(2.75rem, 5vw, 4.5rem); font-weight: 800; line-height: 1.15; letter-spacing: -.035em; }
+.header h1 span { color: var(--fluence-accent-text); }
+.story, .project { padding: clamp(3.5rem, 6vw, 5rem) 0; }
+.story { border-bottom: 1px solid var(--fluence-line); }
+.story h2, .project h2 { margin: 0 0 1.2rem; color: var(--fluence-ink); font-size: clamp(1.85rem, 3vw, 2.5rem); font-weight: 700; line-height: 1.24; letter-spacing: -.025em; }
+.story p, .project p { max-width: 72ch; margin: 0 0 1.25rem; color: var(--fluence-muted); font-size: 1.05rem; line-height: 1.75; }
+.story p:last-child, .project p:last-child { margin-bottom: 0; }
+@media (max-width: 600px) { .contentWidth { width: min(100% - 2rem, 920px); } .header { padding: 3rem 0; } }

@@ -1,0 +1,14 @@
+﻿root = false
+
+# Volta requires a BOM-free package manifest.
+[package.json]
+charset = utf-8
+
+# Preserve generated lockfile encoding.
+[pnpm-lock.yaml]
+charset = utf-8
+
+# Preserve the upstream LGPL text verbatim.
+[LICENSE]
+charset = utf-8
+end_of_line = crlf

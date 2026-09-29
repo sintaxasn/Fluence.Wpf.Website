@@ -1,0 +1,7 @@
+﻿.cardContainer { display: block; height: 100%; padding: 1.4rem; color: var(--fluence-ink); background: var(--fluence-surface); border: 1px solid var(--fluence-line); border-radius: 8px; box-shadow: var(--fluence-shadow); text-decoration: none; transition: border-color var(--fluence-transition-slow), box-shadow var(--fluence-transition-slow); }
+.cardContainer:hover { border-color: var(--fluence-accent); color: var(--fluence-ink); text-decoration: none; box-shadow: var(--fluence-shadow-hover); }
+.cardContainer:hover .cardTitle { color: var(--fluence-accent-text); }
+.cardEyebrow { display: flex; justify-content: space-between; gap: .5rem; margin-bottom: 1.1rem; color: var(--fluence-accent); font-size: .7rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
+.cardTitle { margin: 0 0 .5rem; font-size: 1.22rem; font-weight: 650; line-height: 1.3; color: var(--fluence-ink); transition: color var(--fluence-transition-slow); }
+.cardDescription { margin: 0; color: var(--fluence-muted); font-size: .86rem; line-height: 1.55; }
+@media (prefers-reduced-motion: reduce) { .cardContainer { transition: none; } .cardContainer:hover { transform: none; } }

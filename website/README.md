@@ -15,7 +15,7 @@ Do not copy documentation into Docusaurus plugin directories. The site reads Mar
 
 ## Prerequisites and local development
 
-CI uses Node.js 24 and pnpm 10.33.0. The package accepts Node.js 20 or newer; use Node.js 24 locally to match CI. From the repository root:
+Use Node.js 24 and pnpm 10.33.0, matching the versions declared in `website/package.json`. From the repository root:
 
 ```powershell
 Set-Location website
