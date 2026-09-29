@@ -4,13 +4,6 @@ permissions:
   contents: read
 
 on:
-  workflow_dispatch:
-    inputs:
-      publish:
-        description: 'Publish the reviewed website build to gh-pages'
-        type: boolean
-        required: true
-        default: false
   push:
     branches: [main]
     paths:
@@ -76,60 +69,3 @@ jobs:
           if-no-files-found: error
           retention-days: 7
           include-hidden-files: true
-
-  publish:
-    if: github.event_name == 'workflow_dispatch' && inputs.publish && github.ref == 'refs/heads/main'
-    needs: build
-    runs-on: ubuntu-latest
-    concurrency:
-      group: website-gh-pages
-      cancel-in-progress: false
-    permissions:
-      actions: read
-      contents: write
-      pages: write
-    environment:
-      name: github-pages
-      url: https://fluencewpf.com/
-    steps:
-      - name: Check publishing source
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          gh api "repos/$GITHUB_REPOSITORY/pages" \
-            --jq 'select(.build_type == "legacy" and .source.branch == "gh-pages" and .source.path == "/") | .html_url' \
-            > "$RUNNER_TEMP/pages-url"
-          test -s "$RUNNER_TEMP/pages-url" || { echo 'Configure Pages to deploy from gh-pages / (root) first.'; exit 1; }
-
-      - name: Checkout published site branch
-        uses: actions/checkout@v7
-        with:
-          ref: gh-pages
-          path: published-site
-
-      - name: Download reviewed build
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: gh run download "$GITHUB_RUN_ID" --repo "$GITHUB_REPOSITORY" --name fluence-wpf-website --dir "$RUNNER_TEMP/website-build"
-
-      - name: Update generated site
-        env:
-          SOURCE_SHA: ${{ github.sha }}
-        run: |
-          test -f "$RUNNER_TEMP/website-build/index.html"
-          test -f "$RUNNER_TEMP/website-build/.nojekyll"
-          test "$(cat "$RUNNER_TEMP/website-build/CNAME")" = 'fluencewpf.com'
-          rsync -a --delete --exclude='.git/' "$RUNNER_TEMP/website-build/" published-site/
-          cd published-site
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add --all
-          if ! git diff --cached --quiet; then
-            git commit -m "Publish website from $SOURCE_SHA"
-            git push origin HEAD:gh-pages
-          fi
-
-      - name: Request Pages deployment
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"

@@ -36,11 +36,29 @@ pnpm serve
 
 The production build checks documentation links and anchors. `pnpm check:docs-transform` covers the custom Markdown transform only; it is not a site-wide link check. Website builds do not require .NET or the WPF source checkout.
 
-The site defaults to `https://fluencewpf.com/`. `FLUENCE_SITE_URL` and `FLUENCE_BASE_URL` can override the URL and base path for another hosting environment. The domain also appears in `website/static/CNAME` for GitHub Pages; DNS and the repository's Pages custom-domain setting must be configured separately.
+The site defaults to `https://fluencewpf.com/` with base path `/`; `FLUENCE_SITE_URL` and `FLUENCE_BASE_URL` remain available for intentional overrides. Keep these defaults for the production deployment.
+
+### Planned hosting: Cloudflare Pages
+
+After release approval, open **Workers & Pages > Create application > Pages > Import existing Git repository** in the Cloudflare dashboard, then select `Fluence.Wpf.Website`. Configure the project as follows:
+
+| Setting | Value |
+| --- | --- |
+| Production branch | `main` |
+| Root directory | `website` |
+| Build command | `pnpm build` |
+| Build output directory | `build` |
+| `NODE_VERSION` | `24` |
+| `PNPM_VERSION` | `10.33.0` |
+| Custom domain | `fluencewpf.com` |
+
+Cloudflare Pages Git integration automatically builds branches and may publish preview deployments. Creating the integrated project can therefore make a public preview and, if `main` is selected and builds successfully, publish production content to its Pages hostname before the custom domain is attached. Defer project creation and Git integration until release approval. Then use the Pages project’s **Custom domains** workflow to attach `fluencewpf.com`. Because this is an apex domain, it must be an active Cloudflare zone with its nameservers pointed to Cloudflare; complete the DNS steps shown in the dashboard. Keep the Docusaurus URL and base path defaults above.
+
+See Cloudflare's [Git integration guide](https://developers.cloudflare.com/pages/get-started/git-integration/) and [build configuration](https://developers.cloudflare.com/pages/configuration/build-configuration/).
 
 ## Documentation and source code workflow
 
-The website reads Markdown under `docs/`. The source repository owns `docs/api/`, `docs/powershell/reference/`, `docs/controls.md`, `docs/theming.md`, and `docs/winui-parity.md`; this repository contains synced copies of those paths. Other website documentation is authored here. Keep links relative where possible. Links to code, issues, and source documentation that live in the library repository should point to its GitHub pages.
+The website reads Markdown under `docs/`. The source repository owns `docs/api/`, `docs/powershell/reference/`, `docs/controls.md`, `docs/theming.md`, and `docs/winui-parity.md`; this repository contains synced copies of those paths. Other website documentation is authored here. Keep links relative where possible. Links to code, issues, and source documentation that live in the library repository should point to the source repository on GitHub.
 
 For source changes that affect the docs, use a separate checkout of [Fluence.Wpf](https://github.com/sintaxasn/Fluence.Wpf):
 
@@ -64,4 +82,4 @@ The Fluence.Wpf website source adapted from PSAppDeployToolkit is licensed under
 
 ## Publishing
 
-Publishing configuration must be reviewed and explicitly set up for this standalone repository. Until that is done, treat the site as a locally buildable project only. Publishing the website does not publish the WPF library, NuGet packages, or PowerShell Gallery packages.
+The planned production host is Cloudflare Pages using the configuration above. Project creation and Git integration are deferred until release approval because they can trigger public preview and production deployments. Publishing the website does not publish the WPF library, NuGet packages, or PowerShell Gallery packages.
