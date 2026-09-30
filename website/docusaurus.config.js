@@ -48,6 +48,7 @@ const config = {
           beforeDefaultRemarkPlugins: [[docsTransform, { repository }]],
         },
         blog: false,
+        gtag: { trackingID: 'G-MXRX78P686' },
         theme: { customCss: './src/css/custom.css' },
       },
     ],
