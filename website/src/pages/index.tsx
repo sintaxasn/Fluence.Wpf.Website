@@ -20,8 +20,8 @@ function Arrow() {
   return <span aria-hidden="true">→</span>;
 }
 export default function Home() {
-  const lightLockup = useBaseUrl('/images/heroimage_dark.png');
-  const darkLockup = useBaseUrl('/images/heroimage_light.png');
+  const lightLockup = useBaseUrl('/images/Fluence_Lockup_SideBySide_Dark.svg');
+  const darkLockup = useBaseUrl('/images/Fluence_Lockup_SideBySide_Light.svg');
   const pageRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
