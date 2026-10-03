@@ -1,6 +1,6 @@
 ﻿# Runnable C# walkthroughs
 
-This Windows WPF sample accompanies the website's C# lessons. It builds against the bundled `Fluence.Wpf` `0.9.1-pre` package. The website's Node build does not build or run this project.
+This Windows WPF sample accompanies the website's C# lessons. It builds against the bundled `Fluence.Wpf` `0.9.1` package. The website's Node build does not build or run this project.
 
 From the website repository root, restore and build with PowerShell 7:
 
@@ -8,7 +8,7 @@ From the website repository root, restore and build with PowerShell 7:
 pwsh ./samples/Fluence.Wpf.Docs.Walkthroughs/Build-Walkthroughs.ps1
 ```
 
-The script passes the local `packages/` directory as the explicit NuGet source, checks its SHA256 against `packages/PROVENANCE.md`, restores in locked mode, and keeps its package cache under `obj/`. To build against another local feed, pass `-PackageSource <directory>` containing `Fluence.Wpf.0.9.1-pre.nupkg`. The package has not been published publicly. After intentionally changing the bundled package, run `Build-Walkthroughs.ps1 -UpdateLockFile` once to refresh `packages.lock.json`, then use the default locked restore to verify it.
+The script passes the local `packages/` directory as the explicit NuGet source, checks its SHA256 against `packages/PROVENANCE.md`, restores in locked mode, and keeps its package cache under `obj/`. To build against another local feed, pass `-PackageSource <directory>` containing `Fluence.Wpf.0.9.1.nupkg`. The package has not been published publicly. After intentionally changing the bundled package, run `Build-Walkthroughs.ps1 -UpdateLockFile` once to refresh `packages.lock.json`, then use the default locked restore to verify it.
 
 Run one window after building:
 

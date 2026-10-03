@@ -9,7 +9,7 @@
     <NoWarn>$(NoWarn);CS1591</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Fluence.Wpf" Version="0.9.1-pre" />
+    <PackageReference Include="Fluence.Wpf" Version="0.9.1" />
     <Resource Include="../../assets/Fluence_Icon.ico" Link="Fluence_Icon.ico" />
   </ItemGroup>
 </Project>

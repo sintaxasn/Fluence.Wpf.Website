@@ -4,9 +4,9 @@
     "net10.0-windows10.0.26100": {
       "Fluence.Wpf": {
         "type": "Direct",
-        "requested": "[0.9.1-pre, )",
-        "resolved": "0.9.1-pre",
-        "contentHash": "V4k8wYybwmj9Tc2uwZcN211/7MYYf444pe62IKwib2NaXOHN2KJIY4O0vz0kgy7Le+FRxdpZIThfwSaSFv/N9Q=="
+        "requested": "[0.9.1, )",
+        "resolved": "0.9.1",
+        "contentHash": "XLoVPc/mJyXJdgGqpc/wzhh2EFdFlJMhObOg4nBG50+CEOUbYh+xN28wGGyW5/MJhVduvCvWkGVTUcy4nhArCA=="
       }
     }
   }

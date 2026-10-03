@@ -4,16 +4,11 @@
 
 Use ContextMenu for actions that apply to a selected item or region.
 
+The images show the open menu. A closed context menu has no visible surface.
+
 | Light | Dark |
 | --- | --- |
 | ![ContextMenu in light mode](../screenshots/controls/context-menu-light.png) | ![ContextMenu in dark mode](../screenshots/controls/context-menu-dark.png) |
-
-### Captured state changes
-
-**Open**
-
-![ContextMenu open state in light mode](../screenshots/controls/context-menu-light-open.png)
-![ContextMenu open state in dark mode](../screenshots/controls/context-menu-dark-open.png)
 
 ## Example usage
 

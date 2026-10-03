@@ -7,9 +7,9 @@
 $ErrorActionPreference = 'Stop'
 $project = Join-Path $PSScriptRoot 'Fluence.Wpf.Docs.Walkthroughs.csproj'
 $sourceDirectory = (Resolve-Path -LiteralPath $PackageSource).Path
-$packageFile = Join-Path $sourceDirectory 'Fluence.Wpf.0.9.1-pre.nupkg'
+$packageFile = Join-Path $sourceDirectory 'Fluence.Wpf.0.9.1.nupkg'
 if (-not (Test-Path -LiteralPath $packageFile -PathType Leaf)) {
-    throw "Expected Fluence.Wpf.0.9.1-pre.nupkg in $sourceDirectory"
+    throw "Expected Fluence.Wpf.0.9.1.nupkg in $sourceDirectory"
 }
 
 $hash = (Get-FileHash -LiteralPath $packageFile -Algorithm SHA256).Hash.ToLowerInvariant()

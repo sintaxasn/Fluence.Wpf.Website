@@ -1,6 +1,6 @@
 {
   "name": "fluence-wpf-website",
-  "version": "0.9.1-pre",
+  "version": "0.9.1",
   "private": true,
   "description": "Fluence.Wpf documentation website",
   "packageManager": "pnpm@10.33.0",

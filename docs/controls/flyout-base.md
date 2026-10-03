@@ -12,13 +12,6 @@ The images show an open Flyout, a concrete implementation of FlyoutBase.
 | --- | --- |
 | ![FlyoutBase in light mode](../screenshots/controls/flyout-base-light.png) | ![FlyoutBase in dark mode](../screenshots/controls/flyout-base-dark.png) |
 
-### Captured state changes
-
-**Open**
-
-![FlyoutBase open state in light mode](../screenshots/controls/flyout-base-light-open.png)
-![FlyoutBase open state in dark mode](../screenshots/controls/flyout-base-dark-open.png)
-
 ## Example usage
 
 ```xml

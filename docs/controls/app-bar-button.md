@@ -8,7 +8,7 @@ Use it for a compact action in a command bar flyout.
 
 | Light | Dark |
 | --- | --- |
-| ![AppBarButton in light mode](../screenshots/controls/app-bar-button-light-open.png) | ![AppBarButton in dark mode](../screenshots/controls/app-bar-button-dark-open.png) |
+| ![AppBarButton in light mode](../screenshots/controls/app-bar-button-light.png) | ![AppBarButton in dark mode](../screenshots/controls/app-bar-button-dark.png) |
 
 ## Example usage
 

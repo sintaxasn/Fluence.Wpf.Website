@@ -6,16 +6,11 @@ FlyoutPresenter draws the popup surface for Flyout content. `FlyoutPresenter` is
 
 Use it through Flyout when popup content needs the standard presentation surface.
 
+The images show the presenter while its flyout is open.
+
 | Light | Dark |
 | --- | --- |
 | ![Flyout in light mode](../screenshots/controls/flyout-presenter-light.png) | ![Flyout in dark mode](../screenshots/controls/flyout-presenter-dark.png) |
-
-### Captured state changes
-
-**Open**
-
-![FlyoutPresenter open state in light mode](../screenshots/controls/flyout-presenter-light-open.png)
-![FlyoutPresenter open state in dark mode](../screenshots/controls/flyout-presenter-dark-open.png)
 
 ## Example usage
 

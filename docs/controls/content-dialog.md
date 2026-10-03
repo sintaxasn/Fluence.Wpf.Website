@@ -4,16 +4,11 @@
 
 Use ContentDialog for modal prompts that require an explicit choice (confirmations, errors, sign-in).
 
+The images show the dialog while it is open. A closed dialog has no visible surface.
+
 | Light | Dark |
 | --- | --- |
 | ![ContentDialog in light mode](../screenshots/controls/content-dialog-light.png) | ![ContentDialog in dark mode](../screenshots/controls/content-dialog-dark.png) |
-
-### Captured state changes
-
-**Open**
-
-![ContentDialog open state in light mode](../screenshots/controls/content-dialog-light-open.png)
-![ContentDialog open state in dark mode](../screenshots/controls/content-dialog-dark-open.png)
 
 ## Example usage
 

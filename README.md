@@ -58,7 +58,7 @@ See Cloudflare's [Git integration guide](https://developers.cloudflare.com/pages
 
 ## C# walkthroughs and screenshots
 
-The six C# lessons in `docs/csharp/usage.md` and `docs/how-to/` run from `samples/Fluence.Wpf.Docs.Walkthroughs/` on Windows with the .NET 10 SDK and PowerShell 7. The sample uses the bundled `Fluence.Wpf` `0.9.1-pre` archive in `samples/Fluence.Wpf.Docs.Walkthroughs/packages/`. Its [provenance record](samples/Fluence.Wpf.Docs.Walkthroughs/packages/PROVENANCE.md) identifies the source commit and package hash. The package is a local documentation dependency; the website's Node build does not restore or run it.
+The six C# lessons in `docs/csharp/usage.md` and `docs/how-to/` run from `samples/Fluence.Wpf.Docs.Walkthroughs/` on Windows with the .NET 10 SDK and PowerShell 7. The sample uses the bundled `Fluence.Wpf` `0.9.1` archive in `samples/Fluence.Wpf.Docs.Walkthroughs/packages/`. Its [provenance record](samples/Fluence.Wpf.Docs.Walkthroughs/packages/PROVENANCE.md) identifies the source commit and package hash. The package is a local documentation dependency; the website's Node build does not restore or run it.
 
 From the website repository root, restore and build against the explicit local source, then run one example:
 
@@ -67,11 +67,11 @@ pwsh ./samples/Fluence.Wpf.Docs.Walkthroughs/Build-Walkthroughs.ps1 -PackageSour
 dotnet run --project ./samples/Fluence.Wpf.Docs.Walkthroughs/Fluence.Wpf.Docs.Walkthroughs.csproj -c Release --no-build -- --example basic-usage
 ```
 
-The other `--example` values are `window-and-title-bar`, `theme-and-accent`, `inputs-and-data`, `navigation-and-tabs`, and `dialogs-and-feedback`. The [sample README](samples/Fluence.Wpf.Docs.Walkthroughs/README.md) describes the windows and capture behavior. Its build script defaults to the bundled package folder; `-PackageSource <directory>` selects another local folder containing `Fluence.Wpf.0.9.1-pre.nupkg`.
+The other `--example` values are `window-and-title-bar`, `theme-and-accent`, `inputs-and-data`, `navigation-and-tabs`, and `dialogs-and-feedback`. The [sample README](samples/Fluence.Wpf.Docs.Walkthroughs/README.md) describes the windows and capture behavior. Its build script defaults to the bundled package folder; `-PackageSource <directory>` selects another local folder containing `Fluence.Wpf.0.9.1.nupkg`.
 
 When a source change affects a walkthrough:
 
-1. Build a `Fluence.Wpf.0.9.1-pre.nupkg` from the intended Fluence.Wpf source checkout. It can be anywhere on disk. Review the source state and use `samples/Fluence.Wpf.Docs.Walkthroughs/Update-Package.ps1 -PackageFile <archive> -SourceCommit <sha> -SourceState <description>` to copy the archive and record its provenance. Review the changed package and `packages/PROVENANCE.md`.
+1. Build a `Fluence.Wpf.0.9.1.nupkg` from the intended Fluence.Wpf source checkout. It can be anywhere on disk. Review the source state and use `samples/Fluence.Wpf.Docs.Walkthroughs/Update-Package.ps1 -PackageFile <archive> -SourceCommit <sha> -SourceState <description>` to copy the archive and record its provenance. Review the changed package and `packages/PROVENANCE.md`.
 2. Change the matching XAML window and code-behind in `samples/Fluence.Wpf.Docs.Walkthroughs/`. Compare the lesson's embedded XAML/C# excerpt with those files, then update its explanation and source links. The lessons use selected teaching excerpts, so inspect them manually rather than assuming exact whole-file equality.
 3. Run the script below to restore, build, and capture all six windows in both themes. Review the 12 PNGs in `docs/screenshots/tutorials/` for layout, text, theme, and light/dark pairing. The capture uses a visible Windows desktop.
 

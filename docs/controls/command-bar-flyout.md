@@ -4,6 +4,8 @@
 
 Use CommandBarFlyout for a compact command strip with an overflow menu; commands dismiss the flyout when invoked.
 
+The first images show the open command surface. The closed-state images below show its trigger button.
+
 | Light | Dark |
 | --- | --- |
 | ![CommandBarFlyout in light mode](../screenshots/controls/command-bar-flyout-light-open.png) | ![CommandBarFlyout in dark mode](../screenshots/controls/command-bar-flyout-dark-open.png) |

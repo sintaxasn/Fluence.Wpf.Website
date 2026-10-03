@@ -4,16 +4,11 @@
 
 Use Flyout for lightweight, light-dismiss popups (details, quick forms, confirmations) anchored to a control.
 
+The images show the open popup. A closed flyout has no visible surface.
+
 | Light | Dark |
 | --- | --- |
 | ![Flyout in light mode](../screenshots/controls/flyout-light.png) | ![Flyout in dark mode](../screenshots/controls/flyout-dark.png) |
-
-### Captured state changes
-
-**Open**
-
-![Flyout open state in light mode](../screenshots/controls/flyout-light-open.png)
-![Flyout open state in dark mode](../screenshots/controls/flyout-dark-open.png)
 
 ## Example usage
 

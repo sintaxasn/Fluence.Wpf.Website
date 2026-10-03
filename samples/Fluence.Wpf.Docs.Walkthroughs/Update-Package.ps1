@@ -6,12 +6,12 @@
 
 $ErrorActionPreference = 'Stop'
 $source = (Resolve-Path -LiteralPath $PackageFile).Path
-if ([System.IO.Path]::GetFileName($source) -ne 'Fluence.Wpf.0.9.1-pre.nupkg') {
-    throw 'Expected a Fluence.Wpf.0.9.1-pre.nupkg archive.'
+if ([System.IO.Path]::GetFileName($source) -ne 'Fluence.Wpf.0.9.1.nupkg') {
+    throw 'Expected a Fluence.Wpf.0.9.1.nupkg archive.'
 }
 
 $targetDirectory = Join-Path $PSScriptRoot 'packages'
-$target = Join-Path $targetDirectory 'Fluence.Wpf.0.9.1-pre.nupkg'
+$target = Join-Path $targetDirectory 'Fluence.Wpf.0.9.1.nupkg'
 if (-not (Test-Path -LiteralPath $targetDirectory -PathType Container)) {
     $null = New-Item -ItemType Directory -Path $targetDirectory
 }
@@ -24,7 +24,7 @@ $hash = (Get-FileHash -LiteralPath $target -Algorithm SHA256).Hash.ToUpperInvari
 $provenance = @"
 # Bundled Fluence.Wpf package
 
-- Package: Fluence.Wpf.0.9.1-pre.nupkg
+- Package: Fluence.Wpf.0.9.1.nupkg
 - SHA256: $hash
 - Source commit: $SourceCommit
 - Source state: $SourceState
