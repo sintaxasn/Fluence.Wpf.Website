@@ -14,7 +14,7 @@ const config = {
   tagline: 'Fluent controls for WPF',
   url: siteUrl,
   baseUrl,
-  favicon: 'Fluence_Icon_Light.ico',
+  favicon: 'Fluence_Icon.ico',
   trailingSlash: false,
   organizationName: 'sintaxasn',
   projectName: 'Fluence.Wpf.Website',
@@ -63,12 +63,12 @@ const config = {
   ],
   themeConfig: {
     docs: { sidebar: { autoCollapseCategories: true, hideable: true } },
-    image: 'Fluence_OGImage_Light.png',
+    image: 'Fluence_Lockup_Stacked_Light.png',
     colorMode: { defaultMode: 'light', respectPrefersColorScheme: true, disableSwitch: false },
     navbar: {
       logo: {
         alt: 'Fluence.Wpf',
-        src: 'images/fluence-logo.svg',
+        src: 'Fluence_Icon.svg',
       },
       items: [
         { to: '/features', label: 'Features', position: 'left' },

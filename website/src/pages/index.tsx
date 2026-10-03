@@ -18,8 +18,8 @@ function Arrow() {
   return <span aria-hidden="true">→</span>;
 }
 export default function Home() {
-  const lightLockup = useBaseUrl('/images/Fluence_Lockup_SideBySide_Dark.svg');
-  const darkLockup = useBaseUrl('/images/Fluence_Lockup_SideBySide_Light.svg');
+  const lightLockup = useBaseUrl('/Fluence_Lockup_Horizontal_Light.png');
+  const darkLockup = useBaseUrl('/Fluence_Lockup_Horizontal_Dark.png');
   const pageRef = useRef<HTMLElement>(null);
 
   useEffect(() => {

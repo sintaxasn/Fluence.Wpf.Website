@@ -18,7 +18,7 @@ The complete layout is in [NavigationAndTabsWindow.xaml](https://github.com/sint
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:fluence="http://schemas.fluencewpf.com"
     Title="Navigation and tabs"
-    Icon="/Fluence.Wpf.Docs.Walkthroughs;component/Fluence_Icon_Light.ico"
+    Icon="/Fluence.Wpf.Docs.Walkthroughs;component/Fluence_Icon.ico"
     Width="800" Height="540" MinWidth="640" MinHeight="420"
     WindowStartupLocation="CenterScreen"
     Background="{DynamicResource ApplicationBackgroundBrush}"
@@ -27,7 +27,7 @@ The complete layout is in [NavigationAndTabsWindow.xaml](https://github.com/sint
     <fluence:FluenceWindow.TitleBar>
         <fluence:TitleBar Title="Navigation and tabs" Subtitle="Fluence WPF walkthrough">
             <fluence:TitleBar.Icon>
-                <Image Width="20" Height="20" Source="/Fluence.Wpf.Docs.Walkthroughs;component/Fluence_Icon_Light.ico" />
+                <Image Width="20" Height="20" Source="/Fluence.Wpf.Docs.Walkthroughs;component/Fluence_Icon.ico" />
             </fluence:TitleBar.Icon>
         </fluence:TitleBar>
     </fluence:FluenceWindow.TitleBar>

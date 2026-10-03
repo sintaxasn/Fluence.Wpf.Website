@@ -5,11 +5,11 @@
     <UseWPF>true</UseWPF>
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
-    <ApplicationIcon>../../assets/Fluence_Icon_Light.ico</ApplicationIcon>
+    <ApplicationIcon>../../assets/Fluence_Icon.ico</ApplicationIcon>
     <NoWarn>$(NoWarn);CS1591</NoWarn>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Fluence.Wpf" Version="0.9.1-pre" />
-    <Resource Include="../../assets/Fluence_Icon_Light.ico" Link="Fluence_Icon_Light.ico" />
+    <Resource Include="../../assets/Fluence_Icon.ico" Link="Fluence_Icon.ico" />
   </ItemGroup>
 </Project>
