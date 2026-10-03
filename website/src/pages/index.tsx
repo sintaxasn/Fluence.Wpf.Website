@@ -8,12 +8,10 @@ import statusDark from '@site/../docs/screenshots/gallery/status-dark.png';
 import styles from './index.module.css';
 
 const benefits = [
-  {title: '60+ documented UI types', description: 'Individual guides cover controls and related UI types for forms, navigation, dialogs, and feedback.'},
-  {title: 'Themes that follow the user', description: 'Switch light, dark, and high contrast themes and use the Windows accent or a custom color.'},
-  {title: 'Windows 10 and 11', description: 'Windows 10 version 1809 is the baseline. Windows 11 enables Mica and rounded corners where available.'},
-  {title: 'BSD 3-Clause license', description: 'Use Fluence.Wpf in free or commercial products, subject to the license terms.'},
-  {title: 'Three WPF targets', description: 'Build for .NET Framework 4.7.2, .NET 8 for Windows, or .NET 10 for Windows.'},
-  {title: 'No Windows App SDK runtime', description: 'Use WPF and Windows APIs without adding a WinUI 3 runtime dependency.'},
+  {title: 'Controls for everyday work', description: 'Build forms, navigation, dialogs, and feedback with Fluent styled WPF controls.'},
+  {title: 'One theme across the app', description: 'Use light, dark, or high contrast, with the Windows accent or a custom color.'},
+  {title: 'Windows that fit the system', description: 'Add a Fluent title bar and request Mica or Acrylic where Windows supports it.'},
+  {title: 'WPF across three targets', description: 'Use the same library on .NET Framework 4.7.2, .NET 8 for Windows, or .NET 10 for Windows.'},
 ];
 
 function Arrow() {
@@ -97,7 +95,7 @@ export default function Home() {
   }, []);
 
   return (
-    <Layout title="Fluence.Wpf" description="Fluence.Wpf adds Windows 11 styling, controls, themes, and window chrome to WPF applications. A companion module provides PowerShell dialogs and windows.">
+    <Layout title="Fluence.Wpf" description="Fluent controls, themes, and window chrome for WPF, plus a companion PowerShell module for dialogs and windows.">
       <main ref={pageRef} className={styles.page}>
         <section className={styles.hero} aria-labelledby="hero-title">
           <div className={styles.heroLogoBanner}>
@@ -107,14 +105,14 @@ export default function Home() {
           <div className={styles.heroInner}>
             <div className={styles.heroCopy}>
               <Heading as="h1" id="hero-title" className={styles.heroTitle}>
-                <span className={styles.heroTitleAccent}>WinUI 3</span><span className={styles.heroTitleNeutral}>&nbsp;but for&nbsp;</span><span className={styles.heroTitleAccent}>WPF</span>
+                <span className={styles.heroTitleAccent}>Fluent design</span><span className={styles.heroTitleNeutral}>&nbsp;for&nbsp;</span><span className={styles.heroTitleAccent}>WPF</span>
               </Heading>
-              <p className={styles.heroLead}>Get controls, themes, and window backdrops with the Win 11 look and feel, fully supported on .NET Framework 4.7.2 and above. There's even a module for PowerShell 5.1 and 7.4 and easy to use functions for dialogs.</p>
+              <p className={styles.heroLead}>Bring Windows 11 style controls, themes, and window chrome to the WPF apps you already build. Use the companion PowerShell module when a script needs a desktop UI.</p>
               <div className={styles.heroActions}>
-                <Link className={styles.primaryAction} to="/features">Explore features <Arrow /></Link>
-                <Link className={styles.secondaryAction} to="/docs/controls">Browse controls <Arrow /></Link>
+                <Link className={styles.primaryAction} to="/docs/csharp">Start with C# <Arrow /></Link>
+                <Link className={styles.secondaryAction} to="/docs/powershell">Start with PowerShell <Arrow /></Link>
               </div>
-              <p className={styles.heroMeta}>For .NET Framework 4.7.2, .NET 8, and .NET 10 <span aria-hidden="true">·</span> Windows 10 1809+</p>
+              <p className={styles.heroMeta}>Windows 10 version 1809+ <span aria-hidden="true">·</span> BSD 3-Clause</p>
             </div>
             <div className={styles.heroVisual}>
               <img src={statusLight} alt="Fluence.Wpf gallery showing status and progress controls in light theme" className={`${styles.heroScreenshot} ${styles.heroScreenshotLight}`} />
@@ -127,8 +125,8 @@ export default function Home() {
         <section className={styles.benefits} aria-labelledby="benefits-title" data-reveal="section">
           <div className={styles.contentWidth}>
             <div className={styles.benefitsHeading}>
-              <div><span className={styles.kicker}>WHY FLUENCE</span><Heading as="h2" id="benefits-title">Built for real WPF projects.</Heading></div>
-              <p>Modern controls and theming across current .NET and .NET Framework applications.</p>
+              <div><span className={styles.kicker}>WHAT YOU CAN BUILD</span><Heading as="h2" id="benefits-title">A familiar WPF workflow. A Fluent interface.</Heading></div>
+              <p>Keep your XAML, bindings, and commands while updating the controls and surfaces people use every day.</p>
             </div>
             <div className={styles.benefitGrid}>
               {benefits.map((benefit, index) => (
@@ -140,6 +138,26 @@ export default function Home() {
               ))}
             </div>
             <Link className={styles.textLink} to="/features">Explore all features <Arrow /></Link>
+          </div>
+        </section>
+        <section className={styles.paths} aria-labelledby="paths-title" data-reveal="section">
+          <div className={styles.contentWidth}>
+            <span className={styles.kicker}>CHOOSE YOUR PATH</span>
+            <Heading as="h2" id="paths-title">Start with a working example.</Heading>
+            <div className={styles.pathGrid}>
+              <article className={styles.pathCard}>
+                <span className={styles.pathLabel}>C# LIBRARY</span>
+                <Heading as="h3">Build a Fluent WPF window</Heading>
+                <p>Set up the theme, open a window, and add your first controls in the basic walkthrough.</p>
+                <Link className={styles.textLink} to="/docs/csharp/usage">Follow the C# walkthrough <Arrow /></Link>
+              </article>
+              <article className={styles.pathCard}>
+                <span className={styles.pathLabel}>POWERSHELL MODULE</span>
+                <Heading as="h3">Show a dialog from a script</Heading>
+                <p>Import the module, show a message, and read validated input from a form.</p>
+                <Link className={styles.textLink} to="/docs/powershell/usage">Follow the PowerShell guide <Arrow /></Link>
+              </article>
+            </div>
           </div>
         </section>
       </main>

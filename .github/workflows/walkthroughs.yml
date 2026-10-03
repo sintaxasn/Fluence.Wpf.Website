@@ -1,0 +1,33 @@
+﻿name: Walkthrough Build
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'samples/Fluence.Wpf.Docs.Walkthroughs/**'
+      - '.github/workflows/walkthroughs.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'samples/Fluence.Wpf.Docs.Walkthroughs/**'
+      - '.github/workflows/walkthroughs.yml'
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Restore and build walkthroughs
+        shell: pwsh
+        run: ./samples/Fluence.Wpf.Docs.Walkthroughs/Build-Walkthroughs.ps1

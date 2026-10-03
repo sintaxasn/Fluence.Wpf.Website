@@ -1,41 +1,132 @@
-﻿# Showing Dialogs and feedback
+﻿# Show a dialog and feedback
 
-Add a confirmation button to the [Basic Usage](../csharp/usage.md) window, then show the result in an `InfoBar` while longer work uses a progress control.
+This standalone window asks the user to confirm a sample save, then shows the outcome inline with `InfoBar` and `ProgressBar`. Begin with the [Basic walkthrough](../csharp/usage.md) theme setup, then run this example from the Website repository root. The first command restores and builds against the explicit local package source; the second runs the example:
 
+~~~powershell
+pwsh ./samples/Fluence.Wpf.Docs.Walkthroughs/Build-Walkthroughs.ps1 -PackageSource ./samples/Fluence.Wpf.Docs.Walkthroughs/packages
+dotnet run --project ./samples/Fluence.Wpf.Docs.Walkthroughs/Fluence.Wpf.Docs.Walkthroughs.csproj -c Release --no-build -- --example dialogs-and-feedback
+~~~
 
-Use `ContentDialog` for a decision that must be completed before work continues. Use `InfoBar` for an inline status message and progress controls for ongoing work.
+## Declare the window
 
-## Show a ContentDialog
+The complete layout is in [DialogsAndFeedbackWindow.xaml](https://github.com/sintaxasn/Fluence.Wpf.Website/blob/main/samples/Fluence.Wpf.Docs.Walkthroughs/DialogsAndFeedbackWindow.xaml). The icon URI points to a resource in the sample project; use your own resource when copying the window.
 
-Create the dialog on the UI dispatcher and await `ShowAsync()` while an owner window is active. The dialog returns a `ContentDialogResult`.
+~~~xml
+<fluence:FluenceWindow
+    x:Class="Fluence.Wpf.Docs.Walkthroughs.DialogsAndFeedbackWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:fluence="http://schemas.fluencewpf.com"
+    Title="Dialogs and feedback"
+    Icon="/Fluence.Wpf.Docs.Walkthroughs;component/Fluence_Icon_Light.ico"
+    Width="800" Height="540" MinWidth="640" MinHeight="420"
+    WindowStartupLocation="CenterScreen"
+    Background="{DynamicResource ApplicationBackgroundBrush}"
+    SystemBackdropType="Mica"
+    ExtendsContentIntoTitleBar="True">
+    <fluence:FluenceWindow.TitleBar>
+        <fluence:TitleBar Title="Dialogs and feedback" Subtitle="Fluence WPF walkthrough">
+            <fluence:TitleBar.Icon>
+                <Image Width="20" Height="20" Source="/Fluence.Wpf.Docs.Walkthroughs;component/Fluence_Icon_Light.ico" />
+            </fluence:TitleBar.Icon>
+        </fluence:TitleBar>
+    </fluence:FluenceWindow.TitleBar>
+    <fluence:StackPanel Width="460" HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="16">
+        <fluence:TextBlock Text="Ask for confirmation and report the outcome." />
+        <fluence:Button Content="Save changes" Appearance="Accent" Click="Save_Click"
+                        HorizontalAlignment="Left" />
+        <fluence:InfoBar x:Name="SaveInfo" Title="Ready" Message="No changes saved yet."
+                         IsOpen="True" />
+        <fluence:ProgressBar x:Name="SaveProgress" Value="0" />
+    </fluence:StackPanel>
+</fluence:FluenceWindow>
+~~~
 
-```csharp
-using Fluence.Wpf;
+## Wire the interaction
+
+[DialogsAndFeedbackWindow.xaml.cs](https://github.com/sintaxasn/Fluence.Wpf.Website/blob/main/samples/Fluence.Wpf.Docs.Walkthroughs/DialogsAndFeedbackWindow.xaml.cs) contains the code-behind. The `x:Class` in XAML and the partial class name in C# must match.
+
+~~~csharp
+using System;
+using System.Windows;
+using System.Threading.Tasks;
 using Fluence.Wpf.Controls;
-
-ContentDialog dialog = new()
+namespace Fluence.Wpf.Docs.Walkthroughs
 {
-    Title = "Delete file?",
-    Content = "This action cannot be undone.",
-    PrimaryButtonText = "Delete",
-    CloseButtonText = "Cancel",
-    DefaultButton = ContentDialogButton.Close
-};
+    public sealed partial class DialogsAndFeedbackWindow : FluenceWindow
+    {
+        internal DialogsAndFeedbackWindow()
+        {
+            InitializeComponent();
+        }
 
-ContentDialogResult result = await dialog.ShowAsync();
-bool confirmed = result == ContentDialogResult.Primary;
-```
+        private void Save_Click(object sender, RoutedEventArgs e)
+        {
+            _ = SaveAsync();
+        }
 
-The dialog is hosted over the owner window, blocks input outside itself, and closes through its buttons or Escape. Only one dialog can be open on the same owner. Button click events can cancel closing; see the XML comments on `PrimaryButtonClick`, `SecondaryButtonClick`, and `CloseButtonClick` for the exact behavior.
+        private async Task SaveAsync()
+        {
+            ContentDialog dialog = new()
+            {
+                Title = "Save changes?",
+                Content = "Confirm the sample save action.",
+                PrimaryButtonText = "Save",
+                CloseButtonText = "Cancel",
+            };
+            try
+            {
+                ContentDialogResult result = await dialog.ShowAsync().ConfigureAwait(true);
+                if (result is ContentDialogResult.Primary)
+                {
+                    ShowSaved();
+                }
+                else
+                {
+                    SaveInfo.Title = "Canceled";
+                    SaveInfo.Message = "No changes were saved.";
+                    SaveInfo.Severity = InfoBarSeverity.Informational;
+                }
+            }
+            catch (InvalidOperationException ex)
+            {
+                ShowSaveError(ex.Message);
+            }
+            catch (OperationCanceledException ex)
+            {
+                ShowSaveError(ex.Message);
+            }
+        }
 
-The demo's dialog and feedback controls in both themes:
+        private void ShowSaveError(string message)
+        {
+            SaveInfo.Title = "Save failed";
+            SaveInfo.Message = message;
+            SaveInfo.Severity = InfoBarSeverity.Error;
+        }
 
-![Dialogs and feedback demo in light mode](../screenshots/tutorials/dialogs-and-feedback-light.png)
+        private void ShowSaved()
+        {
+            SaveProgress.Value = 100;
+            SaveInfo.Title = "Saved";
+            SaveInfo.Message = "Your changes are up to date.";
+            SaveInfo.Severity = InfoBarSeverity.Success;
+        }
 
-![Dialogs and feedback demo in dark mode](../screenshots/tutorials/dialogs-and-feedback-dark.png)
+        internal void PrepareCapture()
+        {
+            ShowSaved();
+        }
+    }
+}
+~~~
 
-## Use inline status
+`fluence:StackPanel` spaces the button, `InfoBar`, and progress indicator. `Save_Click` starts `SaveAsync`, which awaits `ContentDialog.ShowAsync()` and uses the result to update feedback. Confirming sets progress to 100 and reports success; canceling reports that nothing was saved. `InvalidOperationException` and `OperationCanceledException` are caught and shown in `InfoBar`. The example changes UI state only and does not write a file. `PrepareCapture` is used only for repeatable documentation screenshots.
 
-`InfoBar` exposes `Severity`, `Title`, `Message`, and `IsOpen`. Its `Opened`, `Closing`, and `Closed` events report state changes. `InfoBadge` shows a compact status marker. Use `ProgressBar` for determinate progress or `ProgressRing` for a compact busy indicator.
+## See the result
 
-For script-driven dialogs and progress windows, use the [PowerShell module](../powershell/README.md), which handles window hosting and returns result objects to the caller.
+![Show a dialog and feedback in light mode](../screenshots/tutorials/dialogs-and-feedback-light.png)
+
+![Show a dialog and feedback in dark mode](../screenshots/tutorials/dialogs-and-feedback-dark.png)
+
+See [ContentDialog](../controls/content-dialog.md), [InfoBar](../controls/info-bar.md), and the [control catalog](../controls.md) for adjacent feedback controls.

@@ -1,7 +1,7 @@
 ﻿.page { overflow: hidden; }
 .contentWidth { width: min(100% - 3rem, 1240px); margin-inline: auto; }
 .header { padding: clamp(3.5rem, 7vw, 6rem) 0; background: radial-gradient(ellipse at 85% 10%, var(--fluence-hero-glow), transparent 46%); border-bottom: 1px solid var(--fluence-line); animation: headerEnter .55s cubic-bezier(.16, 1, .3, 1) both; }
-.header h1 { margin: 0 0 1.1rem; color: var(--fluence-accent-text); font-size: clamp(2.75rem, 5vw, 4.5rem); font-weight: 800; line-height: 1.15; letter-spacing: -.035em; }
+.header h1 { margin: 0 0 1.1rem; color: var(--fluence-accent-text); font-size: clamp(2.75rem, 5vw, 4.5rem); font-weight: 700; line-height: 1.15; letter-spacing: -.035em; overflow-wrap: anywhere; }
 .header p { max-width: 58rem; margin: 0; color: var(--fluence-muted); font-size: clamp(1.15rem, 1.7vw, 1.45rem); line-height: 1.6; }
 .groupSection { padding: clamp(4rem, 7vw, 7rem) 0; border-bottom: 1px solid var(--fluence-line); }
 .groupSection:nth-child(even) { background: var(--fluence-section-wash); }

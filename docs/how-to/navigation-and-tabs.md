@@ -1,54 +1,114 @@
-﻿# Add Navigation and tabs
+﻿# Add navigation and tabs
 
-Build a two-destination shell and place tabbed content on one destination. The [Basic Usage](../csharp/usage.md) window provides the theme startup and title bar.
+This standalone window uses `NavigationView` for two destinations and `TabView` for work inside the selected destination. Begin with the [Basic walkthrough](../csharp/usage.md) theme setup, then run this example from the Website repository root. The first command restores and builds against the explicit local package source; the second runs the example:
 
+~~~powershell
+pwsh ./samples/Fluence.Wpf.Docs.Walkthroughs/Build-Walkthroughs.ps1 -PackageSource ./samples/Fluence.Wpf.Docs.Walkthroughs/packages
+dotnet run --project ./samples/Fluence.Wpf.Docs.Walkthroughs/Fluence.Wpf.Docs.Walkthroughs.csproj -c Release --no-build -- --example navigation-and-tabs
+~~~
 
-Use `NavigationView` for the application's main destinations and `TabView` for documents or parallel workspaces. Both are normal WPF controls with Fluence templates.
+## Declare the window
 
-## Host page content in NavigationView
+The complete layout is in [NavigationAndTabsWindow.xaml](https://github.com/sintaxasn/Fluence.Wpf.Website/blob/main/samples/Fluence.Wpf.Docs.Walkthroughs/NavigationAndTabsWindow.xaml). The icon URI points to a resource in the sample project; use your own resource when copying the window.
 
+~~~xml
+<fluence:FluenceWindow
+    x:Class="Fluence.Wpf.Docs.Walkthroughs.NavigationAndTabsWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:fluence="http://schemas.fluencewpf.com"
+    Title="Navigation and tabs"
+    Icon="/Fluence.Wpf.Docs.Walkthroughs;component/Fluence_Icon_Light.ico"
+    Width="800" Height="540" MinWidth="640" MinHeight="420"
+    WindowStartupLocation="CenterScreen"
+    Background="{DynamicResource ApplicationBackgroundBrush}"
+    SystemBackdropType="Mica"
+    ExtendsContentIntoTitleBar="True">
+    <fluence:FluenceWindow.TitleBar>
+        <fluence:TitleBar Title="Navigation and tabs" Subtitle="Fluence WPF walkthrough">
+            <fluence:TitleBar.Icon>
+                <Image Width="20" Height="20" Source="/Fluence.Wpf.Docs.Walkthroughs;component/Fluence_Icon_Light.ico" />
+            </fluence:TitleBar.Icon>
+        </fluence:TitleBar>
+    </fluence:FluenceWindow.TitleBar>
+    <Grid Margin="32">
+        <fluence:NavigationView x:Name="Navigation" IsPaneOpen="True"
+                                SelectionChanged="Navigation_SelectionChanged">
+            <fluence:NavigationView.Items>
+                <fluence:NavigationViewItem Content="Home" />
+                <fluence:NavigationViewItem Content="Settings" />
+            </fluence:NavigationView.Items>
+            <fluence:NavigationView.Content>
+                <fluence:StackPanel Margin="24" Spacing="16">
+                    <fluence:TextBlock x:Name="DestinationText" Text="Home" />
+                    <fluence:TabView x:Name="Tabs" Height="230" IsAddTabButtonVisible="True"
+                                     AddTabButtonClick="Tabs_AddTabButtonClick"
+                                     TabCloseRequested="Tabs_TabCloseRequested">
+                        <fluence:TabViewItem Header="Overview" Content="Overview content" />
+                        <fluence:TabViewItem Header="Notes" Content="Notes content" />
+                    </fluence:TabView>
+                </fluence:StackPanel>
+            </fluence:NavigationView.Content>
+        </fluence:NavigationView>
+    </Grid>
+</fluence:FluenceWindow>
+~~~
 
-`NavigationView` derives from `Selector`. Put destination items in its item collection and place the active page in its `Content` property. A bare `Frame` child would be treated as an item, so use the property element:
+## Wire the interaction
 
-```xml
-<fluence:NavigationView xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                        xmlns:fluence="http://schemas.fluencewpf.com"
-                        PaneDisplayMode="Left"
-                        IsPaneOpen="True"
-                        ItemInvoked="OnItemInvoked">
-    <fluence:NavigationViewItem Content="Home" Tag="home" />
-    <fluence:NavigationViewItem Content="Settings" Tag="settings" />
-    <fluence:NavigationView.Content>
-        <Frame x:Name="PageFrame" NavigationUIVisibility="Hidden" />
-    </fluence:NavigationView.Content>
-</fluence:NavigationView>
-```
+[NavigationAndTabsWindow.xaml.cs](https://github.com/sintaxasn/Fluence.Wpf.Website/blob/main/samples/Fluence.Wpf.Docs.Walkthroughs/NavigationAndTabsWindow.xaml.cs) contains the code-behind. The `x:Class` in XAML and the partial class name in C# must match.
 
-Handle `ItemInvoked` to navigate the content frame. The event fires before selection changes. `BackRequested` is separate from selection, and the application owns its navigation history. The [gallery shell](../../Fluence.Wpf.Demo/MainWindow.xaml) shows a complete implementation, including pinned footer items and a title-bar search box.
+~~~csharp
+using System.Globalization;
+using System.Windows;
+using System.Windows.Controls;
+using Fluence.Wpf.Controls;
+namespace Fluence.Wpf.Docs.Walkthroughs
+{
+    public sealed partial class NavigationAndTabsWindow : FluenceWindow
+    {
+        private int _nextTabNumber = 1;
 
-`PaneDisplayMode` selects left or top navigation. `IsPaneOpen` controls expansion in left modes. `FooterMenuItems` holds destinations pinned below the scrolling menu.
+        internal NavigationAndTabsWindow()
+        {
+            InitializeComponent();
+            Navigation.SelectedIndex = 0;
+        }
 
-## Add closable tabs
+        private void Navigation_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (Navigation.SelectedItem is NavigationViewItem item)
+            {
+                DestinationText.Text = item.Content?.ToString() ?? string.Empty;
+            }
+        }
 
-`TabView` extends WPF `TabControl`; use `TabViewItem` for each tab. `TabCloseRequested` reports a close request, so your application decides whether to remove the item or ask the user to save work. `AddTabButtonClick` reports the optional add button, and `IsAddTabButtonVisible` controls its display.
+        private void Tabs_AddTabButtonClick(object sender, RoutedEventArgs e)
+        {
+            TabViewItem tab = new()
+            {
+                Header = "New " + _nextTabNumber.ToString(CultureInfo.CurrentCulture),
+                Content = "Content for new tab " + _nextTabNumber.ToString(CultureInfo.CurrentCulture),
+            };
+            _nextTabNumber++;
+            _ = Tabs.Items.Add(tab);
+            Tabs.SelectedItem = tab;
+        }
 
-```xml
-<fluence:TabView xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                 xmlns:fluence="http://schemas.fluencewpf.com"
-                 IsAddTabButtonVisible="True"
-                 AddTabButtonClick="OnAddTab"
-                 TabCloseRequested="OnTabCloseRequested">
-    <fluence:TabViewItem Header="Overview">
-        <TextBlock Text="Overview content" />
-    </fluence:TabViewItem>
-</fluence:TabView>
-```
+        private void Tabs_TabCloseRequested(object sender, TabViewTabCloseRequestedEventArgs e)
+        {
+            Tabs.Items.Remove(e.Item);
+        }
+    }
+}
+~~~
 
-The navigation shell and tabs in both themes:
+`NavigationView.Items` holds the destinations. The content panel is assigned through `NavigationView.Content`; placing it as a bare child would put it among the selectable items. `fluence:StackPanel` spaces the destination label and tabs. `Navigation_SelectionChanged` copies the selected destination into `DestinationText`. The add button creates a new `TabViewItem`, adds it to `Tabs.Items`, and selects it. `TabCloseRequested` removes a tab when its close button is selected. This example changes the displayed destination label; it does not create a navigation history.
 
-![Navigation and tabs demo in light mode](../screenshots/tutorials/navigation-and-tabs-light.png)
+## See the result
 
-![Navigation and tabs demo in dark mode](../screenshots/tutorials/navigation-and-tabs-dark.png)
+![Add navigation and tabs in light mode](../screenshots/tutorials/navigation-and-tabs-light.png)
 
-See the [tab gallery page](../../Fluence.Wpf.Demo/Pages/GalleryTabsPage.xaml) for data-bound and closeable examples. The [control catalog](../controls.md) covers adjacent navigation controls such as `BreadcrumbBar`, `PipsPager`, and `SelectorBar`.
+![Add navigation and tabs in dark mode](../screenshots/tutorials/navigation-and-tabs-dark.png)
+
+See [NavigationView](../controls/navigation-view.md), [TabView](../controls/tab-view.md), and the [gallery shell](https://github.com/sintaxasn/Fluence.Wpf/blob/main/Fluence.Wpf.Demo/MainWindow.xaml) for a larger navigation example.

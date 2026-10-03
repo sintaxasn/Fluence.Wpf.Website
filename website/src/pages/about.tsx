@@ -10,14 +10,19 @@ export default function AboutPage() {
         <header className={styles.header}>
           <div className={styles.contentWidth}>
             <Heading as="h1">About <span>Fluence.Wpf</span></Heading>
+            <p>Fluent design for teams building and maintaining WPF applications.</p>
           </div>
         </header>
 
         <section className={styles.story} aria-labelledby="about-project">
           <div className={styles.contentWidth}>
-            <Heading as="h2" id="about-project">Why Fluence.Wpf</Heading>
-            <p>My other long-term project, <Link href="https://github.com/PSAppDeployToolkit/PSAppDeployToolkit">PSAppDeployToolkit</Link>, aims to support all supported Windows and .NET versions so that deployment scripts remain functional across different environments. To do that, we need a reliable, modern UI framework that works consistently across those platforms. That is where Fluence.Wpf comes in.</p>
-            <p>Fluence.Wpf grew out of a need for modern controls in WPF applications, something Microsoft has not provided without requiring an upgrade to .NET 10 or 11, or a switch to WinUI development. Neither option is practical in many large enterprise environments, where developers may need to build and maintain solutions on an organization's last supported version of Windows LTSC. Newer .NET versions can break internal applications, and there may not be enough budget for newer hardware. Fluence.Wpf fills this gap by offering modern, consistent, and reliable UI components for WPF applications, without dependencies on downloaded libraries or ongoing updates. It is free to use and has no licensing complexities or restrictions.</p>
+            <Heading as="h2" id="about-project">Why it exists</Heading>
+            <p>Fluence.Wpf grew from work on <Link href="https://github.com/PSAppDeployToolkit/PSAppDeployToolkit">PSAppDeployToolkit</Link>, where desktop interfaces need to work across a range of Windows environments. WPF remains useful in those environments, but teams also want controls and window surfaces that feel at home on current Windows.</p>
+            <p>The library brings Fluent styled controls, themes, and window chrome to WPF projects targeting .NET Framework 4.7.2, .NET 8, and .NET 10. The companion PowerShell module provides dialogs, forms, progress, and windows for scripts.</p>
+            <div className={styles.storyLinks}>
+              <Link to="/docs/csharp">Explore the C# library <span aria-hidden="true">→</span></Link>
+              <Link to="/docs/powershell">Explore the PowerShell module <span aria-hidden="true">→</span></Link>
+            </div>
 
           </div>
         </section>
@@ -25,7 +30,7 @@ export default function AboutPage() {
         <section className={styles.project} aria-labelledby="about-source">
           <div className={styles.contentWidth}>
             <Heading as="h2" id="about-source">Source and licensing</Heading>
-            <p>Fluence.Wpf is available on <Link href="https://github.com/sintaxasn/Fluence.Wpf">GitHub</Link>. Copyright © 2026 Dan Cunningham. The control library, PowerShell module, and Fluence-owned documentation and assets use the <Link href="https://github.com/sintaxasn/Fluence.Wpf/blob/main/LICENSE">BSD 3-Clause license</Link>.</p>
+            <p>Dan Cunningham maintains the project on <Link href="https://github.com/sintaxasn/Fluence.Wpf">GitHub</Link>. The control library, PowerShell module, and Fluence-owned documentation and assets use the <Link href="https://github.com/sintaxasn/Fluence.Wpf/blob/main/LICENSE">BSD 3-Clause license</Link>.</p>
           </div>
         </section>
       </main>

@@ -24,9 +24,9 @@ type FeatureGroup = {
 
 const featureGroups: FeatureGroup[] = [
   {
-    title: 'Controls and interaction states',
-    description: 'Build with Fluent styled WPF controls for actions, forms, navigation, and feedback.',
-    points: ['Buttons, pickers, tabs, navigation, flyouts, and dialogs', 'Hover, focus, checked, and disabled appearances', 'Automation peers for supported custom controls'],
+    title: 'Controls that belong together',
+    description: 'Give forms, navigation, and feedback a consistent Fluent appearance without changing how you build WPF interfaces.',
+    points: ['Buttons, pickers, tabs, navigation, flyouts, and dialogs', 'States for pointer, keyboard focus, selection, and disabled controls', 'Automation peers for supported custom controls'],
     light: '/images/features/controls-light.png',
     dark: '/images/features/controls-dark.png',
     animation: {light: '/images/features/controls-light.gif', dark: '/images/features/controls-dark.gif'},
@@ -36,8 +36,8 @@ const featureGroups: FeatureGroup[] = [
   },
   {
     title: 'Themes',
-    description: 'Switch the same dialog between light, dark, and high contrast appearances at runtime.',
-    points: ['Theme-aware brushes update at runtime', 'High contrast uses live Windows system colors', 'DynamicResource and ThemeResource support app-authored styles'],
+    description: 'Change appearance while a window is open. Theme resources update the controls together.',
+    points: ['Light, dark, and Windows high contrast appearances', 'Theme-aware brushes update at runtime', 'DynamicResource and ThemeResource support app-authored styles'],
     light: '/images/features/themes-light.png',
     dark: '/images/features/themes-dark.png',
     animation: {light: '/images/features/themes-light.gif', dark: '/images/features/themes-dark.gif'},
@@ -47,8 +47,8 @@ const featureGroups: FeatureGroup[] = [
   },
   {
     title: 'Accent colors',
-    description: 'Apply a custom accent while keeping the dialog in the selected light or dark appearance.',
-    points: ['Red, orange, yellow, light green, dark green, dark blue, light blue, purple, and pink', 'Accent-aware controls update together', 'Switch back to the Windows system accent when needed'],
+    description: 'Use the Windows accent or choose a color that fits your application. Accent-aware controls update together.',
+    points: ['Use the system accent by default', 'Choose one custom color or separate light and dark colors', 'Return to the system accent at runtime'],
     light: '/images/features/accents-light.png',
     dark: '/images/features/accents-dark.png',
     animation: {light: '/images/features/accents-light.gif', dark: '/images/features/accents-dark.gif'},
@@ -58,8 +58,8 @@ const featureGroups: FeatureGroup[] = [
   },
   {
     title: 'Windows and backdrops',
-    description: 'FluenceWindow brings the title bar, caption controls, and backdrop policy into a WPF window.',
-    points: ['Title-area content and navigation requests', 'Compare a solid window, Mica, and Acrylic', 'Fallback rendering when a requested effect is unavailable'],
+    description: 'Make the window frame part of the experience with a Fluent title bar and system backdrop options.',
+    points: ['Place application content in the title area', 'Request Mica or Acrylic on supported Windows builds', 'Use a solid surface when an effect is unavailable'],
     light: '/images/features/backdrops-light.png',
     dark: '/images/features/backdrops-dark.png',
     animation: {light: '/images/features/backdrops-light.gif', dark: '/images/features/backdrops-dark.gif'},
@@ -70,8 +70,8 @@ const featureGroups: FeatureGroup[] = [
   },
   {
     title: 'Dialogs for PowerShell',
-    description: 'The companion module brings messages, input forms, progress, and hosted windows to scripts.',
-    points: ['Windows PowerShell 5.1 and PowerShell 7.4 or later', 'The same light, dark, and accent experience', 'Runnable examples and a command reference'],
+    description: 'Give an interactive script a clear desktop interface with a small set of PowerShell commands.',
+    points: ['Messages, validated input, progress, and custom windows', 'Windows PowerShell 5.1 and PowerShell 7.4 or later', 'Runnable examples and a command reference'],
     light: powershellLight,
     dark: powershellDark,
     alt: 'PowerShell hosted window with Fluence controls',
@@ -177,7 +177,7 @@ export default function FeaturesPage() {
         <header className={styles.header}>
           <div className={styles.contentWidth}>
             <Heading as="h1">Features</Heading>
-            <p>Fluent controls and theming for WPF applications, with a companion PowerShell module for desktop dialogs and windows.</p>
+            <p>Build a Fluent WPF interface with familiar XAML and C#. Give PowerShell scripts the same visual language through dialogs and windows.</p>
           </div>
         </header>
         <div className={styles.groupList}>

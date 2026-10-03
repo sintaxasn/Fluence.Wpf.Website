@@ -18,6 +18,8 @@ Use check boxes for independent options. Add three-state only when an indetermin
 
 IsChecked shows unchecked and checked states, with indeterminate available when IsThreeState is enabled.
 
+In High Contrast, the indeterminate plate and dash use their own normal, hover, pressed, and disabled resources, distinct from the checked mark. The [theme resource guide](../theming.md#high-contrast-roles) lists the published keys and their Windows color roles.
+
 ## Reference
 
 - [C# API reference](../api/Fluence.Wpf.Controls/CheckBox.md)

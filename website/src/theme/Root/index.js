@@ -1,11 +1,17 @@
 ﻿import {useEffect} from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
+
+
 export default function Root({children}) {
   const lightIcon = useBaseUrl('/Fluence_Icon_Light.ico');
   const darkIcon = useBaseUrl('/Fluence_Icon_Dark.ico');
 
   useEffect(() => {
+    if (typeof window !== 'undefined' && !window.gtag) {
+        window.gtag = function() {};
+      }
+
     const applyIcon = () => {
       let favicon = document.querySelector('link[rel="icon"]');
       if (!favicon) {

@@ -4,7 +4,7 @@ unlisted: true
 
 # Get started with Fluence.Wpf
 
-The current C# path is [Install Fluence.Wpf](csharp/installation.md), followed by [Basic Usage](csharp/usage.md). For scripts, start with the [PowerShell documentation](powershell/README.md).
+The current C# path is [Install Fluence.Wpf](csharp/installation.md), followed by [Basic walkthrough](csharp/usage.md). For scripts, start with the [PowerShell documentation](powershell/README.md).
 
 ## Reference the library
 

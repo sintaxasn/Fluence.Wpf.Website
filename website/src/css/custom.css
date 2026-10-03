@@ -1,8 +1,8 @@
 ﻿/* Fluence visual system: Windows layered neutrals with a restrained blue accent. */
 :root {
-  --ifm-font-family-base: 'Google Sans Flex', 'Segoe UI', system-ui, sans-serif;
-  --ifm-heading-font-family: 'Poppins', var(--ifm-font-family-base);
-  --ifm-font-family-monospace: 'Google Sans Code', 'Cascadia Code', Consolas, monospace;
+  --ifm-font-family-base: 'Source Sans 3', 'Segoe UI', system-ui, sans-serif;
+  --ifm-heading-font-family: 'IBM Plex Sans', var(--ifm-font-family-base);
+  --ifm-font-family-monospace: 'JetBrains Mono', 'Cascadia Code', Consolas, monospace;
   /* Resolved default accent ramp from Fluence.Wpf/Properties/DesignTime.Light.xaml. */
   --ifm-color-primary: #005ba1;
   --ifm-color-primary-dark: #003e6e;
@@ -11,9 +11,35 @@
   --ifm-color-primary-light: #0078d4;
   --ifm-color-primary-lighter: #1298ff;
   --ifm-color-primary-lightest: #4fb3ff;
+  --ifm-color-success: #13b910;
+  --ifm-color-info:    #54bcec;
+  --ifm-color-warning: #fbe924;
+  --ifm-color-danger:  #ef4444;
+
+  --ifm-color-success-contrast-background: rgba(138, 255, 171, 0.95);
+  --ifm-color-success-contrast-foreground: #064e3b;
+  --ifm-color-info-contrast-background:    rgba(220, 246, 255, 0.95);
+  --ifm-color-info-contrast-foreground:    #0e6275;
+  --ifm-color-warning-contrast-background: rgba(255, 230, 165, 0.95);
+  --ifm-color-warning-contrast-foreground: #7a6200;
+  --ifm-color-danger-contrast-background:  rgba(255, 202, 202, 0.95);
+  --ifm-color-danger-contrast-foreground:  #7f1d1d;
+
+
+  /* Content */
+  --ifm-color-content:           var(--ifm-color-emphasis-900);
+  --ifm-color-content-inverse:   var(--ifm-color-emphasis-100);
+  --ifm-color-content-secondary: #525860;
+  --ifm-background-color:         transparent;
+  --ifm-background-surface-color: var(--ifm-color-content-inverse);
+
+  /* Shadows */
+  --ifm-global-shadow-lw: 0 2px 6px rgba(20, 102, 159, 0.10);
+  --ifm-global-shadow-md: 0 4px 12px rgba(20, 102, 159, 0.18);
+  --ifm-global-shadow-tl: 0 8px 24px rgba(20, 102, 159, 0.35);
+
+
   --ifm-background-color: #f3f3f3;
-  --ifm-background-surface-color: #fff;
-  --ifm-color-content: #1b1b1b;
   --ifm-color-content-secondary: #555;
   --ifm-navbar-background-color: #fbfbfb;
   --ifm-footer-background-color: #eaeaea;
@@ -107,6 +133,7 @@ html[data-theme='dark'] {
 body { min-height: 100vh; background: var(--fluence-logo-gradient), var(--fluence-bg); background-attachment: fixed; }
 main, article { color: var(--fluence-ink); }
 h1, h2, h3, h4 { letter-spacing: -.025em; }
+code, pre { font-family: var(--ifm-font-family-monospace); font-variant-ligatures: none; font-feature-settings: 'liga' 0, 'calt' 0; }
 .navbar { border-bottom: 1px solid var(--fluence-line); box-shadow: none; padding-inline-start: 16px; }
 .navbar__inner { width: 100%; margin-inline: 0; }
 .navbar__brand { margin-left: 0; margin-right: 0; flex-shrink: 0; }
@@ -132,10 +159,10 @@ html[data-theme='dark'] .footer { background: #252525; }
 .theme-doc-sidebar-container { border-right-color: var(--fluence-line); }
 .breadcrumbs__link { font-size: .8rem; }
 .theme-doc-markdown { max-width: 920px; animation: fluenceDocumentReveal 500ms var(--ifm-transition-timing-default) both; }
-.theme-doc-markdown h1 { font-size: clamp(2rem, 2.6vw, 2.6rem); font-weight: 650; line-height: 1.2; }
+.theme-doc-markdown h1 { font-size: clamp(2rem, 2.6vw, 2.6rem); font-weight: 600; line-height: 1.2; overflow-wrap: anywhere; }
 .theme-doc-sidebar-menu > .menu__list > .menu__list-item:first-child { margin-bottom: .65rem; padding-bottom: .65rem; border-bottom: 1px solid var(--fluence-line); }
 .theme-doc-sidebar-menu .menu__link { line-height: 1.45; padding-block: .45rem; }
-.theme-doc-markdown h2 { margin-top: 2.5rem; padding-top: .4rem; font-weight: 650; border-top: 1px solid var(--fluence-line); }
+.theme-doc-markdown h2 { margin-top: 2.5rem; padding-top: .4rem; font-weight: 600; overflow-wrap: anywhere; border-top: 1px solid var(--fluence-line); }
 .theme-doc-markdown p, .theme-doc-markdown li { line-height: 1.75; }
 .theme-doc-markdown img:not(.no-frame) { max-width: 100%; height: auto; border-radius: 8px; }
 .theme-doc-markdown .fluence-theme-image--light,
@@ -154,6 +181,13 @@ html[data-theme='dark'] .theme-doc-markdown .fluence-theme-image--light { displa
 .button { transition: background-color var(--fluence-transition-slow), border-color var(--fluence-transition-slow), color var(--fluence-transition-slow), transform var(--fluence-transition-slow), box-shadow var(--fluence-transition-slow); }
 .button:hover { transform: translateY(-1px); box-shadow: var(--fluence-shadow-hover); }
 .button:active { transform: scale(.97); }
+.navbar__search-input { border-radius: var(--ifm-global-radius); }
+/* ── GitHub icon ── */
+.header-github-link:before {content: ''; width: 26px; height: 26px; display: flex; background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E") no-repeat;}
+html[data-theme='dark'] .header-github-link:before {background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='white' d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E") no-repeat;}
+.header-github-link { transition: opacity var(--ifm-transition-slow); }
+.header-github-link:hover { opacity: 0.6; }
+
 @keyframes fluenceDocumentReveal {
   from { opacity: 0; transform: translateY(20px); filter: blur(6px); }
   to { opacity: 1; transform: translateY(0); filter: blur(0); }

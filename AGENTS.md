@@ -1,6 +1,6 @@
 ﻿# Website contributor handbook
 
-This handbook governs the Docusaurus site in `website/` and the canonical Markdown in `docs/`. Shared media lives in `assets/`; site-only and imported feature captures live in `website/static/`. The [README](README.md) documents local development and the separate-checkout import workflow.
+This handbook governs the Docusaurus site in `website/`, the canonical Markdown in `docs/`, and the website-owned WPF walkthrough sample in `samples/`. Shared media lives in `assets/`; site-only and imported feature captures live in `website/static/`. The [README](README.md) documents local development, walkthrough maintenance, and the separate-checkout import workflow.
 
 ## Product and navigation
 
@@ -22,6 +22,7 @@ Controls, C# Library, and PowerShell have separate sidebars. Each document belon
 - `website/src/theme/`: focused Docusaurus theme overrides.
 - `website/sidebars.js` and `website/docusaurus.config.js`: navigation, site metadata, and build configuration.
 - `docs/`: website-authored Markdown and synced source documentation. Do not maintain a second website-only copy.
+- `samples/Fluence.Wpf.Docs.Walkthroughs/`: website-owned runnable C# walkthroughs and their local package source. The sample project and its screenshot workflow are separate from the Node website build.
 - `docs/api/` and `docs/powershell/reference/`: generated C# and PowerShell references synced from the code repository. Correct XML comments, comment-based help, or generators there; do not hand-edit generated pages here.
 - `docs/controls.md`, `docs/theming.md`, and `docs/winui-parity.md`: authored in the code repository and synced here. Change their source copies first.
 - `assets/`: shared documentation media. Keep provenance and applicable license notices when importing or changing assets.
@@ -43,6 +44,7 @@ Website changes may need outputs generated from the separate Fluence.Wpf code ch
 - For PowerShell command reference changes, update comment-based help in the code checkout. Its Alt3.Docusaurus.Powershell workflow regenerates `docs/powershell/reference/` and syncs output here.
 - For feature animations or posters, use the code checkout's `Capture-FeatureAnimations.ps1` workflow on Windows. It stages the module and captures the actual WPF UI. Review outputs and copy the approved website files into `website/static/images/features/`.
 - Keep paired light and dark images together, preserve filenames expected by the page, and retain relevant BSD attribution and notices for imported documentation and assets.
+- C# tutorial screenshots come from the website-owned walkthrough sample. After changing a sample, update the corresponding XAML/C# excerpt and explanation in `docs/`, run the sample build and capture script against its explicit local package source, inspect the new light and dark images, and then run the website gates below. The [README](README.md) gives the command sequence. Do not assume the source repository is a sibling checkout.
 
 Do not run code-repository generators against this repository or substitute screenshots from a different build. Record the source commit when an imported API or feature asset update needs clear provenance.
 
@@ -50,7 +52,7 @@ Do not run code-repository generators against this repository or substitute scre
 
 Use the existing Fluence assets. Navigation shows the standalone logomark with a 16 px left inset. Light and dark images follow the selected theme; the homepage hero uses the matching themed lockup, while the gallery screenshots retain their layered presentation. The first four Features sections have separate light and dark GIFs for controls, themes, accent colors, and window backdrops, with matching themed still images when reduced motion is preferred. If animated backdrop capture cannot show the effects reliably, use themed Acrylic still images for that section. The animations have no playback button. Control captures show the control with breathing room. Showcase images sit directly on the page background.
 
-Accents come from resolved `DesignTime.Light.xaml` and `DesignTime.Dark.xaml` palettes imported from the source repository. Typography and motion follow the adapted upstream design. Reuse CSS tokens and existing motion patterns, respect reduced motion, and keep content accessible when JavaScript is unavailable. Check keyboard focus, narrow screens, and theme changes after visual edits.
+Accents come from resolved `DesignTime.Light.xaml` and `DesignTime.Dark.xaml` palettes imported from the source repository. Website headings use IBM Plex Sans, body text uses Source Sans 3, and code uses JetBrains Mono. Motion follows the adapted upstream design. Reuse CSS tokens and existing motion patterns, respect reduced motion, and keep content accessible when JavaScript is unavailable. Check keyboard focus, narrow screens, and theme changes after visual edits.
 
 ## Copyright and licensing
 
@@ -58,7 +60,7 @@ The visible website copyright names **Dan Cunningham**. Preserve the BSD 3-Claus
 
 ## Build and review
 
-Use the Node and pnpm versions in `website/package.json`. From `website/`:
+Use the Node and pnpm versions in `website/package.json`. The Docusaurus build remains independent of the Windows/.NET walkthrough capture workflow. From `website/`:
 
 ```powershell
 pnpm typecheck

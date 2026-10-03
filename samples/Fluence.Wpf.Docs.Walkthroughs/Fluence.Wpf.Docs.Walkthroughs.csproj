@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows10.0.26100.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <ApplicationIcon>../../assets/Fluence_Icon_Light.ico</ApplicationIcon>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Fluence.Wpf" Version="0.9.1-pre" />
+    <Resource Include="../../assets/Fluence_Icon_Light.ico" Link="Fluence_Icon_Light.ico" />
+  </ItemGroup>
+</Project>

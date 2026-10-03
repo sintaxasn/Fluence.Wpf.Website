@@ -12,7 +12,7 @@ Use it in a FluenceWindow when the window needs title metadata or application na
 
 ## Example usage
 
-Initialize theme resources before creating the window. If startup code creates the window in `OnStartup`, remove `StartupUri` from `App.xaml`; see [C# basic usage](../csharp/usage.md#initialize-the-application).
+Initialize theme resources before creating the window. If startup code creates the window in `OnStartup`, remove `StartupUri` from `App.xaml`; see [Basic walkthrough](../csharp/usage.md#initialize-the-application).
 
 Set `ExtendsContentIntoTitleBar` on the containing window and assign a `TitleBar` to its `TitleBar` content property. The window's default title-bar height is 48 device-independent units. `TitleBar.IsCompact` selects the 32-unit compact layout.
 

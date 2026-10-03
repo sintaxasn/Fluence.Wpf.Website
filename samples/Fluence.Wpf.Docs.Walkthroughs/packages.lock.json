@@ -1,0 +1,13 @@
+﻿{
+  "version": 1,
+  "dependencies": {
+    "net10.0-windows10.0.26100": {
+      "Fluence.Wpf": {
+        "type": "Direct",
+        "requested": "[0.9.1-pre, )",
+        "resolved": "0.9.1-pre",
+        "contentHash": "V4k8wYybwmj9Tc2uwZcN211/7MYYf444pe62IKwib2NaXOHN2KJIY4O0vz0kgy7Le+FRxdpZIThfwSaSFv/N9Q=="
+      }
+    }
+  }
+}

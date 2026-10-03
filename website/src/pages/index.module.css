@@ -16,10 +16,10 @@ html[data-theme='dark'] .heroLockupDark { display: block; }
 .heroActions { animation-delay: .2s; }
 .heroMeta { animation-delay: .3s; }
 .kicker { color: var(--fluence-accent-text); font-size: .76rem; font-weight: 700; letter-spacing: .11em; text-transform: uppercase; }
-.heroTitle { margin: 1rem 0 1.3rem; font-size: clamp(2.25rem, 5vw, 3.5rem); font-weight: 900; letter-spacing: -.035em; line-height: 1.3; color: var(--fluence-accent-text); }
+.heroTitle { margin: 1rem 0 1.3rem; font-size: clamp(2.25rem, 5vw, 3.5rem); font-weight: 700; letter-spacing: -.035em; line-height: 1.3; color: var(--fluence-accent-text); }
 .heroTitleAccent { color: var(--fluence-accent-text); font-style: normal; }
 .heroTitleNeutral { color: var(--fluence-ink); font-weight: 500; font-style: normal; }
-.heroLead { max-width: 34rem; color: var(--fluence-muted); font-size: clamp(1.25rem, 2.1vw, 1.875rem); line-height: 1.6; }
+.heroLead { max-width: 34rem; color: var(--fluence-muted); font-size: clamp(1.18rem, 1.8vw, 1.5rem); line-height: 1.6; }
 .heroActions { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 2rem; }
 .primaryAction, .secondaryAction { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; gap: 1.1rem; padding: .72rem 1.18rem; border-radius: 6px; font-size: .95rem; font-weight: 650; text-decoration: none; transition: transform var(--fluence-transition-slow), background-color var(--fluence-transition-slow), border-color var(--fluence-transition-slow), color var(--fluence-transition-slow), box-shadow var(--fluence-transition-slow); }
 .primaryAction { background: var(--fluence-action-bg); border: 1px solid var(--fluence-action-bg); color: var(--fluence-action-ink); }
@@ -42,15 +42,23 @@ html[data-theme='dark'] .heroScreenshotDark { top: 0; left: 0; z-index: 1; anima
 .benefitsHeading { display: grid; grid-template-columns: 1.2fr .8fr; align-items: end; gap: 3rem; margin-bottom: 2.4rem; }
 .benefitsHeading h2 { margin: .75rem 0 0; color: var(--fluence-ink); font-size: clamp(1.75rem, 3vw, 2.25rem); line-height: 1.3; letter-spacing: -.025em; font-weight: 700; }
 .benefitsHeading p { max-width: 38rem; margin: 0; color: var(--fluence-muted); line-height: 1.7; font-size: 1.03rem; }
-.benefitGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.benefitGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
 .benefitCard { min-width: 0; padding: clamp(1.4rem, 2.4vw, 2rem); border: 1px solid var(--fluence-line-strong); border-radius: 10px; background: var(--fluence-surface); box-shadow: var(--fluence-shadow); }
 .benefitNumber { display: inline-block; margin-bottom: 1.5rem; color: var(--fluence-accent-text); font-size: .78rem; font-weight: 700; letter-spacing: .1em; }
 .benefitCard h3 { margin: 0 0 .7rem; color: var(--fluence-ink); font-size: 1.15rem; line-height: 1.3; }
 .benefitCard p { margin: 0; color: var(--fluence-muted); font-size: .93rem; line-height: 1.65; }
 .textLink { display: inline-flex; align-items: center; gap: .8rem; margin-top: 2rem; color: var(--fluence-accent-text); font-size: .93rem; font-weight: 700; text-decoration: none; transition: color var(--fluence-transition-slow); }
 .textLink:hover { color: var(--fluence-accent-hover); text-decoration: underline; }
+.paths { padding: clamp(4.5rem, 8vw, 7rem) 0; }
+.paths h2 { margin: .75rem 0 2rem; color: var(--fluence-ink); font-size: clamp(1.75rem, 3vw, 2.25rem); line-height: 1.3; }
+.pathGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+.pathCard { padding: clamp(1.5rem, 3vw, 2.5rem); border: 1px solid var(--fluence-line-strong); border-radius: 10px; background: var(--fluence-surface); box-shadow: var(--fluence-shadow); }
+.pathLabel { color: var(--fluence-accent-text); font-size: .76rem; font-weight: 700; letter-spacing: .11em; }
+.pathCard h3 { margin: .8rem 0 .7rem; color: var(--fluence-ink); font-size: clamp(1.25rem, 2vw, 1.55rem); }
+.pathCard p { max-width: 45ch; margin: 0; color: var(--fluence-muted); line-height: 1.65; }
+.pathCard .textLink { margin-top: 1.5rem; }
 @media (max-width: 1000px) { .heroInner { grid-template-columns: 1fr; } .heroCopy { padding-bottom: 0; } .heroVisual { width: min(78%, 580px); margin: 1.5rem auto 2rem; } .heroScreenshot { animation-duration: 1.2s; } .benefitGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 760px) { .contentWidth, .heroInner { width: min(100% - 2rem, 1240px); } .hero { padding: 1.5rem 0 3rem; } .heroLogoBanner { width: min(90%, 600px); margin-bottom: 1rem; } .heroTitle { font-size: clamp(2rem, 7vw, 3rem); } .heroVisual { width: min(76%, 450px); margin-bottom: 1.5rem; } .benefitsHeading { display: block; } .benefitsHeading p { margin-top: 1rem; } }
-@media (max-width: 600px) { .benefitGrid { grid-template-columns: 1fr; } }
+@media (max-width: 760px) { .contentWidth, .heroInner { width: min(100% - 2rem, 1240px); } .hero { padding: 1.5rem 0 3rem; } .heroLogoBanner { width: min(90%, 600px); margin-bottom: 1rem; } .heroTitle { font-size: clamp(2rem, 7vw, 3rem); } .heroVisual { width: min(100%, 450px); margin-bottom: 1.5rem; } .heroScreenshot { width: 80%; } .heroScreenshotDark { top: 16%; left: 18%; } html[data-theme='dark'] .heroScreenshotLight { top: 16%; left: 18%; } .benefitsHeading { display: block; } .benefitsHeading p { margin-top: 1rem; } }
+@media (max-width: 600px) { .benefitGrid, .pathGrid { grid-template-columns: 1fr; } }
 @media (max-width: 480px) { .heroActions { display: grid; } .primaryAction, .secondaryAction { justify-content: space-between; } .heroMeta { line-height: 1.5; } }
 @media (prefers-reduced-motion: reduce) { .heroLogoBanner, .heroTitle, .heroLead, .heroActions, .heroMeta, .heroScreenshot { animation: none; } .page[data-motion-ready='true'] [data-reveal], .page[data-motion-ready='true'] [data-reveal='section']:not([data-visible]) { opacity: 1; transform: none; filter: none; transition: none; } .primaryAction, .secondaryAction { transition: background-color var(--fluence-transition-slow), border-color var(--fluence-transition-slow), color var(--fluence-transition-slow), box-shadow var(--fluence-transition-slow); } .primaryAction:hover, .secondaryAction:hover, .primaryAction:active, .secondaryAction:active { transform: none; } }

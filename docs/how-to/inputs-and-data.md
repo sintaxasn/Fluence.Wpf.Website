@@ -1,46 +1,105 @@
 ﻿# Use inputs and data controls
 
-Build a small form with a name, quantity, and a collection of submitted entries. Begin with the [Basic Usage](../csharp/usage.md) window and add the input controls below; use WPF binding for the collection displayed in a `ListView`.
+This standalone form accepts an item name and quantity, validates them, and displays each submitted entry in a Fluence list. Begin with the [Basic walkthrough](../csharp/usage.md) theme setup, then run this example from the Website repository root. The first command restores and builds against the explicit local package source; the second runs the example:
 
-Most Fluence controls extend the WPF control with the same name. They keep familiar bindings and commands while their templates use the Fluence resource palette. Add `xmlns:fluence="http://schemas.fluencewpf.com"` to the XAML root, and initialize the theme before showing the window.
+~~~powershell
+pwsh ./samples/Fluence.Wpf.Docs.Walkthroughs/Build-Walkthroughs.ps1 -PackageSource ./samples/Fluence.Wpf.Docs.Walkthroughs/packages
+dotnet run --project ./samples/Fluence.Wpf.Docs.Walkthroughs/Fluence.Wpf.Docs.Walkthroughs.csproj -c Release --no-build -- --example inputs-and-data
+~~~
 
-## Choose an input
+## Declare the window
 
-| Task | Control | Main API |
-| --- | --- | --- |
-| Enter text | `fluence:TextBox` | WPF `Text`, `PlaceholderText` |
-| Enter a secret | native `PasswordBox` | `Password`, `PasswordBoxExtensions` attached properties |
-| Search suggestions | `fluence:AutoSuggestBox` | `Text`, `ItemsSource`, `QuerySubmitted`, `SuggestionChosen` |
-| Enter a number | `fluence:NumberBox` | `Value`, `ValueChanged` |
-| Choose one item | `fluence:ComboBox` | WPF selection and items APIs |
-| Choose date or time | `fluence:DatePicker`, `fluence:TimePicker` | `SelectedDate`, `SelectedTime` |
-| Choose a color | `fluence:ColorPicker` | `Color`, `ColorChanged` |
+The complete layout is in [InputsAndDataWindow.xaml](https://github.com/sintaxasn/Fluence.Wpf.Website/blob/main/samples/Fluence.Wpf.Docs.Walkthroughs/InputsAndDataWindow.xaml). The icon URI points to a resource in the sample project; use your own resource when copying this window.
 
-`System.Windows.Controls.PasswordBox` is sealed, so Fluence styles that native type and adds its extra behavior through `PasswordBoxExtensions`. Write `<PasswordBox />` in XAML. The Fluence `DatePicker` is a separate three-column picker, not a subclass of WPF's calendar `DatePicker`; adapt bindings when moving between them.
+~~~xml
+<fluence:FluenceWindow
+    x:Class="Fluence.Wpf.Docs.Walkthroughs.InputsAndDataWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:fluence="http://schemas.fluencewpf.com"
+    Title="Inputs and data"
+    Icon="/Fluence.Wpf.Docs.Walkthroughs;component/Fluence_Icon_Light.ico"
+    Width="800" Height="540" MinWidth="640" MinHeight="420"
+    WindowStartupLocation="CenterScreen"
+    Background="{DynamicResource ApplicationBackgroundBrush}"
+    SystemBackdropType="Mica"
+    ExtendsContentIntoTitleBar="True">
+    <fluence:FluenceWindow.TitleBar>
+        <fluence:TitleBar Title="Inputs and data" Subtitle="Fluence WPF walkthrough">
+            <fluence:TitleBar.Icon>
+                <Image Width="20" Height="20" Source="/Fluence.Wpf.Docs.Walkthroughs;component/Fluence_Icon_Light.ico" />
+            </fluence:TitleBar.Icon>
+        </fluence:TitleBar>
+    </fluence:FluenceWindow.TitleBar>
+    <fluence:StackPanel Width="460" HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="12">
+        <fluence:TextBlock Text="Add an item" />
+        <fluence:TextBox x:Name="ItemName" PlaceholderText="Item name" />
+        <fluence:NumberBox x:Name="Quantity" PlaceholderText="Quantity" Value="1" />
+        <fluence:Button Content="Add to list" Click="AddItem_Click" Appearance="Accent"
+                        HorizontalAlignment="Left" />
+        <fluence:TextBlock x:Name="InputStatus" />
+        <fluence:ListView x:Name="ItemsList" Height="140" ItemsSource="{Binding Entries}" />
+    </fluence:StackPanel>
+</fluence:FluenceWindow>
+~~~
 
-```xml
-<StackPanel xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-            xmlns:fluence="http://schemas.fluencewpf.com">
-    <fluence:TextBox Width="240" PlaceholderText="Display name" />
-    <fluence:NumberBox Width="160" PlaceholderText="Quantity" />
-    <PasswordBox Width="240" />
-</StackPanel>
-```
+## Wire the interaction
 
-The form and data list in both themes:
+[InputsAndDataWindow.xaml.cs](https://github.com/sintaxasn/Fluence.Wpf.Website/blob/main/samples/Fluence.Wpf.Docs.Walkthroughs/InputsAndDataWindow.xaml.cs) contains the code-behind. The `x:Class` in XAML and the partial class name in C# must match.
 
-![Inputs and data demo in light mode](../screenshots/tutorials/inputs-and-data-light.png)
+~~~csharp
+using System;
+using System.Collections.ObjectModel;
+using System.Globalization;
+using System.Windows;
+using Fluence.Wpf.Controls;
+namespace Fluence.Wpf.Docs.Walkthroughs
+{
+    public sealed partial class InputsAndDataWindow : FluenceWindow
+    {
+        public ObservableCollection<string> Entries { get; } = [];
 
-![Inputs and data demo in dark mode](../screenshots/tutorials/inputs-and-data-dark.png)
+        internal InputsAndDataWindow()
+        {
+            InitializeComponent();
+            DataContext = this;
+        }
 
-## Display collections
+        private void AddItem_Click(object sender, RoutedEventArgs e)
+        {
+            AddItem();
+        }
 
-Use `fluence:ListBox` and `fluence:ListView` with `ItemsSource`, `ItemTemplate`, and the WPF selection APIs. `ListView.ItemsLayout` selects the library's list or grid layout behavior; see its XML API comment for supported values. Use `fluence:TreeView` for hierarchical data and `TreeView.SelectedItems` when multiple selection is enabled. The [data binding gallery](../../Fluence.Wpf.Demo/Pages/GalleryDataBindingPage.xaml) demonstrates collection updates and templates.
+        private void AddItem()
+        {
+            if (string.IsNullOrWhiteSpace(ItemName.Text) || double.IsNaN(Quantity.Value) ||
+                Quantity.Value <= 0 || Math.Abs(Quantity.Value - Math.Round(Quantity.Value, MidpointRounding.AwayFromZero)) > 0.000001)
+            {
+                InputStatus.Text = "Enter a name and a positive whole quantity.";
+                return;
+            }
 
-`fluence:Card` is a `ContentControl`. Set `IsClickable="True"` to enable its `Click` event. A card can also group content without handling clicks.
+            Entries.Add(ItemName.Text.Trim() + " - " + Quantity.Value.ToString("0", CultureInfo.CurrentCulture) + " items");
+            InputStatus.Text = "Added " + ItemName.Text.Trim();
+            ItemName.Text = string.Empty;
+        }
 
-## Account for similarly named types
+        internal void PrepareCapture()
+        {
+            ItemName.Text = "Taylor";
+            Quantity.Value = 3;
+            AddItem();
+        }
+    }
+}
+~~~
 
-`fluence:TextBlock` is a `ContentControl` with text properties; it does not provide the native `TextBlock.Inlines` collection. `fluence:Image` is a templated `Control` that supports rounded clipping, not a subtype of the native WPF image. Use the WPF versions where a typed API or inline collection specifically requires them.
+`fluence:StackPanel` gives the form fields a 12-pixel gap. `Entries` is an `ObservableCollection<string>`. The constructor assigns the window as `DataContext`, so `ItemsSource="{Binding Entries}"` resolves to that collection. WPF observes new entries and updates the list. `AddItem_Click` rejects an empty name, a nonnumber, and quantities that are not positive whole numbers. On success it adds a formatted entry and clears the name field.
 
-For more examples, run the [gallery](../../Fluence.Wpf.Demo/README.md) and visit Inputs, Forms, Data, Data binding, and Trees. The [catalog](../controls.md) lists every public control.
+## See the result
+
+![Use inputs and data controls in light mode](../screenshots/tutorials/inputs-and-data-light.png)
+
+![Use inputs and data controls in dark mode](../screenshots/tutorials/inputs-and-data-dark.png)
+
+See the [control catalog](../controls.md) for other inputs and the [data binding gallery](https://github.com/sintaxasn/Fluence.Wpf/blob/main/Fluence.Wpf.Demo/Pages/GalleryDataBindingPage.xaml) for more collection examples.

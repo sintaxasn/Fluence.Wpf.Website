@@ -29,7 +29,7 @@ const sidebars = {
     {
       "type": "doc",
       "id": "csharp/usage",
-      "label": "Basic usage"
+      "label": "Basic walkthrough"
     },
     {
       "type": "doc",
@@ -44,14 +44,8 @@ const sidebars = {
         "how-to/theme-and-accent",
         "how-to/inputs-and-data",
         "how-to/navigation-and-tabs",
-        "how-to/dialogs-and-feedback",
-        "how-to/controls-from-csharp"
+        "how-to/dialogs-and-feedback"
       ]
-    },
-    {
-      "type": "ref",
-      "id": "controls",
-      "label": "Control catalog"
     },
     {
       "type": "category",
@@ -248,7 +242,7 @@ const sidebars = {
     {
       "type": "ref",
       "id": "csharp/usage",
-      "label": "C# basic usage"
+      "label": "C# Basic walkthrough"
     },
     {
       "type": "ref",
@@ -280,7 +274,7 @@ const sidebars = {
     {
       "type": "doc",
       "id": "powershell/usage",
-      "label": "Basic usage"
+      "label": "Basic walkthrough"
     },
     {
       "type": "doc",

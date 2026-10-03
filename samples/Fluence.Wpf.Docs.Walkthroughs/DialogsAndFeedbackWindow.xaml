@@ -1,0 +1,28 @@
+﻿<fluence:FluenceWindow
+    x:Class="Fluence.Wpf.Docs.Walkthroughs.DialogsAndFeedbackWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:fluence="http://schemas.fluencewpf.com"
+    Title="Dialogs and feedback"
+    Icon="/Fluence.Wpf.Docs.Walkthroughs;component/Fluence_Icon_Light.ico"
+    Width="800" Height="540" MinWidth="640" MinHeight="420"
+    WindowStartupLocation="CenterScreen"
+    Background="{DynamicResource ApplicationBackgroundBrush}"
+    SystemBackdropType="Mica"
+    ExtendsContentIntoTitleBar="True">
+    <fluence:FluenceWindow.TitleBar>
+        <fluence:TitleBar Title="Dialogs and feedback" Subtitle="Fluence WPF walkthrough">
+            <fluence:TitleBar.Icon>
+                <Image Width="20" Height="20" Source="/Fluence.Wpf.Docs.Walkthroughs;component/Fluence_Icon_Light.ico" />
+            </fluence:TitleBar.Icon>
+        </fluence:TitleBar>
+    </fluence:FluenceWindow.TitleBar>
+    <fluence:StackPanel Width="460" HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="16">
+        <fluence:TextBlock Text="Ask for confirmation and report the outcome." />
+        <fluence:Button Content="Save changes" Appearance="Accent" Click="Save_Click"
+                        HorizontalAlignment="Left" />
+        <fluence:InfoBar x:Name="SaveInfo" Title="Ready" Message="No changes saved yet."
+                         IsOpen="True" />
+        <fluence:ProgressBar x:Name="SaveProgress" Value="0" />
+    </fluence:StackPanel>
+</fluence:FluenceWindow>

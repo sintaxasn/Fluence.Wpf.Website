@@ -2,7 +2,7 @@
 
 ## Description
 
-`FluenceWindow` derives from WPF `Window`. It provides custom DWM window chrome, optional content in the title bar, caption button controls, and Fluence theme integration. Its properties below extend the normal WPF window API. For a C#-only window setup, see [Create a Fluence window from C#](../how-to/controls-from-csharp.md).
+`FluenceWindow` derives from WPF `Window`. It provides custom DWM window chrome, optional content in the title bar, caption button controls, and Fluence theme integration. Its properties below extend the normal WPF window API. For a complete window example, see [Basic walkthrough](../csharp/usage.md).
 
 Use it as the main window when an app needs Fluence chrome, a custom title bar, or a system backdrop.
 
@@ -12,7 +12,7 @@ Use it as the main window when an app needs Fluence chrome, a custom title bar, 
 
 ## Example usage
 
-Initialize the theme before creating or showing a window. Remove `StartupUri` from `App.xaml` when creating the window in `OnStartup`, as described in [C# basic usage](../csharp/usage.md#initialize-the-application). `SystemBackdropType` is a per-window request. The default is `Auto`; the operating system and current theme determine the available effect.
+Initialize the theme before creating or showing a window. Remove `StartupUri` from `App.xaml` when creating the window in `OnStartup`, as described in [Basic walkthrough](../csharp/usage.md#initialize-the-application). `SystemBackdropType` is a per-window request. The default is `Auto`; the operating system and current theme determine the available effect.
 
 ```xml
 <fluence:FluenceWindow x:Class="MyApp.MainWindow"

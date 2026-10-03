@@ -14,7 +14,7 @@ Browse the [complete C# API reference](../api/index.md) for type declarations, c
 | Task | API | Usage guide |
 | --- | --- | --- |
 | Create a window | [FluenceWindow](../api/Fluence.Wpf.Controls/FluenceWindow.md), [TitleBar](../api/Fluence.Wpf.Controls/TitleBar.md) | [Window and title bar](../how-to/window-and-title-bar.md) |
-| Construct a visual tree in code | [Button](../api/Fluence.Wpf.Controls/Button.md), [StackPanel](../api/Fluence.Wpf.Controls/StackPanel.md) | [Create controls in C#](../how-to/controls-from-csharp.md) |
+| Build a first window | [Button](../api/Fluence.Wpf.Controls/Button.md), [StackPanel](../api/Fluence.Wpf.Controls/StackPanel.md) | [Basic walkthrough](../csharp/usage.md) |
 | Set a theme | [ApplicationThemeManager](../api/Fluence.Wpf/ApplicationThemeManager.md), [SystemThemeWatcher](../api/Fluence.Wpf/SystemThemeWatcher.md) | [Theme and accent](../how-to/theme-and-accent.md) |
 | Choose an accent | [ApplicationAccentColorManager](../api/Fluence.Wpf/ApplicationAccentColorManager.md) | [Theme resources](../theming.md) |
 | Show a dialog | [ContentDialog](../api/Fluence.Wpf.Controls/ContentDialog.md) | [Dialogs and feedback](../how-to/dialogs-and-feedback.md) |

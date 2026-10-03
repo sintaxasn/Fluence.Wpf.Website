@@ -1,14 +1,14 @@
 ﻿# Fluence.Wpf documentation
 
-Fluence.Wpf provides Fluent controls, themes, and window chrome for WPF applications. The companion PowerShell module provides dialogs and windows for scripts. Choose the path that matches what you are building.
+Fluence.Wpf provides Fluent controls, themes, and window chrome for WPF applications. Its companion PowerShell module provides dialogs and windows for scripts. Choose a working path below, or [explore the features](/features) first.
 
 ## C# library
 
-Start with the [C# introduction](csharp/index.md), then check [requirements](csharp/requirements.md), [install the library](csharp/installation.md), and [build a small WPF app](csharp/usage.md). Use the [Gallery](csharp/gallery.md) and [control catalog](controls.md) to find examples. The [API reference](api/index.md) documents public C# types and members.
+Build a small app in the [basic walkthrough](csharp/usage.md). Check [requirements](csharp/requirements.md) and [installation](csharp/installation.md) first. Then browse the [Gallery](csharp/gallery.md), [control catalog](controls.md), or [API reference](api/index.md).
 
 ## PowerShell module
 
-Start with the [PowerShell introduction](powershell/README.md), then check [requirements](powershell/requirements.md), [install the module](powershell/installation.md), and [create a dialog](powershell/usage.md). Continue with [controls and dialogs](powershell/controls.md), task walkthroughs, and the [functions reference](powershell/reference/README.md).
+Show a message and collect validated input in [basic usage](powershell/usage.md). Check [requirements](powershell/requirements.md) and [installation](powershell/installation.md) first. Continue with [controls and dialogs](powershell/controls.md), task walkthroughs, and the [functions reference](powershell/reference/README.md).
 
 ## Contribute
 
