@@ -45,12 +45,12 @@ namespace Fluence.Wpf.Docs.Walkthroughs
             {
                 string directory = Path.Combine(FindWebsiteRoot(), "docs", "screenshots", "tutorials");
                 _ = Directory.CreateDirectory(directory);
-                ApplicationAccentColorManager.ApplyCustomAccent(Color.FromRgb(0x00, 0x78, 0xD4));
                 foreach (ApplicationTheme theme in new[] { ApplicationTheme.Light, ApplicationTheme.Dark })
                 {
                     ApplicationThemeManager.Apply(theme);
                     foreach (string slug in ExampleCatalog.Slugs)
                     {
+                        ApplicationAccentColorManager.ApplySystemAccent();
                         if (!ExampleCatalog.TryCreate(slug, out Window? window) || window is null)
                         {
                             throw new InvalidOperationException("Example could not be created: " + slug);

@@ -69,7 +69,7 @@ namespace Fluence.Wpf.Docs.Walkthroughs
 
         internal void PrepareCapture(ApplicationTheme theme)
         {
-            ThemeStatus.Text = theme + " theme, blue accent";
+            ThemeStatus.Text = theme + " theme, system accent";
         }
 
         private void Light_Click(object sender, RoutedEventArgs e)

@@ -24,6 +24,6 @@ To rebuild and capture all six examples in light and dark themes:
 pwsh ./samples/Fluence.Wpf.Docs.Walkthroughs/Build-Walkthroughs.ps1 -Capture
 ```
 
-The 12 PNGs are written to `docs/screenshots/tutorials/` in this repository. Capture mode sets a fixed blue accent and opaque backdrop for repeatability. Native DWM backdrop pixels, rounded edges, and exterior shadows are composed outside WPF and do not appear in these images.
+The 12 PNGs are written to `docs/screenshots/tutorials/` in this repository. Capture mode applies the current Windows system accent before each example and renders both Light and Dark explicitly. For release captures, select the Windows default-blue palette (`#0078D4` base), Light appearance for apps and the system, enabled transparency, and no accent color on title bars or borders. The examples still expose their labeled custom-accent actions. Capture mode uses an opaque backdrop; native DWM backdrop pixels, rounded edges, and exterior shadows are composed outside WPF and do not appear in these images.
 
 To replace the bundled package with a newly built archive, run `Update-Package.ps1` with its source path, source commit, and source state. Then run the build script. The package hash changes the isolated NuGet cache path, so an archive rebuilt with the same version does not reuse stale cached bytes.
