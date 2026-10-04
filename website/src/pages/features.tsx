@@ -63,7 +63,7 @@ const featureGroups: FeatureGroup[] = [
     light: '/images/features/backdrops-light.png',
     dark: '/images/features/backdrops-dark.png',
     animation: {light: '/images/features/backdrops-light.gif', dark: '/images/features/backdrops-dark.gif'},
-    alt: 'A Fluence window cycles through solid, Mica, and Acrylic backdrops',
+    alt: 'A Fluence window switches from Mica to Acrylic, then changes theme with Acrylic active',
     wallpaper: true,
     href: '/docs/how-to/window-and-title-bar',
     link: 'Configure a window',

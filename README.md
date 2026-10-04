@@ -96,6 +96,19 @@ For source changes that affect the docs, use a separate checkout of [Fluence.Wpf
 - **Feature captures:** run the feature capture workflow in the code checkout on Windows, following its current `Capture-FeatureAnimations.ps1` instructions. Review the exported light and dark animations and posters, then copy the approved site images into `website/static/images/features/`. The capture requires a staged PowerShell module, a visible desktop, and FFmpeg; it cannot be run by the website build.
 - **Other documentation:** edit the canonical pages in this repository when the change is website documentation. If the content describes source behavior, verify it against the code checkout before merging.
 
+The backdrop capture uses this site's `website/static/images/features/backdrops-coronascape.webp` behind the live window. Use an unlocked interactive desktop and pass the image's absolute path to the source script with `-WallpaperPath` whenever the run includes backdrop variants. The Light GIF runs Light Mica -> Light Acrylic -> Dark Acrylic; the Dark GIF runs Dark Mica -> Dark Acrylic -> Light Acrylic. Each PNG poster shows settled Acrylic in its initial theme. The script records the wallpaper hash and capture geometry; it does not change the Windows desktop wallpaper. To refresh only these variants from the website repository root, run these commands sequentially:
+
+```powershell
+$wallpaper = (Resolve-Path 'website/static/images/features/backdrops-coronascape.webp').Path
+$captureScript = 'C:\path\to\Fluence.Wpf\Fluence.Wpf.PowerShell.Module\build\Capture-FeatureAnimations.ps1'
+powershell.exe -NoProfile -STA -ExecutionPolicy Bypass -File $captureScript -Only backdrops-light -WallpaperPath $wallpaper
+powershell.exe -NoProfile -STA -ExecutionPolicy Bypass -File $captureScript -Only backdrops-dark -WallpaperPath $wallpaper
+```
+
+Review both source timelines for an active, visible window and wallpaper host before copying the approved `backdrops-{light,dark}.{gif,png}` files from the source checkout's `website/static/images/features/` into the matching paths here. Keep the website wallpaper and the capture's recorded wallpaper hash together when assessing provenance.
+
+The current captures used wallpaper SHA-256 `AB2EFD87519EDB234A5ED04022EB4759A8FC665C2F664D342EC816FC3938432F`, library DLL SHA-256 `38CE9B56F478AE8BC0C0505D53CCFAC41AE8F2EF104C9F49A971BD7EC6A5EB41` built from source commit `827d74c976be5d705192fb68b54ca6d042d270b4`, and capture script SHA-256 `541E6DDBB6F4F25C1C5C223BC01A6E9CD793E73BD3127F52D5F6E657CABA3557` from capture commit `6d95efab544b4f69aa7a23309451e7d1973b8cbb`. The paired Light and Dark GIFs and posters were independently reviewed against their source timelines before import.
+
 Review imports for complete light/dark pairs, correct links, and consistent filenames. The source checkout and this website repository have separate histories; do not assume relative paths between them.
 
 ## Navigation and theme
