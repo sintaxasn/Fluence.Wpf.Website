@@ -52,7 +52,7 @@ Do not run code-repository generators against this repository or substitute scre
 
 Use the existing Fluence assets. Navigation shows the standalone logomark with a 16 px left inset. Light and dark images follow the selected theme; the homepage hero uses the matching themed lockup, while the gallery screenshots retain their layered presentation. The first four Features sections have separate light and dark GIFs for controls, themes, accent colors, and window backdrops, with matching themed still images when reduced motion is preferred. If animated backdrop capture cannot show the effects reliably, use themed Acrylic still images for that section. The animations have no playback button. Control captures show the control with breathing room. Showcase images sit directly on the page background.
 
-Accents come from resolved `DesignTime.Light.xaml` and `DesignTime.Dark.xaml` palettes imported from the source repository. Website headings use IBM Plex Sans, body text uses Source Sans 3, and code uses JetBrains Mono. Motion follows the adapted upstream design. Reuse CSS tokens and existing motion patterns, respect reduced motion, and keep content accessible when JavaScript is unavailable. Check keyboard focus, narrow screens, and theme changes after visual edits.
+Accents come from resolved `DesignTime.Light.xaml` and `DesignTime.Dark.xaml` palettes imported from the source repository. Website headings and body text use locally bundled Nebula Sans; code uses JetBrains Mono. Motion follows the adapted upstream design. Reuse CSS tokens and existing motion patterns, respect reduced motion, and keep content accessible when JavaScript is unavailable. Check keyboard focus, narrow screens, and theme changes after visual edits.
 
 ## Copyright and licensing
 

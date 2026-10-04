@@ -1,7 +1,20 @@
 ﻿/* Fluence visual system: Windows layered neutrals with a restrained blue accent. */
+@font-face { font-family: 'Nebula Sans'; src: url('./fonts/NebulaSans-Light.woff2') format('woff2'); font-style: normal; font-weight: 300; font-display: swap; }
+@font-face { font-family: 'Nebula Sans'; src: url('./fonts/NebulaSans-LightItalic.woff2') format('woff2'); font-style: italic; font-weight: 300; font-display: swap; }
+@font-face { font-family: 'Nebula Sans'; src: url('./fonts/NebulaSans-Book.woff2') format('woff2'); font-style: normal; font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Nebula Sans'; src: url('./fonts/NebulaSans-BookItalic.woff2') format('woff2'); font-style: italic; font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Nebula Sans'; src: url('./fonts/NebulaSans-Medium.woff2') format('woff2'); font-style: normal; font-weight: 500; font-display: swap; }
+@font-face { font-family: 'Nebula Sans'; src: url('./fonts/NebulaSans-MediumItalic.woff2') format('woff2'); font-style: italic; font-weight: 500; font-display: swap; }
+@font-face { font-family: 'Nebula Sans'; src: url('./fonts/NebulaSans-Semibold.woff2') format('woff2'); font-style: normal; font-weight: 600; font-display: swap; }
+@font-face { font-family: 'Nebula Sans'; src: url('./fonts/NebulaSans-SemiboldItalic.woff2') format('woff2'); font-style: italic; font-weight: 600; font-display: swap; }
+@font-face { font-family: 'Nebula Sans'; src: url('./fonts/NebulaSans-Bold.woff2') format('woff2'); font-style: normal; font-weight: 700; font-display: swap; }
+@font-face { font-family: 'Nebula Sans'; src: url('./fonts/NebulaSans-BoldItalic.woff2') format('woff2'); font-style: italic; font-weight: 700; font-display: swap; }
+@font-face { font-family: 'Nebula Sans'; src: url('./fonts/NebulaSans-Black.woff2') format('woff2'); font-style: normal; font-weight: 900; font-display: swap; }
+@font-face { font-family: 'Nebula Sans'; src: url('./fonts/NebulaSans-BlackItalic.woff2') format('woff2'); font-style: italic; font-weight: 900; font-display: swap; }
+
 :root {
-  --ifm-font-family-base: 'Source Sans 3', 'Segoe UI', system-ui, sans-serif;
-  --ifm-heading-font-family: 'IBM Plex Sans', var(--ifm-font-family-base);
+  --ifm-font-family-base: 'Nebula Sans', 'Segoe UI', system-ui, sans-serif;
+  --ifm-heading-font-family: var(--ifm-font-family-base);
   --ifm-font-family-monospace: 'JetBrains Mono', 'Cascadia Code', Consolas, monospace;
   /* Resolved default accent ramp from Fluence.Wpf/Properties/DesignTime.Light.xaml. */
   --ifm-color-primary: #005ba1;

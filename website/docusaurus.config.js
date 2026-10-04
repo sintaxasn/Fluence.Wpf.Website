@@ -29,7 +29,7 @@ const config = {
   },
   i18n: { defaultLocale: 'en', locales: ['en'] },
   stylesheets: [
-    'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400..700&family=Source+Sans+3:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:ital,wght@0,400..700;1,400..700&display=swap',
+    'https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400..700;1,400..700&display=swap',
   ],
   staticDirectories: ['static', '../assets'],
   customFields: {
