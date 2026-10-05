@@ -7,6 +7,7 @@ import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import powershellLight from '@site/../docs/powershell/images/xaml-window-light.png';
 import powershellDark from '@site/../docs/powershell/images/xaml-window-dark.png';
+import backdropGeometry from './backdrops.geometry.json';
 import styles from './features.module.css';
 
 type FeatureGroup = {
@@ -108,7 +109,60 @@ function FeatureVisual({group}: {group: FeatureGroup}) {
 
 export default function FeaturesPage() {
   const pageRef = useRef<HTMLElement>(null);
-  const backdropWallpaper = useBaseUrl('/images/features/backdrops-coronascape.webp');
+  const backdropRef = useRef<HTMLElement>(null);
+  const backdropWallpaper = useBaseUrl('/images/features/backdrops-realme-pad-2.jpg');
+
+  useEffect(() => {
+    const section = backdropRef.current;
+    const visual = section?.querySelector<HTMLElement>(`.${styles.featureVisual}`);
+    if (!section || !visual) return;
+
+    const alignWallpaper = () => {
+      const image = visual.querySelector<HTMLImageElement>('img');
+      if (!image) return;
+
+      const imageBounds = image.getBoundingClientRect();
+      if (imageBounds.width <= 0 || imageBounds.height <= 0) return;
+
+      const sectionBounds = section.getBoundingClientRect();
+      const scale = imageBounds.width / backdropGeometry.frame.width;
+      if (Math.abs(imageBounds.height - backdropGeometry.frame.height * scale) > 1) {
+        delete section.dataset.wallpaperAligned;
+        return;
+      }
+      const theme = document.documentElement.dataset.theme === 'dark' ? backdropGeometry.dark : backdropGeometry.light;
+      const left = imageBounds.left - sectionBounds.left - (theme.captureX - backdropGeometry.wallpaper.imageDrawX) * scale;
+      const top = imageBounds.top - sectionBounds.top - (theme.captureY - backdropGeometry.wallpaper.imageDrawY) * scale;
+      const drawWidth = backdropGeometry.wallpaper.imageDrawWidth * scale;
+      const drawHeight = backdropGeometry.wallpaper.imageDrawHeight * scale;
+      if (left > 0 || top > 0 || left + drawWidth < sectionBounds.width || top + drawHeight < sectionBounds.height) {
+        delete section.dataset.wallpaperAligned;
+        return;
+      }
+
+      section.style.setProperty('--backdrop-draw-width', `${drawWidth}px`);
+      section.style.setProperty('--backdrop-draw-height', `${drawHeight}px`);
+      section.style.setProperty('--backdrop-draw-left', `${left}px`);
+      section.style.setProperty('--backdrop-draw-top', `${top}px`);
+      section.dataset.wallpaperAligned = 'true';
+    };
+
+    const resizeObserver = typeof ResizeObserver === 'undefined' ? undefined : new ResizeObserver(alignWallpaper);
+    resizeObserver?.observe(section);
+    resizeObserver?.observe(visual);
+    const themeObserver = new MutationObserver(alignWallpaper);
+    themeObserver.observe(document.documentElement, {attributes: true, attributeFilter: ['data-theme']});
+    visual.addEventListener('load', alignWallpaper, true);
+    window.addEventListener('resize', alignWallpaper);
+    alignWallpaper();
+
+    return () => {
+      resizeObserver?.disconnect();
+      themeObserver.disconnect();
+      visual.removeEventListener('load', alignWallpaper, true);
+      window.removeEventListener('resize', alignWallpaper);
+    };
+  }, []);
 
   useEffect(() => {
     const page = pageRef.current;
@@ -182,7 +236,7 @@ export default function FeaturesPage() {
         </header>
         <div className={styles.groupList}>
           {featureGroups.map((group, index) => (
-            <section key={group.title} className={`${styles.groupSection} ${index % 2 === 1 ? styles.groupReverse : ''} ${group.wallpaper ? styles.backdropSection : ''}`} style={group.wallpaper ? {'--backdrop-wallpaper': `url("${backdropWallpaper}")`} as CSSProperties : undefined} aria-labelledby={`feature-${index}`} data-reveal="section">
+            <section key={group.title} ref={group.wallpaper ? backdropRef : undefined} className={`${styles.groupSection} ${index % 2 === 1 ? styles.groupReverse : ''} ${group.animation ? styles.animationSection : ''} ${group.wallpaper ? styles.backdropSection : ''}`} style={group.wallpaper ? {'--backdrop-wallpaper': `url("${backdropWallpaper}")`} as CSSProperties : undefined} aria-labelledby={`feature-${index}`} data-reveal="section">
               <div className={styles.contentWidth}>
                 <div className={styles.groupCopy}>
                   <Heading as="h2" id={`feature-${index}`}>{group.title}</Heading>

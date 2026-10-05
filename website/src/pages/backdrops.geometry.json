@@ -1,0 +1,29 @@
+﻿{
+  "frame": {
+    "width": 750,
+    "height": 510
+  },
+  "wallpaper": {
+    "sourceSha256": "F14A669DD8F3304FD437D74A2D24F81E1FEF83828FAD9A15C61CFB599D45A3C0",
+    "hostX": 0,
+    "hostY": 0,
+    "hostWidth": 5120,
+    "hostHeight": 2160,
+    "imageDrawX": -2048,
+    "imageDrawY": -1992,
+    "imageDrawWidth": 9216,
+    "imageDrawHeight": 6144
+  },
+  "light": {
+    "captureX": 2185,
+    "captureY": 825,
+    "gifSha256": "DAC640795EFD7820CA12C4C041536404E9D06E2D60EEB6C505F3016ACF102E9B",
+    "posterSha256": "6F3FDB2A670AC7B87D85682754FDCBEEAAEE1D77E5013020B0116081FF6FAD8D"
+  },
+  "dark": {
+    "captureX": 2185,
+    "captureY": 825,
+    "gifSha256": "B73BE19D3B3A6FC05ED7443A5C6F15F83C46F12B3671118084B02944CC87ABC0",
+    "posterSha256": "94E94454028E0953DC1109031CFF4C1DCFF8FDC4380974B54BB3B3CB6EDF0B22"
+  }
+}

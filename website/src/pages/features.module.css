@@ -5,12 +5,20 @@
 .header p { max-width: 58rem; margin: 0; color: var(--fluence-muted); font-size: clamp(1.15rem, 1.7vw, 1.45rem); line-height: 1.6; }
 .groupSection { padding: clamp(4rem, 7vw, 7rem) 0; border-bottom: 1px solid var(--fluence-line); }
 .groupSection:nth-child(even) { background: var(--fluence-section-wash); }
-.groupSection.backdropSection { background-color: #d8d5cd; background-image: var(--backdrop-wallpaper); background-position: left top; background-size: cover; }
-.backdropSection .groupCopy h2, .backdropSection .groupDescription, .backdropSection .pointList li, .backdropSection .groupLink, .backdropSection .groupLink:visited, .backdropSection .groupLink:hover, .backdropSection .groupLink:active, .backdropSection .groupLink:focus-visible { color: #000; }
-.backdropSection .pointList li::before { background: #000; }
-.backdropSection .groupLink:focus-visible { outline: 2px solid #000; outline-offset: 4px; }
+.groupSection.backdropSection { padding: clamp(3rem, 5vw, 4rem) 0; background-color: #e9d0ae; background-image: var(--backdrop-wallpaper); background-position: center center; background-size: cover; }
+.groupSection.backdropSection[data-wallpaper-aligned='true'] { background-position: var(--backdrop-draw-left) var(--backdrop-draw-top); background-size: var(--backdrop-draw-width) var(--backdrop-draw-height); background-repeat: no-repeat; }
+.backdropSection .groupCopy { padding: clamp(1.5rem, 2.5vw, 2.5rem); border-radius: 16px; background: rgba(10, 14, 20, .78); box-shadow: 0 16px 36px rgba(0, 0, 0, .2); }
+.backdropSection .groupCopy h2, .backdropSection .groupDescription, .backdropSection .pointList li, .backdropSection .groupLink, .backdropSection .groupLink:visited, .backdropSection .groupLink:hover, .backdropSection .groupLink:active, .backdropSection .groupLink:focus-visible { color: #fff; }
+.backdropSection .pointList li::before { background: #fff; }
+.backdropSection .groupLink:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
+[data-theme='dark'] .backdropSection .groupCopy { background: rgba(255, 255, 255, .88); }
+[data-theme='dark'] .backdropSection .groupCopy h2, [data-theme='dark'] .backdropSection .groupDescription, [data-theme='dark'] .backdropSection .pointList li, [data-theme='dark'] .backdropSection .groupLink, [data-theme='dark'] .backdropSection .groupLink:visited, [data-theme='dark'] .backdropSection .groupLink:hover, [data-theme='dark'] .backdropSection .groupLink:active, [data-theme='dark'] .backdropSection .groupLink:focus-visible { color: #111; }
+[data-theme='dark'] .backdropSection .pointList li::before { background: #111; }
+[data-theme='dark'] .backdropSection .groupLink:focus-visible { outline-color: #111; }
 .backdropSection .groupImage { box-shadow: 0 24px 56px rgba(0, 0, 0, .38), 0 5px 16px rgba(0, 0, 0, .24); }
 .groupSection .contentWidth { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(2rem, 5vw, 5rem); align-items: center; }
+.animationSection .contentWidth { grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); }
+.animationSection.groupReverse .contentWidth { grid-template-columns: minmax(0, 1.3fr) minmax(0, .7fr); }
 .groupReverse .groupImage { order: -1; }
 .groupReverse .featureVisual { order: -1; }
 .groupCopy h2 { max-width: 20ch; margin: 0 0 1rem; color: var(--fluence-ink); font-size: clamp(1.85rem, 3vw, 2.5rem); font-weight: 700; line-height: 1.24; letter-spacing: -.025em; }
@@ -21,11 +29,12 @@
 .groupLink { display: inline-flex; align-items: center; gap: .7rem; margin-top: 1.8rem; color: var(--fluence-accent-text); font-size: .96rem; font-weight: 700; text-decoration: none; transition: color var(--fluence-transition-slow); }
 .groupLink:hover { color: var(--fluence-accent-hover); text-decoration: underline; }
 .groupImage { display: block; min-width: 0; width: 100%; height: auto; border-radius: 8px; box-shadow: var(--fluence-shadow-hero); }
-.featureVisual { min-width: 0; }
+.featureVisual { min-width: 0; width: min(100%, 770px); }
 .page[data-motion-ready='true'] [data-reveal] { transition: opacity .35s cubic-bezier(.16, 1, .3, 1), transform .35s cubic-bezier(.16, 1, .3, 1), filter .35s cubic-bezier(.16, 1, .3, 1); }
 .page[data-motion-ready='true'] [data-reveal]:not([data-visible]) { opacity: 0; transform: translateY(24px); filter: blur(4px); }
 .page[data-motion-ready='true'] [data-reveal][data-instant='true'] { transition: none; }
 @keyframes headerEnter { from { opacity: 0; transform: translateY(20px); filter: blur(4px); } to { opacity: 1; transform: translateY(0); filter: blur(0); } }
+@media (max-width: 1100px) { .animationSection .contentWidth, .animationSection.groupReverse .contentWidth { grid-template-columns: 1fr; } .animationSection .featureVisual { order: 0; } }
 @media (max-width: 900px) { .groupSection .contentWidth { grid-template-columns: 1fr; } .groupReverse .groupImage, .groupReverse .featureVisual { order: 0; } .groupImage { width: min(100%, 760px); } }
-@media (max-width: 600px) { .contentWidth { width: min(100% - 2rem, 1240px); } .header { padding: 3rem 0; } .groupSection { padding: 3.5rem 0; } }
+@media (max-width: 600px) { .contentWidth { width: min(100% - 2rem, 1240px); } .header { padding: 3rem 0; } .groupSection { padding: 3.5rem 0; } .groupSection.backdropSection { padding: 2rem 0; } .backdropSection .contentWidth { gap: 1rem; } .backdropSection .groupCopy { padding: 1rem; } }
 @media (prefers-reduced-motion: reduce) { .header { animation: none; } .page[data-motion-ready='true'] [data-reveal], .page[data-motion-ready='true'] [data-reveal]:not([data-visible]) { opacity: 1; transform: none; filter: none; transition: none; } }
