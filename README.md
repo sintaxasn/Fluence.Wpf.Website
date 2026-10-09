@@ -38,24 +38,6 @@ The production build checks documentation links and anchors. `pnpm check:docs-tr
 
 The site defaults to `https://fluencewpf.com/` with base path `/`; `FLUENCE_SITE_URL` and `FLUENCE_BASE_URL` remain available for intentional overrides. Keep these defaults for the production deployment.
 
-### Planned hosting: Cloudflare Pages
-
-After release approval, open **Workers & Pages > Create application > Pages > Import existing Git repository** in the Cloudflare dashboard, then select `Fluence.Wpf.Website`. Configure the project as follows:
-
-| Setting | Value |
-| --- | --- |
-| Production branch | `main` |
-| Root directory | `website` |
-| Build command | `pnpm build` |
-| Build output directory | `build` |
-| `NODE_VERSION` | `24` |
-| `PNPM_VERSION` | `10.33.0` |
-| Custom domain | `fluencewpf.com` |
-
-Cloudflare Pages Git integration automatically builds branches and may publish preview deployments. Creating the integrated project can therefore make a public preview and, if `main` is selected and builds successfully, publish production content to its Pages hostname before the custom domain is attached. Defer project creation and Git integration until release approval. Then use the Pages project’s **Custom domains** workflow to attach `fluencewpf.com`. Because this is an apex domain, it must be an active Cloudflare zone with its nameservers pointed to Cloudflare; complete the DNS steps shown in the dashboard. Keep the Docusaurus URL and base path defaults above.
-
-See Cloudflare's [Git integration guide](https://developers.cloudflare.com/pages/get-started/git-integration/) and [build configuration](https://developers.cloudflare.com/pages/configuration/build-configuration/).
-
 ## C# walkthroughs and screenshots
 
 The six C# lessons in `docs/csharp/usage.md` and `docs/how-to/` run from `samples/Fluence.Wpf.Docs.Walkthroughs/` on Windows with the .NET 10 SDK and PowerShell 7. The sample uses the bundled `Fluence.Wpf` `0.9.1` archive in `samples/Fluence.Wpf.Docs.Walkthroughs/packages/`. Its [provenance record](samples/Fluence.Wpf.Docs.Walkthroughs/packages/PROVENANCE.md) identifies the source commit and package hash. The package is a local documentation dependency; the website's Node build does not restore or run it.

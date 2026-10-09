@@ -9,6 +9,9 @@ hide_table_of_contents: false
 
 Shows a themed Fluent input dialog and returns the captured value, or $null on cancel.
 
+![Get-FluenceInput representative dialog in Light mode](../images/dialog-form-light.png)
+![Get-FluenceInput representative dialog in Dark mode](../images/dialog-form-dark.png)
+
 ## SYNTAX
 
 ```powershell
@@ -34,6 +37,9 @@ Dispose the returned SecureString when the caller no longer needs it.
 $name = Get-FluenceInput -Message 'Enter your name'
 ```
 
+![Get-FluenceInput example in Light mode](../images/dialog-form-light.png)
+![Get-FluenceInput example in Dark mode](../images/dialog-form-dark.png)
+
 ### EXAMPLE 2
 
 ```powershell
@@ -54,6 +60,9 @@ if ($null -eq $server) { $server = 'localhost' }
 ```
 
 Falls back to the default after twenty unattended seconds.
+
+![Get-FluenceInput examples in Light mode](../images/dialog-form-light.png)
+![Get-FluenceInput examples in Dark mode](../images/dialog-form-dark.png)
 
 ## PARAMETERS
 

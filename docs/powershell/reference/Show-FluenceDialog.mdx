@@ -9,6 +9,9 @@ hide_table_of_contents: false
 
 Shows a themed Fluent dialog built from prompts and buttons, and returns the user's input.
 
+![Show-FluenceDialog in Light mode](../images/dialog-form-light.png)
+![Show-FluenceDialog in Dark mode](../images/dialog-form-dark.png)
+
 ## SYNTAX
 
 ```powershell
@@ -34,6 +37,9 @@ per button, plus Cancelled and TimedOut flags.
 Show-FluenceDialog -Title 'Setup' -Prompts 'Your name?' -Buttons OK
 ```
 
+![Show-FluenceDialog example in Light mode](../images/dialog-form-light.png)
+![Show-FluenceDialog example in Dark mode](../images/dialog-form-dark.png)
+
 ### EXAMPLE 2
 
 ```powershell
@@ -42,6 +48,9 @@ if ($r.TimedOut -or $r.'Start now') { Start-Install }
 ```
 
 Counts down on the first button and proceeds when the user clicks it or the minute elapses.
+
+![Show-FluenceDialog examples in Light mode](../images/dialog-form-light.png)
+![Show-FluenceDialog examples in Dark mode](../images/dialog-form-dark.png)
 
 ## PARAMETERS
 

@@ -9,6 +9,9 @@ hide_table_of_contents: false
 
 Shows a non-modal themed progress window and returns a handle for updating and closing it.
 
+![Show-FluenceProgress in Light mode](../images/progress-light.png)
+![Show-FluenceProgress in Dark mode](../images/progress-dark.png)
+
 ## SYNTAX
 
 ```powershell
@@ -49,6 +52,9 @@ $progress = Show-FluenceProgress -Title 'Contoso Suite' -Message 'Installing...'
 Update-FluenceProgress -Handle $progress -Detail 'Registering components' -PercentComplete 60
 Close-FluenceProgress -Handle $progress
 ```
+
+![Show-FluenceProgress example in Light mode](../images/progress-light.png)
+![Show-FluenceProgress example in Dark mode](../images/progress-dark.png)
 
 ## PARAMETERS
 

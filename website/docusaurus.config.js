@@ -72,7 +72,6 @@ const config = {
       },
       items: [
         { to: '/features', label: 'Features', position: 'left' },
-        { type: 'docSidebar', sidebarId: 'controls', label: 'Controls', position: 'left' },
         { type: 'docSidebar', sidebarId: 'csharp', label: 'C# Library', position: 'left' },
         { type: 'docSidebar', sidebarId: 'powershell', label: 'PowerShell', position: 'left' },
         { to: '/about', label: 'About', position: 'left' },

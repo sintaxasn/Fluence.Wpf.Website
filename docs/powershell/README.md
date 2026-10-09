@@ -1,10 +1,17 @@
 ﻿# PowerShell introduction
 
-`Fluence.Wpf.PowerShell` gives Windows PowerShell scripts Fluent dialogs, forms, progress windows, and custom WPF windows. It uses the Fluence.Wpf control library and supports Windows PowerShell 5.1 and PowerShell 7.4 or later on Windows 10 version 1809 or later.
+`Fluence.Wpf.PowerShell` gives Windows PowerShell and PowerShell 7 scripts dialogs, validated forms, progress windows, and custom WPF windows. Use it when a script needs a small operator-facing UI without building a separate application.
 
-Start with [requirements](requirements.md), [installation](installation.md), and [basic usage](usage.md). Basic Usage takes you from importing the module to showing a message and reading a validated form result.
+## The shortest path to a useful prompt
 
-For a particular task, use the [walkthroughs](#walkthroughs). Browse [controls and dialogs](controls.md) to choose an interface, or open the [Functions Reference](reference/README.md) for parameters and return values.
+1. Check [requirements](requirements.md) for supported Windows and PowerShell versions.
+2. [Install the module](installation.md).
+3. Follow [basic usage](usage.md) to import the module, show a message, and read a result.
+4. Choose a focused task below when the first prompt works.
+
+Use [controls and dialogs](controls.md) to compare the available interfaces. Use the [functions reference](reference/README.md) for exact parameters, validation, return values, and lifecycle behavior.
+
+The module keeps WPF work on its UI thread. Your script owns the work and decides what each result means. Dialog functions return typed result objects or values; they do not decide whether your operation should continue, retry, or roll back. Read the [module architecture](explanation.md) before sharing UI state across runspaces or embedding the module in a host that already has a WPF application.
 
 ## Walkthroughs
 

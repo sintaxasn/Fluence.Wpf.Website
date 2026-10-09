@@ -9,6 +9,9 @@ hide_table_of_contents: false
 
 Shows a themed dialog with a list of items to pick from and returns the selection.
 
+![Show-FluenceListSelection in Light mode](../images/list-selection-light.png)
+![Show-FluenceListSelection in Dark mode](../images/list-selection-dark.png)
+
 ## SYNTAX
 
 ```powershell
@@ -43,6 +46,9 @@ $region = Show-FluenceListSelection -Message 'Choose a region' -Items 'Europe', 
 $features = Show-FluenceListSelection -Message 'Features to install' -Items 'Core', 'Docs', 'Samples' -MultiSelect -DefaultValue 'Core'
 if ($null -ne $features) { "Installing: $($features -join ', ')" }
 ```
+
+![Show-FluenceListSelection example in Light mode](../images/list-selection-light.png)
+![Show-FluenceListSelection example in Dark mode](../images/list-selection-dark.png)
 
 ## PARAMETERS
 

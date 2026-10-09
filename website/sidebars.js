@@ -37,6 +37,11 @@ const sidebars = {
       "label": "Running the gallery"
     },
     {
+      "type": "doc",
+      "id": "controls",
+      "label": "Control catalog"
+    },
+    {
       "type": "category",
       "label": "Walkthroughs",
       "items": [

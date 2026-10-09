@@ -1,15 +1,23 @@
-﻿# Fluence.Wpf documentation
+# Fluence.Wpf documentation
 
-Fluence.Wpf provides Fluent controls, themes, and window chrome for WPF applications. Its companion PowerShell module provides dialogs and windows for scripts. Choose a working path below, or [explore the features](/features) first.
+Fluence.Wpf brings native Windows 11-style (Fluent) windows and controls - including automatic light / dark mode and customisable accent colors - without requiring you to rewrite your app for WinUI or upgrade to the latest .NET release. It comes as a NuGet package for C# developers, and a handy PowerShell module for administrators who need to create modern user experiences. 
 
-## C# library
+## Explore the product
 
-Build a small app in the [basic walkthrough](csharp/usage.md). Check [requirements](csharp/requirements.md) and [installation](csharp/installation.md) first. Then browse the [Gallery](csharp/gallery.md), [control catalog](controls.md), or [API reference](api/index.md).
+Start with the [Features page](/features) to see the visual system, controls, themes, accent behavior, and Mica or Acrylic backdrops in both themes.
 
-## PowerShell module
+## Build a WPF application in C#
 
-Show a message and collect validated input in [basic usage](powershell/usage.md). Check [requirements](powershell/requirements.md) and [installation](powershell/installation.md) first. Continue with [controls and dialogs](powershell/controls.md), task walkthroughs, and the [functions reference](powershell/reference/README.md).
+The [C# Library](csharp/index.md) documentation covers installation, the first window, theme setup, control selection, walkthroughs, the control catalog, and the generated API reference. Use it when you are building or maintaining a WPF application.
 
-## Contribute
+## Add Fluent UI to a PowerShell script
 
-See the [C# contributing guide](csharp/contributing.md) or [PowerShell contributing guide](powershell/contributing.md) for the relevant workflow. Repository-wide policies are in [CONTRIBUTING.md](../CONTRIBUTING.md).
+The [PowerShell module](powershell/README.md) documentation covers installation, dialogs, validated forms, progress, custom XAML windows, runtime theming, and the function reference. Use it when the script is the application entry point or when you need a small operator-facing UI.
+
+## Shared references
+
+- [Theme and resource guide](theming.md) explains the published theme resources and accent behavior.
+- [WinUI parity notes](winui-parity.md) records where Fluence follows WinUI and where WPF requires a translation.
+- [Accessibility reference](reference/accessibility.md) describes keyboard, focus, automation, high contrast, and right-to-left considerations.
+
+Interested in contributing? Use the [C# contributing guide](csharp/contributing.md) or [PowerShell contributing guide](powershell/contributing.md). Repository-wide policies are in [CONTRIBUTING.md](../CONTRIBUTING.md).
