@@ -95,7 +95,7 @@ export default function Home() {
   }, []);
 
   return (
-    <Layout title="Fluence.Wpf" description="Fluent controls, themes, and window chrome for WPF, plus a companion PowerShell module for dialogs and windows.">
+    <Layout title="Fluence.Wpf" description="Fluence.Wpf brings native Windows 11-style (Fluent) windows and controls - including automatic light / dark mode and customisable accent colors - without requiring you to rewrite your app for WinUI or upgrade to the latest .NET release. Fluent controls, themes, and window chrome for WPF, plus a companion PowerShell module for dialogs and windows.">
       <main ref={pageRef} className={styles.page}>
         <section className={styles.hero} aria-labelledby="hero-title">
           <div className={styles.heroLogoBanner}>
@@ -107,7 +107,7 @@ export default function Home() {
               <Heading as="h1" id="hero-title" className={styles.heroTitle}>
                 <span className={styles.heroTitleAccent}>Fluent design</span><span className={styles.heroTitleNeutral}>&nbsp;for&nbsp;</span><span className={styles.heroTitleAccent}>WPF</span>
               </Heading>
-              <p className={styles.heroLead}>Bring Windows 11 style controls, themes, and window chrome to the WPF apps you already build. Use the companion PowerShell module when a script needs a desktop UI.</p>
+              <p className={styles.heroLead}>Beautiful Windows 11-style controls and theming for WPF applications, without the Windows App SDK dependency. And a PowerShell module for admins who want to build their own UIs.</p>
               <div className={styles.heroActions}>
                 <Link className={styles.primaryAction} to="/docs/csharp">Start with C# <Arrow /></Link>
                 <Link className={styles.secondaryAction} to="/docs/powershell">Start with PowerShell <Arrow /></Link>
@@ -125,9 +125,8 @@ export default function Home() {
         <section className={styles.benefits} aria-labelledby="benefits-title" data-reveal="section">
           <div className={styles.contentWidth}>
             <div className={styles.benefitsHeading}>
-              <div><span className={styles.kicker}>WHAT YOU CAN BUILD</span><Heading as="h2" id="benefits-title">A familiar WPF workflow. A Fluent interface.</Heading></div>
-              <p>Keep your XAML, bindings, and commands while updating the controls and surfaces people use every day.</p>
-            </div>
+              <div><span className={styles.kicker}>WHAT YOU CAN BUILD</span><Heading as="h2" id="benefits-title">Modern user experiences.</Heading></div>
+              <p>Modernize your existing WPF application in record time, or start new ones with over 60 different control types.</p>            </div>
             <div className={styles.benefitGrid}>
               {benefits.map((benefit, index) => (
                 <article className={styles.benefitCard} key={benefit.title}>
@@ -142,8 +141,8 @@ export default function Home() {
         </section>
         <section className={styles.paths} aria-labelledby="paths-title" data-reveal="section">
           <div className={styles.contentWidth}>
-            <span className={styles.kicker}>CHOOSE YOUR PATH</span>
-            <Heading as="h2" id="paths-title">Start with a working example.</Heading>
+            <span className={styles.kicker}>DIVE INTO DOCUMENTATION</span>
+            <Heading as="h2" id="paths-title">Pick a path to get started.</Heading>
             <div className={styles.pathGrid}>
               <article className={styles.pathCard}>
                 <span className={styles.pathLabel}>C# LIBRARY</span>

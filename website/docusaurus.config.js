@@ -8,7 +8,6 @@ const websiteRepository = 'https://github.com/sintaxasn/Fluence.Wpf.Website';
 const siteUrl = process.env.FLUENCE_SITE_URL || 'https://fluencewpf.com';
 const baseUrl = process.env.FLUENCE_BASE_URL || '/';
 
-/** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Fluence.Wpf',
   tagline: 'Fluent controls for WPF',
@@ -29,7 +28,7 @@ const config = {
   },
   i18n: { defaultLocale: 'en', locales: ['en'] },
   stylesheets: [
-    'https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400..700;1,400..700&display=swap',
+    'https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap',
   ],
   staticDirectories: ['static', '../assets'],
   customFields: {
@@ -44,7 +43,7 @@ const config = {
           routeBasePath: 'docs',
           sidebarPath: './sidebars.js',
           exclude: ['**/_internal/**', '**/plans/**', 'release.md', 'roadmap.md', '**/release.md', '**/roadmap.md'],
-          editUrl: ({ docPath }) => `${websiteRepository}/edit/main/docs/${docPath}`,
+        //   editUrl: ({ docPath }) => `${websiteRepository}/edit/main/docs/${docPath}`,
           beforeDefaultRemarkPlugins: [[docsTransform, { repository }]],
         },
         blog: false,
