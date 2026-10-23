@@ -8,7 +8,7 @@
   "scripts": {
     "start": "docusaurus start",
     "build": "docusaurus build",
-    "serve": "docusaurus serve",
+    "serve": "node scripts/serve.mjs",
     "clear": "docusaurus clear",
     "typecheck": "tsc --noEmit",
     "check:docs-transform": "node scripts/docs-transform.test.mjs"
