@@ -1,4 +1,4 @@
-﻿/* Fluence visual system: Windows layered neutrals with a restrained blue accent. */
+/* Fluence visual system: Windows layered neutrals with a restrained blue accent. */
 @font-face { font-family: 'Nebula Sans'; src: url('./fonts/NebulaSans-Light.woff2') format('woff2'); font-style: normal; font-weight: 300; font-display: swap; }
 @font-face { font-family: 'Nebula Sans'; src: url('./fonts/NebulaSans-LightItalic.woff2') format('woff2'); font-style: italic; font-weight: 300; font-display: swap; }
 @font-face { font-family: 'Nebula Sans'; src: url('./fonts/NebulaSans-Book.woff2') format('woff2'); font-style: normal; font-weight: 400; font-display: swap; }
@@ -11,11 +11,32 @@
 @font-face { font-family: 'Nebula Sans'; src: url('./fonts/NebulaSans-BoldItalic.woff2') format('woff2'); font-style: italic; font-weight: 700; font-display: swap; }
 @font-face { font-family: 'Nebula Sans'; src: url('./fonts/NebulaSans-Black.woff2') format('woff2'); font-style: normal; font-weight: 900; font-display: swap; }
 @font-face { font-family: 'Nebula Sans'; src: url('./fonts/NebulaSans-BlackItalic.woff2') format('woff2'); font-style: italic; font-weight: 900; font-display: swap; }
+@font-face { font-family: 'JetBrains Mono'; src: url('./fonts/JetBrainsMono-Variable.woff2') format('woff2'); font-style: normal; font-weight: 100 800; font-display: swap; }
+@font-face { font-family: 'JetBrains Mono'; src: url('./fonts/JetBrainsMono-VariableItalic.woff2') format('woff2'); font-style: italic; font-weight: 100 800; font-display: swap; }
+/* Metric-matched local fallbacks so the font swap does not re-break lines. Values derived from the fonts' advance widths and typo metrics. */
+@font-face { font-family: 'Nebula Sans Fallback'; src: local('Segoe UI'); font-weight: 400; size-adjust: 110.4%; ascent-override: 86.96%; descent-override: 21.74%; line-gap-override: 0%; }
+@font-face { font-family: 'Nebula Sans Fallback'; src: local('Segoe UI Semibold'); font-weight: 600; size-adjust: 110.6%; ascent-override: 86.8%; descent-override: 21.7%; line-gap-override: 0%; }
+@font-face { font-family: 'Nebula Sans Fallback'; src: local('Segoe UI Bold'); font-weight: 700; size-adjust: 110.6%; ascent-override: 86.8%; descent-override: 21.7%; line-gap-override: 0%; }
+@font-face { font-family: 'JetBrains Mono Fallback'; src: local('Consolas'); size-adjust: 109.1%; ascent-override: 93.49%; descent-override: 27.5%; line-gap-override: 0%; }
 
 :root {
-  --ifm-font-family-base: 'Nebula Sans', 'Segoe UI', system-ui, sans-serif;
+  --ifm-font-family-base: 'Nebula Sans', 'Nebula Sans Fallback', 'Segoe UI', system-ui, sans-serif;
   --ifm-heading-font-family: var(--ifm-font-family-base);
-  --ifm-font-family-monospace: 'JetBrains Mono', 'Cascadia Code', Consolas, monospace;
+  --ifm-font-family-monospace: 'JetBrains Mono', 'JetBrains Mono Fallback', 'Cascadia Code', Consolas, monospace;
+  --ifm-heading-font-weight: 600;
+  /* Type roles. Docs follow the WinUI ramp (Body, Subtitle, Title, TitleLarge) with a 16px web body floor. */
+  --fluence-text-caption: .75rem;
+  --fluence-text-meta: .8125rem;
+  --fluence-text-label: .875rem;
+  --fluence-text-ui: .9375rem;
+  --fluence-text-body: 1rem;
+  --fluence-text-lead: 1.125rem;
+  --fluence-text-subtitle: 1.25rem;
+  --fluence-text-title: 1.75rem;
+  --fluence-text-title-large: 2.5rem;
+  --fluence-text-lead-display: clamp(1.125rem, 1.6vw, 1.375rem);
+  --fluence-text-section: clamp(1.75rem, 3vw, 2.5rem);
+  --fluence-text-display: clamp(2.5rem, 5vw, 4.25rem);
   /* Resolved default accent ramp from Fluence.Wpf/Properties/DesignTime.Light.xaml. */
   --ifm-color-primary: #005ba1;
   --ifm-color-primary-dark: #003e6e;
@@ -65,9 +86,9 @@
   --fluence-bg: #f3f3f3;
   --fluence-section: #ebebeb;
   --fluence-section-wash: rgb(0 0 0 / .035);
-  --fluence-callout-wash: rgb(25 60 90 / .05);
-  /* Red, orange, yellow, green, light blue, royal blue, purple at 5% opacity. */
-  --fluence-logo-gradient: linear-gradient(90deg, rgb(239 39 48 / .05) 0%, rgb(247 127 0 / .05) 16.67%, rgb(245 184 0 / .05) 33.33%, rgb(27 178 87 / .05) 50%, rgb(18 174 206 / .05) 66.67%, rgb(31 95 224 / .05) 83.33%, rgb(176 38 200 / .05) 100%);
+  /* Logo spectrum: red, orange, yellow, green, light blue, royal blue, purple. Spent once, as the navbar edge. */
+  --fluence-brand-stripe: linear-gradient(90deg, #ef2730 0%, #f77f00 16.67%, #f5b800 33.33%, #1bb257 50%, #12aece 66.67%, #1f5fe0 83.33%, #b026c8 100%);
+  --fluence-selection: rgb(0 91 161 / .2);
   --fluence-surface: #fff;
   --fluence-ink: #1b1b1b;
   --fluence-muted: #515151;
@@ -84,11 +105,11 @@
   --fluence-shadow: 0 2px 4px rgba(0, 0, 0, .04), 0 14px 30px rgba(0, 0, 0, .055);
   --fluence-shadow-hero: 0 4px 10px rgba(0, 0, 0, .06), 0 32px 72px rgba(0, 0, 0, .11);
   --fluence-shadow-hover: 0 4px 8px rgba(0, 0, 0, .06), 0 18px 36px rgba(0, 0, 0, .09);
-  --fluence-hero-glow: rgb(0 91 161 / .12);
-  --fluence-code-bg: #f8f9fa;
-  --fluence-code-ink: #27384b;
-  --fluence-code-muted: #707984;
-  --fluence-callout: #eaeef2;
+  /* WinUI LayerFillColorDefault, CardStrokeColorDefault, SubtleFillColorSecondary/Tertiary. */
+  --fluence-layer: rgb(255 255 255 / .5);
+  --fluence-layer-stroke: rgb(0 0 0 / .0578);
+  --fluence-subtle-fill: rgb(0 0 0 / .0373);
+  --fluence-subtle-fill-pressed: rgb(0 0 0 / .0241);
   --ifm-link-color: var(--fluence-accent-text);
   --ifm-link-hover-color: var(--fluence-accent-hover);
   --ifm-menu-color-active: var(--fluence-accent-text);
@@ -114,14 +135,13 @@ html[data-theme='dark'] {
   --fluence-bg: #202020;
   --fluence-section: #252525;
   --fluence-section-wash: rgb(255 255 255 / .02);
-  --fluence-callout-wash: rgb(74 130 170 / .1);
   --fluence-surface: #2c2c2c;
   --fluence-ink: #f5f5f5;
   --fluence-muted: #c6c6c6;
   --fluence-subtle: #adadad;
   --fluence-accent: #4fb3ff;
   --fluence-accent-text: #8dcdff;
-  --fluence-accent-hover: #8dcdff;
+  --fluence-accent-hover: #c7e6ff;
   --fluence-action-bg: #4fb3ff;
   --fluence-action-hover: rgb(79 179 255 / .902);
   --fluence-action-ink: #000;
@@ -131,11 +151,10 @@ html[data-theme='dark'] {
   --fluence-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 14px 30px rgba(0, 0, 0, .18);
   --fluence-shadow-hero: 0 4px 10px rgba(0, 0, 0, .2), 0 32px 72px rgba(0, 0, 0, .32);
   --fluence-shadow-hover: 0 4px 8px rgba(0, 0, 0, .18), 0 18px 36px rgba(0, 0, 0, .28);
-  --fluence-hero-glow: rgb(79 179 255 / .11);
-  --fluence-code-bg: #202326;
-  --fluence-code-ink: #d7e5f3;
-  --fluence-code-muted: #abb4bd;
-  --fluence-callout: #262e35;
+  --fluence-layer: rgb(58 58 58 / .3);
+  --fluence-layer-stroke: rgb(255 255 255 / .08);
+  --fluence-subtle-fill: rgb(255 255 255 / .0605);
+  --fluence-subtle-fill-pressed: rgb(255 255 255 / .0419);
   --ifm-link-color: var(--fluence-accent-text);
   --ifm-link-hover-color: var(--fluence-accent-hover);
   --ifm-menu-color-active: var(--fluence-accent);
@@ -143,11 +162,16 @@ html[data-theme='dark'] {
   --ifm-button-color: var(--fluence-action-ink);
 }
 
-body { min-height: 100vh; background: var(--fluence-logo-gradient), var(--fluence-bg); background-attachment: fixed; }
+:root { accent-color: var(--fluence-accent); }
+html { scrollbar-color: var(--fluence-line-strong) transparent; }
+::selection { background: var(--fluence-selection); }
+body { min-height: 100vh; background: var(--fluence-bg); }
 main, article { color: var(--fluence-ink); }
 h1, h2, h3, h4 { letter-spacing: -.025em; }
 code, pre { font-family: var(--ifm-font-family-monospace); font-variant-ligatures: none; font-feature-settings: 'liga' 0, 'calt' 0; }
-.navbar { border-bottom: 1px solid var(--fluence-line); box-shadow: none; padding-inline-start: 16px; }
+.navbar { border-bottom: 0; box-shadow: none; padding-inline-start: 16px; }
+.navbar::after { content: ''; position: absolute; inset-inline: 0; bottom: 0; height: 3px; background: var(--fluence-brand-stripe); pointer-events: none; }
+.navbar.navbar-sidebar--show::after { display: none; }
 .navbar__inner { width: 100%; margin-inline: 0; }
 .navbar__brand { margin-left: 0; margin-right: 0; flex-shrink: 0; }
 .navbar__logo { display: block; flex: 0 0 auto; width: 48px; height: 48px; margin-left: 16px; }
@@ -157,26 +181,46 @@ code, pre { font-family: var(--ifm-font-family-monospace); font-variant-ligature
 .navbar__link.fluence-github-link { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; font-size: 0; }
 .navbar__link.fluence-github-link::before { content: ''; display: block; width: 22px; height: 22px; background: currentColor; -webkit-mask: url('../../static/images/github.svg') center / contain no-repeat; mask: url('../../static/images/github.svg') center / contain no-repeat; }
 .navbar__link.fluence-github-link > svg { display: none; }
-.navbar__link { font-size: .9rem; font-weight: 600; white-space: nowrap; transition: color var(--fluence-transition-fast); }
+.navbar__link { font-size: var(--fluence-text-ui); font-weight: 600; white-space: nowrap; transition: color var(--fluence-transition-fast); }
 .navbar__link:hover, .navbar__link--active { color: var(--fluence-accent-text); }
 .navbar-sidebar { background: var(--fluence-surface); }
-.footer { border-top: 1px solid var(--fluence-line); background: #eaeaea; color: var(--fluence-muted); }
-html[data-theme='dark'] .footer { background: #252525; }
+.footer { border-top: 1px solid var(--fluence-line); background: var(--fluence-section); color: var(--fluence-muted); }
 .footer__link-item { color: var(--fluence-muted); transition: color var(--fluence-transition-slow); }
 .footer__link-item:hover { color: var(--fluence-accent-text); }
-.footer__title { color: var(--fluence-ink); font-size: .89rem; }
-.footer__link-item { font-size: .83rem; }
-.footer__copyright { color: var(--fluence-subtle); font-size: .75rem; }
+.footer__title { color: var(--fluence-ink); font-size: var(--fluence-text-label); font-weight: 600; }
+.footer__link-item { font-size: var(--fluence-text-meta); }
+.footer__copyright { color: var(--fluence-subtle); font-size: var(--fluence-text-caption); }
+/* Two short link columns read as one centered group with the copyright, not pinned to opposite edges. */
+.footer__links { display: flex; justify-content: center; gap: clamp(3rem, 10vw, 8rem); margin: 0 0 1.5rem; }
+.footer__col { flex: 0 0 auto; width: auto; max-width: none; padding: 0; }
 .menu__link { border-radius: 5px; }
-.menu__link--active { background: var(--fluence-accent-soft); }
-.theme-doc-sidebar-container { border-right-color: var(--fluence-line); }
-.breadcrumbs__link { font-size: .8rem; }
-.theme-doc-markdown { max-width: 920px; animation: fluenceDocumentReveal 500ms var(--ifm-transition-timing-default) both; }
-.theme-doc-markdown h1 { font-size: clamp(2rem, 2.6vw, 2.6rem); font-weight: 600; line-height: 1.2; overflow-wrap: anywhere; }
+.menu__link--active { background: var(--fluence-accent-soft); font-weight: 600; }
+/* Docs shell as a WinUI NavigationView: the pane sits on the base, content sits on a layer with a rounded leading corner. */
+aside.theme-doc-sidebar-container { border-inline-end: 0; }
+.theme-doc-sidebar-menu { --ifm-menu-color: var(--fluence-ink); --ifm-menu-color-active: var(--fluence-ink); --ifm-menu-color-background-hover: var(--fluence-subtle-fill); --ifm-menu-color-background-active: var(--fluence-subtle-fill); }
+.theme-doc-sidebar-menu .menu__link { position: relative; color: var(--fluence-ink); transition: background-color var(--fluence-transition-fast); }
+.theme-doc-sidebar-menu .menu__link:active { background: var(--fluence-subtle-fill-pressed); }
+.theme-doc-sidebar-menu .menu__link--active { background: transparent; }
+.theme-doc-sidebar-menu .menu__link[aria-current='page'] { background: var(--fluence-subtle-fill); }
+.theme-doc-sidebar-menu .menu__link[aria-current='page']::before { content: ''; position: absolute; inset-inline-start: 0; top: 50%; width: 3px; height: 16px; border-radius: 2px; background: var(--fluence-accent); translate: 0 -50%; animation: fluenceSelectionPill 300ms cubic-bezier(.16, 1, .3, 1) both; }
+.theme-doc-sidebar-menu .menu__list-item-collapsible--active { background: transparent; }
+.theme-doc-sidebar-menu .menu__list-item-collapsible:hover { background: var(--fluence-subtle-fill); }
+.theme-doc-sidebar-menu .menu__list-item-collapsible .menu__link:hover { background: transparent; }
+main[class*='docMainContainer'] { background: var(--fluence-layer); border-block-start: 1px solid var(--fluence-layer-stroke); border-inline-start: 1px solid var(--fluence-layer-stroke); border-start-start-radius: 8px; }
+@media (max-width: 996px) { main[class*='docMainContainer'] { border: 0; border-radius: 0; } }
+@keyframes fluenceSelectionPill { from { scale: 1 .25; opacity: 0; } to { scale: 1 1; opacity: 1; } }
+.breadcrumbs__link { font-size: var(--fluence-text-meta); }
+.table-of-contents__link { font-size: var(--fluence-text-meta); color: var(--fluence-muted); }
+.table-of-contents__link:hover, .table-of-contents__link--active { color: var(--fluence-accent-text); }
+.theme-doc-markdown { max-width: 920px; animation: fluenceDocumentReveal 200ms ease-out both; }
+.theme-doc-markdown h1 { font-size: var(--fluence-text-title-large); font-weight: 600; line-height: 1.2; overflow-wrap: break-word; text-wrap: balance; }
 .theme-doc-sidebar-menu > .menu__list > .menu__list-item:first-child { margin-bottom: .65rem; padding-bottom: .65rem; border-bottom: 1px solid var(--fluence-line); }
-.theme-doc-sidebar-menu .menu__link { line-height: 1.45; padding-block: .45rem; }
-.theme-doc-markdown h2 { margin-top: 2.5rem; padding-top: .4rem; font-weight: 600; overflow-wrap: anywhere; border-top: 1px solid var(--fluence-line); }
-.theme-doc-markdown p, .theme-doc-markdown li { line-height: 1.75; }
+.theme-doc-sidebar-menu .menu__link { font-size: var(--fluence-text-ui); font-weight: 400; line-height: 1.45; padding-block: .45rem; }
+.theme-doc-sidebar-menu .menu__link[aria-current='page'], .theme-doc-sidebar-menu .menu__link--active.menu__link--sublist { font-weight: 600; }
+.theme-doc-markdown h2 { margin-top: 3rem; padding-top: .5rem; font-size: var(--fluence-text-title); font-weight: 600; line-height: 1.29; overflow-wrap: break-word; text-wrap: balance; border-top: 1px solid var(--fluence-line); }
+.theme-doc-markdown h3 { margin-top: 2rem; font-size: var(--fluence-text-subtitle); font-weight: 600; line-height: 1.4; overflow-wrap: break-word; }
+.theme-doc-markdown h4 { margin-top: 1.5rem; font-size: var(--fluence-text-body); font-weight: 600; line-height: 1.5; }
+.theme-doc-markdown p, .theme-doc-markdown li { line-height: 1.7; text-wrap: pretty; }
 .theme-doc-markdown img:not(.no-frame) { max-width: 100%; height: auto; border-radius: 8px; }
 .theme-doc-markdown .fluence-theme-image--light,
 .theme-doc-markdown .fluence-theme-image--dark { display: block; margin: 1.5rem 0; }
@@ -185,32 +229,46 @@ html[data-theme='dark'] .footer { background: #252525; }
 .theme-doc-markdown .fluence-control-image img { border: 1px solid var(--fluence-line); border-radius: 7px; background: var(--fluence-surface); box-shadow: var(--fluence-shadow); }
 html[data-theme='light'] .theme-doc-markdown .fluence-theme-image--dark,
 html[data-theme='dark'] .theme-doc-markdown .fluence-theme-image--light { display: none; }
-.markdown table { display: block; max-width: 100%; overflow-x: auto; border: 1px solid var(--fluence-line); border-radius: 7px; }
+.markdown table { font-variant-numeric: tabular-nums; display: block; max-width: 100%; overflow-x: auto; border: 1px solid var(--fluence-line); border-radius: 7px; }
 .markdown table tr { background: var(--fluence-surface); }
+.markdown table th { text-align: start; font-weight: 600; }
 .markdown table tr:nth-child(even) { background: var(--fluence-section); }
+/* docs-transform wraps tables so the wrapper scrolls and the table fills the content width. */
+.markdown .fluence-table { max-width: 100%; margin-bottom: var(--ifm-spacing-vertical); overflow-x: auto; border: 1px solid var(--fluence-line); border-radius: 7px; }
+.markdown .fluence-table table { display: table; width: 100%; margin: 0; overflow: visible; border: 0; border-radius: 0; border-collapse: collapse; }
+.markdown .fluence-table :is(th, td) { border: 0; border-bottom: 1px solid var(--fluence-line); }
+.markdown .fluence-table :is(th, td) + :is(th, td) { border-inline-start: 1px solid var(--fluence-line); }
+.markdown .fluence-table tr:last-child td { border-bottom: 0; }
+.markdown .fluence-table thead tr { background: var(--fluence-section); }
+.markdown .fluence-table tbody tr { background: var(--fluence-surface); }
+/* Admonitions as WinUI InfoBars: tinted fill, hairline stroke, severity carried by the icon. */
+.theme-admonition.alert { --ifm-alert-border-width: 1px; --ifm-alert-border-left-width: 1px; --ifm-alert-border-color: var(--fluence-line); --ifm-alert-shadow: none; --fluence-severity: var(--fluence-muted); border-radius: 7px; }
+.theme-admonition.alert--secondary { --ifm-alert-background-color: var(--fluence-surface); --ifm-alert-foreground-color: var(--fluence-ink); }
+.theme-admonition.alert--success { --fluence-severity: var(--ifm-color-success); }
+.theme-admonition.alert--info { --fluence-severity: var(--ifm-color-info); }
+.theme-admonition.alert--warning { --fluence-severity: var(--ifm-color-warning); }
+.theme-admonition.alert--danger { --fluence-severity: var(--ifm-color-danger); }
+.theme-admonition [class*='admonitionHeading'] { font-size: .95rem; font-weight: 600; text-transform: capitalize; }
+.theme-admonition [class*='admonitionIcon'] svg { width: 1.25em; height: 1.25em; fill: var(--fluence-severity); }
 .theme-code-block { border: 1px solid var(--fluence-line); border-radius: 7px; box-shadow: var(--fluence-shadow); }
+.pagination-nav { max-width: 920px; }
+.pagination-nav__label { font-weight: 600; }
 .pagination-nav__link { border-color: var(--fluence-line); background: var(--fluence-surface); transition: border-color var(--fluence-transition-slow), box-shadow var(--fluence-transition-slow); }
 .pagination-nav__link:hover { border-color: var(--fluence-accent); box-shadow: var(--fluence-shadow-hover); }
 .button { transition: background-color var(--fluence-transition-slow), border-color var(--fluence-transition-slow), color var(--fluence-transition-slow), transform var(--fluence-transition-slow), box-shadow var(--fluence-transition-slow); }
 .button:hover { transform: translateY(-1px); box-shadow: var(--fluence-shadow-hover); }
 .button:active { transform: scale(.97); }
 .navbar__search-input { border-radius: var(--ifm-global-radius); }
-/* ── GitHub icon ── */
-.header-github-link:before {content: ''; width: 26px; height: 26px; display: flex; background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E") no-repeat;}
-html[data-theme='dark'] .header-github-link:before {background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='white' d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E") no-repeat;}
-.header-github-link { transition: opacity var(--ifm-transition-slow); }
-.header-github-link:hover { opacity: 0.6; }
+.navbar [class*='searchHint_'] { color: var(--fluence-subtle); background: var(--fluence-surface); border-color: var(--fluence-line-strong); box-shadow: none; }
 
-@keyframes fluenceDocumentReveal {
-  from { opacity: 0; transform: translateY(20px); filter: blur(6px); }
-  to { opacity: 1; transform: translateY(0); filter: blur(0); }
-}
+@keyframes fluenceDocumentReveal { from { opacity: 0; } to { opacity: 1; } }
+
 a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, [role='tab']:focus-visible { outline: 2px solid var(--fluence-accent); outline-offset: 3px; }
-@media (max-width: 996px) { .theme-layout-navbar-left { gap: 1rem; } .navbar__logo { width: 42px; height: 42px; } }
+@media (max-width: 996px) { .theme-layout-navbar-left { gap: 1rem; } .navbar__logo { width: 42px; height: 42px; } .theme-doc-markdown h1 { font-size: 2rem; } .theme-doc-markdown h2 { font-size: 1.5rem; } }
 @media (min-width: 997px) and (max-width: 1200px) {
   .theme-layout-navbar-left { gap: 1rem; }
   .navbar__logo { width: 44px; height: 44px; }
-  .navbar__link { padding-inline: .6rem; font-size: .85rem; }
+  .navbar__link { padding-inline: .6rem; font-size: var(--fluence-text-label); }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-delay: 0ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; transition-delay: 0ms !important; }
