@@ -2,6 +2,7 @@
   - .
 
 overrides:
+  tinypool: 2.1.2
   '@babel/core': 7.29.6
   qs: ^6.16.0
   joi: 17.13.8

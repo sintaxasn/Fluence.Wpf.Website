@@ -4,7 +4,7 @@
   "private": true,
   "description": "Fluence.Wpf documentation website",
   "packageManager": "pnpm@10.33.0",
-  "engines": { "node": ">=20.0" },
+  "engines": { "node": "^20.0.0 || >=22.0.0" },
   "scripts": {
     "start": "docusaurus start",
     "build": "docusaurus build",
