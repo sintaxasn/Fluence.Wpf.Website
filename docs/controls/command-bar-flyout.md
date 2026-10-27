@@ -10,9 +10,7 @@ The first images show the open command surface. The closed-state images below sh
 | --- | --- |
 | ![CommandBarFlyout in light mode](../screenshots/controls/command-bar-flyout-light-open.png) | ![CommandBarFlyout in dark mode](../screenshots/controls/command-bar-flyout-dark-open.png) |
 
-### Captured state changes
-
-**Closed trigger**
+### Closed trigger {#captured-state-changes}
 
 ![CommandBarFlyout closed trigger in light mode](../screenshots/controls/command-bar-flyout-light.png)
 ![CommandBarFlyout closed trigger in dark mode](../screenshots/controls/command-bar-flyout-dark.png)

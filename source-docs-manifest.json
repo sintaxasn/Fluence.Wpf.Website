@@ -2860,8 +2860,8 @@
     {
       "path": "docs/screenshots/controls/font-icon-dark.png",
       "kind": "capture",
-      "sha256": "f4623d29e845d93d2012cb1ed95376d8676cd3013b459713255131b559ca7ba3",
-      "provenance": "160 DPI geometry and theme checks; independent visual review of representative controls and popup families",
+      "sha256": "e78d6b2da7c1d5140cead61882040920316f2292900e4fbdca523f75e3764f04",
+      "provenance": "Natural-size capture; independently reviewed light and dark images",
       "theme": "dark",
       "state": "default",
       "mode": "WpfRender",
@@ -2875,16 +2875,16 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "6dcc6525637e2f4772a0ff80216467227da2722e910d6ffd9de7fcfa035199b9",
-      "pngSha256": "f4623d29e845d93d2012cb1ed95376d8676cd3013b459713255131b559ca7ba3",
-      "decodedPixelSha256": "a92bd914549c904e66de9d2c1fa9255d2d398ffee5258e1eb7a53be5c024bf48",
+      "checkedVisualInputSha256": "1ddf7e0fc1104682a163efdd985606923b3466f3e45f81a539ceab7f169c60e1",
+      "pngSha256": "e78d6b2da7c1d5140cead61882040920316f2292900e4fbdca523f75e3764f04",
+      "decodedPixelSha256": "e4256af42694b05e7e86706d0ed6788c8ac8e74bece49046485a1645cf4f6eab",
       "decision": "material-change"
     },
     {
       "path": "docs/screenshots/controls/font-icon-light.png",
       "kind": "capture",
-      "sha256": "6ae33afd0e292b84c067760072304bb2d003994bae105fef55328ea2a719ddad",
-      "provenance": "160 DPI geometry and theme checks; independent visual review of representative controls and popup families",
+      "sha256": "b302c79ff81f63e9b2171d8449360a4cc4476f75d80d12a3eeec4ba6df89c2d6",
+      "provenance": "Natural-size capture; independently reviewed light and dark images",
       "theme": "light",
       "state": "default",
       "mode": "WpfRender",
@@ -2898,9 +2898,9 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "e5bdcfb093aad729dd16f469eaf0d7841835d8b5c67e02988b70222fce46ce81",
-      "pngSha256": "6ae33afd0e292b84c067760072304bb2d003994bae105fef55328ea2a719ddad",
-      "decodedPixelSha256": "b6b371cceb46f863b1cce40fbe624d10be35e2358fcc301ea62ae44b1b372c9b",
+      "checkedVisualInputSha256": "1cceb388207005f497564f84cf082902237e56cc333994c735f729fcf9abdc80",
+      "pngSha256": "b302c79ff81f63e9b2171d8449360a4cc4476f75d80d12a3eeec4ba6df89c2d6",
+      "decodedPixelSha256": "e5a81dee4e89b8377de27bd7a3f48034e3be0db15b326740d3d7bd2bc5b43579",
       "decision": "material-change"
     },
     {
@@ -3259,7 +3259,7 @@
       "path": "docs/screenshots/controls/menu-dark-open.png",
       "kind": "capture",
       "sha256": "fa750f2fe73bc385bcf29eda15ea56811ea7f9c14dbcb5e763d0cd75a3fbfcb1",
-      "provenance": "160 DPI geometry and theme checks; independent visual review of representative controls and popup families",
+      "provenance": "decoded-pixel-identical",
       "theme": "dark",
       "state": "open",
       "mode": "WpfRender",
@@ -3272,16 +3272,16 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "197c7450c20195bf90637e78c18b19f4008eed130524217fe24a5aead0f150b9",
+      "checkedVisualInputSha256": "2fcc15dbe0df2ac5679be4f45a8898d039ee390bf06581b4b7318fbd960e9468",
       "pngSha256": "fa750f2fe73bc385bcf29eda15ea56811ea7f9c14dbcb5e763d0cd75a3fbfcb1",
       "decodedPixelSha256": "900356f6406d36351de5876c78c08fba89d0ac942b55c46090ce21252a0b6615",
-      "decision": "new-capture"
+      "decision": "visually-unchanged"
     },
     {
       "path": "docs/screenshots/controls/menu-dark.png",
       "kind": "capture",
-      "sha256": "ffd679833371b4b5c0d47211c34a852ffc4a30d3cef7e65b2fb7e7673c02c370",
-      "provenance": "160 DPI geometry and theme checks; independent visual review of representative controls and popup families",
+      "sha256": "b72f0aae253d5c5e85fe30bec09419f3d9fcf60f2accdca74b32dd4590b7e17f",
+      "provenance": "Natural-size capture; independently reviewed light and dark images",
       "theme": "dark",
       "state": "default",
       "mode": "WpfRender",
@@ -3294,9 +3294,9 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "197c7450c20195bf90637e78c18b19f4008eed130524217fe24a5aead0f150b9",
-      "pngSha256": "ffd679833371b4b5c0d47211c34a852ffc4a30d3cef7e65b2fb7e7673c02c370",
-      "decodedPixelSha256": "abb998c80f8e20fd0394bc0568c13762807119361111357e3edb2637568c6ebc",
+      "checkedVisualInputSha256": "2fcc15dbe0df2ac5679be4f45a8898d039ee390bf06581b4b7318fbd960e9468",
+      "pngSha256": "b72f0aae253d5c5e85fe30bec09419f3d9fcf60f2accdca74b32dd4590b7e17f",
+      "decodedPixelSha256": "84eb718df886df8809b04cb65fe91e8c19c425b4a6ae11bde2c164da8604f817",
       "decision": "material-change"
     },
     {
@@ -3345,7 +3345,7 @@
       "path": "docs/screenshots/controls/menu-light-open.png",
       "kind": "capture",
       "sha256": "4e874f5cff63fedf679422d4895d16ecfd9c9ee5c7b5f1c59a582fc1fd7d287c",
-      "provenance": "160 DPI geometry and theme checks; independent visual review of representative controls and popup families",
+      "provenance": "decoded-pixel-identical",
       "theme": "light",
       "state": "open",
       "mode": "WpfRender",
@@ -3358,16 +3358,16 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "38c5c4a60fa24f350888f44555b79447b9c281b48c7996339acdc4af4cf03be8",
+      "checkedVisualInputSha256": "4f17d314f86511747752062a47709e71ccd854c109674dd43dbadb0d87074469",
       "pngSha256": "4e874f5cff63fedf679422d4895d16ecfd9c9ee5c7b5f1c59a582fc1fd7d287c",
       "decodedPixelSha256": "c6a83d6912f73ed7343f25190b82a541d2ea6c12133ed4840188855dc39ed2ee",
-      "decision": "new-capture"
+      "decision": "visually-unchanged"
     },
     {
       "path": "docs/screenshots/controls/menu-light.png",
       "kind": "capture",
-      "sha256": "9a35909b13ac06cf84ab50bdafd545dbc377d906c983ea0ad1b0cdb82fc0436c",
-      "provenance": "160 DPI geometry and theme checks; independent visual review of representative controls and popup families",
+      "sha256": "e4a09ce0c1b991f0e105bf199f087515255e8064772c13a67c1cf6f57aa79d48",
+      "provenance": "Natural-size capture; independently reviewed light and dark images",
       "theme": "light",
       "state": "default",
       "mode": "WpfRender",
@@ -3380,9 +3380,9 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "38c5c4a60fa24f350888f44555b79447b9c281b48c7996339acdc4af4cf03be8",
-      "pngSha256": "9a35909b13ac06cf84ab50bdafd545dbc377d906c983ea0ad1b0cdb82fc0436c",
-      "decodedPixelSha256": "fa306f28692b5299a63b63120e5f87666495e3560f2e675af10af693608f6974",
+      "checkedVisualInputSha256": "4f17d314f86511747752062a47709e71ccd854c109674dd43dbadb0d87074469",
+      "pngSha256": "e4a09ce0c1b991f0e105bf199f087515255e8064772c13a67c1cf6f57aa79d48",
+      "decodedPixelSha256": "3cc5d01c8f9168fff58c0023251d57923eadd075f12f15c8ce3213088e9f4b58",
       "decision": "material-change"
     },
     {
@@ -3960,8 +3960,8 @@
     {
       "path": "docs/screenshots/controls/rating-control-dark.png",
       "kind": "capture",
-      "sha256": "2174688735510bde1ec555f2c4637d41a32a0b516370ccdf030aa71105ccd211",
-      "provenance": "160 DPI geometry and theme checks; independent visual review of representative controls and popup families",
+      "sha256": "a4fae6287b45a767ba550e85c5264f408d4618e3695ac46fd6cdbe1d044e48a7",
+      "provenance": "Natural-size capture; independently reviewed light and dark images",
       "theme": "dark",
       "state": "default",
       "mode": "WpfRender",
@@ -3974,16 +3974,16 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "a1f7fbb1362996d905108d6a967fe9380d3209c39298efbaf7d9b159b8a746f8",
-      "pngSha256": "2174688735510bde1ec555f2c4637d41a32a0b516370ccdf030aa71105ccd211",
-      "decodedPixelSha256": "c69ccea5d844471cf1969906dbac38f3683130fed6ea59652c746bdc7df4a36b",
+      "checkedVisualInputSha256": "034c25471fd6c8526a678ad3ff9acba6291ebbfb15ccdf20b574ffb3426c7d14",
+      "pngSha256": "a4fae6287b45a767ba550e85c5264f408d4618e3695ac46fd6cdbe1d044e48a7",
+      "decodedPixelSha256": "e83cf54fdd28c66035f322ac27e705d3004b3996772d5a3ef83995ef1995bf61",
       "decision": "material-change"
     },
     {
       "path": "docs/screenshots/controls/rating-control-light.png",
       "kind": "capture",
-      "sha256": "74b34727a46c1acc6402cb650ca5f46a5694b0a34fe00481366a654357e43c79",
-      "provenance": "160 DPI geometry and theme checks; independent visual review of representative controls and popup families",
+      "sha256": "4aeabfd6b1077bceed8ce5d94409a57030a08a1791c65aee51ce867c1532c0aa",
+      "provenance": "Natural-size capture; independently reviewed light and dark images",
       "theme": "light",
       "state": "default",
       "mode": "WpfRender",
@@ -3996,9 +3996,9 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "85faa127cdd0add0a6fdeb41c80d72a18cdf3783299210f49866ff578a12374b",
-      "pngSha256": "74b34727a46c1acc6402cb650ca5f46a5694b0a34fe00481366a654357e43c79",
-      "decodedPixelSha256": "8a639d76168ebc18843c7801f30b15f0e45e46409c18a59ee1a0a9afaa1e298b",
+      "checkedVisualInputSha256": "c6e7447b02f681fb44ec21e47cf7ae5cfec436dc96d1f4b176eb3f247139d74f",
+      "pngSha256": "4aeabfd6b1077bceed8ce5d94409a57030a08a1791c65aee51ce867c1532c0aa",
+      "decodedPixelSha256": "c4f706c0b6d48e465461a6c9dab09c8a623766effef45adeb62b1c913302e7ae",
       "decision": "material-change"
     },
     {
@@ -4702,8 +4702,8 @@
     {
       "path": "docs/screenshots/controls/text-block-dark.png",
       "kind": "capture",
-      "sha256": "16acc2ba3d0b6b8c307d59da4a7ed27c84bde745edae701027c96039e5190500",
-      "provenance": "160 DPI geometry and theme checks; independent visual review of representative controls and popup families",
+      "sha256": "291d60c0ec5b2a3c0e697c855b84dbe17cb833e3a223742c0bb8310e39aea9e6",
+      "provenance": "Natural-size capture; independently reviewed light and dark images",
       "theme": "dark",
       "state": "default",
       "mode": "WpfRender",
@@ -4716,16 +4716,16 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "ee6dcc15a357c1ea5bae7bd38bb0050a7e414f5abd6f9f3f03f885763d8033be",
-      "pngSha256": "16acc2ba3d0b6b8c307d59da4a7ed27c84bde745edae701027c96039e5190500",
-      "decodedPixelSha256": "874cd33937b936526e94ad7f6757455aa9e3d7c930ef3e3a3e360f3d22dfb3da",
+      "checkedVisualInputSha256": "ed43d14899b50b3b8d1f8495fd57a3d3d44acfe15f2b881ef0b3bb950d7122ba",
+      "pngSha256": "291d60c0ec5b2a3c0e697c855b84dbe17cb833e3a223742c0bb8310e39aea9e6",
+      "decodedPixelSha256": "714d6b193968007309c7ca71fb623a64ffc88a849a5f0bf6ecdbb75668e334b3",
       "decision": "material-change"
     },
     {
       "path": "docs/screenshots/controls/text-block-extensions-dark.png",
       "kind": "capture",
-      "sha256": "16acc2ba3d0b6b8c307d59da4a7ed27c84bde745edae701027c96039e5190500",
-      "provenance": "160 DPI geometry and theme checks; independent visual review of representative controls and popup families",
+      "sha256": "291d60c0ec5b2a3c0e697c855b84dbe17cb833e3a223742c0bb8310e39aea9e6",
+      "provenance": "Natural-size capture; independently reviewed light and dark images",
       "theme": "dark",
       "state": "default",
       "mode": "WpfRender",
@@ -4738,16 +4738,16 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "ee6dcc15a357c1ea5bae7bd38bb0050a7e414f5abd6f9f3f03f885763d8033be",
-      "pngSha256": "16acc2ba3d0b6b8c307d59da4a7ed27c84bde745edae701027c96039e5190500",
-      "decodedPixelSha256": "874cd33937b936526e94ad7f6757455aa9e3d7c930ef3e3a3e360f3d22dfb3da",
+      "checkedVisualInputSha256": "ed43d14899b50b3b8d1f8495fd57a3d3d44acfe15f2b881ef0b3bb950d7122ba",
+      "pngSha256": "291d60c0ec5b2a3c0e697c855b84dbe17cb833e3a223742c0bb8310e39aea9e6",
+      "decodedPixelSha256": "714d6b193968007309c7ca71fb623a64ffc88a849a5f0bf6ecdbb75668e334b3",
       "decision": "material-change"
     },
     {
       "path": "docs/screenshots/controls/text-block-extensions-light.png",
       "kind": "capture",
-      "sha256": "4e12db2eb64ebef5923f29ae38627e7bcec2db575747d7a9d63e503c65e889bf",
-      "provenance": "160 DPI geometry and theme checks; independent visual review of representative controls and popup families",
+      "sha256": "99e6aacf8c86d199fe35106f56aa9c0180f7b2ef6a45def54c15566d52e5ae26",
+      "provenance": "Natural-size capture; independently reviewed light and dark images",
       "theme": "light",
       "state": "default",
       "mode": "WpfRender",
@@ -4760,16 +4760,16 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "0b152b3b2dfb0909c6c18522bf9ced699f14d231a13bb08ab651c87030c76a15",
-      "pngSha256": "4e12db2eb64ebef5923f29ae38627e7bcec2db575747d7a9d63e503c65e889bf",
-      "decodedPixelSha256": "7cc1b37f5c40d4aeb5b6190c624704f1e47dfa71e24a6ff691a9bc7af946355a",
+      "checkedVisualInputSha256": "a5768cf06e6809d7dcbaf2400e6f2b235016df636374baf64883423b745f2c88",
+      "pngSha256": "99e6aacf8c86d199fe35106f56aa9c0180f7b2ef6a45def54c15566d52e5ae26",
+      "decodedPixelSha256": "86afa7361efae9ad9de9d5c96a149942584a54af0a77342501ed9837ba4fa06d",
       "decision": "material-change"
     },
     {
       "path": "docs/screenshots/controls/text-block-light.png",
       "kind": "capture",
-      "sha256": "4e12db2eb64ebef5923f29ae38627e7bcec2db575747d7a9d63e503c65e889bf",
-      "provenance": "160 DPI geometry and theme checks; independent visual review of representative controls and popup families",
+      "sha256": "99e6aacf8c86d199fe35106f56aa9c0180f7b2ef6a45def54c15566d52e5ae26",
+      "provenance": "Natural-size capture; independently reviewed light and dark images",
       "theme": "light",
       "state": "default",
       "mode": "WpfRender",
@@ -4782,9 +4782,9 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "0b152b3b2dfb0909c6c18522bf9ced699f14d231a13bb08ab651c87030c76a15",
-      "pngSha256": "4e12db2eb64ebef5923f29ae38627e7bcec2db575747d7a9d63e503c65e889bf",
-      "decodedPixelSha256": "7cc1b37f5c40d4aeb5b6190c624704f1e47dfa71e24a6ff691a9bc7af946355a",
+      "checkedVisualInputSha256": "a5768cf06e6809d7dcbaf2400e6f2b235016df636374baf64883423b745f2c88",
+      "pngSha256": "99e6aacf8c86d199fe35106f56aa9c0180f7b2ef6a45def54c15566d52e5ae26",
+      "decodedPixelSha256": "86afa7361efae9ad9de9d5c96a149942584a54af0a77342501ed9837ba4fa06d",
       "decision": "material-change"
     },
     {

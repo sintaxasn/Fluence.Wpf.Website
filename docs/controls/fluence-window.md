@@ -185,11 +185,6 @@ Interactive custom content placed in the extended chrome must set `WindowChrome.
 
 The `TitleBar` provides `LeftHeader` and `RightHeader` slots for custom content. When hosted by `FluenceWindow`, the right header sits before the actual caption-button area; a standalone `TitleBar` reserves no caption-button space. `TitleBarGlyphButtonStyle` is a keyed public resource for buttons in either header whose `Content` is a Segoe Fluent Icons glyph string.
 
-### Related {#title-bar-related}
-
-- [Window and title bar guide](../how-to/window-and-title-bar.md)
-- [Navigation and tabs guide](../how-to/navigation-and-tabs.md)
-
 ### Reference {#title-bar-reference}
 
 - [C# API reference](../api/Fluence.Wpf.Controls/TitleBar.md)
@@ -197,6 +192,8 @@ The `TitleBar` provides `LeftHeader` and `RightHeader` slots for custom content.
 - [Gallery C# source](../../Fluence.Wpf.Demo/MainWindow.xaml.cs)
 - [Control source](../../Fluence.Wpf/Controls/TitleBar.cs)
 - [Control catalog](../controls.md)
+
+<span id="title-bar-related"></span>
 
 ## Related
 

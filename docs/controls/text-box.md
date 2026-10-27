@@ -8,9 +8,7 @@ TextBox extends the WPF `TextBox` with Fluent placeholder, helper, clear-button,
 | --- | --- |
 | ![TextBox in light mode](../screenshots/controls/text-box-light.png) | ![TextBox in dark mode](../screenshots/controls/text-box-dark.png) |
 
-### Captured state changes
-
-**Text entered**
+### Text entered {#captured-state-changes}
 
 ![TextBox text entered in light mode](../screenshots/controls/text-box-light-entered.png)
 ![TextBox text entered in dark mode](../screenshots/controls/text-box-dark-entered.png)

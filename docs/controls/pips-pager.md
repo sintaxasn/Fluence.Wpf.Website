@@ -8,9 +8,7 @@ Use PipsPager for compact page indication and switching, as in carousels and onb
 | --- | --- |
 | ![PipsPager in light mode](../screenshots/controls/pips-pager-light.png) | ![PipsPager in dark mode](../screenshots/controls/pips-pager-dark.png) |
 
-### Captured state changes
-
-**Page selected**
+### Selected page {#captured-state-changes}
 
 ![PipsPager page-selected state in light mode](../screenshots/controls/pips-pager-light-page-selected.png)
 ![PipsPager page-selected state in dark mode](../screenshots/controls/pips-pager-dark-page-selected.png)

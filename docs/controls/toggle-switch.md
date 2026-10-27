@@ -8,9 +8,7 @@ Use toggle switches for settings that take effect immediately.
 | --- | --- |
 | ![ToggleSwitch in light mode](../screenshots/controls/toggle-switch-light.png) | ![ToggleSwitch in dark mode](../screenshots/controls/toggle-switch-dark.png) |
 
-### Captured state changes
-
-**Toggled**
+### Toggled state {#captured-state-changes}
 
 ![ToggleSwitch toggled state in light mode](../screenshots/controls/toggle-switch-light-toggled.png)
 ![ToggleSwitch toggled state in dark mode](../screenshots/controls/toggle-switch-dark-toggled.png)

@@ -24,7 +24,7 @@ See [Additional behavior](fluence-window.md#title-bar-additional-behavior).
 
 ## Related
 
-See [Related](fluence-window.md#title-bar-related).
+See [Related](fluence-window.md#related).
 
 ## Reference
 

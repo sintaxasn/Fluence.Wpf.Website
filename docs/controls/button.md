@@ -8,19 +8,17 @@ Use Button for actions. Choose its Accent appearance for the primary action and 
 | --- | --- |
 | ![Button in light mode](../screenshots/controls/button-light.png) | ![Button in dark mode](../screenshots/controls/button-dark.png) |
 
-### Captured state changes
-
-**Disabled**
+### Disabled state {#captured-state-changes}
 
 ![Button disabled in light mode](../screenshots/controls/button-light-disabled.png)
 ![Button disabled in dark mode](../screenshots/controls/button-dark-disabled.png)
 
-**Blue accent**
+### Blue accent
 
 ![Button blue accent in light mode](../screenshots/controls/button-light-accent-blue.png)
 ![Button blue accent in dark mode](../screenshots/controls/button-dark-accent-blue.png)
 
-**Orange accent**
+### Orange accent
 
 ![Button orange accent in light mode](../screenshots/controls/button-light-accent-orange.png)
 ![Button orange accent in dark mode](../screenshots/controls/button-dark-accent-orange.png)

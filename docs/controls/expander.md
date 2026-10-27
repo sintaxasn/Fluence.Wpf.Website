@@ -8,9 +8,7 @@ Use Expander for secondary settings that should start collapsed until needed.
 | --- | --- |
 | ![Expander in light mode](../screenshots/controls/expander-light.png) | ![Expander in dark mode](../screenshots/controls/expander-dark.png) |
 
-### Captured state changes
-
-**Expanded**
+### Expanded state {#captured-state-changes}
 
 ![Expander expanded state in light mode](../screenshots/controls/expander-light-expanded.png)
 ![Expander expanded state in dark mode](../screenshots/controls/expander-dark-expanded.png)
