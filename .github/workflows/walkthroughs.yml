@@ -15,13 +15,22 @@ on:
       - 'samples/Fluence.Wpf.Docs.Walkthroughs/**'
       - '.github/workflows/walkthroughs.yml'
 
+# Pull request runs cancel the run they supersede. Each main run gets its own group, so it is never
+# cancelled or replaced by a later push.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event_name == 'pull_request' && github.ref || github.run_id }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
 jobs:
   build:
     runs-on: windows-latest
+    timeout-minutes: 10
 
     steps:
       - name: Checkout
         uses: actions/checkout@v7
+        with:
+          persist-credentials: false
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v6
