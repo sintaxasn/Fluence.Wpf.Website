@@ -2,7 +2,7 @@
 
 ## Description
 
-FlyoutBase defines the attached and programmatic flyout APIs used by concrete flyouts. `FlyoutBase` is shown within `Flyout`; it is not a separate gallery destination.
+FlyoutBase defines the attached and programmatic flyout APIs used by concrete flyouts. The screenshots show `FlyoutBase` inside `Flyout`.
 
 Use its attached flyout API when a control needs a concrete Flyout or CommandBarFlyout.
 

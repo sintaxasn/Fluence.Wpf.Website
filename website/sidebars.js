@@ -13,11 +13,6 @@ const sidebars = {
     },
     {
       "type": "doc",
-      "id": "csharp/license",
-      "label": "License"
-    },
-    {
-      "type": "doc",
       "id": "csharp/requirements",
       "label": "Requirements"
     },
@@ -37,7 +32,7 @@ const sidebars = {
       "label": "Running the gallery"
     },
     {
-      "type": "doc",
+      "type": "ref",
       "id": "controls",
       "label": "Control catalog"
     },
@@ -132,6 +127,11 @@ const sidebars = {
       "type": "doc",
       "id": "csharp/contributing",
       "label": "Contributing"
+    },
+    {
+      "type": "doc",
+      "id": "csharp/license",
+      "label": "License"
     }
   ],
   "controls": [
@@ -263,11 +263,6 @@ const sidebars = {
     },
     {
       "type": "doc",
-      "id": "powershell/license",
-      "label": "License"
-    },
-    {
-      "type": "doc",
       "id": "powershell/requirements",
       "label": "Requirements"
     },
@@ -327,6 +322,11 @@ const sidebars = {
       "type": "doc",
       "id": "powershell/contributing",
       "label": "Contributing"
+    },
+    {
+      "type": "doc",
+      "id": "powershell/license",
+      "label": "License"
     }
   ]
 };

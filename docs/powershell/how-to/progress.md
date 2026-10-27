@@ -1,4 +1,4 @@
-﻿﻿# Show progress during a long task
+﻿# Show progress during a long task
 
 `Show-FluenceProgress` opens a non-modal window and returns a handle immediately. The window has a message, an optional detail line, and a progress bar. A script must close it; the user cannot.
 

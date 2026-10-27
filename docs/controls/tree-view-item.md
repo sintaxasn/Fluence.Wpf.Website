@@ -2,7 +2,7 @@
 
 ## Description
 
-TreeViewItem represents an expandable node inside TreeView. `TreeViewItem` is shown within `TreeView`; it is not a separate gallery destination.
+TreeViewItem represents an expandable node inside TreeView. The screenshots show `TreeViewItem` inside `TreeView`.
 
 Use it for a node within a TreeView hierarchy.
 

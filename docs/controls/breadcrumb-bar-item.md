@@ -2,7 +2,7 @@
 
 ## Description
 
-BreadcrumbBar creates item containers for the visible path segments. `BreadcrumbBarItem` is shown within `BreadcrumbBar`; it is not a separate gallery destination.
+BreadcrumbBar creates item containers for the visible path segments. The screenshots show `BreadcrumbBarItem` inside `BreadcrumbBar`.
 
 Use it through BreadcrumbBar when people need to return to an ancestor location.
 

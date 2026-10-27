@@ -1,6 +1,6 @@
-﻿﻿# Show messages and dialogs
+﻿# Show messages and dialogs
 
-Use this guide after [importing the module](../tutorial.md). It covers responses, custom actions, timers, images, placement, and restart decisions.
+Use this guide after [importing the module](../usage.md). It covers responses, custom actions, timers, images, placement, and restart decisions.
 
 ## Ask a question
 
@@ -16,13 +16,13 @@ if ($answer -eq 'Yes')
 
 Esc and the title bar close button return the cancel button, or the last button if the preset has no cancel button. For `YesNo`, a dismiss returns `No`; for `OK`, it returns `OK`. The command always returns a button name. An array passed to `-Message` displays as separate paragraphs.
 
-## Choose a default action
-
 The message dialog is shown in both themes here.
 
 ![Message dialog in light mode](../images/message-light.png)
 
 ![Message dialog in dark mode](../images/message-dark.png)
+
+## Choose a default action
 
 The first preset button is the default unless `-DefaultButton` names another button in that preset. Enter activates it. Make an irreversible action opt in:
 
@@ -90,9 +90,9 @@ Show-FluenceMessage -Title 'Update' -Message 'Ready to install.' -Icon None -Ima
 
 ![A dialog with an image in the light theme](../images/dialog-image-light.png)
 
-The [capture notes](../images/CAPTURE.md) describe the offscreen render and its DWM limitations.
+Screenshots on this page are rendered offscreen, so they omit the native window shadow and backdrop.
 
-`-Position Center`, `TopRight`, or `BottomRight` places a dialog in the primary monitor work area. `-ParentWindow` centers a `Center` dialog over its owner; a corner position takes precedence. `Show-FluenceDialog -Topmost` keeps a general dialog above other windows.
+`-Position Center`, `TopRight`, or `BottomRight` places a message, dialog, or progress window in the primary monitor work area. On `Show-FluenceDialog`, `-ParentWindow` centers a `Center` dialog over its owner; a corner position takes precedence. `Show-FluenceDialog -Topmost` keeps a general dialog above other windows.
 
 ## Ask about restarting
 

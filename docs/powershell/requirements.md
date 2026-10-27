@@ -9,4 +9,4 @@ The module runs on Windows 10 version 1809 or later. It needs an interactive Win
 
 A release package includes both library builds and does not require an SDK to use. Building the module from a repository checkout requires the .NET SDKs and build prerequisites described in the [module setup guide](../../Fluence.Wpf.PowerShell.Module/README.md).
 
-The Windows 10 baseline supports the library's controls and dialogs. Mica and Tabbed backdrops require supported Windows 11 builds; the actual backdrop may fall back according to Windows capabilities and transparency settings. See [compatibility](../reference/compatibility.md) and [appearance walkthrough](how-to/theming-at-runtime.md).
+The Windows 10 baseline supports the library's controls and dialogs. Mica and Tabbed backdrops require supported Windows 11 builds; the actual backdrop may fall back according to Windows capabilities and transparency settings. See [Windows and backdrop support](../csharp/requirements.md#windows-and-backdrop-support) and [appearance walkthrough](how-to/theming-at-runtime.md).

@@ -2,7 +2,7 @@
 
 ## Description
 
-SelectorBarItem is a selectable view choice inside SelectorBar. `SelectorBarItem` is shown within `SelectorBar`; it is not a separate gallery destination.
+SelectorBarItem is a selectable view choice inside SelectorBar. The screenshots show `SelectorBarItem` inside `SelectorBar`.
 
 | Light | Dark |
 | --- | --- |

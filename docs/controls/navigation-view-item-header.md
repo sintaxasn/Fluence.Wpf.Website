@@ -2,7 +2,7 @@
 
 ## Description
 
-Use a header to label a group of destinations in NavigationView. `NavigationViewItemHeader` is shown within `NavigationView`; it is not a separate gallery destination.
+Use a header to label a group of destinations in NavigationView. The screenshots show `NavigationViewItemHeader` inside `NavigationView`.
 
 | Light | Dark |
 | --- | --- |

@@ -2,7 +2,7 @@
 
 ## Description
 
-NavigationViewItem is a selectable destination inside NavigationView. `NavigationViewItem` is shown within `NavigationView`; it is not a separate gallery destination.
+NavigationViewItem is a selectable destination inside NavigationView. The screenshots show `NavigationViewItem` inside `NavigationView`.
 
 Use it for a selectable destination in NavigationView.
 

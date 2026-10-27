@@ -81,6 +81,7 @@ The XAML declares `MainFrame` inside `AppNavigation`, so the handlers can use th
 | `LeftHeader`, `RightHeader` | `null` | Content slots to the left and right of the central title-bar area. |
 | `CustomContent` | `null` | Content displayed in the centered slot. |
 | `BackCommand`, `PaneToggleCommand` | `null` | Commands invoked by their respective buttons. |
+| `BackCommandParameter`, `PaneToggleCommandParameter` | `null` | Parameters passed to those commands. |
 | `BackRequested`, `PaneToggleRequested` | Not applicable | Events for handling button requests in code. |
 
 Interactive custom content placed in the extended chrome must set `WindowChrome.IsHitTestVisibleInChrome="True"` so WPF can route pointer input to it. The [gallery title bar](../../Fluence.Wpf.Demo/MainWindow.xaml) demonstrates this on its search control. Keep the title bar's content within the available space beside the caption controls.

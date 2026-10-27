@@ -96,4 +96,4 @@ namespace Fluence.Wpf.Docs.Walkthroughs
 
 ![Configure a window and title bar in dark mode](../screenshots/tutorials/window-and-title-bar-dark.png)
 
-See [FluenceWindow](../controls/fluence-window.md), [TitleBar](../controls/title-bar.md), and the [backdrop compatibility guide](../reference/compatibility.md).
+See [FluenceWindow](../controls/fluence-window.md), [TitleBar](../controls/title-bar.md), and [Windows and backdrop support](../csharp/requirements.md#windows-and-backdrop-support).

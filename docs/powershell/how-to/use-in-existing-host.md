@@ -4,10 +4,13 @@ Use this guide when a script runs inside another WPF application or PowerShell h
 
 ## Import the module
 
-Import the module from its release package, or [stage it from a source checkout](../../../Fluence.Wpf.PowerShell.Module/README.md#use-the-module-from-a-source-checkout):
+Import the [installed module](../installation.md), or import the manifest by path when the module folder ships with your script. You can also [stage it from a source checkout](../../../Fluence.Wpf.PowerShell.Module/README.md#use-the-module-from-a-source-checkout).
 
 ```powershell
-Import-Module (Join-Path $PSScriptRoot 'SupportFiles/Fluence.Wpf.PowerShell/Fluence.Wpf.PowerShell.psd1')
+Import-Module Fluence.Wpf.PowerShell
+
+# Or, when the module folder ships beside your script:
+Import-Module (Join-Path $PSScriptRoot 'Fluence.Wpf.PowerShell/Fluence.Wpf.PowerShell.psd1')
 ```
 
 Windows PowerShell 5.1 uses the `net472` library build. PowerShell 7.4 or later uses `net8.0-windows10.0.26100.0`.

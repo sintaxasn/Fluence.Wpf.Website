@@ -16,7 +16,7 @@ Use number boxes for numeric entry with optional spin buttons, bounds, and suppo
 
 ## State and behavior
 
-Spin buttons and text entry change Value within configured bounds; invalid input can be reported.
+Spin buttons and text entry change `Value` within the configured bounds. Text that does not parse leaves `Value` unchanged, and clearing the field sets `Value` to `NaN`.
 
 ## Reference
 

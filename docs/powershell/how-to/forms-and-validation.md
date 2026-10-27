@@ -1,4 +1,4 @@
-﻿﻿# Collect and validate input
+﻿# Collect and validate input
 
 Use `Get-FluenceInput` for one value and `Show-FluenceDialog` for a form. Both use the same prompt types described in the [input type reference](../reference/input-types.md).
 
@@ -33,13 +33,13 @@ if ($result.Connect)
 
 Prompt and button names must be unique without regard to case. `Cancelled`, `TimedOut`, and `PSTypeName` are reserved. A bare string prompt creates a text field with a generated `Input_` name, so use `New-FluencePrompt -Name` when scripts need the value.
 
-## Reject invalid input
-
 The form dialog is available in both captured themes.
 
 ![Form dialog in light mode](../images/dialog-form-light.png)
 
 ![Form dialog in dark mode](../images/dialog-form-dark.png)
+
+## Reject invalid input
 
 Validation runs in prompt order when a non-cancel button is clicked. The first failure appears in an error InfoBar and keeps the dialog open. Cancel, Esc, and title bar dismissal bypass validation.
 
@@ -73,17 +73,17 @@ if ($null -eq $features)
 
 The list command returns `$null` on cancel or timeout. An OK response requires at least one selection.
 
+The standalone list selection dialog is shown in both themes.
+
+![List selection dialog in light mode](../images/list-selection-light.png)
+
+![List selection dialog in dark mode](../images/list-selection-dark.png)
+
 This capture shows multiple selected items.
 
 ![List selection dialog with multiple selections in dark mode](../images/list-selection-multiple-dark.png)
 
 ## Collect paths, dates, and passwords
-
-The standalone list selection dialog is also shown in both themes.
-
-![List selection dialog in light mode](../images/list-selection-light.png)
-
-![List selection dialog in dark mode](../images/list-selection-dark.png)
 
 `FileOpen`, `FileSave`, and `FolderOpen` show a text box with a Browse button and return a path string. `Date` returns `DateTime` or `$null`; `Time` returns `TimeSpan` or `$null`. Numeric defaults are converted to `double` before the window opens.
 

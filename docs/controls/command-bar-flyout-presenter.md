@@ -2,7 +2,7 @@
 
 ## Description
 
-CommandBarFlyoutPresenter draws the primary strip and overflow surface of CommandBarFlyout. `CommandBarFlyoutPresenter` is shown within `CommandBarFlyout`; it is not a separate gallery destination.
+CommandBarFlyoutPresenter draws the primary strip and overflow surface of CommandBarFlyout. The screenshots show `CommandBarFlyoutPresenter` inside `CommandBarFlyout`.
 
 Use it through CommandBarFlyout when a command strip needs an overflow surface.
 

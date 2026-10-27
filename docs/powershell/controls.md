@@ -1,4 +1,4 @@
-﻿﻿# PowerShell controls and dialogs
+﻿# PowerShell controls and dialogs
 
 Choose the interface that gives your script the answer it needs:
 

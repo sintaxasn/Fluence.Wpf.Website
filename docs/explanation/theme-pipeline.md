@@ -1,6 +1,6 @@
 ﻿# How theme publication works
 
-The application-facing explanation and supported resource key families are now together in [Theme Resources and publication](../theming.md). This deeper pipeline trace remains for readers who need the resolver and fingerprint stages.
+This page traces how the theme engine resolves, builds, and publishes resources, including the resolver and fingerprint stages. For the supported resource keys and how to use them, see [Theme Resources and publication](../theming.md).
 
 The theme engine in `Fluence.Wpf/Theming/FluenceThemeEngine.cs` is the single path for theme and accent updates. `ApplicationThemeManager` and `ApplicationAccentColorManager` are public entry points that delegate to it.
 

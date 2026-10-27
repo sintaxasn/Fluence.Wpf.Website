@@ -2,7 +2,7 @@
 
 ## Description
 
-Use a separator to divide destination groups in NavigationView. `NavigationViewItemSeparator` is shown within `NavigationView`; it is not a separate gallery destination.
+Use a separator to divide destination groups in NavigationView. The screenshots show `NavigationViewItemSeparator` inside `NavigationView`.
 
 | Light | Dark |
 | --- | --- |

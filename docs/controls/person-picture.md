@@ -2,7 +2,7 @@
 
 ## Description
 
-Use PersonPicture to represent people and contact status in data-heavy views.
+Use PersonPicture to show a person or group as a circular avatar: a profile photo, initials, or a placeholder glyph, with an optional badge.
 
 | Light | Dark |
 | --- | --- |
@@ -16,7 +16,7 @@ Use PersonPicture to represent people and contact status in data-heavy views.
 
 ## State and behavior
 
-Initials or an image identify the person; status changes its visual badge.
+`ProfilePicture` shows a photo. Without one, the control shows initials, derived from `DisplayName` unless `Initials` is set. `IsGroup` shows the group glyph. `BadgeNumber` or `BadgeGlyph` adds a badge.
 
 ## Reference
 
