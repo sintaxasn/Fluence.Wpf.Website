@@ -27,7 +27,7 @@ A top-level window that recreates the Windows 11 Fluent / WinUI 3 chrome on WPF:
 public FluenceWindow()
 ```
 
-Initializes a new instance of the [FluenceWindow](FluenceWindow.md) class: loads the default style explicitly, attaches the four `SystemCommands` command bindings, and installs the `WindowChrome` that collapses the native frame.
+Initializes a new instance of the [FluenceWindow](FluenceWindow.md) class: loads the style explicitly, attaches the four `SystemCommands` command bindings, and installs the `WindowChrome` that collapses the native frame.
 
 **Remarks:** The theme-manager subscriptions are intentionally deferred to [OnSourceInitialized](FluenceWindow.md#api-e7a5d65e5102) (HWND realisation) so a constructed-but-never- shown window does not pin itself to the static managers' invocation lists.
 
@@ -51,7 +51,7 @@ Gets or sets the preferred window corner rounding policy for DWM.
 public static ImageSource? DefaultIcon { get; }
 ```
 
-The Fluence brand icon embedded in this assembly, loaded once and shared (frozen) as the default `Icon` for every [FluenceWindow](FluenceWindow.md). `null` only if the embedded resource cannot be loaded. Exposed so a consumer can apply the same square, no-background brand mark to its own windows.
+The Fluence brand icon embedded in this assembly, loaded once and shared (frozen). It is available for consumers that want to opt in to the square, no-background brand mark on their own windows. `null` only if the embedded resource cannot be loaded.
 
 <a id="api-748d582858ab"></a>
 
