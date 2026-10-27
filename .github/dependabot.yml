@@ -1,0 +1,8 @@
+version: 2
+updates:
+  # Keeps workflow actions current, including the SHA-pinned pnpm/action-setup. The walkthrough
+  # sample restores a bundled, hash-checked Fluence.Wpf package, so NuGet is not listed here.
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
