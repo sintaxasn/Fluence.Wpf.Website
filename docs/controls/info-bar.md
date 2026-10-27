@@ -8,13 +8,6 @@ Use InfoBar for inline messages that explain status, validation, or recoverable 
 | --- | --- |
 | ![InfoBar in light mode](../screenshots/controls/info-bar-light.png) | ![InfoBar in dark mode](../screenshots/controls/info-bar-dark.png) |
 
-### Captured state changes
-
-**Dismissed**
-
-![InfoBar dismissed state in light mode](../screenshots/controls/info-bar-light-dismissed.png)
-![InfoBar dismissed state in dark mode](../screenshots/controls/info-bar-dark-dismissed.png)
-
 ## Example usage
 
 ```xml

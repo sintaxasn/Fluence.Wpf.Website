@@ -8,6 +8,12 @@ Use AutoSuggestBox for search and autocomplete: handle TextChanged to filter sug
 | --- | --- |
 | ![AutoSuggestBox in light mode](../screenshots/controls/auto-suggest-box-light.png) | ![AutoSuggestBox in dark mode](../screenshots/controls/auto-suggest-box-dark.png) |
 
+### Open suggestions
+
+![AutoSuggestBox suggestion list with entries in light mode](../screenshots/controls/auto-suggest-box-light-open.png)
+
+![AutoSuggestBox suggestion list with entries in dark mode](../screenshots/controls/auto-suggest-box-dark-open.png)
+
 ## Example usage
 
 ```xml

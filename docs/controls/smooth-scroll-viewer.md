@@ -54,17 +54,13 @@ Scrolling changes the viewport while retaining Fluent scrollbar presentation.
 
 ScrollBarExtensions adds indicator behavior to native WPF ScrollBar. The screenshots show `ScrollBarExtensions` inside `SmoothScrollViewer`.
 
-The gallery scroll viewer enables the indicator behavior through its internal scrollbar template. These images isolate its vertical scrollbar before and after scrolling, with the indicator visible.
+The gallery scroll viewer enables the indicator behavior through its internal scrollbar template. The parent captures above show its vertical scrollbar before and after scrolling, with the indicator visible.
 
-| Light | Dark |
-| --- | --- |
-| ![Scrollbar before scrolling in light mode](../screenshots/controls/scroll-bar-extensions-light.png) | ![Scrollbar before scrolling in dark mode](../screenshots/controls/scroll-bar-extensions-dark.png) |
+See the parent control captures above for this part in context.
 
 ##### After scrolling {#scroll-bar-extensions-after-scrolling}
 
-| Light | Dark |
-| --- | --- |
-| ![Thin scrollbar indicator after scrolling in light mode](../screenshots/controls/scroll-bar-extensions-light-scrolled.png) | ![Thin scrollbar indicator after scrolling in dark mode](../screenshots/controls/scroll-bar-extensions-dark-scrolled.png) |
+See the parent control captures above for this part in context.
 
 #### Example usage {#scroll-bar-extensions-example-usage}
 

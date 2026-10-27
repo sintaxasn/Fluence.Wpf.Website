@@ -8,6 +8,12 @@ Use DatePicker for choosing a date from day, month, and year columns in a flyout
 | --- | --- |
 | ![DatePicker in light mode](../screenshots/controls/date-picker-light.png) | ![DatePicker in dark mode](../screenshots/controls/date-picker-dark.png) |
 
+### Open picker
+
+![DatePicker with its picker open in light mode](../screenshots/controls/date-picker-light-open.png)
+
+![DatePicker with its picker open in dark mode](../screenshots/controls/date-picker-dark-open.png)
+
 ## Example usage
 
 ```xml

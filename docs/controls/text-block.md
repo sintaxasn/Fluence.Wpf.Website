@@ -45,9 +45,7 @@ TextBlockExtensions adds Fluent typography and related attached properties to na
 
 The gallery image shows the typography ramp on a native TextBlock. It does not isolate an attached TextBlockExtensions property.
 
-| Light | Dark |
-| --- | --- |
-| ![TextBlockExtensions in light mode](../screenshots/controls/text-block-extensions-light.png) | ![TextBlockExtensions in dark mode](../screenshots/controls/text-block-extensions-dark.png) |
+See the parent control captures above for this part in context.
 
 #### Example usage {#text-block-extensions-example-usage}
 

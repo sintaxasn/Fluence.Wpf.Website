@@ -40,9 +40,7 @@ BreadcrumbBar creates item containers for the visible path segments. The screens
 
 Use it through BreadcrumbBar when people need to return to an ancestor location.
 
-| Light | Dark |
-| --- | --- |
-| ![BreadcrumbBarItem in light mode](../screenshots/controls/breadcrumb-bar-item-light.png) | ![BreadcrumbBarItem in dark mode](../screenshots/controls/breadcrumb-bar-item-dark.png) |
+The parent control capture above shows this part in context.
 
 #### Example usage {#breadcrumb-bar-item-example-usage}
 

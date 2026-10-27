@@ -8,6 +8,12 @@ Use Menu for persistent command groups with submenus, keyboard cues, separators,
 | --- | --- |
 | ![Menu in light mode](../screenshots/controls/menu-light.png) | ![Menu in dark mode](../screenshots/controls/menu-dark.png) |
 
+### Open submenu
+
+![Menu with its submenu open in light mode](../screenshots/controls/menu-light-open.png)
+
+![Menu with its submenu open in dark mode](../screenshots/controls/menu-dark-open.png)
+
 ## Example usage
 
 ```xml
@@ -44,9 +50,7 @@ MenuItem is a command or submenu entry inside Menu or ContextMenu. The screensho
 
 Use it for commands or nested choices inside Menu or ContextMenu.
 
-| Light | Dark |
-| --- | --- |
-| ![MenuItem in light mode](../screenshots/controls/menu-item-light.png) | ![MenuItem in dark mode](../screenshots/controls/menu-item-dark.png) |
+The parent control capture above shows this part in context.
 
 #### Example usage {#menu-item-example-usage}
 

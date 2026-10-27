@@ -71,9 +71,7 @@ CommandBarFlyoutPresenter draws the primary strip and overflow surface of Comman
 
 Use it through CommandBarFlyout when a command strip needs an overflow surface.
 
-| Light | Dark |
-| --- | --- |
-| ![CommandBarFlyoutPresenter in light mode](../screenshots/controls/command-bar-flyout-presenter-light-open.png) | ![CommandBarFlyoutPresenter in dark mode](../screenshots/controls/command-bar-flyout-presenter-dark-open.png) |
+The parent control capture above shows this part in context.
 
 #### Example usage {#command-bar-flyout-presenter-example-usage}
 

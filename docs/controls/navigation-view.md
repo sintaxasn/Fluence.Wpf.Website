@@ -8,6 +8,12 @@ NavigationView is a WPF `Selector` that presents application destinations in a l
 | --- | --- |
 | ![NavigationView in light mode](../screenshots/controls/navigation-view-light.png) | ![NavigationView in dark mode](../screenshots/controls/navigation-view-dark.png) |
 
+### Compact pane
+
+![NavigationView with its navigation pane collapsed to compact mode in light mode](../screenshots/controls/navigation-view-light-compact.png)
+
+![NavigationView with its navigation pane collapsed to compact mode in dark mode](../screenshots/controls/navigation-view-dark-compact.png)
+
 ## Example usage
 
 ```xml
@@ -56,9 +62,7 @@ NavigationViewItem is a selectable destination inside NavigationView. The screen
 
 Use it for a selectable destination in NavigationView.
 
-| Light | Dark |
-| --- | --- |
-| ![NavigationViewItem in light mode](../screenshots/controls/navigation-view-item-light.png) | ![NavigationViewItem in dark mode](../screenshots/controls/navigation-view-item-dark.png) |
+The parent control capture above shows this part in context.
 
 #### Example usage {#navigation-view-item-example-usage}
 
@@ -87,9 +91,7 @@ Selected and unselected destinations differ visually; InfoBadge can show item st
 
 Use a header to label a group of destinations in NavigationView. The screenshots show `NavigationViewItemHeader` inside `NavigationView`.
 
-| Light | Dark |
-| --- | --- |
-| ![NavigationViewItemHeader in light mode](../screenshots/controls/navigation-view-item-header-light.png) | ![NavigationViewItemHeader in dark mode](../screenshots/controls/navigation-view-item-header-dark.png) |
+The parent control capture above shows this part in context.
 
 #### Example usage {#navigation-view-item-header-example-usage}
 
@@ -118,9 +120,7 @@ Headers label groups of NavigationView items; they do not navigate as destinatio
 
 Use a separator to divide destination groups in NavigationView. The screenshots show `NavigationViewItemSeparator` inside `NavigationView`.
 
-| Light | Dark |
-| --- | --- |
-| ![NavigationViewItemSeparator in light mode](../screenshots/controls/navigation-view-item-separator-light.png) | ![NavigationViewItemSeparator in dark mode](../screenshots/controls/navigation-view-item-separator-dark.png) |
+The parent control capture above shows this part in context.
 
 #### Example usage {#navigation-view-item-separator-example-usage}
 

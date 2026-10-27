@@ -8,6 +8,12 @@ Use a combo box when the choices are useful but do not need to stay visible.
 | --- | --- |
 | ![ComboBox in light mode](../screenshots/controls/combo-box-light.png) | ![ComboBox in dark mode](../screenshots/controls/combo-box-dark.png) |
 
+### Open list
+
+![ComboBox drop-down list with choices in light mode](../screenshots/controls/combo-box-light-open.png)
+
+![ComboBox drop-down list with choices in dark mode](../screenshots/controls/combo-box-dark-open.png)
+
 ## Example usage
 
 ```xml

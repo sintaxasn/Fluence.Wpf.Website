@@ -8,6 +8,12 @@ TimePicker is a WPF `Control` for selecting a time in a flyout.
 | --- | --- |
 | ![TimePicker in light mode](../screenshots/controls/time-picker-light.png) | ![TimePicker in dark mode](../screenshots/controls/time-picker-dark.png) |
 
+### Open picker
+
+![TimePicker with its picker open in light mode](../screenshots/controls/time-picker-light-open.png)
+
+![TimePicker with its picker open in dark mode](../screenshots/controls/time-picker-dark-open.png)
+
 ## Example usage
 
 ```xml

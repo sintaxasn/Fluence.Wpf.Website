@@ -8,6 +8,12 @@ TreeView extends the WPF `TreeView` to display hierarchical items with optional 
 | --- | --- |
 | ![TreeView in light mode](../screenshots/controls/tree-view-light.png) | ![TreeView in dark mode](../screenshots/controls/tree-view-dark.png) |
 
+### Expanded nodes
+
+![TreeView with tree nodes expanded in light mode](../screenshots/controls/tree-view-light-expanded.png)
+
+![TreeView with tree nodes expanded in dark mode](../screenshots/controls/tree-view-dark-expanded.png)
+
 ## Example usage
 
 ```xml
@@ -54,9 +60,7 @@ TreeViewItem represents an expandable node inside TreeView. The screenshots show
 
 Use it for a node within a TreeView hierarchy.
 
-| Light | Dark |
-| --- | --- |
-| ![TreeViewItem in light mode](../screenshots/controls/tree-view-item-light.png) | ![TreeViewItem in dark mode](../screenshots/controls/tree-view-item-dark.png) |
+See the parent control captures above for this part in context.
 
 #### Example usage {#tree-view-item-example-usage}
 

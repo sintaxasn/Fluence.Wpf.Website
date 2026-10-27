@@ -57,9 +57,7 @@ Use its attached flyout API when a control needs a concrete Flyout or CommandBar
 
 The images show an open Flyout, a concrete implementation of FlyoutBase.
 
-| Light | Dark |
-| --- | --- |
-| ![FlyoutBase in light mode](../screenshots/controls/flyout-base-light.png) | ![FlyoutBase in dark mode](../screenshots/controls/flyout-base-dark.png) |
+The parent control capture above shows this part in context.
 
 #### Example usage {#flyout-base-example-usage}
 
@@ -105,9 +103,7 @@ Use it through Flyout when popup content needs the standard presentation surface
 
 The images show the presenter while its flyout is open.
 
-| Light | Dark |
-| --- | --- |
-| ![Flyout in light mode](../screenshots/controls/flyout-presenter-light.png) | ![Flyout in dark mode](../screenshots/controls/flyout-presenter-dark.png) |
+The parent control capture above shows this part in context.
 
 #### Example usage {#flyout-presenter-example-usage}
 

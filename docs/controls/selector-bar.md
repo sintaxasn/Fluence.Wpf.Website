@@ -44,9 +44,7 @@ Selection changes the active item. Handle `SelectionChanged` or bind `SelectedIt
 
 SelectorBarItem is a selectable view choice inside SelectorBar. The screenshots show `SelectorBarItem` inside `SelectorBar`.
 
-| Light | Dark |
-| --- | --- |
-| ![SelectorBarItem in light mode](../screenshots/controls/selector-bar-item-light.png) | ![SelectorBarItem in dark mode](../screenshots/controls/selector-bar-item-dark.png) |
+The parent control capture above shows this part in context.
 
 #### Example usage {#selector-bar-item-example-usage}
 

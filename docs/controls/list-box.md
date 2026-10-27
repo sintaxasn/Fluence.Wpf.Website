@@ -44,9 +44,7 @@ ListBoxItem is the visible selectable container inside ListBox. The screenshots 
 
 Use it as an item container within a ListBox.
 
-| Light | Dark |
-| --- | --- |
-| ![ListBoxItem in light mode](../screenshots/controls/list-box-item-light.png) | ![ListBoxItem in dark mode](../screenshots/controls/list-box-item-dark.png) |
+The parent control capture above shows this part in context.
 
 #### Example usage {#list-box-item-example-usage}
 

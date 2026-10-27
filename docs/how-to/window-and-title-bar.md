@@ -77,4 +77,4 @@ The screenshots show the standalone sample, which uses the same controls with it
 
 ![Configure a window and title bar in dark mode](../screenshots/tutorials/window-and-title-bar-dark.png)
 
-See [FluenceWindow](../controls/fluence-window.md), [TitleBar](../controls/title-bar.md), and [Windows and backdrop support](../csharp/requirements.md#windows-and-backdrop-support).
+See [FluenceWindow](../controls/fluence-window.md), [TitleBar](../controls/fluence-window.md#title-bar), and [Windows and backdrop support](../csharp/requirements.md#windows-and-backdrop-support).

@@ -8,6 +8,12 @@ Use ToggleSplitButton when the primary half toggles a state and the flyout choos
 | --- | --- |
 | ![ToggleSplitButton in light mode](../screenshots/controls/toggle-split-button-light.png) | ![ToggleSplitButton in dark mode](../screenshots/controls/toggle-split-button-dark.png) |
 
+### Open flyout
+
+![ToggleSplitButton with its flyout open in light mode](../screenshots/controls/toggle-split-button-light-open.png)
+
+![ToggleSplitButton with its flyout open in dark mode](../screenshots/controls/toggle-split-button-dark-open.png)
+
 ## Example usage
 
 ```xml

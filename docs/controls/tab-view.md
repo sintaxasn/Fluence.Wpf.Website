@@ -52,9 +52,7 @@ TabViewItem is a document tab inside TabView. The screenshots show `TabViewItem`
 
 Use it for a document or workspace tab inside TabView.
 
-| Light | Dark |
-| --- | --- |
-| ![TabViewItem in light mode](../screenshots/controls/tab-view-item-light.png) | ![TabViewItem in dark mode](../screenshots/controls/tab-view-item-dark.png) |
+See the parent control captures above for this part in context.
 
 #### Example usage {#tab-view-item-example-usage}
 

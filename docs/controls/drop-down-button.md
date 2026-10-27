@@ -8,6 +8,12 @@ Use DropDownButton when all available actions live in the flyout.
 | --- | --- |
 | ![DropDownButton in light mode](../screenshots/controls/drop-down-button-light.png) | ![DropDownButton in dark mode](../screenshots/controls/drop-down-button-dark.png) |
 
+### Open flyout
+
+![DropDownButton with its flyout open in light mode](../screenshots/controls/drop-down-button-light-open.png)
+
+![DropDownButton with its flyout open in dark mode](../screenshots/controls/drop-down-button-dark-open.png)
+
 ## Example usage
 
 ```xml

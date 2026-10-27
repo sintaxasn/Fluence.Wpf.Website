@@ -152,7 +152,6 @@ const sidebars = {
       "label": "Windows and layout",
       "items": [
         "controls/fluence-window",
-        "controls/title-bar",
         "controls/border",
         "controls/card",
         "controls/expander",

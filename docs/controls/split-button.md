@@ -8,6 +8,12 @@ Use SplitButton when there is one default action plus alternate actions in the f
 | --- | --- |
 | ![SplitButton in light mode](../screenshots/controls/split-button-light.png) | ![SplitButton in dark mode](../screenshots/controls/split-button-dark.png) |
 
+### Open flyout
+
+![SplitButton with its alternate actions open in light mode](../screenshots/controls/split-button-light-open.png)
+
+![SplitButton with its alternate actions open in dark mode](../screenshots/controls/split-button-dark-open.png)
+
 ## Example usage
 
 ```xml
