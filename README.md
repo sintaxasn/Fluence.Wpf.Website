@@ -105,4 +105,10 @@ The Fluence.Wpf website source adapted from PSAppDeployToolkit is licensed under
 
 ## Publishing
 
-The planned production host is Cloudflare Pages using the configuration above. Project creation and Git integration are deferred until release approval because they can trigger public preview and production deployments. Publishing the website does not publish the WPF library, NuGet packages, or PowerShell Gallery packages.
+The site runs on Cloudflare Workers and is published by Cloudflare Workers Builds through its GitHub app. Production builds use the site URL defaults above. The build settings live in the Cloudflare dashboard, not in this repository. The current settings use root directory `website`, build command `pnpm build`, deploy command `npx wrangler@latest deploy` for `main`, and `npx wrangler preview` for other branches. Each build reports as the `Workers Builds: fluence-wpf-website` check.
+
+Every push to `main` deploys the production site, including the documentation commits that the source repository's docs-sync workflow pushes. Builds for other branches, such as pull request branches, create a Preview deployment instead. The GitHub Actions workflows build and check the site but do not deploy it.
+
+`website/wrangler.jsonc` configures the Worker: its name, compatibility date, observability, and the static assets served from `build/`. `wrangler preview` requires its `previews` block, even when the block is empty. After `pnpm build`, check a change to this file from `website/` with `npx wrangler deploy --dry-run`.
+
+Publishing the website does not publish the WPF library, NuGet packages, or PowerShell Gallery packages.
