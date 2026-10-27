@@ -40,7 +40,20 @@ const config = {
                     path: '../docs',
                     routeBasePath: 'docs',
                     sidebarPath: './sidebars.js',
-                    exclude: ['**/_internal/**', '**/plans/**', 'release.md', 'roadmap.md', '**/release.md', '**/roadmap.md'],
+                    // A custom list replaces the Docusaurus default, so the first four entries restore it.
+                    // They keep `_`-prefixed files and folders, such as maintainer notes, off the site.
+                    exclude: [
+                        '**/_*.{js,jsx,ts,tsx,md,mdx}',
+                        '**/_*/**',
+                        '**/*.test.{js,jsx,ts,tsx}',
+                        '**/__tests__/**',
+                        '**/_internal/**',
+                        '**/plans/**',
+                        'release.md',
+                        'roadmap.md',
+                        '**/release.md',
+                        '**/roadmap.md',
+                    ],
                     //   editUrl: ({ docPath }) => `${websiteRepository}/edit/main/docs/${docPath}`,
                     beforeDefaultRemarkPlugins: [[docsTransform, { repository }]],
                 },
