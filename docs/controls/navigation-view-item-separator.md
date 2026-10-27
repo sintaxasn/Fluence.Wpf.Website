@@ -1,31 +1,23 @@
-﻿# NavigationViewItemSeparator
+﻿---
+unlisted: true
+---
+
+# NavigationViewItemSeparator
+
+See [NavigationViewItemSeparator](navigation-view.md#navigation-view-item-separator) in the parent control guide.
 
 ## Description
 
-Use a separator to divide destination groups in NavigationView. The screenshots show `NavigationViewItemSeparator` inside `NavigationView`.
-
-| Light | Dark |
-| --- | --- |
-| ![NavigationViewItemSeparator in light mode](../screenshots/controls/navigation-view-item-separator-light.png) | ![NavigationViewItemSeparator in dark mode](../screenshots/controls/navigation-view-item-separator-dark.png) |
+See [Description](navigation-view.md#navigation-view-item-separator-description).
 
 ## Example usage
 
-```xml
-<fluence:NavigationView>
-    <fluence:NavigationViewItem Content="Home" />
-    <fluence:NavigationViewItemSeparator />
-    <fluence:NavigationViewItem Content="Settings" />
-</fluence:NavigationView>
-```
+See [Example usage](navigation-view.md#navigation-view-item-separator-example-usage).
 
 ## State and behavior
 
-Separators divide destination groups and have no selected state.
+See [State and behavior](navigation-view.md#navigation-view-item-separator-state-and-behavior).
 
 ## Reference
 
-- [C# API reference](../api/Fluence.Wpf.Controls/NavigationViewItemSeparator.md)
-- [Gallery XAML source](../../Fluence.Wpf.Demo/Pages/GalleryNavigationPage.xaml)
-- [Gallery C# source](../../Fluence.Wpf.Demo/Pages/GalleryNavigationPage.xaml.cs)
-- [Control source](../../Fluence.Wpf/Controls/NavigationViewItemSeparator.cs)
-- [Control catalog](../controls.md)
+See [Reference](navigation-view.md#navigation-view-item-separator-reference).

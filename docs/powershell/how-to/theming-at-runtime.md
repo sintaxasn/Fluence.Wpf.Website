@@ -32,7 +32,7 @@ Themes are `Auto`, `Light`, `Dark`, and `HighContrast`. `Auto` follows Windows w
 
 Open controls using dynamic resources reflect published theme and accent changes. `-UpdateAccent` on `Set-FluenceTheme` is accepted for compatibility and ignored because the theme engine retains its accent intent. These images show separate accent examples, not one dialog changing while open. They are rendered offscreen, so they omit the native window shadow and backdrop.
 
-An open, realized `FluenceWindow` fades its previous WPF surface out over 167 ms for Light/Dark theme and accent changes. Resources, requested and resolved state, and public change events update immediately; the fade is a visual overlay. High Contrast entry or exit is immediate. The transition is skipped when motion is disabled, the window is minimized or not realized, or the surface cannot be captured. A regular WPF `Window` changes immediately. Native DWM backdrop pixels are outside the WPF snapshot and cannot be interpolated.
+See [theme pipeline internals](../../explanation/theme-pipeline.md#from-request-to-resources) for how theme transitions and resource publication work.
 
 ## Change a backdrop
 

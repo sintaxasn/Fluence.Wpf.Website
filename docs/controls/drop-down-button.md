@@ -21,11 +21,27 @@ Use DropDownButton when all available actions live in the flyout.
 </fluence:DropDownButton>
 ```
 
+```csharp
+var button = new Fluence.Wpf.Controls.DropDownButton { Content = "New" };
+```
+
 Bind the two commands on the page's data context to make the flyout choices act on your content.
+
+## Key properties
+
+| Property | Default | Purpose |
+| --- | --- | --- |
+| `Flyout` | `null` | Flyout shown by the button. |
+| `FlyoutTemplate` | `null` | Template used to create flyout content. |
+| `DropdownCornerRadius` | `8` | Rounds the drop-down surface. |
 
 ## State and behavior
 
 Opening the flyout changes the button state; light dismissal closes it.
+
+## Related
+
+- [C# how-to guide](../how-to/dialogs-and-feedback.md)
 
 ## Reference
 

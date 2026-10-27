@@ -2,7 +2,7 @@
 
 ## Description
 
-Use DockPanel when one element should pin to an edge while the remaining content fills the available space.
+DockPanel is a WPF `Panel` that docks children at edges and adds uniform spacing.
 
 | Light | Dark |
 | --- | --- |
@@ -17,9 +17,26 @@ Use DockPanel when one element should pin to an edge while the remaining content
 </fluence:DockPanel>
 ```
 
+```csharp
+var panel = new Fluence.Wpf.Controls.DockPanel { Spacing = 8 };
+```
+
+## Key properties
+
+| Property | Default | Purpose |
+| --- | --- | --- |
+| `Spacing` | `0` | Space between consecutive docked children. |
+| `LastChildFill` | `true` | Makes the final child fill the remaining area. |
+
 ## State and behavior
 
 Dock attached properties pin children to edges while the final child fills remaining space.
+
+Unlike the native WPF DockPanel, this panel supplies `Spacing`. Use the WPF `DockPanel.Dock` attached property to position children.
+
+## Related
+
+- [C# how-to guide](../how-to/inputs-and-data.md)
 
 ## Reference
 

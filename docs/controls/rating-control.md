@@ -2,7 +2,7 @@
 
 ## Description
 
-Use rating when a compact ordered preference is more natural than a numeric input.
+RatingControl is a WPF `Control` for choosing or displaying a star rating.
 
 | Light | Dark |
 | --- | --- |
@@ -14,9 +14,26 @@ Use rating when a compact ordered preference is more natural than a numeric inpu
 <fluence:RatingControl Value="3" MaxRating="5" />
 ```
 
+```csharp
+var rating = new Fluence.Wpf.Controls.RatingControl { Value = 3, MaxRating = 5 };
+```
+
+## Key properties
+
+| Property | Default | Purpose |
+| --- | --- | --- |
+| `Value` | `0` | Current rating, bounded by `MaxRating`. |
+| `MaxRating` | `5` | Number of stars. |
+| `IsReadOnly` | `false` | Makes the rating display-only. |
+| `Caption` | Empty string | Optional caption displayed beside the stars. |
+
 ## State and behavior
 
 Pointer or keyboard input changes Value; the control can also present a read-only rating.
+
+## Related
+
+- [C# how-to guide](../how-to/inputs-and-data.md)
 
 ## Reference
 

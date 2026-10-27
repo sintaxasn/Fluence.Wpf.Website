@@ -21,9 +21,32 @@ Use toggle switches for settings that take effect immediately.
 <fluence:ToggleSwitch IsChecked="True" />
 ```
 
+
+```csharp
+var toggle = new Fluence.Wpf.Controls.ToggleSwitch { HeaderContent = "Notifications", IsChecked = true };
+```
+
+
+## Key properties
+
+| Property | Default | Purpose |
+| --- | --- | --- |
+| `HeaderContent` | `null` | Content displayed as the switch header. |
+| `OnContent` | `null` | Content displayed for the on state. |
+| `OffContent` | `null` | Content displayed for the off state. |
+| `IsChecked` | `false` | Current toggle state. |
+
 ## State and behavior
 
 IsChecked changes the switch position immediately; IsEnabled controls the disabled appearance.
+
+## Events
+
+`Checked` and `Unchecked` report state changes.
+
+## Related
+
+- [C# how-to guide](../how-to/inputs-and-data.md)
 
 ## Reference
 

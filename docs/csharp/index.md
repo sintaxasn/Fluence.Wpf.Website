@@ -9,7 +9,7 @@ Fluence.Wpf is a WPF control library for applications that want Fluent interacti
 3. Follow the [basic walkthrough](usage.md) to apply a theme, create a `FluenceWindow`, and add a control.
 4. Run the [gallery](gallery.md) when you want to compare complete examples or inspect the interaction patterns together.
 
-The library targets .NET Framework 4.7.2, .NET 8 for Windows, and .NET 10 for Windows. Windows 10 version 1809 is the baseline. Windows 11-only effects such as Mica light up when the operating system supports them and fall back to the configured surface when they do not. The consuming application does not need the Windows App SDK or WinUI runtime.
+The consuming application does not need the Windows App SDK or WinUI runtime. See [requirements](requirements.md) for framework and Windows support.
 
 ## Choose the next reference
 

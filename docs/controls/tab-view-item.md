@@ -1,32 +1,23 @@
-﻿# TabViewItem
+﻿---
+unlisted: true
+---
+
+# TabViewItem
+
+See [TabViewItem](tab-view.md#tab-view-item) in the parent control guide.
 
 ## Description
 
-TabViewItem is a document tab inside TabView. The screenshots show `TabViewItem` inside `TabView`.
-
-Use it for a document or workspace tab inside TabView.
-
-| Light | Dark |
-| --- | --- |
-| ![TabViewItem in light mode](../screenshots/controls/tab-view-item-light.png) | ![TabViewItem in dark mode](../screenshots/controls/tab-view-item-dark.png) |
+See [Description](tab-view.md#tab-view-item-description).
 
 ## Example usage
 
-```xml
-<fluence:TabView>
-    <fluence:TabViewItem Header="Document 1" IsSelected="True" />
-    <fluence:TabViewItem Header="Document 2" IsClosable="False" />
-</fluence:TabView>
-```
+See [Example usage](tab-view.md#tab-view-item-example-usage).
 
 ## State and behavior
 
-Selected and inactive tabs have different presentations; IsClosable controls the close affordance.
+See [State and behavior](tab-view.md#tab-view-item-state-and-behavior).
 
 ## Reference
 
-- [C# API reference](../api/Fluence.Wpf.Controls/TabViewItem.md)
-- [Gallery XAML source](../../Fluence.Wpf.Demo/Pages/GalleryTabsPage.xaml)
-- [Gallery C# source](../../Fluence.Wpf.Demo/Pages/GalleryTabsPage.xaml.cs)
-- [Control source](../../Fluence.Wpf/Controls/TabViewItem.cs)
-- [Control catalog](../controls.md)
+See [Reference](tab-view.md#tab-view-item-reference).

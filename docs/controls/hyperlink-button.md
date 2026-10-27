@@ -2,7 +2,7 @@
 
 ## Description
 
-Use HyperlinkButton for lightweight navigation and related secondary actions.
+HyperlinkButton extends the WPF `Button` for link-style navigation or actions.
 
 | Light | Dark |
 | --- | --- |
@@ -16,9 +16,36 @@ Use HyperlinkButton for lightweight navigation and related secondary actions.
     NavigateUri="https://github.com/sintaxasn/Fluence.Wpf" />
 ```
 
+```csharp
+var link = new Fluence.Wpf.Controls.HyperlinkButton
+{
+    Content = "Documentation",
+    NavigateUri = new System.Uri("https://github.com/sintaxasn/Fluence.Wpf"),
+};
+```
+
+## Key properties
+
+| Property | Default | Purpose |
+| --- | --- | --- |
+| `NavigateUri` | `null` | Absolute URI opened via the shell on click. |
+| `Icon` | `null` | Optional icon content. |
+| `IconPlacement` | `Left` | Places the icon relative to the label. |
+| `CornerRadius` | `4` | Sets the corner radius. |
+
 ## State and behavior
 
 The link responds to pointer and keyboard input; disabled links do not activate.
+
+The control uses shell execution for `NavigateUri` after raising the normal button click. Supply an absolute URI.
+
+## Events
+
+The inherited `Click` event is raised on activation.
+
+## Related
+
+- [C# how-to guide](../how-to/navigation-and-tabs.md)
 
 ## Reference
 

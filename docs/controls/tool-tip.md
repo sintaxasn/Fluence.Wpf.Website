@@ -18,9 +18,26 @@ Use ToolTip for short hints that clarify icons, disabled commands, or risky acti
 </fluence:Button>
 ```
 
+
+```csharp
+var tip = new Fluence.Wpf.Controls.ToolTip { Content = "More information" };
+```
+
+
+## Key properties
+
+| Property | Default | Purpose |
+| --- | --- | --- |
+| `Content` | `null` | Content displayed in the popup. |
+| `IsOpen` | `false` | Controls whether the tooltip is open. |
+
 ## State and behavior
 
 Hover or keyboard focus reveals a brief hint; it closes when focus or hover ends.
+
+## Related
+
+- [C# how-to guide](../how-to/window-and-title-bar.md)
 
 ## Reference
 

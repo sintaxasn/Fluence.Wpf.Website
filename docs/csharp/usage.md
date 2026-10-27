@@ -1,107 +1,95 @@
 ﻿# Basic walkthrough
 
-Run the [standalone Basic walkthrough example](https://github.com/sintaxasn/Fluence.Wpf.Website/tree/main/samples/Fluence.Wpf.Docs.Walkthroughs) from the Website repository root. The first command restores and builds against the explicit local package source; the second runs the example:
-
-~~~powershell
-pwsh ./samples/Fluence.Wpf.Docs.Walkthroughs/Build-Walkthroughs.ps1 -PackageSource ./samples/Fluence.Wpf.Docs.Walkthroughs/packages
-dotnet run --project ./samples/Fluence.Wpf.Docs.Walkthroughs/Fluence.Wpf.Docs.Walkthroughs.csproj -c Release --no-build -- --example basic-usage
-~~~
-
-The window asks for a name. Select **Say hello** and the result shows `Hello ` followed by the text you entered. Each walkthrough has its own window and run command.
+Create your first Fluence window in the WPF project from [installation](installation.md). The example uses the project namespace `MyApp`; replace it throughout with your own project's namespace. It works with C# 7.3 and later.
 
 ## Initialize the application
 
-Apply the Fluence theme before constructing the first window. Leave `StartupUri` unset in `App.xaml`:
+Remove `StartupUri` from `App.xaml` so the window opens after theme initialization:
 
-~~~xml
-<Application x:Class="Fluence.Wpf.Docs.Walkthroughs.App"
+```xml
+<Application x:Class="MyApp.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" />
-~~~
+```
 
-The minimal startup for this one window is:
+In `App.xaml.cs`, apply the theme and show the window:
 
-~~~csharp
+```csharp
 using System.Windows;
 using Fluence.Wpf;
 
-namespace Fluence.Wpf.Docs.Walkthroughs;
-
-public partial class App : Application
+namespace MyApp
 {
-    protected override void OnStartup(StartupEventArgs e)
+    public partial class App : Application
     {
-        base.OnStartup(e);
-        ApplicationThemeManager.Apply(ApplicationTheme.Auto);
-
-        MainWindow = new BasicUsageWindow();
-        MainWindow.Show();
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            base.OnStartup(e);
+            ApplicationThemeManager.Apply(ApplicationTheme.Auto);
+            MainWindow = new MainWindow();
+            MainWindow.Show();
+        }
     }
 }
-~~~
+```
 
-This startup class and the window below use the same namespace. The runnable sample's [App.xaml.cs](https://github.com/sintaxasn/Fluence.Wpf.Website/blob/main/samples/Fluence.Wpf.Docs.Walkthroughs/App.xaml.cs) also selects the requested `--example` slug and runs [CaptureRunner.cs](https://github.com/sintaxasn/Fluence.Wpf.Website/blob/main/samples/Fluence.Wpf.Docs.Walkthroughs/CaptureRunner.cs) for screenshots. `Auto` follows the Windows app theme and uses the system accent by default. Theme initialization loads the Fluence control templates, so do not merge `Generic.xaml` yourself.
+`Auto` follows the Windows app theme and uses the system accent by default. The manager loads Fluence control templates; do not merge `Generic.xaml` yourself.
 
 ## Declare the window and its layout
 
-The sample's [BasicUsageWindow.xaml](https://github.com/sintaxasn/Fluence.Wpf.Website/blob/main/samples/Fluence.Wpf.Docs.Walkthroughs/BasicUsageWindow.xaml) has a title, an application icon, and a title-bar image. The icon is a compiled resource in the sample project; update its URI when copying the window into another project.
+Replace `MainWindow.xaml` with this window. The `x:Class` must match the code-behind namespace and class.
 
-~~~xml
-<fluence:FluenceWindow
-    x:Class="Fluence.Wpf.Docs.Walkthroughs.BasicUsageWindow"
+```xml
+<fluence:FluenceWindow x:Class="MyApp.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:fluence="http://schemas.fluencewpf.com"
-    Title="My first Fluent window"
-    Icon="/Fluence.Wpf.Docs.Walkthroughs;component/Fluence_Icon.ico"
-    Width="800" Height="540" MinWidth="640" MinHeight="420"
-    WindowStartupLocation="CenterScreen"
-    Background="{DynamicResource ApplicationBackgroundBrush}"
-    SystemBackdropType="Mica"
-    ExtendsContentIntoTitleBar="True">
-    <fluence:FluenceWindow.TitleBar>
-        <fluence:TitleBar Title="My first Fluent window" Subtitle="Fluence WPF walkthrough">
-            <fluence:TitleBar.Icon>
-                <Image Width="20" Height="20" Source="/Fluence.Wpf.Docs.Walkthroughs;component/Fluence_Icon.ico" />
-            </fluence:TitleBar.Icon>
-        </fluence:TitleBar>
-    </fluence:FluenceWindow.TitleBar>
+    Title="My first Fluent window" Width="800" Height="540"
+    Background="{DynamicResource ApplicationBackgroundBrush}">
     <fluence:StackPanel Spacing="16" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <fluence:TextBlock Text="Enter your name" HorizontalAlignment="Center" />
-        <fluence:TextBox x:Name="NameInput" Width="330" HorizontalAlignment="Center" />
-        <fluence:Button Content="Say hello" Click="SayHello_Click"
-                        Appearance="Accent" HorizontalAlignment="Center" />
-        <fluence:TextBlock x:Name="ResultText" HorizontalAlignment="Center" />
+        <fluence:TextBlock Text="Enter your name" />
+        <fluence:TextBox x:Name="NameInput" Width="330" />
+        <fluence:Button Content="Say hello" Click="SayHello_Click" Appearance="Accent" />
+        <fluence:TextBlock x:Name="ResultText" />
     </fluence:StackPanel>
 </fluence:FluenceWindow>
-~~~
+```
 
-The `fluence:StackPanel` centers the group vertically and each control horizontally. `Spacing="16"` gives adjacent controls a 16 device-independent-pixel gap. `DynamicResource` lets the background follow theme changes.
+The background uses `DynamicResource` so it follows theme changes. The StackPanel spaces its children by 16 device-independent pixels.
 
 ## Handle the click
 
-The named input and result are available in [BasicUsageWindow.xaml.cs](https://github.com/sintaxasn/Fluence.Wpf.Website/blob/main/samples/Fluence.Wpf.Docs.Walkthroughs/BasicUsageWindow.xaml.cs). The click handler calls `UpdateGreeting`, which reads the current input:
+Replace `MainWindow.xaml.cs` with:
 
-~~~csharp
-private void SayHello_Click(object sender, RoutedEventArgs e)
+```csharp
+using System.Windows;
+using Fluence.Wpf.Controls;
+
+namespace MyApp
 {
-    UpdateGreeting();
+    public partial class MainWindow : FluenceWindow
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        private void SayHello_Click(object sender, RoutedEventArgs e)
+        {
+            ResultText.Text = "Hello " + NameInput.Text;
+        }
+    }
 }
+```
 
-private void UpdateGreeting()
-{
-    ResultText.Text = "Hello " + NameInput.Text;
-}
-~~~
+Build and run the project from Visual Studio, or run `dotnet run --project YourApp.csproj` from a terminal. Enter a name and select **Say hello**.
 
-The sample's code-behind also has a `PrepareCapture` method for repeatable screenshots. An application does not need it. Change the `App.xaml` class, window `x:Class`, and code-behind namespace together when moving the example into your own project.
+## Continue
 
-The completed window in light and dark themes:
+Try the [window and title bar guide](../how-to/window-and-title-bar.md), browse the [control catalog](../controls.md), or [run the Gallery](gallery.md). The website also provides an optional [standalone walkthrough sample](https://github.com/sintaxasn/Fluence.Wpf.Website/tree/main/samples/Fluence.Wpf.Docs.Walkthroughs), pinned to the bundled 0.9.1 package for reproducible captures. From the website repository root, build it with `pwsh ./samples/Fluence.Wpf.Docs.Walkthroughs/Build-Walkthroughs.ps1 -PackageSource ./samples/Fluence.Wpf.Docs.Walkthroughs/packages`, then run `dotnet run --project ./samples/Fluence.Wpf.Docs.Walkthroughs/Fluence.Wpf.Docs.Walkthroughs.csproj -c Release --no-build -- --example basic-usage`.
+
+These screenshots show the standalone sample in light and dark themes:
 
 ![Basic walkthrough window in light mode](../screenshots/tutorials/basic-usage-light.png)
 
 ![Basic walkthrough window in dark mode](../screenshots/tutorials/basic-usage-dark.png)
-
-## Continue
-
-Open the [window and title bar walkthrough](../how-to/window-and-title-bar.md), browse the [control catalog](../controls.md), or [run the Gallery](gallery.md).

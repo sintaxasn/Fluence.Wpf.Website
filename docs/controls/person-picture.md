@@ -2,7 +2,7 @@
 
 ## Description
 
-Use PersonPicture to show a person or group as a circular avatar: a profile photo, initials, or a placeholder glyph, with an optional badge.
+PersonPicture is a WPF `Control` that represents a person or group with a photo, initials, or a glyph.
 
 | Light | Dark |
 | --- | --- |
@@ -14,9 +14,28 @@ Use PersonPicture to show a person or group as a circular avatar: a profile phot
 <fluence:PersonPicture DisplayName="Ana Bowman" />
 ```
 
+```csharp
+var avatar = new Fluence.Wpf.Controls.PersonPicture { DisplayName = "Ana Bowman" };
+```
+
+## Key properties
+
+| Property | Default | Purpose |
+| --- | --- | --- |
+| `DisplayName` | Empty string | Name used to derive up to two initials. |
+| `Initials` | Empty string | Explicit initials override those derived from the name. |
+| `ProfilePicture` | `null` | Image source for the profile photo. |
+| `IsGroup` | `false` | Displays a group glyph. |
+| `BadgeNumber` | `0` | Number shown in the optional badge. |
+| `BadgeGlyph` | `null` | Glyph shown in the optional badge. |
+
 ## State and behavior
 
 `ProfilePicture` shows a photo. Without one, the control shows initials, derived from `DisplayName` unless `Initials` is set. `IsGroup` shows the group glyph. `BadgeNumber` or `BadgeGlyph` adds a badge.
+
+## Related
+
+- [C# how-to guide](../how-to/inputs-and-data.md)
 
 ## Reference
 

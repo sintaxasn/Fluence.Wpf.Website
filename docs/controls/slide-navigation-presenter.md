@@ -27,9 +27,21 @@ SectionHost.TransitionEffect = Fluence.Wpf.SlideNavigationTransitionEffect.FromL
 SectionHost.Content = new System.Windows.Controls.TextBlock { Text = "Previous view" };
 ```
 
+
+## Key properties
+
+| Property | Default | Purpose |
+| --- | --- | --- |
+| `TransitionEffect` | `FromRight` | Choose `FromRight` or `FromLeft` before changing content. |
+| `Content` | `null` | The currently displayed content. |
+
 ## State and behavior
 
 The default is `FromRight`. The control does not infer navigation direction; the caller sets `FromLeft` before a backward change.
+
+## Related
+
+- [C# how-to guide](../how-to/navigation-and-tabs.md)
 
 ## Reference
 

@@ -15,7 +15,17 @@ Import-Module (Join-Path $PSScriptRoot 'Fluence.Wpf.PowerShell/Fluence.Wpf.Power
 
 Windows PowerShell 5.1 uses the `net472` library build. PowerShell 7.4 or later uses `net8.0-windows10.0.26100.0`.
 
-## Understand which thread displays the window
+<span id="understand-which-thread-displays-the-window"></span>
+
+## Check the calling thread
+
+Run the following in the host before showing a window:
+
+```powershell
+[System.Threading.Thread]::CurrentThread.GetApartmentState()
+```
+
+## Run on the host dispatcher
 
 | Process and thread state | Module behavior |
 | --- | --- |
@@ -26,24 +36,27 @@ Windows PowerShell 5.1 uses the `net472` library build. PowerShell 7.4 or later 
 
 Importing the module does not dispatch work onto another application's UI thread. Arrange for the script to run in the host's supported dispatcher context. If the host cannot do that, use a separate PowerShell process for the UI.
 
-## Keep runspace callbacks self-contained
+<span id="keep-runspace-callbacks-self-contained"></span>
+
+## Pass data to callbacks on an MTA host
 
 When the module sends a script block to its own UI runspace, it serializes the script block as text. Caller variables, functions, and closures do not travel with it. Put values needed by a callback in explicit parameters or in data supported by that command, and keep the callback self-contained. See [PowerShell UI threading](../explanation.md#where-the-ui-thread-comes-from) for the execution model.
 
-## Use dialog results in the host script
-
-Fluence returns values; the host decides what those values mean. For example:
+For `Show-FluenceWindow`, pass a hashtable through `-Data`. The content block receives the window and that hashtable as parameters:
 
 ```powershell
-$result = Show-FluenceMessage -Message 'Continue?' -Buttons YesNo -DefaultButton No
-
-if ($result -eq 'Yes')
-{
-    # Continue the operation.
+$data = @{ Message = 'Ready' }
+Show-FluenceWindow -Data $data -Content {
+    param($Window, $Data)
+    $text = [System.Windows.Controls.TextBlock]::new()
+    $text.Text = $Data.Message
+    $Window.Content = $text
 }
 ```
 
-A restart prompt returns `Restart`, `Later`, or `TimedOut`; it does not restart the computer. A progress window returns a handle that the script passes to `Update-FluenceProgress` and `Close-FluenceProgress`.
+<span id="use-dialog-results-in-the-host-script"></span>
+
+For dialog result values, see [Dialogs and messages](dialogs.md).
 
 ## Handle noninteractive execution
 
@@ -61,6 +74,10 @@ else
 ```
 
 A timeout handles an interactive session where nobody responds. See [dialog and message guidance](dialogs.md) for the result values.
+
+## Clean up an application you own
+
+If a standalone script owns the WPF application and has finished every UI operation, call `[System.Windows.Application]::Current.Dispatcher.InvokeShutdown()` on its dispatcher thread. This is terminal cleanup: do not open another WPF window in that process afterward. An embedded script must leave shutdown to its host.
 
 ## Related guides
 

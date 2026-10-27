@@ -21,9 +21,31 @@ Use PipsPager for compact page indication and switching, as in carousels and onb
 <fluence:PipsPager NumberOfPages="5" SelectedPageIndex="0" />
 ```
 
+```csharp
+var pager = new Fluence.Wpf.Controls.PipsPager { NumberOfPages = 5 };
+```
+
+## Key properties
+
+| Property | Default | Purpose |
+| --- | --- | --- |
+| `NumberOfPages` | `0` | Total number of pages. |
+| `SelectedPageIndex` | `0` | Selected page index. |
+| `MaxVisiblePips` | `5` | Maximum visible page indicators. |
+| `Orientation` | `Horizontal` | Direction of the pager. |
+| `PreviousButtonVisibility`, `NextButtonVisibility` | `Collapsed` | Controls arrow-button visibility. |
+
 ## State and behavior
 
 The selected pip follows SelectedPageIndex; next and previous actions change the current page.
+
+## Events
+
+`SelectedIndexChanged` reports a changed page index.
+
+## Related
+
+- [C# how-to guide](../how-to/navigation-and-tabs.md)
 
 ## Reference
 

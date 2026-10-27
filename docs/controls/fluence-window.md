@@ -32,25 +32,26 @@ using System.Windows;
 using Fluence.Wpf;
 using Fluence.Wpf.Controls;
 
-namespace MyApp;
-
-public partial class MainWindow : FluenceWindow
+namespace MyApp
 {
-    public MainWindow()
+    public partial class MainWindow : FluenceWindow
     {
-        InitializeComponent();
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
     }
-}
 
-public partial class App : Application
-{
-    protected override void OnStartup(StartupEventArgs e)
+    public partial class App : Application
     {
-        ApplicationThemeManager.Apply(ApplicationTheme.Light);
-        base.OnStartup(e);
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            ApplicationThemeManager.Apply(ApplicationTheme.Light);
+            base.OnStartup(e);
 
-        MainWindow mainWindow = new();
-        mainWindow.Show();
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+        }
     }
 }
 ```
@@ -78,11 +79,25 @@ The visibility and capability properties serve different purposes: visibility co
 
 ### Backdrops and platform behavior
 
+`FluenceWindow` uses the theme's `NavigationViewContentBackgroundBrush` for the NavigationView content layer over Mica. Dark Mica uses its canonical translucent `#4C3A3A3A` layer on 10-bit displays with advanced color off. The window's backdrop compensation preserves the source header tint. Applications can provide a window-scoped `NavigationViewContentBackgroundBrush` resource to own that surface.
+
+
 `ApplicationThemeManager.Apply(theme, backdrop)` records an application-level backdrop request and raises the manager change event when appropriate. `FluenceWindow` does not read `CurrentBackdrop` as a global default: choose the requested effect on each window with `SystemBackdropType`.
 
 Mica, Acrylic, Tabbed, and rounded-corner requests depend on Windows capabilities. Windows 11 uses DWM system backdrop support where available. On Windows 10, the library uses its documented fallback; high contrast uses an opaque surface. The OS can ignore unsupported corner requests. See [Windows and backdrop support](../csharp/requirements.md#windows-and-backdrop-support).
 
 `FluenceWindow` begins watching relevant system theme changes when its native window is initialized and updates its chrome accordingly. Call `ApplicationThemeManager.Apply` before showing windows so Fluence resources are ready.
+
+## Additional behavior
+
+[FluenceWindow](fluence-window.md) extends `Window`. `SystemBackdropType` requests Mica, Acrylic, Tabbed, Auto, or None. `Window.Icon` is unset by default so WPF can use the consumer application's icon or the Windows default; set it to `FluenceWindow.DefaultIcon` to opt into Fluence branding. Its [TitleBar](title-bar.md) property accepts a UI element; the [TitleBar](title-bar.md) control raises `BackRequested` and `PaneToggleRequested`.
+
+On Windows 11 with Snap layouts enabled, the Maximize and Restore caption glyphs expose Snap hover and perform their window action when clicked. The window handles the caption action on mouse release.
+
+## Related
+
+- [Window and title bar guide](../how-to/window-and-title-bar.md)
+- [Navigation and tabs guide](../how-to/navigation-and-tabs.md)
 
 ## Reference
 

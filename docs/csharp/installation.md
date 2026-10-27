@@ -50,4 +50,4 @@ The Fluence package comes from the local output directory. The additional source
 
 ## Initialize resources
 
-Call `ApplicationThemeManager.Apply` before showing the first window. The manager loads computed theme resources and control templates. Do not merge `Generic.xaml` yourself. See [Basic walkthrough](usage.md) for a complete example and [Theme Resources](../theming.md) for resource usage.
+[Build a first app](usage.md) to initialize the theme and open a window.

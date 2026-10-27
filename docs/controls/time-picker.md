@@ -2,7 +2,7 @@
 
 ## Description
 
-Use TimePicker for choosing a time from hour, minute, and AM/PM columns in a flyout.
+TimePicker is a WPF `Control` for selecting a time in a flyout.
 
 | Light | Dark |
 | --- | --- |
@@ -14,9 +14,30 @@ Use TimePicker for choosing a time from hour, minute, and AM/PM columns in a fly
 <fluence:TimePicker Header="Reminder time" PlaceholderText="Pick a time" />
 ```
 
+```csharp
+var picker = new Fluence.Wpf.Controls.TimePicker { Header = "Reminder time" };
+```
+
+## Key properties
+
+| Property | Default | Purpose |
+| --- | --- | --- |
+| `SelectedTime` | `null` | Selected time as a nullable `TimeSpan`. |
+| `ClockIdentifier` | Current culture | Selects `12HourClock` or `24HourClock`. |
+| `MinuteIncrement` | `1` | Sets the minute step, clamped from 1 through 59. |
+| `Header` | `null` | Optional label above the field. |
+
 ## State and behavior
 
 Opening the picker exposes time columns; selection updates the chosen time.
+
+## Events
+
+`SelectedTimeChanged` is raised when the selected time changes, including a programmatic change.
+
+## Related
+
+- [C# how-to guide](../how-to/inputs-and-data.md)
 
 ## Reference
 

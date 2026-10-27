@@ -2,6 +2,8 @@
 
 Read the repository [contribution guide](../../CONTRIBUTING.md) and [developer handbook](../../AGENTS.md) before changing code. They define supported targets, analyzer rules, source formatting, build commands, and verification expectations.
 
+From the repository root, restore and build with `dotnet restore Fluence.Wpf.sln` and `dotnet build Fluence.Wpf.sln -c Debug`. Run the affected test targets using the commands in the contribution guide; UI tests require an interactive Windows desktop.
+
 Useful starting points:
 
 - [Architecture](../explanation/architecture.md) and [theme pipeline](../explanation/theme-pipeline.md)

@@ -38,7 +38,7 @@ const sidebars = {
     },
     {
       "type": "category",
-      "label": "Walkthroughs",
+      "label": "How-to guides",
       "items": [
         "how-to/window-and-title-bar",
         "how-to/theme-and-accent",
@@ -115,10 +115,17 @@ const sidebars = {
     },
     {
       "type": "category",
-      "label": "Architecture",
+      "label": "Concepts",
       "items": [
         "explanation/architecture",
-        "winui-parity",
+        "explanation/theme-pipeline",
+        "winui-parity"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Reference",
+      "items": [
         "theming",
         "reference/accessibility"
       ]
@@ -152,7 +159,6 @@ const sidebars = {
         "controls/dock-panel",
         "controls/stack-panel",
         "controls/separator",
-        "controls/scroll-bar-extensions",
         "controls/smooth-scroll-viewer"
       ]
     },
@@ -194,22 +200,14 @@ const sidebars = {
       "label": "Navigation and collections",
       "items": [
         "controls/breadcrumb-bar",
-        "controls/breadcrumb-bar-item",
         "controls/navigation-view",
-        "controls/navigation-view-item",
-        "controls/navigation-view-item-header",
-        "controls/navigation-view-item-separator",
         "controls/pips-pager",
         "controls/selector-bar",
-        "controls/selector-bar-item",
         "controls/slide-navigation-presenter",
         "controls/tab-view",
-        "controls/tab-view-item",
         "controls/list-box",
-        "controls/list-box-item",
         "controls/list-view",
-        "controls/tree-view",
-        "controls/tree-view-item"
+        "controls/tree-view"
       ]
     },
     {
@@ -218,13 +216,9 @@ const sidebars = {
       "items": [
         "controls/content-dialog",
         "controls/command-bar-flyout",
-        "controls/command-bar-flyout-presenter",
         "controls/context-menu",
         "controls/flyout",
-        "controls/flyout-base",
-        "controls/flyout-presenter",
         "controls/menu",
-        "controls/menu-item",
         "controls/teaching-tip",
         "controls/tool-tip",
         "controls/info-bar",
@@ -238,7 +232,6 @@ const sidebars = {
       "label": "Text, icons, and images",
       "items": [
         "controls/text-block",
-        "controls/text-block-extensions",
         "controls/font-icon",
         "controls/image",
         "controls/person-picture"
@@ -283,7 +276,7 @@ const sidebars = {
     },
     {
       "type": "category",
-      "label": "Walkthroughs",
+      "label": "How-to guides",
       "items": [
         "powershell/how-to/dialogs",
         "powershell/how-to/forms-and-validation",
@@ -324,8 +317,8 @@ const sidebars = {
       "label": "Contributing"
     },
     {
-      "type": "doc",
-      "id": "powershell/license",
+      "type": "ref",
+      "id": "csharp/license",
       "label": "License"
     }
   ]

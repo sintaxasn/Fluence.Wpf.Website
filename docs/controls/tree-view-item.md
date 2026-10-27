@@ -1,33 +1,23 @@
-﻿# TreeViewItem
+﻿---
+unlisted: true
+---
+
+# TreeViewItem
+
+See [TreeViewItem](tree-view.md#tree-view-item) in the parent control guide.
 
 ## Description
 
-TreeViewItem represents an expandable node inside TreeView. The screenshots show `TreeViewItem` inside `TreeView`.
-
-Use it for a node within a TreeView hierarchy.
-
-| Light | Dark |
-| --- | --- |
-| ![TreeViewItem in light mode](../screenshots/controls/tree-view-item-light.png) | ![TreeViewItem in dark mode](../screenshots/controls/tree-view-item-dark.png) |
+See [Description](tree-view.md#tree-view-item-description).
 
 ## Example usage
 
-```xml
-<fluence:TreeView>
-    <fluence:TreeViewItem Header="Workspace" IsExpanded="True">
-        <fluence:TreeViewItem Header="Pages" />
-    </fluence:TreeViewItem>
-</fluence:TreeView>
-```
+See [Example usage](tree-view.md#tree-view-item-example-usage).
 
 ## State and behavior
 
-IsExpanded reveals children; selection and pointer states change the row.
+See [State and behavior](tree-view.md#tree-view-item-state-and-behavior).
 
 ## Reference
 
-- [C# API reference](../api/Fluence.Wpf.Controls/TreeViewItem.md)
-- [Gallery XAML source](../../Fluence.Wpf.Demo/Pages/GalleryTreesPage.xaml)
-- [Gallery C# source](../../Fluence.Wpf.Demo/Pages/GalleryTreesPage.xaml.cs)
-- [Control source](../../Fluence.Wpf/Controls/TreeViewItem.cs)
-- [Control catalog](../controls.md)
+See [Reference](tree-view.md#tree-view-item-reference).

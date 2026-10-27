@@ -1,34 +1,23 @@
-﻿# MenuItem
+﻿---
+unlisted: true
+---
+
+# MenuItem
+
+See [MenuItem](menu.md#menu-item) in the parent control guide.
 
 ## Description
 
-MenuItem is a command or submenu entry inside Menu or ContextMenu. The screenshots show `MenuItem` inside `Menu`.
-
-Use it for commands or nested choices inside Menu or ContextMenu.
-
-| Light | Dark |
-| --- | --- |
-| ![MenuItem in light mode](../screenshots/controls/menu-item-light.png) | ![MenuItem in dark mode](../screenshots/controls/menu-item-dark.png) |
+See [Description](menu.md#menu-item-description).
 
 ## Example usage
 
-```xml
-<fluence:Menu>
-    <fluence:MenuItem Header="_File">
-        <fluence:MenuItem Header="_Open" Command="{Binding OpenCommand}" />
-        <fluence:MenuItem Header="Status bar" IsCheckable="True" IsChecked="True" />
-    </fluence:MenuItem>
-</fluence:Menu>
-```
+See [Example usage](menu.md#menu-item-example-usage).
 
 ## State and behavior
 
-MenuItem can open a submenu, toggle a checked state, or invoke a command.
+See [State and behavior](menu.md#menu-item-state-and-behavior).
 
 ## Reference
 
-- [C# API reference](../api/Fluence.Wpf.Controls/MenuItem.md)
-- [Gallery XAML source](../../Fluence.Wpf.Demo/Pages/GalleryMenusPage.xaml)
-- [Gallery C# source](../../Fluence.Wpf.Demo/Pages/GalleryMenusPage.xaml.cs)
-- [Control source](../../Fluence.Wpf/Controls/MenuItem.cs)
-- [Control catalog](../controls.md)
+See [Reference](menu.md#menu-item-reference).

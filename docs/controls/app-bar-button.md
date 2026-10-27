@@ -38,9 +38,24 @@ private void ShowFlyoutButton_Click(object sender, System.Windows.RoutedEventArg
 
 Bind `CopyCommand` on the page's data context.
 
+## Key properties
+
+| Property | Default | Purpose |
+| --- | --- | --- |
+| `Icon` | `null` | Icon shown for the command. |
+| `Label` | Empty string | Command label. |
+
 ## State and behavior
 
 The command displays an icon and label in a command bar flyout; invoking it dismisses the flyout.
+
+## Events
+
+The inherited `Click` event runs the button action.
+
+## Related
+
+- [C# how-to guide](../how-to/dialogs-and-feedback.md)
 
 ## Reference
 

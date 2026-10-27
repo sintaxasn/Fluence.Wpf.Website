@@ -17,9 +17,31 @@ Use ProgressBar for measurable work where the current value can be reported.
 </fluence:StackPanel>
 ```
 
+```csharp
+var progress = new Fluence.Wpf.Controls.ProgressBar { Value = 40 };
+```
+
+## Key properties
+
+| Property | Default | Purpose |
+| --- | --- | --- |
+| `ProgressMode` | `Standard` | Selects the progress presentation. |
+| `ShowError`, `ShowPaused` | `false` | Select error or paused presentation. |
+| `Steps`, `CurrentStep` | `0` | Configure the total and current step in step-progress mode. |
+| `ShowStepMarkers` | `false` | Shows step markers. |
+| `TrackHeight` | `1` | Sets track height in device-independent units. |
+
 ## State and behavior
 
 Value fills a determinate bar; IsIndeterminate presents ongoing work without a percentage.
+
+## Additional behavior
+
+The ProgressBar uses a 1 DIP track and a 3 DIP indicator by default. Their vertical centerlines align in the determinate presentation. Custom `TrackHeight` or `MinHeight` values can have half-pixel offsets from device-pixel rounding.
+
+## Related
+
+- [C# how-to guide](../how-to/dialogs-and-feedback.md)
 
 ## Reference
 

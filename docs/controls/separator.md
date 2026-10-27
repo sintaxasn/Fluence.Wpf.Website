@@ -20,9 +20,26 @@ Use it between related groups of controls or commands.
 </fluence:StackPanel>
 ```
 
+
+```csharp
+var separator = new Fluence.Wpf.Controls.Separator();
+```
+
+
+## Key properties
+
+| Property | Default | Purpose |
+| --- | --- | --- |
+| `Width` | `NaN` (automatic) | Allows layout to determine width. |
+| `Height` | `NaN` (automatic) | Allows layout to determine height. |
+
 ## State and behavior
 
 The divider separates content groups and follows theme strokes.
+
+## Related
+
+- [C# how-to guide](../how-to/window-and-title-bar.md)
 
 ## Reference
 

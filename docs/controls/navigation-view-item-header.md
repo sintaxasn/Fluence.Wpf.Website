@@ -1,30 +1,23 @@
-﻿# NavigationViewItemHeader
+﻿---
+unlisted: true
+---
+
+# NavigationViewItemHeader
+
+See [NavigationViewItemHeader](navigation-view.md#navigation-view-item-header) in the parent control guide.
 
 ## Description
 
-Use a header to label a group of destinations in NavigationView. The screenshots show `NavigationViewItemHeader` inside `NavigationView`.
-
-| Light | Dark |
-| --- | --- |
-| ![NavigationViewItemHeader in light mode](../screenshots/controls/navigation-view-item-header-light.png) | ![NavigationViewItemHeader in dark mode](../screenshots/controls/navigation-view-item-header-dark.png) |
+See [Description](navigation-view.md#navigation-view-item-header-description).
 
 ## Example usage
 
-```xml
-<fluence:NavigationView>
-    <fluence:NavigationViewItemHeader Content="Workspace" />
-    <fluence:NavigationViewItem Content="Home" />
-</fluence:NavigationView>
-```
+See [Example usage](navigation-view.md#navigation-view-item-header-example-usage).
 
 ## State and behavior
 
-Headers label groups of NavigationView items; they do not navigate as destinations.
+See [State and behavior](navigation-view.md#navigation-view-item-header-state-and-behavior).
 
 ## Reference
 
-- [C# API reference](../api/Fluence.Wpf.Controls/NavigationViewItemHeader.md)
-- [Gallery XAML source](../../Fluence.Wpf.Demo/Pages/GalleryNavigationPage.xaml)
-- [Gallery C# source](../../Fluence.Wpf.Demo/Pages/GalleryNavigationPage.xaml.cs)
-- [Control source](../../Fluence.Wpf/Controls/NavigationViewItemHeader.cs)
-- [Control catalog](../controls.md)
+See [Reference](navigation-view.md#navigation-view-item-header-reference).

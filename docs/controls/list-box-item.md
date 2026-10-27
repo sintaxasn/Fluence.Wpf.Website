@@ -1,32 +1,23 @@
-﻿# ListBoxItem
+﻿---
+unlisted: true
+---
+
+# ListBoxItem
+
+See [ListBoxItem](list-box.md#list-box-item) in the parent control guide.
 
 ## Description
 
-ListBoxItem is the visible selectable container inside ListBox. The screenshots show `ListBoxItem` inside `ListBox`.
-
-Use it as an item container within a ListBox.
-
-| Light | Dark |
-| --- | --- |
-| ![ListBoxItem in light mode](../screenshots/controls/list-box-item-light.png) | ![ListBoxItem in dark mode](../screenshots/controls/list-box-item-dark.png) |
+See [Description](list-box.md#list-box-item-description).
 
 ## Example usage
 
-```xml
-<fluence:ListBox>
-    <fluence:ListBoxItem Content="Documents" IsSelected="True" />
-    <fluence:ListBoxItem Content="Pictures" />
-</fluence:ListBox>
-```
+See [Example usage](list-box.md#list-box-item-example-usage).
 
 ## State and behavior
 
-The item container shows selection, pointer, focus, and disabled states within ListBox.
+See [State and behavior](list-box.md#list-box-item-state-and-behavior).
 
 ## Reference
 
-- [C# API reference](../api/Fluence.Wpf.Controls/ListBoxItem.md)
-- [Gallery XAML source](../../Fluence.Wpf.Demo/Pages/GalleryDataPage.xaml)
-- [Gallery C# source](../../Fluence.Wpf.Demo/Pages/GalleryDataPage.xaml.cs)
-- [Control source](../../Fluence.Wpf/Controls/ListBoxItem.cs)
-- [Control catalog](../controls.md)
+See [Reference](list-box.md#list-box-item-reference).

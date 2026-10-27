@@ -22,9 +22,34 @@ Use TeachingTip for contextual, non-blocking coaching anchored to a UI element.
 </Grid>
 ```
 
+
+```csharp
+var tip = new Fluence.Wpf.Controls.TeachingTip { Title = "Tip", IsOpen = true };
+```
+
+
+## Key properties
+
+| Property | Default | Purpose |
+| --- | --- | --- |
+| `Title` | Empty string | Main instruction text. |
+| `Subtitle` | Empty string | Supporting text. |
+| `Target` | `null` | Element used to position the tip. |
+| `IsOpen` | `false` | Shows or hides the tip. |
+| `PreferredPlacement` | `Auto` | Preferred position relative to the target. |
+| `IsLightDismissEnabled` | `false` | Allows dismissal by interacting outside the tip. |
+
 ## State and behavior
 
 IsOpen shows contextual coaching; action or close controls update its open state.
+
+## Events
+
+`ActionButtonClick`, `CloseButtonClick`, and `Closed` report the respective actions and closure.
+
+## Related
+
+- [C# how-to guide](../how-to/dialogs-and-feedback.md)
 
 ## Reference
 

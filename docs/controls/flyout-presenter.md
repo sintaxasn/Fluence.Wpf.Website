@@ -1,47 +1,23 @@
-﻿# FlyoutPresenter
+﻿---
+unlisted: true
+---
+
+# FlyoutPresenter
+
+See [FlyoutPresenter](flyout.md#flyout-presenter) in the parent control guide.
 
 ## Description
 
-FlyoutPresenter draws the popup surface for Flyout content. The screenshots show `FlyoutPresenter` inside `Flyout`.
-
-Use it through Flyout when popup content needs the standard presentation surface.
-
-The images show the presenter while its flyout is open.
-
-| Light | Dark |
-| --- | --- |
-| ![Flyout in light mode](../screenshots/controls/flyout-presenter-light.png) | ![Flyout in dark mode](../screenshots/controls/flyout-presenter-dark.png) |
+See [Description](flyout.md#flyout-presenter-description).
 
 ## Example usage
 
-```xml
-<fluence:Button Content="More" Click="ShowFlyoutButton_Click">
-    <fluence:FlyoutBase.AttachedFlyout>
-        <fluence:Flyout Content="Details" />
-    </fluence:FlyoutBase.AttachedFlyout>
-</fluence:Button>
-```
-
-In the window or page code-behind:
-
-```csharp
-private void ShowFlyoutButton_Click(object sender, System.Windows.RoutedEventArgs e)
-{
-    if (sender is System.Windows.FrameworkElement target)
-    {
-        Fluence.Wpf.Controls.FlyoutBase.ShowAttachedFlyout(target);
-    }
-}
-```
+See [Example usage](flyout.md#flyout-presenter-example-usage).
 
 ## State and behavior
 
-The presenter is the visual surface created for Flyout content; its appearance follows the theme.
+See [State and behavior](flyout.md#flyout-presenter-state-and-behavior).
 
 ## Reference
 
-- [C# API reference](../api/Fluence.Wpf.Controls/FlyoutPresenter.md)
-- [Gallery XAML source](../../Fluence.Wpf.Demo/Pages/GalleryMenusPage.xaml)
-- [Gallery C# source](../../Fluence.Wpf.Demo/Pages/GalleryMenusPage.xaml.cs)
-- [Control source](../../Fluence.Wpf/Controls/FlyoutPresenter.cs)
-- [Control catalog](../controls.md)
+See [Reference](flyout.md#flyout-presenter-reference).

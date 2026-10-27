@@ -20,7 +20,7 @@ WPF wants a single-threaded apartment and one `Application` per process. The mod
 
 For the primary `ConsoleHost` session, the module registers `PowerShell.Exiting` to close progress and shut down its owned secondary dispatcher before PowerShell disposes that runspace. Reimporting or removing the module does not end the application. A child runspace, a pushed session, or a custom host does not receive this terminal cleanup hook, because closing one of those sessions need not mean the process is ending. The engine event also does not cover forced process termination or closing the terminal window.
 
-An inline STA dispatcher belongs to the caller's thread. The host remains responsible for ending that dispatcher on its own thread after its final WPF operation. `Remove-Module` cannot do that safely because the process may import the module again. In a standalone script that owns the WPF application, `[System.Windows.Application]::Current.Dispatcher.InvokeShutdown()` is terminal cleanup: call it only after the last UI operation, and do not attempt another WPF window in that process. An embedded script must leave this decision to its host.
+An inline STA dispatcher belongs to the caller. For terminal cleanup and host responsibilities, see [Use Fluence from an existing PowerShell host](how-to/use-in-existing-host.md#clean-up-an-application-you-own).
 
 **Existing application.** A host application can be reused when the calling PowerShell runspace executes on its dispatcher thread. An application on another foreign thread is rejected with an actionable error. Passing a PowerShell delegate to that dispatcher would not establish a PowerShell execution context, so the module does not attempt it.
 
@@ -28,13 +28,7 @@ Closures on a separate UI runspace and pumping on the inline thread follow diffe
 
 ## Theme seeding and the three slots
 
-The ControlsTour window is a visual example of the module-hosted Fluence window in light and dark themes.
-
-![ControlsTour window in light mode](../screenshots/powershell-light.png)
-
-![ControlsTour window in dark mode](../screenshots/powershell-dark.png)
-
-The library's theme engine publishes computed colors and brushes into `Application.Current.Resources.MergedDictionaries` as three dictionaries: the computed colors and brushes in slot 0, the typography in slot 1 and the control templates in slot 2. Slots 1 and 2 load once. Slot 0 is replaced when a resolved theme, accent, or another input to the computed resources changes. A backdrop request can change without replacing slot 0. Duplicate applies that produce the same resources do not republish them.
+The library publishes theme resources in application dictionaries. See [Theme resources](../theming.md) for the dictionary slots.
 
 This is why the module creates the application before it applies a theme, applies a theme before it shows anything, and never merges a dictionary itself. `-Theme`, `-Backdrop`, and `-Accent` on one dialog set process state that later dialogs inherit. `Set-FluenceTheme` can change windows that are already open through dynamic resources. A dialog applies an appearance option only when you pass it, so it does not undo an earlier `Set-FluenceTheme` or `Set-FluenceAccent`. The first Fluence call seeds `Auto`, `Mica`, and the system accent; the flag recording that lives in an AppDomain data slot shared with the UI runspace on an MTA host.
 
@@ -48,9 +42,9 @@ The module could have started a separate process for the UI and talked to it ove
 
 The cost is the threading model above and the single-assembly rule: the process decides which library is loaded, not the module.
 
-## Why the module is not in the solution
+<span id="why-the-module-is-not-in-the-solution"></span>
 
-`Fluence.Wpf.PowerShell` is a script module with no compiled code of its own. It lives at the repository root, next to the C# projects, but is not a project in `Fluence.Wpf.sln`. Its gate is PSScriptAnalyzer plus Pester, run by `build/Test-Module.ps1`, and its dependency on the library is a staging step (`build/Build-Module.ps1`) that copies the library's Release output into `lib/`. Keeping it out of the solution keeps `dotnet build` and `dotnet test` unchanged for library work and lets the module follow PowerShell conventions (one function per file, comment-based help, Allman braces, 5.1-compatible syntax) that would fight the C# analyzers if the two were one build.
+The module build and test gate are described in [Contributing](contributing.md).
 
 ## Related
 

@@ -2,6 +2,8 @@
 
 The module has its own source conventions, staging scripts, reference generator, examples, and test gate. Begin with the [module setup and build guide](../../Fluence.Wpf.PowerShell.Module/README.md), then read the root [contribution guide](../../CONTRIBUTING.md) for repository-wide requirements.
 
+The script module is not a project in `Fluence.Wpf.sln`. Its build stages the library separately, and its module gate runs PSScriptAnalyzer and Pester. From the module directory, run `build/Test-Module.ps1` for that gate.
+
 Key references:
 
 - [Module source and package layout](../../Fluence.Wpf.PowerShell.Module/README.md#project-layout)

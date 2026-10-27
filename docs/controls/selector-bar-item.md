@@ -1,30 +1,23 @@
-﻿# SelectorBarItem
+﻿---
+unlisted: true
+---
+
+# SelectorBarItem
+
+See [SelectorBarItem](selector-bar.md#selector-bar-item) in the parent control guide.
 
 ## Description
 
-SelectorBarItem is a selectable view choice inside SelectorBar. The screenshots show `SelectorBarItem` inside `SelectorBar`.
-
-| Light | Dark |
-| --- | --- |
-| ![SelectorBarItem in light mode](../screenshots/controls/selector-bar-item-light.png) | ![SelectorBarItem in dark mode](../screenshots/controls/selector-bar-item-dark.png) |
+See [Description](selector-bar.md#selector-bar-item-description).
 
 ## Example usage
 
-```xml
-<fluence:SelectorBar SelectedIndex="0">
-    <fluence:SelectorBarItem Text="Recent" />
-    <fluence:SelectorBarItem Text="Shared" />
-</fluence:SelectorBar>
-```
+See [Example usage](selector-bar.md#selector-bar-item-example-usage).
 
 ## State and behavior
 
-The selected item gets the active indicator and its Text and optional Icon remain visible.
+See [State and behavior](selector-bar.md#selector-bar-item-state-and-behavior).
 
 ## Reference
 
-- [C# API reference](../api/Fluence.Wpf.Controls/SelectorBarItem.md)
-- [Gallery XAML source](../../Fluence.Wpf.Demo/Pages/GalleryNavigationPage.xaml)
-- [Gallery C# source](../../Fluence.Wpf.Demo/Pages/GalleryNavigationPage.xaml.cs)
-- [Control source](../../Fluence.Wpf/Controls/SelectorBarItem.cs)
-- [Control catalog](../controls.md)
+See [Reference](selector-bar.md#selector-bar-item-reference).

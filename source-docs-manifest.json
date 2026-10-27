@@ -952,13 +952,13 @@
     {
       "path": "docs/api/index.md",
       "kind": "reference",
-      "sha256": "695d248e591c5644052fe014fdddcb15af4a5347d1fb56176fe8c2ced198f9dc",
+      "sha256": "9ba5ccd173c7b2689a936808ee88c26faf4cc203bf6ba174485fda4f410531d9",
       "provenance": "source-generated"
     },
     {
       "path": "docs/controls.md",
       "kind": "reference",
-      "sha256": "ae807ca1835fb7ca203fd1b9213cfaedc4fbd26c4731da56c5494f1299ba9652",
+      "sha256": "e73b1a634cc93fe0de1d77a1ca3df2a23127dd2914b453299828f752e52b1af7",
       "provenance": "source-generated"
     },
     {
@@ -1694,124 +1694,180 @@
       "decision": "legacy-unverified"
     },
     {
+      "path": "docs/screenshots/controls/button-dark-accent-blue.png",
+      "kind": "capture",
+      "sha256": "96b432849aa9f9f2d5b2714c247a5607ce33f834e40a513be469f5fbc1c18c84",
+      "provenance": "agent-visual-review-wpf-render",
+      "theme": "dark",
+      "state": "accent-blue",
+      "mode": "WpfRender",
+      "inputs": [
+        "Fluence.Wpf.Demo/Pages/GalleryButtonsPage.xaml",
+        "Fluence.Wpf.Demo/Resources/DemoSharedStyles.xaml",
+        "Fluence.Wpf.Tests/Tools/GalleryScreenshotHarness.cs",
+        "Fluence.Wpf/Themes/Colors/Theme.Dark.xaml",
+        "Fluence.Wpf/Themes/Controls/Button.xaml",
+        "Fluence.Wpf/Themes/Generic.xaml",
+        "Fluence.Wpf/Themes/Typography/Typography.xaml"
+      ],
+      "checkedVisualInputSha256": "fa812a981bda8dfbb2a1131dc18798b6abf01e471ee26ef9f1f97abeaec5a355",
+      "pngSha256": "96b432849aa9f9f2d5b2714c247a5607ce33f834e40a513be469f5fbc1c18c84",
+      "decodedPixelSha256": "151cc82e4e38a638986413e8b1eb90dc1b21677496b3b904cb4b515a87e6514f",
+      "decision": "new-capture"
+    },
+    {
+      "path": "docs/screenshots/controls/button-dark-accent-orange.png",
+      "kind": "capture",
+      "sha256": "b050cd0c05483a3782091c579a613f914eb4ac1d1e29039eb04adbc34c94bafc",
+      "provenance": "agent-visual-review-wpf-render",
+      "theme": "dark",
+      "state": "accent-orange",
+      "mode": "WpfRender",
+      "inputs": [
+        "Fluence.Wpf.Demo/Pages/GalleryButtonsPage.xaml",
+        "Fluence.Wpf.Demo/Resources/DemoSharedStyles.xaml",
+        "Fluence.Wpf.Tests/Tools/GalleryScreenshotHarness.cs",
+        "Fluence.Wpf/Themes/Colors/Theme.Dark.xaml",
+        "Fluence.Wpf/Themes/Controls/Button.xaml",
+        "Fluence.Wpf/Themes/Generic.xaml",
+        "Fluence.Wpf/Themes/Typography/Typography.xaml"
+      ],
+      "checkedVisualInputSha256": "fa812a981bda8dfbb2a1131dc18798b6abf01e471ee26ef9f1f97abeaec5a355",
+      "pngSha256": "b050cd0c05483a3782091c579a613f914eb4ac1d1e29039eb04adbc34c94bafc",
+      "decodedPixelSha256": "e2f42009229628c8d02b71a9912c7142883cd4806ac507507eab2748cbea262f",
+      "decision": "new-capture"
+    },
+    {
       "path": "docs/screenshots/controls/button-dark-disabled.png",
       "kind": "capture",
-      "sha256": "88ae541697e09cd216b6eaf5933b62d1792671690f7bb146b205665117c0eb8d",
-      "provenance": "legacy-unverified",
+      "sha256": "7764919379ffa8d89d9629c610fbe7b1be3093faf98c0c315213241343d7e810",
+      "provenance": "agent-visual-review-wpf-render",
       "theme": "dark",
       "state": "disabled",
       "mode": "WpfRender",
       "inputs": [
         "Fluence.Wpf.Demo/Pages/GalleryButtonsPage.xaml",
         "Fluence.Wpf.Demo/Resources/DemoSharedStyles.xaml",
+        "Fluence.Wpf.Tests/Tools/GalleryScreenshotHarness.cs",
         "Fluence.Wpf/Themes/Colors/Theme.Dark.xaml",
         "Fluence.Wpf/Themes/Controls/Button.xaml",
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": null,
-      "pngSha256": "88ae541697e09cd216b6eaf5933b62d1792671690f7bb146b205665117c0eb8d",
-      "decision": "legacy-unverified"
+      "checkedVisualInputSha256": "fa812a981bda8dfbb2a1131dc18798b6abf01e471ee26ef9f1f97abeaec5a355",
+      "pngSha256": "7764919379ffa8d89d9629c610fbe7b1be3093faf98c0c315213241343d7e810",
+      "decodedPixelSha256": "f7c26cbfc840fd3ec75b9ee078c7792acd418c62f9aa3f04d9e6886c94512064",
+      "decision": "material-change"
     },
     {
       "path": "docs/screenshots/controls/button-dark.png",
       "kind": "capture",
-      "sha256": "efad89df4262a28a3fa663a3182c5e540f20c76a5ad09dab2ddfba229c8cb5c2",
-      "provenance": "legacy-unverified",
+      "sha256": "4bb8f9feaf59e4bcaa3ab602244d4f28f5aba6299ef70dbd4bd95e26bddb749b",
+      "provenance": "agent-visual-review-wpf-render",
       "theme": "dark",
       "state": "default",
       "mode": "WpfRender",
       "inputs": [
         "Fluence.Wpf.Demo/Pages/GalleryButtonsPage.xaml",
         "Fluence.Wpf.Demo/Resources/DemoSharedStyles.xaml",
+        "Fluence.Wpf.Tests/Tools/GalleryScreenshotHarness.cs",
         "Fluence.Wpf/Themes/Colors/Theme.Dark.xaml",
         "Fluence.Wpf/Themes/Controls/Button.xaml",
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": null,
-      "pngSha256": "efad89df4262a28a3fa663a3182c5e540f20c76a5ad09dab2ddfba229c8cb5c2",
-      "decision": "legacy-unverified"
+      "checkedVisualInputSha256": "fa812a981bda8dfbb2a1131dc18798b6abf01e471ee26ef9f1f97abeaec5a355",
+      "pngSha256": "4bb8f9feaf59e4bcaa3ab602244d4f28f5aba6299ef70dbd4bd95e26bddb749b",
+      "decodedPixelSha256": "7709d100c5140929e3536bdf10c410b69ea9ccc0ce0ccdf8cde47a40c14c2aae",
+      "decision": "material-change"
     },
     {
       "path": "docs/screenshots/controls/button-light-accent-blue.png",
       "kind": "capture",
-      "sha256": "582fd22c6bd9d3f403f63c1df63983856ed4a7548d859dbbe948b177711637f1",
-      "provenance": "legacy-unverified",
+      "sha256": "2b122b313e8d48da8d255605a38969e5589dae218efd5a2c320a4239eacc63ca",
+      "provenance": "agent-visual-review-wpf-render",
       "theme": "light",
       "state": "accent-blue",
       "mode": "WpfRender",
       "inputs": [
         "Fluence.Wpf.Demo/Pages/GalleryButtonsPage.xaml",
         "Fluence.Wpf.Demo/Resources/DemoSharedStyles.xaml",
+        "Fluence.Wpf.Tests/Tools/GalleryScreenshotHarness.cs",
         "Fluence.Wpf/Themes/Colors/Theme.Light.xaml",
         "Fluence.Wpf/Themes/Controls/Button.xaml",
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": null,
-      "pngSha256": "582fd22c6bd9d3f403f63c1df63983856ed4a7548d859dbbe948b177711637f1",
-      "decision": "legacy-unverified"
+      "checkedVisualInputSha256": "d1ddf384371ba67b8e45a2cc1da27419a0b0cde83fa8cc5ee8eaa5dae055d2fb",
+      "pngSha256": "2b122b313e8d48da8d255605a38969e5589dae218efd5a2c320a4239eacc63ca",
+      "decodedPixelSha256": "5469406d787ae926ef9fece0fa87736fa8e2d539b4efbc19cae2acc0a7300633",
+      "decision": "material-change"
     },
     {
       "path": "docs/screenshots/controls/button-light-accent-orange.png",
       "kind": "capture",
-      "sha256": "678870881dff0cd869badc587672eadeeff29464423121833bb1c1879ade02bc",
-      "provenance": "legacy-unverified",
+      "sha256": "6fa8a62cc1bc631c9ad14bd2cf4b26ae6ded4d1726370ae24ff37d70532e9af7",
+      "provenance": "agent-visual-review-wpf-render",
       "theme": "light",
       "state": "accent-orange",
       "mode": "WpfRender",
       "inputs": [
         "Fluence.Wpf.Demo/Pages/GalleryButtonsPage.xaml",
         "Fluence.Wpf.Demo/Resources/DemoSharedStyles.xaml",
+        "Fluence.Wpf.Tests/Tools/GalleryScreenshotHarness.cs",
         "Fluence.Wpf/Themes/Colors/Theme.Light.xaml",
         "Fluence.Wpf/Themes/Controls/Button.xaml",
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": null,
-      "pngSha256": "678870881dff0cd869badc587672eadeeff29464423121833bb1c1879ade02bc",
-      "decision": "legacy-unverified"
+      "checkedVisualInputSha256": "d1ddf384371ba67b8e45a2cc1da27419a0b0cde83fa8cc5ee8eaa5dae055d2fb",
+      "pngSha256": "6fa8a62cc1bc631c9ad14bd2cf4b26ae6ded4d1726370ae24ff37d70532e9af7",
+      "decodedPixelSha256": "27991abad36ec48293e185606a54b286780110636221e97ba54abc62caacebf1",
+      "decision": "material-change"
     },
     {
       "path": "docs/screenshots/controls/button-light-disabled.png",
       "kind": "capture",
-      "sha256": "246175d4d1b141954b46cf2f5d534263804e747255981b6cc48d3981bccbc5cf",
-      "provenance": "legacy-unverified",
+      "sha256": "64e285c82f99a824dc7ed3dddca6ed7b6f0f43234b3b17b57b901cb4cc9dda87",
+      "provenance": "agent-visual-review-wpf-render",
       "theme": "light",
       "state": "disabled",
       "mode": "WpfRender",
       "inputs": [
         "Fluence.Wpf.Demo/Pages/GalleryButtonsPage.xaml",
         "Fluence.Wpf.Demo/Resources/DemoSharedStyles.xaml",
+        "Fluence.Wpf.Tests/Tools/GalleryScreenshotHarness.cs",
         "Fluence.Wpf/Themes/Colors/Theme.Light.xaml",
         "Fluence.Wpf/Themes/Controls/Button.xaml",
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": null,
-      "pngSha256": "246175d4d1b141954b46cf2f5d534263804e747255981b6cc48d3981bccbc5cf",
-      "decision": "legacy-unverified"
+      "checkedVisualInputSha256": "d1ddf384371ba67b8e45a2cc1da27419a0b0cde83fa8cc5ee8eaa5dae055d2fb",
+      "pngSha256": "64e285c82f99a824dc7ed3dddca6ed7b6f0f43234b3b17b57b901cb4cc9dda87",
+      "decodedPixelSha256": "dcc2c7ceac63361db3cad719087af4cfaac10bed9d5414412a3e527b45ae4531",
+      "decision": "material-change"
     },
     {
       "path": "docs/screenshots/controls/button-light.png",
       "kind": "capture",
-      "sha256": "582fd22c6bd9d3f403f63c1df63983856ed4a7548d859dbbe948b177711637f1",
-      "provenance": "legacy-unverified",
+      "sha256": "70c5baf5f5524ad168f8051c5559c2b25553d6f97b6076a8825cbc4fe7ca65ee",
+      "provenance": "agent-visual-review-wpf-render",
       "theme": "light",
       "state": "default",
       "mode": "WpfRender",
       "inputs": [
         "Fluence.Wpf.Demo/Pages/GalleryButtonsPage.xaml",
         "Fluence.Wpf.Demo/Resources/DemoSharedStyles.xaml",
+        "Fluence.Wpf.Tests/Tools/GalleryScreenshotHarness.cs",
         "Fluence.Wpf/Themes/Colors/Theme.Light.xaml",
         "Fluence.Wpf/Themes/Controls/Button.xaml",
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": null,
-      "pngSha256": "582fd22c6bd9d3f403f63c1df63983856ed4a7548d859dbbe948b177711637f1",
-      "decision": "legacy-unverified"
+      "checkedVisualInputSha256": "d1ddf384371ba67b8e45a2cc1da27419a0b0cde83fa8cc5ee8eaa5dae055d2fb",
+      "pngSha256": "70c5baf5f5524ad168f8051c5559c2b25553d6f97b6076a8825cbc4fe7ca65ee",
+      "decodedPixelSha256": "4d630bf1a3210bd96beb1d66b4b1f24b0e34b8c0a91fa594186cda239cd46009",
+      "decision": "material-change"
     },
     {
       "path": "docs/screenshots/controls/card-dark.png",
@@ -2374,8 +2430,8 @@
     {
       "path": "docs/screenshots/controls/fluence-window-dark.png",
       "kind": "capture",
-      "sha256": "c1b478fadbf136218313d6057cfbfee0f3fb86a279a3abcabec4c1b1baf59641",
-      "provenance": "legacy-unverified",
+      "sha256": "82c6fa8184d525d5e07dc7ed5f427f505e7e3ef03f45b90291b6fce2251c8972",
+      "provenance": "agent-visual-review-wpf-render",
       "theme": "dark",
       "state": "default",
       "mode": "WpfRender",
@@ -2383,20 +2439,22 @@
         "Fluence.Wpf.Demo/MainWindow.xaml",
         "Fluence.Wpf.Demo/Pages/GalleryHomePage.xaml",
         "Fluence.Wpf.Demo/Resources/DemoSharedStyles.xaml",
+        "Fluence.Wpf.Tests/Tools/GalleryScreenshotHarness.cs",
         "Fluence.Wpf/Themes/Colors/Theme.Dark.xaml",
         "Fluence.Wpf/Themes/Controls/FluenceWindow.xaml",
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": null,
-      "pngSha256": "c1b478fadbf136218313d6057cfbfee0f3fb86a279a3abcabec4c1b1baf59641",
-      "decision": "legacy-unverified"
+      "checkedVisualInputSha256": "3e9420af2daf6a2975cce0c923e7e0705525519df1eef1bc876e243022ec3099",
+      "pngSha256": "82c6fa8184d525d5e07dc7ed5f427f505e7e3ef03f45b90291b6fce2251c8972",
+      "decodedPixelSha256": "a9621eebe96dc9a483ce9a6b23eaa82e14a190fa161a08120f5023b9e28b0262",
+      "decision": "material-change"
     },
     {
       "path": "docs/screenshots/controls/fluence-window-light.png",
       "kind": "capture",
-      "sha256": "dbde7bf3babf2bbca72eb8ca1bbfd051dafa8c0bccd79d5fd747f761999b1552",
-      "provenance": "legacy-unverified",
+      "sha256": "c26fcc5f1d0b7286c046f7abdd0a83934d5fe31d56ab3cb6205d336d2c465589",
+      "provenance": "agent-visual-review-wpf-render",
       "theme": "light",
       "state": "default",
       "mode": "WpfRender",
@@ -2404,14 +2462,16 @@
         "Fluence.Wpf.Demo/MainWindow.xaml",
         "Fluence.Wpf.Demo/Pages/GalleryHomePage.xaml",
         "Fluence.Wpf.Demo/Resources/DemoSharedStyles.xaml",
+        "Fluence.Wpf.Tests/Tools/GalleryScreenshotHarness.cs",
         "Fluence.Wpf/Themes/Colors/Theme.Light.xaml",
         "Fluence.Wpf/Themes/Controls/FluenceWindow.xaml",
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": null,
-      "pngSha256": "dbde7bf3babf2bbca72eb8ca1bbfd051dafa8c0bccd79d5fd747f761999b1552",
-      "decision": "legacy-unverified"
+      "checkedVisualInputSha256": "7d119890cc450b8e2130d0eaf58e6e9c24aa76de6139236a5e86a3b6c71d73a5",
+      "pngSha256": "c26fcc5f1d0b7286c046f7abdd0a83934d5fe31d56ab3cb6205d336d2c465589",
+      "decodedPixelSha256": "0122cf98c83d6b5f0122c70c18306d9f83bd7a56d0a372a2632b4d9b57f41db4",
+      "decision": "material-change"
     },
     {
       "path": "docs/screenshots/controls/flyout-base-dark.png",
@@ -9402,13 +9462,13 @@
     {
       "path": "docs/theming.md",
       "kind": "reference",
-      "sha256": "7665d468ceb2903964d5320bf726cd58fdd1e952c03a376f44e09e07cf2f4dfb",
+      "sha256": "ed991f4df02ed11cf5c27aa668274df20728d5acbb68b03fed48e57e56e4adcd",
       "provenance": "source-generated"
     },
     {
       "path": "docs/winui-parity.md",
       "kind": "reference",
-      "sha256": "0e58c54c4e81eccea7f9fc4602676e63c9be438b8f569318e8d00029b6ca13ea",
+      "sha256": "734921fe1a449b0addc2d10e4d0dce6ddbb68c2a6281253126523e379f75c4c6",
       "provenance": "source-generated"
     }
   ]

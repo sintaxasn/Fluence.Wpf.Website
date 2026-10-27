@@ -43,26 +43,27 @@ using System;
 using System.Windows;
 using Fluence.Wpf.Controls;
 
-namespace MyApp;
-
-public partial class MainWindow : FluenceWindow
+namespace MyApp
 {
-    public MainWindow()
+    public partial class MainWindow : FluenceWindow
     {
-        InitializeComponent();
-    }
-
-    private void TitleBar_BackRequested(object? sender, EventArgs e)
-    {
-        if (MainFrame.CanGoBack)
+        public MainWindow()
         {
-            MainFrame.GoBack();
+            InitializeComponent();
         }
-    }
 
-    private void TitleBar_PaneToggleRequested(object? sender, EventArgs e)
-    {
-        AppNavigation.IsPaneOpen = !AppNavigation.IsPaneOpen;
+        private void TitleBar_BackRequested(object sender, EventArgs e)
+        {
+            if (MainFrame.CanGoBack)
+            {
+                MainFrame.GoBack();
+            }
+        }
+
+        private void TitleBar_PaneToggleRequested(object sender, EventArgs e)
+        {
+            AppNavigation.IsPaneOpen = !AppNavigation.IsPaneOpen;
+        }
     }
 }
 ```
@@ -85,6 +86,15 @@ The XAML declares `MainFrame` inside `AppNavigation`, so the handlers can use th
 | `BackRequested`, `PaneToggleRequested` | Not applicable | Events for handling button requests in code. |
 
 Interactive custom content placed in the extended chrome must set `WindowChrome.IsHitTestVisibleInChrome="True"` so WPF can route pointer input to it. The [gallery title bar](../../Fluence.Wpf.Demo/MainWindow.xaml) demonstrates this on its search control. Keep the title bar's content within the available space beside the caption controls.
+
+## Additional behavior
+
+The `TitleBar` provides `LeftHeader` and `RightHeader` slots for custom content. When hosted by `FluenceWindow`, the right header sits before the actual caption-button area; a standalone `TitleBar` reserves no caption-button space. `TitleBarGlyphButtonStyle` is a keyed public resource for buttons in either header whose `Content` is a Segoe Fluent Icons glyph string.
+
+## Related
+
+- [Window and title bar guide](../how-to/window-and-title-bar.md)
+- [Navigation and tabs guide](../how-to/navigation-and-tabs.md)
 
 ## Reference
 

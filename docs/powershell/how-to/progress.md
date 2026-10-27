@@ -23,7 +23,7 @@ finally
 
 Only one progress window may be open at a time. A second open call throws. Closing an already closed handle has no effect.
 
-Set its title-bar text with `-Title` (also available as `-TitleBarText`) and its host icon with `-TitleBarIcon`, which accepts a local path, `file:` URI, or `pack:` URI. Progress does not expose `-ShowIcon`; that switch is available on `Show-FluenceWindow` to hide its built-in host icon. This window icon is separate from dialog body glyphs and images.
+The progress window accepts `-Title` and `-TitleBarIcon`. See [title-bar customization](dialogs.md#customize-the-title-bar) for icon formats. Progress does not expose `-ShowIcon`.
 
 The next capture shows an indeterminate progress bar in light mode.
 

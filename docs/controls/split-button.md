@@ -23,9 +23,34 @@ Use SplitButton when there is one default action plus alternate actions in the f
 
 The main region invokes `SaveCommand`; bind the alternate commands on the page's data context.
 
+
+```csharp
+var action = new Fluence.Wpf.Controls.SplitButton { Content = "Save" };
+```
+
+
+## Key properties
+
+| Property | Default | Purpose |
+| --- | --- | --- |
+| `Appearance` | `Standard` | Sets the visual emphasis. |
+| `Command` | `null` | Command invoked by the primary action. |
+| `CommandParameter` | `null` | Parameter passed to the command. |
+| `Flyout` | `null` | Content shown by the secondary action. |
+| `CornerRadius` | `4` | Rounds the main surface. |
+| `DropdownCornerRadius` | `8` | Rounds the flyout surface. |
+
 ## State and behavior
 
 The main region performs the default action while the arrow opens alternate actions.
+
+## Events
+
+`Click` is raised for the primary action.
+
+## Related
+
+- [C# how-to guide](../how-to/dialogs-and-feedback.md)
 
 ## Reference
 

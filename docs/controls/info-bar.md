@@ -25,9 +25,32 @@ Use InfoBar for inline messages that explain status, validation, or recoverable 
     IsOpen="True" />
 ```
 
+```csharp
+var info = new Fluence.Wpf.Controls.InfoBar { Title = "Saved", IsOpen = true };
+```
+
+## Key properties
+
+| Property | Default | Purpose |
+| --- | --- | --- |
+| `Title` | `null` | Title shown with the message. |
+| `Message` | `null` | Message text. |
+| `Severity` | `Informational` | Visual severity. |
+| `IsOpen` | `false` | Shows the bar. |
+| `IsClosable` | `true` | Shows the close affordance. |
+| `IsIconVisible` | `true` | Shows the severity icon. |
+
 ## State and behavior
 
 IsOpen shows or dismisses the message; Severity changes the visual treatment.
+
+## Events
+
+`CloseButtonClick`, `Opened`, `Closing`, and `Closed` report interactions and lifecycle changes.
+
+## Related
+
+- [C# how-to guide](../how-to/dialogs-and-feedback.md)
 
 ## Reference
 

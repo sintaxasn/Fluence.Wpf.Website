@@ -2,7 +2,7 @@
 
 ## Description
 
-Use StackPanel to arrange children in a row or column with uniform `Spacing` between them, instead of setting a margin on each child.
+StackPanel extends the WPF `StackPanel` with uniform spacing between children.
 
 | Light | Dark |
 | --- | --- |
@@ -18,9 +18,26 @@ Use StackPanel to arrange children in a row or column with uniform `Spacing` bet
 </fluence:StackPanel>
 ```
 
+```csharp
+var panel = new Fluence.Wpf.Controls.StackPanel { Spacing = 10 };
+```
+
+## Key properties
+
+| Property | Default | Purpose |
+| --- | --- | --- |
+| `Spacing` | `0` | Space between consecutive children. |
+| `Orientation` | WPF default | Chooses horizontal or vertical arrangement. |
+
 ## State and behavior
 
 Spacing changes the gaps between stacked children; orientation changes the layout direction.
+
+The spacing is applied between children; use `Orientation` to change direction.
+
+## Related
+
+- [C# how-to guide](../how-to/inputs-and-data.md)
 
 ## Reference
 

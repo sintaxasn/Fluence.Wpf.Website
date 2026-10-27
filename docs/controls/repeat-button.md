@@ -2,7 +2,7 @@
 
 ## Description
 
-Use RepeatButton when holding the pointer should raise Click repeatedly.
+RepeatButton extends the WPF `RepeatButton` and raises repeated clicks while held.
 
 | Light | Dark |
 | --- | --- |
@@ -14,9 +14,29 @@ Use RepeatButton when holding the pointer should raise Click repeatedly.
 <fluence:RepeatButton Content="Hold to repeat" />
 ```
 
+```csharp
+var repeat = new Fluence.Wpf.Controls.RepeatButton { Content = "Hold to repeat" };
+```
+
+## Key properties
+
+| Property | Default | Purpose |
+| --- | --- | --- |
+| `Appearance` | `Standard` | Selects the button appearance. |
+| `CornerRadius` | `4` | Sets the surface corner radius. |
+| `Delay`, `Interval` | WPF defaults | Set the delay before repeating and interval between repeats. |
+
 ## State and behavior
 
 Holding the pointer raises repeated Click events until release; disabling it stops interaction.
+
+## Events
+
+The inherited `Click` event is raised on each repetition.
+
+## Related
+
+- [C# how-to guide](../how-to/inputs-and-data.md)
 
 ## Reference
 

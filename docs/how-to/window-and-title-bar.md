@@ -1,73 +1,52 @@
 ﻿# Configure a window and title bar
 
-This standalone window shows how to put controls in a `FluenceWindow` title bar and respond to its requests. It has a back button, a pane toggle button, and a search box in the chrome. Begin with the [Basic walkthrough](../csharp/usage.md) theme setup, then run this example from the Website repository root. The first command restores and builds against the explicit local package source; the second runs the example:
-
-~~~powershell
-pwsh ./samples/Fluence.Wpf.Docs.Walkthroughs/Build-Walkthroughs.ps1 -PackageSource ./samples/Fluence.Wpf.Docs.Walkthroughs/packages
-dotnet run --project ./samples/Fluence.Wpf.Docs.Walkthroughs/Fluence.Wpf.Docs.Walkthroughs.csproj -c Release --no-build -- --example window-and-title-bar
-~~~
+This standalone window shows how to put controls in a `FluenceWindow` title bar and respond to its requests. It has a back button, a pane toggle button, and a search box in the chrome. Start with the [Basic walkthrough](../csharp/usage.md), then replace the window content and code-behind with the examples below. Replace `MyApp` with your project namespace.
 
 ## Declare the window
 
-The complete layout is in [WindowAndTitleBarWindow.xaml](https://github.com/sintaxasn/Fluence.Wpf.Website/blob/main/samples/Fluence.Wpf.Docs.Walkthroughs/WindowAndTitleBarWindow.xaml). The icon URI points to a resource in the sample project; use your own resource when copying this window.
+Set `ExtendsContentIntoTitleBar="True"` on the tutorial window and replace its content with these title-bar and content elements. The [standalone sample](https://github.com/sintaxasn/Fluence.Wpf.Website/blob/main/samples/Fluence.Wpf.Docs.Walkthroughs/WindowAndTitleBarWindow.xaml) contains the complete window.
 
 ~~~xml
-<fluence:FluenceWindow
-    x:Class="Fluence.Wpf.Docs.Walkthroughs.WindowAndTitleBarWindow"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:fluence="http://schemas.fluencewpf.com"
-    Title="Window and title bar"
-    Icon="/Fluence.Wpf.Docs.Walkthroughs;component/Fluence_Icon.ico"
-    Width="800" Height="540" MinWidth="640" MinHeight="420"
-    WindowStartupLocation="CenterScreen"
-    Background="{DynamicResource ApplicationBackgroundBrush}"
-    SystemBackdropType="Mica"
-    ExtendsContentIntoTitleBar="True">
-    <fluence:FluenceWindow.TitleBar>
-        <fluence:TitleBar x:Name="ShellTitleBar" Title="Documents"
-                          IsBackButtonVisible="True"
-                          IsPaneToggleButtonVisible="True">
-            <fluence:TitleBar.Icon>
-                <Image Width="20" Height="20" Source="/Fluence.Wpf.Docs.Walkthroughs;component/Fluence_Icon.ico" />
-            </fluence:TitleBar.Icon>
-            <fluence:TitleBar.CustomContent>
-                <fluence:TextBox x:Name="TitleSearch" Width="160" PlaceholderText="Search documents"
-                                 WindowChrome.IsHitTestVisibleInChrome="True" />
-            </fluence:TitleBar.CustomContent>
-        </fluence:TitleBar>
-    </fluence:FluenceWindow.TitleBar>
-    <fluence:StackPanel Width="460" HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="16">
-        <fluence:TextBlock Text="Use the back and pane buttons, then search in the title bar."
-                           TextWrapping="Wrap" />
-        <fluence:TextBlock x:Name="DocumentsPane" Text="Documents: Project notes, Roadmap, Release plan" />
-        <fluence:Button Content="Search documents" Appearance="Accent"
-                        Click="OpenDocument_Click" HorizontalAlignment="Left" />
-        <fluence:TextBlock x:Name="DocumentStatus" Text="Document list" />
-    </fluence:StackPanel>
-</fluence:FluenceWindow>
+<fluence:FluenceWindow.TitleBar>
+    <fluence:TitleBar x:Name="ShellTitleBar" Title="Documents"
+                      IsBackButtonVisible="True"
+                      IsPaneToggleButtonVisible="True">
+        <fluence:TitleBar.CustomContent>
+            <fluence:TextBox x:Name="TitleSearch" Width="160" PlaceholderText="Search documents"
+                             WindowChrome.IsHitTestVisibleInChrome="True" />
+        </fluence:TitleBar.CustomContent>
+    </fluence:TitleBar>
+</fluence:FluenceWindow.TitleBar>
+<fluence:StackPanel Width="460" HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="16">
+    <fluence:TextBlock Text="Use the back and pane buttons, then search in the title bar."
+                       TextWrapping="Wrap" />
+    <fluence:TextBlock x:Name="DocumentsPane" Text="Documents: Project notes, Roadmap, Release plan" />
+    <fluence:Button Content="Search documents" Appearance="Accent"
+                    Click="OpenDocument_Click" HorizontalAlignment="Left" />
+    <fluence:TextBlock x:Name="DocumentStatus" Text="Document list" />
+</fluence:StackPanel>
 ~~~
 
 ## Wire the interaction
 
-[WindowAndTitleBarWindow.xaml.cs](https://github.com/sintaxasn/Fluence.Wpf.Website/blob/main/samples/Fluence.Wpf.Docs.Walkthroughs/WindowAndTitleBarWindow.xaml.cs) contains the code-behind. The `x:Class` in XAML and the partial class name in C# must match.
+[WindowAndTitleBarWindow.xaml.cs](https://github.com/sintaxasn/Fluence.Wpf.Website/blob/main/samples/Fluence.Wpf.Docs.Walkthroughs/WindowAndTitleBarWindow.xaml.cs) contains the code-behind. Replace `MainWindow.xaml.cs` with the following code and use the same namespace as your XAML.
 
 ~~~csharp
 using System.Windows;
 using Fluence.Wpf.Controls;
-namespace Fluence.Wpf.Docs.Walkthroughs
+namespace MyApp
 {
-    public sealed partial class WindowAndTitleBarWindow : FluenceWindow
+    public partial class MainWindow : FluenceWindow
     {
-        internal WindowAndTitleBarWindow()
+        public MainWindow()
         {
             InitializeComponent();
-            ShellTitleBar.BackRequested += (_, _) =>
+            ShellTitleBar.BackRequested += (sender, args) =>
             {
                 DocumentsPane.Visibility = Visibility.Visible;
                 DocumentStatus.Text = "Document list";
             };
-            ShellTitleBar.PaneToggleRequested += (_, _) =>
+            ShellTitleBar.PaneToggleRequested += (sender, args) =>
                 DocumentsPane.Visibility = DocumentsPane.Visibility is Visibility.Visible
                     ? Visibility.Collapsed
                     : Visibility.Visible;
@@ -91,6 +70,8 @@ namespace Fluence.Wpf.Docs.Walkthroughs
 `TitleSearch` is placed in `TitleBar.CustomContent`. `WindowChrome.IsHitTestVisibleInChrome="True"` lets the text box receive input even though it sits in the draggable title area. `fluence:StackPanel` spaces the window content without margins on each child. The constructor handles `BackRequested` by returning to the document list and `PaneToggleRequested` by showing or hiding it. Selecting **Search documents** reads the search box and updates `DocumentStatus`; it does not open a file.
 
 ## See the result
+
+The screenshots show the standalone sample, which uses the same controls with its own window shell.
 
 ![Configure a window and title bar in light mode](../screenshots/tutorials/window-and-title-bar-light.png)
 

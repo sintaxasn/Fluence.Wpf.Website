@@ -1,29 +1,23 @@
-﻿# BreadcrumbBarItem
+﻿---
+unlisted: true
+---
+
+# BreadcrumbBarItem
+
+See [BreadcrumbBarItem](breadcrumb-bar.md#breadcrumb-bar-item) in the parent control guide.
 
 ## Description
 
-BreadcrumbBar creates item containers for the visible path segments. The screenshots show `BreadcrumbBarItem` inside `BreadcrumbBar`.
-
-Use it through BreadcrumbBar when people need to return to an ancestor location.
-
-| Light | Dark |
-| --- | --- |
-| ![BreadcrumbBarItem in light mode](../screenshots/controls/breadcrumb-bar-item-light.png) | ![BreadcrumbBarItem in dark mode](../screenshots/controls/breadcrumb-bar-item-dark.png) |
+See [Description](breadcrumb-bar.md#breadcrumb-bar-item-description).
 
 ## Example usage
 
-```xml
-<fluence:BreadcrumbBar ItemsSource="{Binding PathSegments}" />
-```
+See [Example usage](breadcrumb-bar.md#breadcrumb-bar-item-example-usage).
 
 ## State and behavior
 
-A breadcrumb item is created inside BreadcrumbBar from the path; selecting an ancestor raises ItemClicked.
+See [State and behavior](breadcrumb-bar.md#breadcrumb-bar-item-state-and-behavior).
 
 ## Reference
 
-- [C# API reference](../api/Fluence.Wpf.Controls/BreadcrumbBarItem.md)
-- [Gallery XAML source](../../Fluence.Wpf.Demo/Pages/GalleryNavigationPage.xaml)
-- [Gallery C# source](../../Fluence.Wpf.Demo/Pages/GalleryNavigationPage.xaml.cs)
-- [Control source](../../Fluence.Wpf/Controls/BreadcrumbBarItem.cs)
-- [Control catalog](../controls.md)
+See [Reference](breadcrumb-bar.md#breadcrumb-bar-item-reference).

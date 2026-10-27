@@ -23,9 +23,32 @@ Use ToggleSplitButton when the primary half toggles a state and the flyout choos
 
 The main region toggles `IsChecked`; bind the flyout commands on the page's data context to choose a variant.
 
+
+```csharp
+var toggle = new Fluence.Wpf.Controls.ToggleSplitButton { Content = "Bulleted list", IsChecked = true };
+```
+
+
+## Key properties
+
+| Property | Default | Purpose |
+| --- | --- | --- |
+| `IsChecked` | `false` | Current primary-action state. |
+| `Flyout` | `null` | Choices shown by the secondary action. |
+| `Appearance` | `Standard` | Sets the visual emphasis. |
+| `Command` | `null` | Command associated with the primary action. |
+
 ## State and behavior
 
 The main region changes IsChecked; the arrow opens variants without toggling the current state.
+
+## Events
+
+`IsCheckedChanged` reports a change to `IsChecked`; `Click` is raised by the primary action.
+
+## Related
+
+- [C# how-to guide](../how-to/dialogs-and-feedback.md)
 
 ## Reference
 

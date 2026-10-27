@@ -84,7 +84,7 @@ $outcome.Result
 
 When the root is a non-window element, use `-Title`, `-Width`, `-Height`, and the chrome options on `Show-FluenceWindow`. These options also apply to a `FluenceWindow` root. Common options include `-Topmost`, `-ResizeMode`, `-SizeToContent`, `-StartupLocation`, `-CornerStyle`, and switches for title and caption buttons.
 
-Set the host title-bar text with `-Title` (also available as `-TitleBarText`) and its icon with `-TitleBarIcon`. The icon accepts a local path, `file:` URI, or `pack:` URI. `-ShowIcon:$false` hides the built-in host icon. When you supply a custom `TitleBar` or set `-ExtendsContentIntoTitleBar`, the built-in title-bar icon and text are hidden so the custom title-bar content can take their place. For a XAML `FluenceWindow` root, these parameters configure its host window icon and title-bar text.
+Use `-Title` and `-TitleBarIcon` to customize the host title bar; see [title-bar customization](dialogs.md#customize-the-title-bar) for accepted icon formats. `-ShowIcon:$false` hides the built-in icon. A custom `TitleBar` or `-ExtendsContentIntoTitleBar` hides the built-in icon and text so custom content can take their place. For a XAML `FluenceWindow` root, these parameters configure its host window icon and title-bar text.
 
 ```powershell
 Show-FluenceWindow -Xaml $xaml -Title 'Setup' -TitleBarIcon "$PSScriptRoot\assets\app.ico" -ResizeMode NoResize -CornerStyle RoundSmall -NoMaximizeButton

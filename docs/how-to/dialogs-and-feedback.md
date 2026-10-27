@@ -1,61 +1,37 @@
 ﻿# Show a dialog and feedback
 
-This standalone window asks the user to confirm a sample save, then shows the outcome inline with `InfoBar` and `ProgressBar`. Begin with the [Basic walkthrough](../csharp/usage.md) theme setup, then run this example from the Website repository root. The first command restores and builds against the explicit local package source; the second runs the example:
-
-~~~powershell
-pwsh ./samples/Fluence.Wpf.Docs.Walkthroughs/Build-Walkthroughs.ps1 -PackageSource ./samples/Fluence.Wpf.Docs.Walkthroughs/packages
-dotnet run --project ./samples/Fluence.Wpf.Docs.Walkthroughs/Fluence.Wpf.Docs.Walkthroughs.csproj -c Release --no-build -- --example dialogs-and-feedback
-~~~
+This standalone window asks the user to confirm a sample save, then shows the outcome inline with `InfoBar` and `ProgressBar`. Start with the [Basic walkthrough](../csharp/usage.md), then replace the window content and code-behind with the examples below. Replace `MyApp` with your project namespace.
 
 ## Declare the window
 
-The complete layout is in [DialogsAndFeedbackWindow.xaml](https://github.com/sintaxasn/Fluence.Wpf.Website/blob/main/samples/Fluence.Wpf.Docs.Walkthroughs/DialogsAndFeedbackWindow.xaml). The icon URI points to a resource in the sample project; use your own resource when copying the window.
+Replace the content inside the tutorial window with this layout. The standalone [DialogsAndFeedbackWindow.xaml](https://github.com/sintaxasn/Fluence.Wpf.Website/blob/main/samples/Fluence.Wpf.Docs.Walkthroughs/DialogsAndFeedbackWindow.xaml) contains the complete sample.
 
 ~~~xml
-<fluence:FluenceWindow
-    x:Class="Fluence.Wpf.Docs.Walkthroughs.DialogsAndFeedbackWindow"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:fluence="http://schemas.fluencewpf.com"
-    Title="Dialogs and feedback"
-    Icon="/Fluence.Wpf.Docs.Walkthroughs;component/Fluence_Icon.ico"
-    Width="800" Height="540" MinWidth="640" MinHeight="420"
-    WindowStartupLocation="CenterScreen"
-    Background="{DynamicResource ApplicationBackgroundBrush}"
-    SystemBackdropType="Mica"
-    ExtendsContentIntoTitleBar="True">
-    <fluence:FluenceWindow.TitleBar>
-        <fluence:TitleBar Title="Dialogs and feedback" Subtitle="Fluence WPF walkthrough">
-            <fluence:TitleBar.Icon>
-                <Image Width="20" Height="20" Source="/Fluence.Wpf.Docs.Walkthroughs;component/Fluence_Icon.ico" />
-            </fluence:TitleBar.Icon>
-        </fluence:TitleBar>
-    </fluence:FluenceWindow.TitleBar>
-    <fluence:StackPanel Width="460" HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="16">
-        <fluence:TextBlock Text="Ask for confirmation and report the outcome." />
-        <fluence:Button Content="Save changes" Appearance="Accent" Click="Save_Click"
-                        HorizontalAlignment="Left" />
-        <fluence:InfoBar x:Name="SaveInfo" Title="Ready" Message="No changes saved yet."
-                         IsOpen="True" />
-        <fluence:ProgressBar x:Name="SaveProgress" Value="0" />
-    </fluence:StackPanel>
-</fluence:FluenceWindow>
+<fluence:StackPanel Width="460" HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="16">
+    <fluence:TextBlock Text="Ask for confirmation and report the outcome." />
+    <fluence:Button Content="Save changes" Appearance="Accent" Click="Save_Click"
+                    HorizontalAlignment="Left" />
+    <fluence:InfoBar x:Name="SaveInfo" Title="Ready" Message="No changes saved yet."
+                     IsOpen="True" />
+    <fluence:ProgressBar x:Name="SaveProgress" Value="0" />
+</fluence:StackPanel>
 ~~~
 
 ## Wire the interaction
 
-[DialogsAndFeedbackWindow.xaml.cs](https://github.com/sintaxasn/Fluence.Wpf.Website/blob/main/samples/Fluence.Wpf.Docs.Walkthroughs/DialogsAndFeedbackWindow.xaml.cs) contains the code-behind. The `x:Class` in XAML and the partial class name in C# must match.
+[DialogsAndFeedbackWindow.xaml.cs](https://github.com/sintaxasn/Fluence.Wpf.Website/blob/main/samples/Fluence.Wpf.Docs.Walkthroughs/DialogsAndFeedbackWindow.xaml.cs) contains the code-behind. Replace `MainWindow.xaml.cs` with the following code and use the same namespace as your XAML.
 
 ~~~csharp
 using System;
 using System.Windows;
 using System.Threading.Tasks;
+using Fluence.Wpf;
 using Fluence.Wpf.Controls;
-namespace Fluence.Wpf.Docs.Walkthroughs
+namespace MyApp
 {
-    public sealed partial class DialogsAndFeedbackWindow : FluenceWindow
+    public partial class MainWindow : FluenceWindow
     {
-        internal DialogsAndFeedbackWindow()
+        public MainWindow()
         {
             InitializeComponent();
         }
@@ -67,7 +43,7 @@ namespace Fluence.Wpf.Docs.Walkthroughs
 
         private async Task SaveAsync()
         {
-            ContentDialog dialog = new()
+            ContentDialog dialog = new ContentDialog()
             {
                 Title = "Save changes?",
                 Content = "Confirm the sample save action.",
@@ -113,17 +89,15 @@ namespace Fluence.Wpf.Docs.Walkthroughs
             SaveInfo.Severity = InfoBarSeverity.Success;
         }
 
-        internal void PrepareCapture()
-        {
-            ShowSaved();
-        }
     }
 }
 ~~~
 
-`fluence:StackPanel` spaces the button, `InfoBar`, and progress indicator. `Save_Click` starts `SaveAsync`, which awaits `ContentDialog.ShowAsync()` and uses the result to update feedback. Confirming sets progress to 100 and reports success; canceling reports that nothing was saved. `InvalidOperationException` and `OperationCanceledException` are caught and shown in `InfoBar`. The example changes UI state only and does not write a file. `PrepareCapture` is used only for repeatable documentation screenshots.
+`fluence:StackPanel` spaces the button, `InfoBar`, and progress indicator. `Save_Click` starts `SaveAsync`, which awaits `ContentDialog.ShowAsync()` and uses the result to update feedback. Confirming sets progress to 100 and reports success; canceling reports that nothing was saved. `InvalidOperationException` and `OperationCanceledException` are caught and shown in `InfoBar`. The example changes UI state only and does not write a file.
 
 ## See the result
+
+The screenshots show the standalone sample, which uses the same controls with its own window shell.
 
 ![Show a dialog and feedback in light mode](../screenshots/tutorials/dialogs-and-feedback-light.png)
 

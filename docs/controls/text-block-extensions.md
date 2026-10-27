@@ -1,30 +1,23 @@
-﻿# TextBlockExtensions
+﻿---
+unlisted: true
+---
+
+# TextBlockExtensions
+
+See [TextBlockExtensions](text-block.md#text-block-extensions) in the parent control guide.
 
 ## Description
 
-TextBlockExtensions adds Fluent typography and related attached properties to native text. The screenshots show `TextBlockExtensions` inside `TextBlock`.
-
-The gallery image shows the typography ramp on a native TextBlock. It does not isolate an attached TextBlockExtensions property.
-
-| Light | Dark |
-| --- | --- |
-| ![TextBlockExtensions in light mode](../screenshots/controls/text-block-extensions-light.png) | ![TextBlockExtensions in dark mode](../screenshots/controls/text-block-extensions-dark.png) |
+See [Description](text-block.md#text-block-extensions-description).
 
 ## Example usage
 
-```xml
-<TextBlock Text="Section heading"
-           fluence:TextBlockExtensions.Typography="Subtitle" />
-```
+See [Example usage](text-block.md#text-block-extensions-example-usage).
 
 ## State and behavior
 
-Attached typography and selection properties change native text presentation.
+See [State and behavior](text-block.md#text-block-extensions-state-and-behavior).
 
 ## Reference
 
-- [C# API reference](../api/Fluence.Wpf.Controls/TextBlockExtensions.md)
-- [Gallery XAML source](../../Fluence.Wpf.Demo/Pages/GalleryTypographyPage.xaml)
-- [Gallery C# source](../../Fluence.Wpf.Demo/Pages/GalleryTypographyPage.xaml.cs)
-- [Control source](../../Fluence.Wpf/Controls/TextBlockExtensions.cs)
-- [Control catalog](../controls.md)
+See [Reference](text-block.md#text-block-extensions-reference).

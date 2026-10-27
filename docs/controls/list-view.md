@@ -23,9 +23,36 @@ Use it for a list of items, switching to a grid when tiles suit the content.
 </fluence:ListView>
 ```
 
+```csharp
+var list = new Fluence.Wpf.Controls.ListView();
+list.Items.Add("First");
+```
+
+## Key properties
+
+| Property | Default | Purpose |
+| --- | --- | --- |
+| `ItemsLayout` | `List` | Selects list or grid layout. |
+| `ItemAnimationsEnabled` | `true` | Enables item animations. |
+| `HoverHighlightEnabled` | `true` | Enables the hover highlight. |
+| `EmptyContent` | `null` | Content shown for an empty collection. |
+| `CornerRadius` | `4` | Rounds the list surface. |
+
 ## State and behavior
 
 Selection highlights a row. `ItemsLayout="Grid"` arranges items as tiles; change it to `List` for one item per row. `EmptyContent` appears when the collection is empty.
+
+## Additional behavior
+
+The theme also styles some native framework elements used inside these controls. A `ListViewItem` is the WPF container, not a separate public Fluence class.
+
+## Events
+
+The inherited `SelectionChanged` event reports a changed selection.
+
+## Related
+
+- [C# how-to guide](../how-to/inputs-and-data.md)
 
 ## Reference
 

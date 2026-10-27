@@ -16,9 +16,27 @@ Use it for compact action or navigation icons that use the Segoe Fluent font.
 <fluence:FontIcon Glyph="&#xE8E5;" IconFontSize="20" />
 ```
 
+```csharp
+var icon = new Fluence.Wpf.Controls.FontIcon { Glyph = "\uE8E5", IconFontSize = 20 };
+```
+
+## Key properties
+
+| Property | Default | Purpose |
+| --- | --- | --- |
+| `Glyph` | Empty string | Icon glyph. |
+| `IconFontFamily` | Segoe Fluent Icons | Font used for the glyph. |
+| `IconFontSize` | `16` | Glyph size. |
+| `MirroredWhenRightToLeft` | `false` | Mirrors the icon in right-to-left layout. |
+| `IsSpinning` | `false` | Enables spin animation. |
+
 ## State and behavior
 
 Glyph selects a Segoe Fluent symbol; icon size and foreground follow their properties and theme.
+
+## Related
+
+- [C# how-to guide](../how-to/inputs-and-data.md)
 
 ## Reference
 

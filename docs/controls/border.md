@@ -2,7 +2,7 @@
 
 ## Description
 
-Use Border to frame a region of content. Set `Variant` to `Card`, `Subtle`, or `Divider` for a themed preset, or leave it at `None` and set the brush, thickness, and corner radius yourself.
+Border extends the WPF `Border` with themed surface presets.
 
 | Light | Dark |
 | --- | --- |
@@ -20,9 +20,23 @@ Use Border to frame a region of content. Set `Variant` to `Card`, `Subtle`, or `
 </fluence:Border>
 ```
 
+```csharp
+var border = new Fluence.Wpf.Controls.Border { Padding = new System.Windows.Thickness(12) };
+```
+
+## Key properties
+
+| Property | Default | Purpose |
+| --- | --- | --- |
+| `Variant` | `None` | Choose `Card`, `Subtle`, or `Divider`, or retain `None` for a custom border. |
+
 ## State and behavior
 
 BorderBrush, thickness, and corner radius frame content and follow dynamic theme resources.
+
+## Related
+
+- [C# how-to guide](../how-to/inputs-and-data.md)
 
 ## Reference
 

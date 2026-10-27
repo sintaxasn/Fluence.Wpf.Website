@@ -1,32 +1,23 @@
-﻿# NavigationViewItem
+﻿---
+unlisted: true
+---
+
+# NavigationViewItem
+
+See [NavigationViewItem](navigation-view.md#navigation-view-item) in the parent control guide.
 
 ## Description
 
-NavigationViewItem is a selectable destination inside NavigationView. The screenshots show `NavigationViewItem` inside `NavigationView`.
-
-Use it for a selectable destination in NavigationView.
-
-| Light | Dark |
-| --- | --- |
-| ![NavigationViewItem in light mode](../screenshots/controls/navigation-view-item-light.png) | ![NavigationViewItem in dark mode](../screenshots/controls/navigation-view-item-dark.png) |
+See [Description](navigation-view.md#navigation-view-item-description).
 
 ## Example usage
 
-```xml
-<fluence:NavigationView>
-    <fluence:NavigationViewItem Content="Home" IsSelected="True" />
-    <fluence:NavigationViewItem Content="Files" />
-</fluence:NavigationView>
-```
+See [Example usage](navigation-view.md#navigation-view-item-example-usage).
 
 ## State and behavior
 
-Selected and unselected destinations differ visually; InfoBadge can show item status.
+See [State and behavior](navigation-view.md#navigation-view-item-state-and-behavior).
 
 ## Reference
 
-- [C# API reference](../api/Fluence.Wpf.Controls/NavigationViewItem.md)
-- [Gallery XAML source](../../Fluence.Wpf.Demo/Pages/GalleryNavigationPage.xaml)
-- [Gallery C# source](../../Fluence.Wpf.Demo/Pages/GalleryNavigationPage.xaml.cs)
-- [Control source](../../Fluence.Wpf/Controls/NavigationViewItem.cs)
-- [Control catalog](../controls.md)
+See [Reference](navigation-view.md#navigation-view-item-reference).
