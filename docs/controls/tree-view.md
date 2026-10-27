@@ -2,7 +2,7 @@
 
 ## Description
 
-Use TreeViewItem nesting for compact folder, outline, or category hierarchies.
+Use TreeView to show a folder, outline, or category hierarchy that readers expand and collapse. Nest `TreeViewItem` elements to build the levels.
 
 | Light | Dark |
 | --- | --- |

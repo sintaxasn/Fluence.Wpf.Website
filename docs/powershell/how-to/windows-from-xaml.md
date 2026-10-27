@@ -1,4 +1,4 @@
-﻿﻿# Host a custom window from XAML
+﻿# Host a custom window from XAML
 
 `Show-FluenceWindow` displays a XAML document or a window built in PowerShell. It handles library loading, the WPF application, and the modal window lifetime. Load only trusted XAML: `XamlReader` constructs objects and does not sandbox the document.
 
@@ -28,7 +28,7 @@ Show-FluenceWindow -Xaml $xaml -Initialize {
 }
 ```
 
-The call blocks until the window closes. Use `DynamicResource` for theme colors and brushes so open controls can respond to theme and accent changes. See the [theme key catalogue](../../theming.md).
+The call blocks until the window closes. Use `DynamicResource` for theme colors and brushes so open controls can respond to theme and accent changes. See the [theme key catalog](../../theming.md).
 
 ## Move layout into a file
 
@@ -98,4 +98,4 @@ Use `-Content { param($Window, $Data) ... }` when building the body in PowerShel
 
 - [Show-FluenceWindow](../reference/Show-FluenceWindow.mdx) and [Close-FluenceWindow](../reference/Close-FluenceWindow.mdx)
 - [Change appearance](theming-at-runtime.md) for a live window backdrop
-- [Examples catalogue](../../../Fluence.Wpf.PowerShell.Module/examples/README.md) for complete window scripts
+- [Examples catalog](../../../Fluence.Wpf.PowerShell.Module/examples/README.md) for complete window scripts

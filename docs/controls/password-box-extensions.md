@@ -2,7 +2,7 @@
 
 ## Description
 
-PasswordBoxExtensions adds Fluent placeholder, reveal, and feedback properties to native PasswordBox. `PasswordBoxExtensions` is shown within `PasswordBox`; it is not a separate gallery destination.
+PasswordBoxExtensions adds Fluent placeholder, reveal, and feedback properties to native PasswordBox. The screenshots show `PasswordBoxExtensions` inside `PasswordBox`.
 
 The images show the styled PasswordBox with its placeholder.
 

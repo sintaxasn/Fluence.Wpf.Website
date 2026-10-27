@@ -2,7 +2,7 @@
 
 ## Description
 
-TabViewItem is a document tab inside TabView. `TabViewItem` is shown within `TabView`; it is not a separate gallery destination.
+TabViewItem is a document tab inside TabView. The screenshots show `TabViewItem` inside `TabView`.
 
 Use it for a document or workspace tab inside TabView.
 

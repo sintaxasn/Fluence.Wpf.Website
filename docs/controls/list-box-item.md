@@ -2,7 +2,7 @@
 
 ## Description
 
-ListBoxItem is the visible selectable container inside ListBox. `ListBoxItem` is shown within `ListBox`; it is not a separate gallery destination.
+ListBoxItem is the visible selectable container inside ListBox. The screenshots show `ListBoxItem` inside `ListBox`.
 
 Use it as an item container within a ListBox.
 

@@ -1,6 +1,6 @@
-# Fluence.Wpf documentation
+﻿# Fluence.Wpf documentation
 
-Fluence.Wpf brings native Windows 11-style (Fluent) windows and controls - including automatic light / dark mode and customisable accent colors - without requiring you to rewrite your app for WinUI or upgrade to the latest .NET release. It comes as a NuGet package for C# developers, and a handy PowerShell module for administrators who need to create modern user experiences. 
+Fluence.Wpf gives WPF windows and controls the Windows 11 Fluent look, with light, dark, and high contrast themes and custom accent colors. It supports .NET Framework 4.7.2, .NET 8, and .NET 10, so an existing app can adopt it without moving to WinUI or a newer .NET release. It is published as a NuGet package for C# applications and as a PowerShell module for scripts that need a dialog or window.
 
 ## Explore the product
 

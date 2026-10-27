@@ -2,7 +2,7 @@
 
 ## Description
 
-TextBlockExtensions adds Fluent typography and related attached properties to native text. `TextBlockExtensions` is shown within `TextBlock`; it is not a separate gallery destination.
+TextBlockExtensions adds Fluent typography and related attached properties to native text. The screenshots show `TextBlockExtensions` inside `TextBlock`.
 
 The gallery image shows the typography ramp on a native TextBlock. It does not isolate an attached TextBlockExtensions property.
 

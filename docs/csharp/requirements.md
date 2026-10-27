@@ -8,6 +8,8 @@ Fluence.Wpf is a Windows Presentation Foundation library. The supported target f
 | `net8.0-windows10.0.26100.0` | .NET 8 WPF applications on Windows |
 | `net10.0-windows10.0.26100.0` | .NET 10 WPF applications on Windows |
 
+## Windows and backdrop support
+
 Windows 10 version 1809 is the operating system baseline. Core controls, themes, and high contrast resources run there. Mica, Tabbed, DWM Acrylic, and DWM rounded corners depend on supported Windows 11 capabilities. On Windows 10, backdrop requests use the available legacy acrylic path when allowed or an opaque fallback. High contrast uses an opaque surface.
 
 `WindowBackdropType` records a request; Windows version, theme, and transparency settings determine the effective appearance. The library is implemented in WPF and does not require the Windows App SDK or WinUI runtime in a consuming application. Your application still needs the runtime appropriate to its target framework.

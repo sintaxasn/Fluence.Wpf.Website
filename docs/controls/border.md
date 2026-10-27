@@ -2,7 +2,7 @@
 
 ## Description
 
-Use Border to frame a region, StackPanel spacing for readable rows, and Separator to divide related content.
+Use Border to frame a region of content. Set `Variant` to `Card`, `Subtle`, or `Divider` for a themed preset, or leave it at `None` and set the brush, thickness, and corner radius yourself.
 
 | Light | Dark |
 | --- | --- |

@@ -1,4 +1,4 @@
-﻿﻿# Change theme, accent, and backdrop
+﻿# Change theme, accent, and backdrop
 
 Appearance settings belong to the WPF application in the current process. Set them before opening a window or change them while one is open.
 
@@ -30,7 +30,7 @@ Set-FluenceAccent -System
 
 Themes are `Auto`, `Light`, `Dark`, and `HighContrast`. `Auto` follows Windows when a window is watching system changes. `-Color` pins a custom accent ramp until another accent request; `-System` restores the Windows accent. `Set-FluenceTheme -Theme Dark -Backdrop Acrylic` changes the requested theme and backdrop together. Omitting the backdrop retains its current value.
 
-Open controls using dynamic resources reflect published theme and accent changes. `-UpdateAccent` on `Set-FluenceTheme` is accepted for compatibility and ignored because the theme engine retains its accent intent. These images show separate accent examples, not one dialog changing while open. The [capture notes](../images/CAPTURE.md) describe the render method and its limits, including the missing native DWM shadow and backdrop.
+Open controls using dynamic resources reflect published theme and accent changes. `-UpdateAccent` on `Set-FluenceTheme` is accepted for compatibility and ignored because the theme engine retains its accent intent. These images show separate accent examples, not one dialog changing while open. They are rendered offscreen, so they omit the native window shadow and backdrop.
 
 An open, realized `FluenceWindow` fades its previous WPF surface out over 167 ms for Light/Dark theme and accent changes. Resources, requested and resolved state, and public change events update immediately; the fade is a visual overlay. High Contrast entry or exit is immediate. The transition is skipped when motion is disabled, the window is minimized or not realized, or the surface cannot be captured. A regular WPF `Window` changes immediately. Native DWM backdrop pixels are outside the WPF snapshot and cannot be interpolated.
 
@@ -67,7 +67,7 @@ $theme.IsAppInDarkMode
 
 ## React in application code
 
-For a custom window whose icon or other local state needs to change, subscribe to `ApplicationThemeManager.Changed` inside `-Initialize` and unsubscribe when the window closes. The [appearance example](../../../Fluence.Wpf.PowerShell.Module/examples/04-ThemeAndAccent.ps1) shows the complete subscription and cleanup. Theme brushes usually need only `DynamicResource` in XAML; consult the [theme key catalogue](../../theming.md).
+For a custom window whose icon or other local state needs to change, subscribe to `ApplicationThemeManager.Changed` inside `-Initialize` and unsubscribe when the window closes. The [appearance example](../../../Fluence.Wpf.PowerShell.Module/examples/04-ThemeAndAccent.ps1) shows the complete subscription and cleanup. Theme brushes usually need only `DynamicResource` in XAML; consult the [theme key catalog](../../theming.md).
 
 ## Command details
 

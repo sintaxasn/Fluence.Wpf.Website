@@ -1,28 +1,30 @@
 ﻿# Install Fluence.Wpf in a project
 
-The package ID is `Fluence.Wpf`. The locally bundled package is version `0.9.1`; NuGet publication has not been confirmed. Build a local package from source today, or use the commands below once the package appears on your configured feed. Use the version shown on the feed if it differs.
+Fluence.Wpf is published on [nuget.org](https://www.nuget.org/packages/Fluence.Wpf) with the package ID `Fluence.Wpf`. Add the latest stable release to your WPF application project:
 
 ```powershell
-dotnet package add Fluence.Wpf --version 0.9.1 --project YourApp.csproj
+dotnet package add Fluence.Wpf --project YourApp.csproj
 ```
 
-The `dotnet package add` form uses the .NET 10 SDK. With the .NET 9 SDK or earlier, use `dotnet add YourApp.csproj package Fluence.Wpf --version 0.9.1`. See the [Microsoft CLI reference](https://learn.microsoft.com/dotnet/core/tools/dotnet-package-add).
+The `dotnet package add` form uses the .NET 10 SDK. With the .NET 9 SDK or earlier, use `dotnet add YourApp.csproj package Fluence.Wpf`. Add `--version <version>` to either command to pin a specific release. See the [Microsoft CLI reference](https://learn.microsoft.com/dotnet/core/tools/dotnet-package-add).
 
 In Visual Studio, open **Manage NuGet Packages** for the WPF project, search for **Fluence.Wpf**, choose a version, and install. In Package Manager Console:
 
 ```powershell
-Install-Package Fluence.Wpf -Version 0.9.1 -ProjectName YourApp
+Install-Package Fluence.Wpf -ProjectName YourApp
 ```
 
-For a source checkout, clone the [Fluence.Wpf library repository](https://github.com/sintaxasn/Fluence.Wpf) separately from this website. Run the local commands below from the library checkout root, with `$appProject` set to the actual path of your WPF application's `.csproj` file. If you already have the library checkout, use it instead of cloning again.
+After adding the package, [build a first app](usage.md).
+
+## Use a source checkout
+
+To build against unreleased changes, clone the [Fluence.Wpf library repository](https://github.com/sintaxasn/Fluence.Wpf) separately from this website. Run the commands in the next two sections from the library checkout root, with `$appProject` set to the actual path of your WPF application's `.csproj` file. If you already have the library checkout, use it instead of cloning again.
 
 ```powershell
 git clone https://github.com/sintaxasn/Fluence.Wpf.git
 Set-Location ./Fluence.Wpf
 $appProject = 'C:\path\to\YourApp\YourApp.csproj' # Replace with your app's actual project path.
 ```
-
-After adding the reference or package, [build a first app](usage.md).
 
 ## Reference the library project
 
@@ -34,12 +36,13 @@ dotnet add $appProject reference ./Fluence.Wpf/Fluence.Wpf.csproj
 
 ## Build a local NuGet package
 
-Pack version `0.9.1` from the library checkout and add the resulting local package to your application:
+Pack the library checkout and add the resulting local package to your application. Set `$version` to the version in the package file name that `dotnet pack` writes to `./artifacts`:
 
 ```powershell
 dotnet pack ./Fluence.Wpf/Fluence.Wpf.csproj -c Release -o ./artifacts
 $packageSource = (Resolve-Path ./artifacts).Path
-dotnet add $appProject package Fluence.Wpf --version 0.9.1 --no-restore
+$version = '0.9.4' # Replace with the version of the package in ./artifacts.
+dotnet add $appProject package Fluence.Wpf --version $version --no-restore
 dotnet restore $appProject --source $packageSource --source https://api.nuget.org/v3/index.json
 ```
 

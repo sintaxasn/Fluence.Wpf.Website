@@ -2,7 +2,7 @@
 
 ## Description
 
-MenuItem is a command or submenu entry inside Menu or ContextMenu. `MenuItem` is shown within `Menu`; it is not a separate gallery destination.
+MenuItem is a command or submenu entry inside Menu or ContextMenu. The screenshots show `MenuItem` inside `Menu`.
 
 Use it for commands or nested choices inside Menu or ContextMenu.
 

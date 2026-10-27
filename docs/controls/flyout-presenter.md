@@ -2,7 +2,7 @@
 
 ## Description
 
-FlyoutPresenter draws the popup surface for Flyout content. `FlyoutPresenter` is shown within `Flyout`; it is not a separate gallery destination.
+FlyoutPresenter draws the popup surface for Flyout content. The screenshots show `FlyoutPresenter` inside `Flyout`.
 
 Use it through Flyout when popup content needs the standard presentation surface.
 

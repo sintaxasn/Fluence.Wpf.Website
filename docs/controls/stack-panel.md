@@ -2,7 +2,7 @@
 
 ## Description
 
-Use Border to frame a region, StackPanel spacing for readable rows, and Separator to divide related content.
+Use StackPanel to arrange children in a row or column with uniform `Spacing` between them, instead of setting a margin on each child.
 
 | Light | Dark |
 | --- | --- |

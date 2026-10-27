@@ -2,7 +2,7 @@
 
 ## Description
 
-ScrollBarExtensions adds indicator behavior to native WPF ScrollBar. `ScrollBarExtensions` is shown within `SmoothScrollViewer`; it is not a separate gallery destination.
+ScrollBarExtensions adds indicator behavior to native WPF ScrollBar. The screenshots show `ScrollBarExtensions` inside `SmoothScrollViewer`.
 
 The gallery scroll viewer enables the indicator behavior through its internal scrollbar template. These images isolate its vertical scrollbar before and after scrolling, with the indicator visible.
 
