@@ -1,0 +1,14 @@
+// Cloudflare Workers Builds deploys this static site: `npx wrangler@latest deploy` on main and
+// `npx wrangler preview` on other branches. These settings match what `wrangler deploy` generated
+// on main before this file existed. `wrangler preview` requires the `previews` block, even when empty.
+{
+  "name": "fluence-wpf-website",
+  "compatibility_date": "2026-10-23",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "build"
+  },
+  "previews": {}
+}
