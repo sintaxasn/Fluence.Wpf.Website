@@ -75,6 +75,12 @@ After authoring, perform a separate review of navigation, technical claims, exam
 
 ## Publishing
 
-Publishing is not configured by this handbook. Confirm and review the deployment setup for this standalone repository before any publication. Keep deployment changes separate from local build validation. Website publication does not authorize or trigger a NuGet or PowerShell Gallery release.
+Cloudflare Workers Builds publishes the site through its GitHub app. Its build settings live in the Cloudflare dashboard, not in this repository. The current settings use root directory `website`, build command `pnpm build`, deploy command `npx wrangler@latest deploy` for `main`, and `npx wrangler preview` for other branches. Each build reports as the `Workers Builds: fluence-wpf-website` check.
 
-Commits and public publication require the user's explicit authorization. Keep the branch, commit summary, and preview reviewable before publication.
+Every push to `main` deploys the production site, including the documentation commits that the Fluence.Wpf docs-sync workflow pushes. Builds for other branches, such as pull request branches, create a Preview deployment instead. The GitHub Actions workflows build and check the site but do not deploy it.
+
+`website/wrangler.jsonc` configures the Worker: its name, compatibility date, observability, and the static assets served from `build/`. `wrangler preview` requires its `previews` block, even when the block is empty. Treat changes to this file as deployment changes. After `pnpm build`, validate them from `website/` with `npx wrangler deploy --dry-run`.
+
+Keep deployment changes separate from local build validation. Website publication does not authorize or trigger a NuGet or PowerShell Gallery release.
+
+Commits and public publication require the user's explicit authorization. Merging to `main` publishes, so keep the branch, commit summary, and Preview deployment reviewable before merging.
