@@ -11,7 +11,9 @@ public class FluenceWindow : Window
 
 A top-level window that recreates the Windows 11 Fluent / WinUI 3 chrome on WPF: a DWM system backdrop (Mica, Acrylic, or Tabbed), rounded corners, an extendable title bar, and custom caption buttons that integrate with the Windows 11 snap-layout flyout.
 
-**Remarks:** The window collapses the native non-client frame through `WindowChrome` and drives every caption interaction (drag, resize, snap-layout hover, maximize/restore) from a Win32 message hook so the custom chrome stays authoritative. Theme, accent, and backdrop are applied directly to the HWND via DWM attributes and kept in sync with the shared theme managers for the lifetime of the realised window.
+**Remarks:** The window collapses the native non-client frame through `WindowChrome` and drives every caption interaction (drag, resize, snap-layout hover, maximize/restore) from a Win32 message hook so the custom chrome stays authoritative. Theme, accent, and backdrop are applied directly to the HWND via DWM attributes and kept in sync with the shared theme managers for the lifetime of the realised window. 
+
+`ShowActivated` defaults to `false`, so the first show does not activate the window before its content has rendered. The window activates itself once the first frame has rendered, then sets `ShowActivated` to `true` so later shows and restores activate normally. A maximized window is always shown activated, because Windows cannot show a maximized window without activating it. Setting `ShowActivated` explicitly turns off this deferred activation. When the launching process asks for a startup show state, such as a shortcut set to run maximized or minimized, the first [FluenceWindow](FluenceWindow.md) shown in the process is shown activated so Windows can apply that state.
 
 **Base type:** [`Window`](https://learn.microsoft.com/dotnet/api/system.windows.window) (including inherited WPF and .NET members)
 
@@ -236,6 +238,18 @@ protected override void OnClosed(EventArgs e)
 ```
 
 Documentation inherited from the [`Window` API](https://learn.microsoft.com/dotnet/api/system.windows.window).
+
+<a id="api-121d16d15594"></a>
+
+### OnContentRendered
+
+```csharp
+protected override void OnContentRendered(EventArgs e)
+```
+
+Documentation inherited from the [`Window` API](https://learn.microsoft.com/dotnet/api/system.windows.window).
+
+**Remarks:** The first call activates a window whose activation on show was deferred by the `ShowActivated` default, before `ContentRendered` is raised. See `CompleteDeferredActivation`.
 
 <a id="api-7b0a2f7cf586"></a>
 
