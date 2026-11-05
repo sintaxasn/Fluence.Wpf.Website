@@ -2,6 +2,7 @@
 
 import { themes as prismThemes } from 'prism-react-renderer';
 import docsTransform from './plugins/docs-transform.mjs';
+import controlPages from './plugins/control-pages.mjs';
 
 const repository = 'https://github.com/sintaxasn/Fluence.Wpf';
 const websiteRepository = 'https://github.com/sintaxasn/Fluence.Wpf.Website';
@@ -63,6 +64,8 @@ const config = {
             },
         ],
     ],
+    // Runs before the docs plugin reads ../docs, so a catalog control without a guide gets a generated one.
+    plugins: [[controlPages, { docsPath: '../docs', repository }]],
     themes: [
         ['@easyops-cn/docusaurus-search-local', {
             hashed: true,

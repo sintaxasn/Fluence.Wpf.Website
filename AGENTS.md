@@ -25,6 +25,7 @@ Controls, C# Library, and PowerShell have separate sidebars. Each document belon
 - `samples/Fluence.Wpf.Docs.Walkthroughs/`: website-owned runnable C# walkthroughs and their local package source. The sample project and its screenshot workflow are separate from the Node website build.
 - `docs/api/` and `docs/powershell/reference/`: generated C# and PowerShell references synced from the code repository. Correct XML comments, comment-based help, or generators there; do not hand-edit generated pages here.
 - `docs/controls.md`, `docs/theming.md`, and `docs/winui-parity.md`: authored in the code repository and synced here. Change their source copies first.
+- `docs/controls/`: website-authored control guides. When the synced catalog links a guide that does not exist, `website/plugins/control-pages.mjs` writes a starter guide during the build from the catalog row and the synced API page, and `website/sidebars.js` lists it with its catalog section. A file that contains the `fluence-generated-control-page` comment is build output. To author it, remove that comment and complete the guide. The generator never changes a guide without the comment.
 - `assets/`: shared documentation media. Keep provenance and applicable license notices when importing or changing assets.
 - `website/build/`, `website/.docusaurus/`, and `website/node_modules/`: generated output; do not author files there.
 

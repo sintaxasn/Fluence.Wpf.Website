@@ -1,5 +1,7 @@
 ﻿// @ts-check
 
+import { addCatalogControls } from './plugins/control-pages.mjs';
+
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   "overview": [
@@ -322,5 +324,8 @@ const sidebars = {
     }
   ]
 };
+
+// Catalog controls without a sidebar entry, such as generated guides, join the closest category.
+addCatalogControls(sidebars.controls);
 
 export default sidebars;
