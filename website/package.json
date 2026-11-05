@@ -11,7 +11,7 @@
     "serve": "docusaurus serve",
     "clear": "docusaurus clear",
     "typecheck": "tsc --noEmit",
-    "check:docs-transform": "node scripts/docs-transform.test.mjs"
+    "check:docs-transform": "node --test scripts/docs-transform.test.mjs scripts/control-pages.test.mjs"
   },
   "dependencies": {
     "@docusaurus/core": "3.10.2",
