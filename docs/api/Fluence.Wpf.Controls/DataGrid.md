@@ -9,17 +9,17 @@
 public class DataGrid : System.Windows.Controls.DataGrid
 ```
 
-Represents a Fluent table built on the WPF `DataGrid`; it is the Fluence counterpart of the WinUI 3 `TableView`.
+Represents a table of bound rows and columns built on the WPF `DataGrid`. It covers the WinUI 3 `TableView` scenarios with WPF names.
 
-**Remarks:** All native DataGrid behavior is kept: column types, sorting, resizing, reordering, frozen leading columns, editing transactions, `INotifyDataErrorInfo` validation, grouping and filtering through `ICollectionView`, and row virtualization. The theme supplies Fluent row, cell, header, and group styles.
-
-
-
-`DataGridTextColumn` and `DataGridCheckBoxColumn` columns that do not set an element or editing style receive the Fluent display and editing styles from the theme, so a column that sets its own style keeps it. When the grid loads and `GroupStyle` is empty, the grid adds a group style with a Fluent collapsible header; [ExpandAllGroups](DataGrid.md#api-ad460bce098b) and [CollapseAllGroups](DataGrid.md#api-9e92579699a7) control those headers.
+**Remarks:** Column types, sorting, resizing, reordering, frozen leading columns, editing, `INotifyDataErrorInfo` validation, grouping and filtering through `ICollectionView`, and row virtualization work as they do in WPF.
 
 
 
-A frozen `SolidColorBrush` assigned to `HorizontalGridLinesBrush` or `VerticalGridLinesBrush` reads back as a grid-owned copy with the same color, which keeps open edits across theme changes.
+When the grid loads and `GroupStyle` is empty, the grid shows each group under a collapsible header. [ExpandAllGroups](DataGrid.md#api-ad460bce098b) and [CollapseAllGroups](DataGrid.md#api-9e92579699a7) open or close those headers.
+
+
+
+A frozen `SolidColorBrush` assigned to `HorizontalGridLinesBrush` or `VerticalGridLinesBrush` reads back as a grid-owned copy with the same color.
 
 **Base type:** [`System.Windows.Controls.DataGrid`](https://learn.microsoft.com/dotnet/api/system.windows.controls.datagrid) (including inherited WPF and .NET members)
 
@@ -79,7 +79,7 @@ Gets or sets a value indicating whether rows and cells can be selected. Setting 
 public void CollapseAllGroups()
 ```
 
-Collapses every realized group header of this grid that uses the Fluent group header. Groups of a grid nested in a cell or the row details are left as they are.
+Collapses every realized group header of this grid that uses the built-in group header. Groups of a grid nested in a cell or the row details are left as they are.
 
 <a id="api-ad460bce098b"></a>
 
@@ -89,7 +89,7 @@ Collapses every realized group header of this grid that uses the Fluent group he
 public void ExpandAllGroups()
 ```
 
-Expands every realized group header of this grid that uses the Fluent group header. Groups of a grid nested in a cell or the row details are left as they are.
+Expands every realized group header of this grid that uses the built-in group header. Groups of a grid nested in a cell or the row details are left as they are.
 
 **Remarks:** Grouping turns off row virtualization unless `IsVirtualizingWhenGroupingProperty` is set, so by default every group is realized.
 

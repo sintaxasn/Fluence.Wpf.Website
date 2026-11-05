@@ -262,7 +262,7 @@
     {
       "path": "docs/api/Fluence.Wpf.Controls/DataGrid.md",
       "kind": "reference",
-      "sha256": "487098889a918b0bea7c26d2b7cd7bbfb44bb30e82036bfb2436d4382cc4941f",
+      "sha256": "561adde9b20be366382eec926c313406b1838f9e5cb022856ca179f63f234dd8",
       "provenance": "source-generated"
     },
     {
@@ -964,7 +964,7 @@
     {
       "path": "docs/controls.md",
       "kind": "reference",
-      "sha256": "c9fb1df1bec0004bde1db205b0735888b7e11dd4a3be702652014d8825a53873",
+      "sha256": "d7cbfc5a1e5aa507da5666d36db422c8f48837e73d1707a23df8630dc934bffd",
       "provenance": "source-generated"
     },
     {
