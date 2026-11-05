@@ -52,7 +52,7 @@ A header click sorts by that column, and dragging a header edge resizes it. When
 
 ## Additional behavior
 
-Group and filter rows through an `ICollectionView`. The grid shows each group under a collapsible header, and `ExpandAllGroups` and `CollapseAllGroups` open or close every header.
+Group and filter rows through an `ICollectionView`. When `GroupStyle` is empty at load time, the grid supplies collapsible group headers. `ExpandAllGroups` and `CollapseAllGroups` open or close only realized headers of this grid that use the built-in group header.
 
 ```csharp
 var view = new ListCollectionView(products);
