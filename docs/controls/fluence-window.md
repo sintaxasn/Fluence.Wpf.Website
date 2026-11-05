@@ -56,7 +56,7 @@ namespace MyApp
 }
 ```
 
-The `FluenceWindow` dependency properties add to, rather than replace, inherited `Window` properties such as `Title`, `Width`, `Height`, `ResizeMode`, `WindowStartupLocation`, `Owner`, and `Content`.
+The `FluenceWindow` dependency properties add to, rather than replace, inherited `Window` properties such as `Title`, `Width`, `Height`, `ResizeMode`, `WindowStartupLocation`, `Owner`, and `Content`. One inherited default is different: `ShowActivated` starts as `false`. See [Activation on first show](#activation-on-first-show).
 
 ## State and behavior
 
@@ -87,6 +87,16 @@ The visibility and capability properties serve different purposes: visibility co
 Mica, Acrylic, Tabbed, and rounded-corner requests depend on Windows capabilities. Windows 11 uses DWM system backdrop support where available. On Windows 10, the library uses its documented fallback; high contrast uses an opaque surface. The OS can ignore unsupported corner requests. See [Windows and backdrop support](../csharp/requirements.md#windows-and-backdrop-support).
 
 `FluenceWindow` begins watching relevant system theme changes when its native window is initialized and updates its chrome accordingly. Call `ApplicationThemeManager.Apply` before showing windows so Fluence resources are ready.
+
+### Activation on first show {#activation-on-first-show}
+
+`FluenceWindow` changes the default of the inherited `Window.ShowActivated` property to `false`. The first `Show()` or `ShowDialog()` displays the window without activating it. The window then activates itself once its first frame has rendered. This stops a window, such as a dialog, from becoming active while its controls are still being set up. You do not need to defer activation in your own window code.
+
+After the first frame renders, `ShowActivated` is `true`, so later shows and restores activate the window normally. Changing `Content` later does not activate the window again.
+
+- A maximized window is always shown activated, because Windows cannot show a maximized window without activating it. `ShowActivated` reads `true` while `WindowState` is `Maximized`.
+- Setting `ShowActivated` yourself in XAML, code, a style, or a binding turns off the deferred activation. Set it to `true` to activate the window when it is shown, or to `false` to keep the window inactive.
+- Until the first frame renders, `IsActive` is `false` and the previously active window stays active. Code that looks for the active window in that time finds the earlier window.
 
 ## Additional behavior
 
