@@ -16,6 +16,7 @@
 - [CommandBarFlyoutPresenter](CommandBarFlyoutPresenter.md)
 - [ContentDialog](ContentDialog.md)
 - [ContextMenu](ContextMenu.md)
+- [DataGrid](DataGrid.md)
 - [DatePicker](DatePicker.md)
 - [DockPanel](DockPanel.md)
 - [DropDownButton](DropDownButton.md)

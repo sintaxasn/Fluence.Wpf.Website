@@ -260,6 +260,12 @@
       "provenance": "source-generated"
     },
     {
+      "path": "docs/api/Fluence.Wpf.Controls/DataGrid.md",
+      "kind": "reference",
+      "sha256": "487098889a918b0bea7c26d2b7cd7bbfb44bb30e82036bfb2436d4382cc4941f",
+      "provenance": "source-generated"
+    },
+    {
       "path": "docs/api/Fluence.Wpf.Controls/DatePicker.md",
       "kind": "reference",
       "sha256": "db4fb61b3760bb19787ad0d2fefb606c599017fa447ec31ff5c71597eca40ad2",
@@ -586,7 +592,7 @@
     {
       "path": "docs/api/Fluence.Wpf.Controls/index.md",
       "kind": "reference",
-      "sha256": "3f3014fdd58212fdc0b3efdc011ec13075f2f7d0c47c2860f6e1efc891b989b3",
+      "sha256": "1ef93f7c01329e26bc9bb008e4e734ddcd058706f38bf23c415c3c4ee0ddd513",
       "provenance": "source-generated"
     },
     {
@@ -952,13 +958,13 @@
     {
       "path": "docs/api/index.md",
       "kind": "reference",
-      "sha256": "9ba5ccd173c7b2689a936808ee88c26faf4cc203bf6ba174485fda4f410531d9",
+      "sha256": "0f933a3b29b986e99a6679f531cf6ec2825d75625a7726d2e7b6668e685b6719",
       "provenance": "source-generated"
     },
     {
       "path": "docs/controls.md",
       "kind": "reference",
-      "sha256": "8e3838516c2d4d6f8bf05bdf42924676b5523b05cbb45550d192fb55876bd565",
+      "sha256": "c9fb1df1bec0004bde1db205b0735888b7e11dd4a3be702652014d8825a53873",
       "provenance": "source-generated"
     },
     {
@@ -10204,7 +10210,7 @@
     {
       "path": "docs/winui-parity.md",
       "kind": "reference",
-      "sha256": "734921fe1a449b0addc2d10e4d0dce6ddbb68c2a6281253126523e379f75c4c6",
+      "sha256": "f43b317fbecb1590a774b507cb43cdd8bb4e1335939b98d77b8e31490373d48c",
       "provenance": "source-generated"
     }
   ]
