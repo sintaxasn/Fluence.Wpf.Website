@@ -66,6 +66,50 @@ Show-FluenceWindow -Xaml $xaml -Data @{ Clicks = 0 } -Initialize {
 
 On an MTA caller, `-Initialize`, `-Content`, and event handlers run in a module-owned STA runspace. They cannot read caller variables or functions. Pass state through `-Data` and keep callbacks self-contained. On an inline STA caller, they run on the caller's WPF thread. See [UI threading](../explanation.md#where-the-ui-thread-comes-from).
 
+## Bind PowerShell objects to a DataGrid
+
+A Fluence [DataGrid](../../controls/data-grid.md) displays ordinary PowerShell objects. Declare one column per property, with each `Binding` naming a property of the row objects. In `-Initialize`, set `ItemsSource` to an array of `[pscustomobject]` rows. A header click sorts by that column. `EmptyContent` shows until rows are set.
+
+```powershell
+$xaml = @'
+<fluence:FluenceWindow
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:fluence="http://schemas.fluencewpf.com"
+    Title="Tasks" Width="560" Height="320">
+    <fluence:DataGrid x:Name="TaskGrid" Margin="24" AutoGenerateColumns="False" IsReadOnly="True">
+        <fluence:DataGrid.EmptyContent>
+            <TextBlock Text="No tasks." Foreground="{DynamicResource TextFillColorSecondaryBrush}" />
+        </fluence:DataGrid.EmptyContent>
+        <fluence:DataGrid.Columns>
+            <DataGridTextColumn Header="Task" Binding="{Binding Name}" Width="2*" />
+            <DataGridTextColumn Header="Owner" Binding="{Binding Owner}" Width="*" />
+            <DataGridTextColumn Header="Progress" Binding="{Binding Progress, StringFormat='{}{0}%'}" Width="*" />
+            <DataGridCheckBoxColumn Header="Done" Binding="{Binding Done}" Width="Auto" />
+        </fluence:DataGrid.Columns>
+    </fluence:DataGrid>
+</fluence:FluenceWindow>
+'@
+
+Show-FluenceWindow -Xaml $xaml -Initialize {
+    param($Window, $Data)
+    $grid = $Window.FindName('TaskGrid')
+    $grid.ItemsSource = @(
+        [pscustomobject]@{ Name = 'Collect inventory'; Owner = 'Avery'; Progress = 100; Done = $true }
+        [pscustomobject]@{ Name = 'Patch servers'; Owner = 'Jordan'; Progress = 60; Done = $false }
+        [pscustomobject]@{ Name = 'Rotate certificates'; Owner = 'Riley'; Progress = 25; Done = $false }
+    )
+    $grid.add_SelectionChanged({
+        $task = $grid.SelectedItem
+        if ($null -ne $task) {
+            $Window.Title = "Selected: $($task.Name), owned by $($task.Owner)"
+        }
+    }.GetNewClosure())
+}
+```
+
+`SelectedItem` returns the selected row object, so the handler reads its properties directly. The [ControlsTour example](../../../Fluence.Wpf.PowerShell.Module/examples/06-ControlsTour.ps1) shows the same grid inside a larger window and reports the selection in an `InfoBar`.
+
 ## Return a result
 
 `Close-FluenceWindow -Result <value>` stores a value before closing. `Show-FluenceWindow` returns that value; a title bar close returns `$null`. Add `-PassThru` to return a `Fluence.WindowResult` with `Result` and `Closed` properties.

@@ -11,6 +11,7 @@ Choose the interface that gives your script the answer it needs. Images illustra
 | Report work in progress | [Show-FluenceProgress](reference/Show-FluenceProgress.mdx)<br />![Example in light mode](images/progress-light.png) |
 | Show a deployment restart choice | [Show-FluenceRestartPrompt](reference/Show-FluenceRestartPrompt.mdx)<br />![Example in light mode](images/restart-prompt-light.png) |
 | Build a custom interface | [Show-FluenceWindow](reference/Show-FluenceWindow.mdx)<br />![Example in light mode](images/xaml-window-light.png) |
+| Show rows of PowerShell objects in a table | [Show-FluenceWindow](reference/Show-FluenceWindow.mdx) with a Fluence `DataGrid`; see [Bind PowerShell objects to a DataGrid](how-to/windows-from-xaml.md#bind-powershell-objects-to-a-datagrid) |
 
 The [input type reference](reference/input-types.md) lists prompt types, values, defaults, and validation behavior. The [result object reference](reference/result-objects.md) explains what commands return.
 
