@@ -5,7 +5,7 @@ import path from 'node:path';
 import test, { after } from 'node:test';
 import { fileURLToPath } from 'node:url';
 import {
-  GENERATED_MARKER, addCatalogControls, parseApiPage, parseCatalog, rebaseLinks, syncControlPages,
+  GENERATED_MARKER, addCatalogControls, isGeneratedContent, parseApiPage, parseCatalog, rebaseLinks, syncControlPages,
 } from '../plugins/control-pages.mjs';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
@@ -208,6 +208,20 @@ test('leaves authored guides unchanged', () => {
   assert.deepEqual(fs.readFileSync(path.join(root, 'controls/list-view.md')), before);
 });
 
+test('treats a guide as generated only when the marker comment follows its title', () => {
+  const prose = `# Gauge\n\nThis guide replaced its \`${GENERATED_MARKER}\` starter.\n`;
+  const quoted = `# Old\n\nText.\n\n<!-- ${GENERATED_MARKER}: copied example -->\n`;
+  const root = makeDocs({ files: { 'controls/gauge.md': prose, 'controls/old.md': quoted } });
+  const result = syncControlPages({ docsRoot: root });
+  assert.ok(!result.written.includes('controls/gauge.md'));
+  assert.deepEqual(result.removed, []);
+  assert.equal(read(root, 'controls/gauge.md'), prose);
+  assert.equal(read(root, 'controls/old.md'), quoted);
+  assert.ok(isGeneratedContent(read(root, 'controls/widget.md')));
+  assert.ok(!isGeneratedContent(prose));
+  assert.ok(!isGeneratedContent(quoted));
+});
+
 test('is idempotent, refreshes generated guides, and removes unlinked generated guides only', () => {
   const root = makeDocs({ files: { 'controls/old.md': '# Old\n\nAuthored and unlinked.\n' } });
   syncControlPages({ docsRoot: root });
@@ -265,6 +279,6 @@ test('never targets an authored guide in this site', () => {
   const result = syncControlPages({ docsRoot: realDocs, write: false });
   for (const page of [...result.written, ...result.removed]) {
     const file = path.join(realDocs, page);
-    assert.ok(!fs.existsSync(file) || fs.readFileSync(file, 'utf8').includes(GENERATED_MARKER), page);
+    assert.ok(!fs.existsSync(file) || isGeneratedContent(fs.readFileSync(file, 'utf8')), page);
   }
 });

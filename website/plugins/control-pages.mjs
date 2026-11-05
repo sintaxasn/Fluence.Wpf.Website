@@ -260,7 +260,13 @@ export function renderControlPage({ entry, docsRoot, repository = defaultReposit
   return `\uFEFF${out.join('\n').replace(/\n{3,}/g, '\n\n').trimEnd()}\n`;
 }
 
-const isGenerated = (file) => fs.existsSync(file) && fs.readFileSync(file, 'utf8').includes(GENERATED_MARKER);
+// Ownership needs the marker comment directly under the title, where the generator writes it.
+// A guide that only mentions the marker elsewhere is authored and stays untouched.
+const generatedHead = new RegExp(String.raw`^# [^\n]+\n\n<!-- ${GENERATED_MARKER}: [^\n]*-->\n`);
+
+/** Reports whether guide Markdown was written by this generator. */
+export const isGeneratedContent = (text) => generatedHead.test(normalize(text));
+const isGenerated = (file) => fs.existsSync(file) && isGeneratedContent(fs.readFileSync(file, 'utf8'));
 
 function catalogEntries(docsRoot) {
   const catalog = path.join(docsRoot, 'controls.md');
