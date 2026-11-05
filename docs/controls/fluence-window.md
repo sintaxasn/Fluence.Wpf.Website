@@ -92,10 +92,11 @@ Mica, Acrylic, Tabbed, and rounded-corner requests depend on Windows capabilitie
 
 `FluenceWindow` changes the default of the inherited `Window.ShowActivated` property to `false`. The first `Show()` or `ShowDialog()` displays the window without activating it. The window then activates itself once its first frame has rendered. This stops a window, such as a dialog, from becoming active while its controls are still being set up. You do not need to defer activation in your own window code.
 
-After the first frame renders, `ShowActivated` is `true`, so later shows and restores activate the window normally. Changing `Content` later does not activate the window again.
+The window activates itself before it raises `ContentRendered`, so a `ContentRendered` handler that looks for the active window, for example to open a `ContentDialog`, finds this window. After the first frame renders, `ShowActivated` is `true`, so later shows and restores activate the window normally. Changing `Content` later does not activate the window again.
 
 - A maximized window is always shown activated, because Windows cannot show a maximized window without activating it. `ShowActivated` reads `true` while `WindowState` is `Maximized`.
-- Setting `ShowActivated` yourself in XAML, code, a style, or a binding turns off the deferred activation. Set it to `true` to activate the window when it is shown, or to `false` to keep the window inactive.
+- When the app is launched with a startup show state, such as a shortcut set to run maximized or minimized, the first `FluenceWindow` shown in the process is shown activated. Windows applies that state only to an activated first show. A normal launch still uses deferred activation.
+- Setting `ShowActivated` yourself in XAML, code, a style, or a binding turns off the deferred activation. Set it to `true` to activate the window when it is shown, or to `false` to keep the window inactive. A style or trigger that sets `ShowActivated` after the first render also takes effect.
 - Until the first frame renders, `IsActive` is `false` and the previously active window stays active. Code that looks for the active window in that time finds the earlier window.
 
 ## Additional behavior
