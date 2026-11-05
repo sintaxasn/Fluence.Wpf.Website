@@ -208,7 +208,8 @@ const sidebars = {
         "controls/tab-view",
         "controls/list-box",
         "controls/list-view",
-        "controls/tree-view"
+        "controls/tree-view",
+        "controls/data-grid"
       ]
     },
     {

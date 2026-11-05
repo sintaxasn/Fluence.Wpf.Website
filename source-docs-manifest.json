@@ -2380,6 +2380,50 @@
       "decision": "material-change"
     },
     {
+      "path": "docs/screenshots/controls/data-grid-dark.png",
+      "kind": "capture",
+      "sha256": "4f0d0efb2a78784622005d021f60157786a8c90f0e34b2ca53e13c49e90f88d5",
+      "provenance": "Visual review of new DataGrid control captures from 55eb6bbf: 96 DPI and matching 680x384 light and dark dimensions checked. The basic sample overflows horizontally by design, so the In stock column is cut at the right edge.",
+      "theme": "dark",
+      "state": "default",
+      "mode": "WpfRender",
+      "inputs": [
+        "Fluence.Wpf.Demo/Pages/GalleryDataGridPage.xaml",
+        "Fluence.Wpf.Demo/Resources/DemoSharedStyles.xaml",
+        "Fluence.Wpf.Tests/Tools/GalleryScreenshotHarness.cs",
+        "Fluence.Wpf/Themes/Colors/Theme.Dark.xaml",
+        "Fluence.Wpf/Themes/Controls/DataGrid.xaml",
+        "Fluence.Wpf/Themes/Generic.xaml",
+        "Fluence.Wpf/Themes/Typography/Typography.xaml"
+      ],
+      "checkedVisualInputSha256": "ff26bac7b9f955298f02a6cb0cedb199882423cef1860e9ef7ebc29f9211dba2",
+      "pngSha256": "4f0d0efb2a78784622005d021f60157786a8c90f0e34b2ca53e13c49e90f88d5",
+      "decodedPixelSha256": "aa712f32fde24e69ae1975bec992786ac0c768960b207efe7cc7398538b4746f",
+      "decision": "new-capture"
+    },
+    {
+      "path": "docs/screenshots/controls/data-grid-light.png",
+      "kind": "capture",
+      "sha256": "f986cecbc965435611a70f07648f1837587632a8565c75d99140bba4571bf701",
+      "provenance": "Visual review of new DataGrid control captures from 55eb6bbf: 96 DPI and matching 680x384 light and dark dimensions checked. The basic sample overflows horizontally by design, so the In stock column is cut at the right edge.",
+      "theme": "light",
+      "state": "default",
+      "mode": "WpfRender",
+      "inputs": [
+        "Fluence.Wpf.Demo/Pages/GalleryDataGridPage.xaml",
+        "Fluence.Wpf.Demo/Resources/DemoSharedStyles.xaml",
+        "Fluence.Wpf.Tests/Tools/GalleryScreenshotHarness.cs",
+        "Fluence.Wpf/Themes/Colors/Theme.Light.xaml",
+        "Fluence.Wpf/Themes/Controls/DataGrid.xaml",
+        "Fluence.Wpf/Themes/Generic.xaml",
+        "Fluence.Wpf/Themes/Typography/Typography.xaml"
+      ],
+      "checkedVisualInputSha256": "ce1bc0c52fad71e9bd04d50c675c2c5513b4f2c2a5a563c1ba83be96029f85f1",
+      "pngSha256": "f986cecbc965435611a70f07648f1837587632a8565c75d99140bba4571bf701",
+      "decodedPixelSha256": "609b6b1a8312f8b85bc98c00b4c3f29212965ec5428f88ef5a63a2171fb81645",
+      "decision": "new-capture"
+    },
+    {
       "path": "docs/screenshots/controls/date-picker-dark-open.png",
       "kind": "capture",
       "sha256": "d736fea74bda8404482f35c75524641d69e0dc0b017f445c5055b212aa250119",

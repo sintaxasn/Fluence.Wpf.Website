@@ -73,4 +73,4 @@ The screenshots show the standalone sample, which uses the same controls with it
 
 ![Use inputs and data controls in dark mode](../screenshots/tutorials/inputs-and-data-dark.png)
 
-See the [control catalog](../controls.md) for other inputs and the [data binding gallery](https://github.com/sintaxasn/Fluence.Wpf/blob/main/Fluence.Wpf.Demo/Pages/GalleryDataBindingPage.xaml) for more collection examples.
+See the [control catalog](../controls.md) for other inputs and the [data binding gallery](https://github.com/sintaxasn/Fluence.Wpf/blob/main/Fluence.Wpf.Demo/Pages/GalleryDataBindingPage.xaml) for more collection examples. For a table that people sort, group, filter, or edit, use a [DataGrid](../controls/data-grid.md).
