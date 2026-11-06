@@ -2,9 +2,9 @@
 
 ## Description
 
-DataGrid extends the WPF `DataGrid` with Fluent row, cell, header, and group styles. It is the Fluence counterpart of the WinUI 3 `TableView` and keeps the WPF API names, so native columns, sorting, resizing, reordering, frozen leading columns, editing transactions, validation, grouping, filtering, and row virtualization work as they do in WPF.
+DataGrid extends the WPF `DataGrid` to display bound data in rows and columns. It covers the WinUI 3 `TableView` scenarios with WPF names.
 
-Use it for tables of bound data that people sort, group, filter, or edit.
+Use it for tables that people sort, group, filter, or edit.
 
 | Light | Dark |
 | --- | --- |
@@ -12,15 +12,11 @@ Use it for tables of bound data that people sort, group, filter, or edit.
 
 ## Example usage
 
-Declare the columns and bind each one to a property of the row objects. A header click sorts by that column, a header edge resizes it, and `FrozenColumnCount` keeps the leading columns in place while the grid scrolls sideways.
-
 ```xml
-<fluence:DataGrid
-    x:Name="ProductsGrid"
-    Height="320"
-    AutoGenerateColumns="False"
-    FrozenColumnCount="1"
-    IsReadOnly="True">
+<fluence:DataGrid x:Name="ProductsGrid" AutoGenerateColumns="False" FrozenColumnCount="1" IsReadOnly="True">
+    <fluence:DataGrid.EmptyContent>
+        <TextBlock Text="No products to show." />
+    </fluence:DataGrid.EmptyContent>
     <fluence:DataGrid.Columns>
         <DataGridTextColumn Width="160" Binding="{Binding Name}" Header="Product" />
         <DataGridTextColumn Width="140" Binding="{Binding Category}" Header="Category" />
@@ -43,127 +39,47 @@ ProductsGrid.ItemsSource = new ObservableCollection<Product>
 
 | Property | Default | Purpose |
 | --- | --- | --- |
-| `IsItemSelectable` | `true` | Allows row and cell selection. `false` is the equivalent of WinUI `SelectionMode="None"`. |
-| `EmptyContent` | `null` | Content shown over the grid while it has no rows. |
-| `CornerRadius` | `4` (`ControlCornerRadius`) | Rounds the grid's outer border. |
-| `GridLinesVisibility` | `Horizontal` | Inherited; the Fluent style shows horizontal lines only. |
-| `HeadersVisibility` | `Column` | Inherited; the Fluent style hides row headers. |
-| `FrozenColumnCount` | `0` | Inherited; keeps leading columns in view while scrolling sideways. |
+| `AutoGenerateColumns` | `true` | Creates a column for each property of the row type. |
+| `IsReadOnly` | `false` | Prevents cell editing. |
+| `FrozenColumnCount` | `0` | Number of leading columns that stay in view during horizontal scrolling. |
+| `IsItemSelectable` | `true` | Allows row and cell selection. |
+| `EmptyContent` | `null` | Content shown when the grid has no rows. |
+| `CornerRadius` | `4` | Rounds the grid border. |
 
 ## State and behavior
 
-### Columns and sorting
+A header click sorts by that column, and dragging a header edge resizes it. When `IsReadOnly` is `false`, a double-click, F2, or typing begins editing a cell. Enter commits the edit and Esc cancels it. `EmptyContent` appears when the grid has no rows.
 
-`DataGridTextColumn` and `DataGridCheckBoxColumn` columns that do not set an `ElementStyle` or `EditingElementStyle` receive the Fluent display and editing styles, so a column that sets its own style keeps it. Use `DataGridTemplateColumn` for other content, and set `SortMemberPath` so a header click can still sort it:
+## Additional behavior
 
-```xml
-<DataGridTemplateColumn Width="Auto" Header="Rating" SortMemberPath="Rating">
-    <DataGridTemplateColumn.CellTemplate>
-        <DataTemplate>
-            <fluence:RatingControl VerticalAlignment="Center" IsReadOnly="True" Value="{Binding Rating}" />
-        </DataTemplate>
-    </DataGridTemplateColumn.CellTemplate>
-</DataGridTemplateColumn>
-```
-
-`DataGridComboBoxColumn` and `DataGridHyperlinkColumn` have no Fluent styles. For a Fluent drop-down cell, use a `DataGridTemplateColumn` with a Fluence `ComboBox`. Only leading columns can be frozen; trailing frozen columns and the WinUI `Density` option are not provided.
-
-### Grouping and filtering
-
-Group and filter rows through an `ICollectionView`. When the grid loads with an empty `GroupStyle`, it adds a group style with a Fluent collapsible header. `ExpandAllGroups` and `CollapseAllGroups` open or close every realized header of this grid that uses the Fluent header; groups in a grid nested in a cell or the row details are left as they are.
+Group and filter rows through an `ICollectionView`. When `GroupStyle` is empty at load time, the grid supplies collapsible group headers. `ExpandAllGroups` and `CollapseAllGroups` open or close only realized headers of this grid that use the built-in group header.
 
 ```csharp
 var view = new ListCollectionView(products);
 view.GroupDescriptions.Add(new PropertyGroupDescription(nameof(Product.Category)));
-GroupedGrid.ItemsSource = view;
-
-// Call from a search box's TextChanged handler.
-void ApplyFilter(string filterText) =>
-    view.Filter = filterText.Length == 0
-        ? null
-        : item => ((Product)item).Name.IndexOf(filterText, StringComparison.OrdinalIgnoreCase) >= 0;
-
-// Call from an Expand all or Collapse all button.
-GroupedGrid.ExpandAllGroups();
-GroupedGrid.CollapseAllGroups();
+view.Filter = item => ((Product)item).InStock;
+ProductsGrid.ItemsSource = view;
 ```
 
-Set an application group style before the grid loads, usually in XAML. A group style added later applies only to the second grouping level and below, because the Fluent header already holds the first slot.
+Grouping turns off row virtualization unless `VirtualizingPanel.IsVirtualizingWhenGrouping` is `true`. Set it for a large grouped source.
 
-As in native WPF, grouping turns off row virtualization unless `VirtualizingPanel.IsVirtualizingWhenGrouping` is set, so a large grouped source realizes every row. Opt in for large sources:
+Row objects that implement `INotifyDataErrorInfo` report validation errors. An invalid cell shows its error message as a tooltip, and a failed commit keeps the editor open.
 
-```xml
-<fluence:DataGrid
-    x:Name="GroupedGrid"
-    AutoGenerateColumns="False"
-    VirtualizingPanel.IsVirtualizingWhenGrouping="True" />
-```
+For cell content other than text or a check box, use a `DataGridTemplateColumn` and set its `SortMemberPath` so its header still sorts. For a drop-down cell, put a Fluence `ComboBox` in a template column. Only leading columns can be frozen.
 
-### Editing and validation
+On an editable source, set `CanUserAddRows` to `false`. Otherwise the new-item row counts as a row and `EmptyContent` stays hidden.
 
-When `IsReadOnly` is `false`, a double-click, F2, or typing begins editing a cell; Enter commits and Esc cancels. Bind the grid to row objects that implement `INotifyDataErrorInfo`: an invalid value shows the Fluent error outline with the error message as its tooltip, and the row shows an error indicator. A failed commit keeps the editor open. Handle `CellEditEnding` and `RowEditEnding` to react to committed or cancelled edits.
-
-```xml
-<fluence:DataGrid
-    x:Name="EditableGrid"
-    AutoGenerateColumns="False"
-    CanUserAddRows="False"
-    CellEditEnding="EditableGrid_CellEditEnding"
-    RowEditEnding="EditableGrid_RowEditEnding">
-    <fluence:DataGrid.EmptyContent>
-        <TextBlock Foreground="{DynamicResource TextFillColorSecondaryBrush}" Text="No products." />
-    </fluence:DataGrid.EmptyContent>
-    <fluence:DataGrid.Columns>
-        <DataGridTextColumn Width="2*" Binding="{Binding Name}" Header="Product" />
-        <DataGridTextColumn Width="*" Binding="{Binding Quantity}" Header="Quantity" />
-        <DataGridCheckBoxColumn Width="*" Binding="{Binding InStock}" Header="In stock" />
-    </fluence:DataGrid.Columns>
-</fluence:DataGrid>
-```
-
-### Empty state
-
-`EmptyContent` appears over the grid while it has no rows. On an editable source, set `CanUserAddRows` to `false`; otherwise the new-item row counts as a row and the empty content stays hidden.
-
-### Selection
-
-Setting `IsItemSelectable` to `false` clears the selection and suppresses the hover and selection visuals. Cells stay focusable, so keyboard navigation works, and F2 or typing still begins editing. A mouse click does not begin editing, because the native cell starts a click edit only when it is selected. A click briefly selects the row or cell and then clears it, so `SelectedCellsChanged`, and `SelectionChanged` when whole rows are selected, report a selection and then its removal. With row selection, a two-way `SelectedItem` binding sees a transient value.
-
-### Grid lines across theme changes
-
-A frozen `SolidColorBrush` assigned to `HorizontalGridLinesBrush` or `VerticalGridLinesBrush` reads back as a grid-owned copy with the same color. This keeps an open cell edit when the theme or accent changes.
+With `IsItemSelectable` set to `false`, keyboard navigation and F2 editing still work, but a mouse click does not begin editing. See the [native grid behavior](../../KNOWN_ISSUES.md#current-follow-ups-not-defects) in known issues.
 
 ## Events
 
-Use the inherited WPF events: `SelectionChanged` and `SelectedCellsChanged` report selection, `Sorting` reports a header sort, and `CellEditEnding` and `RowEditEnding` report the end of an edit.
-
-## Styling
-
-The Fluent styles are keyed resources, so a native WPF `DataGrid` keeps its own look; the Fluence `DataGrid` style applies them. After `ApplicationThemeManager.Apply`, base a custom style on a key, for example `<Style TargetType="DataGridCell" BasedOn="{StaticResource DataGridCellStyle}">`, and assign it to the matching grid or column property.
-
-| Key | Target | Used for |
-| --- | --- | --- |
-| `DataGridCellStyle` | `DataGridCell` | `CellStyle` |
-| `DataGridRowStyle` | `DataGridRow` | `RowStyle` |
-| `DataGridColumnHeaderStyle` | `DataGridColumnHeader` | `ColumnHeaderStyle` |
-| `DataGridColumnHeadersPresenterStyle` | `DataGridColumnHeadersPresenter` | The column header row |
-| `DataGridColumnHeaderGripperStyle` | `Thumb` | Column header resize gripper |
-| `DataGridRowHeaderStyle` | `DataGridRowHeader` | `RowHeaderStyle` |
-| `DataGridRowHeaderGripperStyle` | `Thumb` | Row header resize gripper |
-| `DataGridSelectAllButtonStyle` | `Button` | Select-all corner, visible when `HeadersVisibility` is `All` |
-| `DataGridValidationErrorTemplate` | Control template | Validation outline for cell text |
-| `DataGridTextColumnElementStyle` | `TextBlock` | Text column display element |
-| `DataGridTextColumnEditingElementStyle` | `TextBox` | Text column editor |
-| `DataGridCheckBoxTemplate` | `CheckBox` template | Compact check box in check box columns |
-| `DataGridCheckBoxColumnElementStyle` | `CheckBox` | Check box column display element |
-| `DataGridCheckBoxColumnEditingElementStyle` | `CheckBox` | Check box column editor |
-| `DataGridGroupItemStyle` | `GroupItem` | Fluent collapsible group header |
+The inherited `SelectionChanged` and `SelectedCellsChanged` events report a changed selection. `Sorting` reports a header sort, and `CellEditEnding` and `RowEditEnding` report the end of an edit.
 
 ## Related
 
+- [C# how-to guide](../how-to/inputs-and-data.md)
+- [PowerShell how-to guide](../powershell/how-to/windows-from-xaml.md#bind-powershell-objects-to-a-datagrid)
 - [WinUI parity and differences](../winui-parity.md#differences-to-account-for)
-- [Known issues: native grid behavior](../../KNOWN_ISSUES.md#current-follow-ups-not-defects)
-- [Bind PowerShell objects to a DataGrid](../powershell/how-to/windows-from-xaml.md#bind-powershell-objects-to-a-datagrid)
 
 ## Reference
 
@@ -171,5 +87,4 @@ The Fluent styles are keyed resources, so a native WPF `DataGrid` keeps its own 
 - [Gallery XAML source](../../Fluence.Wpf.Demo/Pages/GalleryDataGridPage.xaml)
 - [Gallery C# source](../../Fluence.Wpf.Demo/Pages/GalleryDataGridPage.xaml.cs)
 - [Control source](../../Fluence.Wpf/Controls/DataGrid.cs)
-- [Theme resources](../../Fluence.Wpf/Themes/Controls/DataGrid.xaml)
 - [Control catalog](../controls.md)
