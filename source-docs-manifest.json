@@ -196,13 +196,13 @@
     {
       "path": "docs/api/Fluence.Wpf.Controls/BreadcrumbBar.md",
       "kind": "reference",
-      "sha256": "57c2eb057f17d09eb7a28fccd7281f3464606d6f443d75477f739e66421f4928",
+      "sha256": "af7f3bf57a8ab34b20cae6b340935ef99aaf7ac10d48c3edfccbc258188ce171",
       "provenance": "source-generated"
     },
     {
       "path": "docs/api/Fluence.Wpf.Controls/BreadcrumbBarItem.md",
       "kind": "reference",
-      "sha256": "4af2a0333de6f4e092921779121e2b1b7732e89966f2d18d3635cef34b079cea",
+      "sha256": "c07c4e768670b549c353d90dab5a6c8035e45bfc6d472a1daf7eaf0f42fd979b",
       "provenance": "source-generated"
     },
     {
@@ -262,7 +262,7 @@
     {
       "path": "docs/api/Fluence.Wpf.Controls/DataGrid.md",
       "kind": "reference",
-      "sha256": "561adde9b20be366382eec926c313406b1838f9e5cb022856ca179f63f234dd8",
+      "sha256": "9c668b2bbf40f0d5c2438a089424f8bbef68cdd811890a2f2f13f1eadd9fec9d",
       "provenance": "source-generated"
     },
     {
@@ -382,7 +382,7 @@
     {
       "path": "docs/api/Fluence.Wpf.Controls/NavigationViewItem.md",
       "kind": "reference",
-      "sha256": "53442989e12aa3f2a410cb3e1a3ed9e95e1d661f34f97f7194bcb24c92bed638",
+      "sha256": "34b039e268d52073c74300808c4c41517c1e13ada519bc6fe1d82cb477cca8e7",
       "provenance": "source-generated"
     },
     {
@@ -526,7 +526,7 @@
     {
       "path": "docs/api/Fluence.Wpf.Controls/TextBlock.md",
       "kind": "reference",
-      "sha256": "4aedf747cf369cc7efb9000831fc82cab2a44a163f9d1ae5c2720ed89be63705",
+      "sha256": "631730651fbf81cd497c7b31e3a94e154a6324a3dce3237c483c71315e2fee7f",
       "provenance": "source-generated"
     },
     {
@@ -964,7 +964,7 @@
     {
       "path": "docs/controls.md",
       "kind": "reference",
-      "sha256": "d7cbfc5a1e5aa507da5666d36db422c8f48837e73d1707a23df8630dc934bffd",
+      "sha256": "390cfdceeec58917cbacb38458f63bb2a3ed1e5e6e63f831fef51b8a07782ebb",
       "provenance": "source-generated"
     },
     {
@@ -10248,13 +10248,13 @@
     {
       "path": "docs/theming.md",
       "kind": "reference",
-      "sha256": "ed991f4df02ed11cf5c27aa668274df20728d5acbb68b03fed48e57e56e4adcd",
+      "sha256": "11531d9e9cd7802cedacab91f76d8973c8ba8aa1d6166ad5c432e95bab546f4e",
       "provenance": "source-generated"
     },
     {
       "path": "docs/winui-parity.md",
       "kind": "reference",
-      "sha256": "f43b317fbecb1590a774b507cb43cdd8bb4e1335939b98d77b8e31490373d48c",
+      "sha256": "deada833673c589d4f38a097ee60771cdeedefaa6e0e975620e94838782b00ee",
       "provenance": "source-generated"
     }
   ]

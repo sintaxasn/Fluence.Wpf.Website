@@ -51,6 +51,16 @@ Gets whether the crumb is currently pressed.
 
 ## Methods
 
+<a id="api-fcad80eb3a97"></a>
+
+### OnCreateAutomationPeer
+
+```csharp
+protected override AutomationPeer OnCreateAutomationPeer()
+```
+
+Documentation inherited from the [`ContentControl` API](https://learn.microsoft.com/dotnet/api/system.windows.controls.contentcontrol).
+
 <a id="api-53d7d2aff176"></a>
 
 ### OnKeyDown
