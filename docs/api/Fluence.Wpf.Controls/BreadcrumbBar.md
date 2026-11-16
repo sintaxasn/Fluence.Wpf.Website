@@ -15,7 +15,7 @@ A horizontal trail of crumbs mirroring the WinUI 3 `BreadcrumbBar`: each item re
 
 
 
-WinUI collapses leading crumbs into an ellipsis crumb when the bar is width-constrained; that overflow collapse is a deliberate v1 omission here. The strip simply extends to its natural width and clips when constrained.
+When width is constrained, an ellipsis button gives access to the trail and the current location remains in view.
 
 **Base type:** [`ItemsControl`](https://learn.microsoft.com/dotnet/api/system.windows.controls.itemscontrol) (including inherited WPF and .NET members)
 
@@ -51,6 +51,16 @@ Documentation inherited from the [`ItemsControl` API](https://learn.microsoft.co
 
 ```csharp
 protected override bool IsItemItsOwnContainerOverride(object item)
+```
+
+Documentation inherited from the [`ItemsControl` API](https://learn.microsoft.com/dotnet/api/system.windows.controls.itemscontrol).
+
+<a id="api-fc0ec031a1b3"></a>
+
+### OnApplyTemplate
+
+```csharp
+public override void OnApplyTemplate()
 ```
 
 Documentation inherited from the [`ItemsControl` API](https://learn.microsoft.com/dotnet/api/system.windows.controls.itemscontrol).

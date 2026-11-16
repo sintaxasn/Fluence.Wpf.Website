@@ -145,7 +145,7 @@ protected override void OnPropertyChanged(DependencyPropertyChangedEventArgs e)
 
 Documentation inherited from the [ListBoxItem API](../Fluence.Wpf.Controls/ListBoxItem.md).
 
-**Remarks:** Evicts the parent [NavigationView](NavigationView.md)'s cached Top-overflow natural width when a measure-affecting property changes while a width is cached. An item sitting collapsed in the overflow menu is never measured, so it never raises the `SizeChanged` that is the ordinary eviction path; a content or font change while overflowed would otherwise keep the stale width forever. `VisibilityProperty` is excluded because the overflow pass itself toggles it, and that toggle carries no width change.
+**Remarks:** Evicts the parent [NavigationView](NavigationView.md)'s cached Top-overflow natural width when content is replaced or an item property affecting measure changes. An item collapsed in the overflow menu is never measured, so it cannot raise the ordinary size-change signal. A hidden WPF `TextBlock` is watched separately for text changes. `VisibilityProperty` is excluded from width eviction because the overflow pass itself toggles it without changing the content width.
 
 ## Dependency property identifiers
 

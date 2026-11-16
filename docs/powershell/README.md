@@ -22,9 +22,9 @@ The module keeps WPF work on its UI thread. Your script owns the work and decide
 - [Change theme, accent, and backdrop](how-to/theming-at-runtime.md)
 - [Use the module in an existing WPF host](how-to/use-in-existing-host.md)
 
-The [runnable examples](../../Fluence.Wpf.PowerShell.Module/examples/README.md) provide complete scripts. [Architecture](explanation.md) explains the module's assembly and UI threading model, and [Contributing](contributing.md) covers source changes.
+The [runnable examples](https://github.com/sintaxasn/Fluence.Wpf/blob/main/Fluence.Wpf.PowerShell.Module/examples/README.md) provide complete scripts. [Architecture](explanation.md) explains the module's assembly and UI threading model, and [Contributing](contributing.md) covers source changes.
 
-The ControlsTour example shows the module's windows in both themes.
+The [ControlsTour example](https://github.com/sintaxasn/Fluence.Wpf/blob/main/Fluence.Wpf.PowerShell.Module/examples/06-ControlsTour.ps1) is a complete, runnable tour of nine categories, with two-column pages for inputs, color, selection, commands, data, navigation, status, surfaces, and layout. To run it from a source checkout, follow the [module staging steps](https://github.com/sintaxasn/Fluence.Wpf/blob/main/Fluence.Wpf.PowerShell.Module/README.md#use-the-module-from-a-source-checkout), then use the commands in the [examples catalogue](https://github.com/sintaxasn/Fluence.Wpf/blob/main/Fluence.Wpf.PowerShell.Module/examples/README.md). The overview images below show the tour in both themes.
 
 ![ControlsTour window in light mode](../screenshots/powershell-light.png)
 

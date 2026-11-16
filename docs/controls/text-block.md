@@ -33,7 +33,7 @@ var label = new Fluence.Wpf.Controls.TextBlock { Text = "Hello" };
 
 ## State and behavior
 
-Typography resources change the text style; theme changes update its foreground.
+`Typography` selects the named font-size role. An explicit `FontSize` set locally, through a binding, or by an application style takes precedence; removing that override restores the named size. Theme changes update the foreground and continue to supply the font family.
 
 ## Parts
 

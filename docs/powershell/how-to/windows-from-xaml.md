@@ -38,7 +38,7 @@ The module can host XAML in a Fluence window in either theme.
 
 ![XAML-hosted Fluence window in dark mode](../images/xaml-window-dark.png)
 
-Store a complete XAML document beside your script and pass its path. The [runnable example](../../../Fluence.Wpf.PowerShell.Module/examples/05-LoadXamlFile.ps1) loads [MainWindow.xaml](../../../Fluence.Wpf.PowerShell.Module/examples/MainWindow.xaml).
+Store a complete XAML document beside your script and pass its path. The [runnable example](https://github.com/sintaxasn/Fluence.Wpf/blob/main/Fluence.Wpf.PowerShell.Module/examples/05-LoadXamlFile.ps1) loads [MainWindow.xaml](https://github.com/sintaxasn/Fluence.Wpf/blob/main/Fluence.Wpf.PowerShell.Module/examples/MainWindow.xaml).
 
 ```powershell
 Show-FluenceWindow -XamlPath (Join-Path $PSScriptRoot 'MainWindow.xaml') -WatchSystemTheme -Initialize {
@@ -108,7 +108,7 @@ Show-FluenceWindow -Xaml $xaml -Initialize {
 }
 ```
 
-`SelectedItem` returns the selected row object, so the handler reads its properties directly. The [ControlsTour example](../../../Fluence.Wpf.PowerShell.Module/examples/06-ControlsTour.ps1) shows the same grid inside a larger window and reports the selection in an `InfoBar`.
+`SelectedItem` returns the selected row object, so the handler reads its properties directly. The [Data page in the ControlsTour example](https://github.com/sintaxasn/Fluence.Wpf/blob/main/Fluence.Wpf.PowerShell.Module/examples/06-ControlsTour.ps1) binds five PowerShell objects to a sortable grid and reports the selected row in a shared `InfoBar`. Its event handlers capture local controls and state with `.GetNewClosure()`, including the callback that updates the status bar. See the [tour guide](../controls.md#explore-the-controlstour) for all nine categories and their Light and Dark captures.
 
 ## Return a result
 
@@ -142,4 +142,4 @@ Use `-Content { param($Window, $Data) ... }` when building the body in PowerShel
 
 - [Show-FluenceWindow](../reference/Show-FluenceWindow.mdx) and [Close-FluenceWindow](../reference/Close-FluenceWindow.mdx)
 - [Change appearance](theming-at-runtime.md) for a live window backdrop
-- [Examples catalog](../../../Fluence.Wpf.PowerShell.Module/examples/README.md) for complete window scripts
+- [Examples catalog](https://github.com/sintaxasn/Fluence.Wpf/blob/main/Fluence.Wpf.PowerShell.Module/examples/README.md) for complete window scripts

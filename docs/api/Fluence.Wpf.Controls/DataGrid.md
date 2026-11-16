@@ -67,7 +67,7 @@ Gets or sets the content shown over the grid while it has no rows. Set `CanUserA
 public bool IsItemSelectable { get; set; }
 ```
 
-Gets or sets a value indicating whether rows and cells can be selected. Setting it to `false` clears the selection and suppresses the hover and selection visuals; it is the equivalent of WinUI TableView `SelectionMode="None"`. Cells stay focusable, so keyboard navigation works, and F2 or typing still begins editing. A mouse click does not begin editing, because the native cell starts a click edit only when it is selected. A click briefly selects the row or cell and then clears it, so `SelectedCellsChanged`, and `SelectionChanged` when whole rows are selected, report a selection and then its removal. With row selection, a two-way `SelectedItem` binding sees a transient value.
+Gets or sets a value indicating whether rows and cells can be selected. Setting it to `false` clears selection, keeps the single-selection properties empty, and suppresses selection events for rejected row or cell selections. Existing selection still reports its removal when this property changes to `false`. The native `SelectedItems` and `SelectedCells` collections can briefly contain a rejected entry before the deferred clear. This is the WPF adaptation of WinUI TableView `SelectionMode="None"`. Cells stay focusable, so keyboard navigation works, and F2 or typing still begins editing. A mouse click does not begin editing, because the native cell starts a click edit only when it is selected.
 
 ## Methods
 
@@ -101,7 +101,7 @@ Expands every realized group header of this grid that uses the built-in group he
 protected override void OnSelectedCellsChanged(SelectedCellsChangedEventArgs e)
 ```
 
-Clears a new cell selection when [IsItemSelectable](DataGrid.md#api-590c6e2d3d64) is `false`.
+Clears a rejected cell selection without publishing its native selection event.
 
 **Parameter `e`:** The selected-cells change.
 
@@ -113,7 +113,7 @@ Clears a new cell selection when [IsItemSelectable](DataGrid.md#api-590c6e2d3d64
 protected override void OnSelectionChanged(SelectionChangedEventArgs e)
 ```
 
-Clears a new row selection when [IsItemSelectable](DataGrid.md#api-590c6e2d3d64) is `false`.
+Clears a rejected row selection without publishing its native selection event.
 
 **Parameter `e`:** The selection change.
 

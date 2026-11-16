@@ -91,6 +91,16 @@ protected override AutomationPeer OnCreateAutomationPeer()
 
 Documentation inherited from the [`ContentControl` API](https://learn.microsoft.com/dotnet/api/system.windows.controls.contentcontrol).
 
+<a id="api-bab71e702972"></a>
+
+### OnPropertyChanged
+
+```csharp
+protected override void OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+```
+
+Documentation inherited from the [`ContentControl` API](https://learn.microsoft.com/dotnet/api/system.windows.controls.contentcontrol).
+
 ## Dependency property identifiers
 
 Use these identifiers with WPF property APIs. The matching CLR properties appear above when the control exposes them.

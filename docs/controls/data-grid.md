@@ -127,7 +127,9 @@ When `IsReadOnly` is `false`, a double-click, F2, or typing begins editing a cel
 
 ### Selection
 
-Setting `IsItemSelectable` to `false` clears the selection and suppresses the hover and selection visuals. Cells stay focusable, so keyboard navigation works, and F2 or typing still begins editing. A mouse click does not begin editing, because the native cell starts a click edit only when it is selected. A click briefly selects the row or cell and then clears it, so `SelectedCellsChanged`, and `SelectionChanged` when whole rows are selected, report a selection and then its removal. With row selection, a two-way `SelectedItem` binding sees a transient value.
+Setting `IsItemSelectable` to `false` clears the selection, keeps `SelectedItem`, `SelectedIndex`, and `SelectedValue` empty, and suppresses public and UI Automation selection events for rejected row and cell selections. If you turn the property off while an item is selected, the grid still reports that selection's removal. The grid retains its current-cell APIs, and programmatic editing through `BeginEdit()` remains available. Test input interactions in your application when `IsItemSelectable` is `false`.
+
+WPF can briefly add a rejected entry to its native `SelectedItems` or `SelectedCells` collection before Fluence clears it. The public single-selection properties remain empty, and rejected selection events are suppressed, but the collections are not guaranteed to stay unchanged at every instant.
 
 ### Grid lines across theme changes
 

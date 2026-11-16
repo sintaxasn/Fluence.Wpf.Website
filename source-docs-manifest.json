@@ -196,13 +196,13 @@
     {
       "path": "docs/api/Fluence.Wpf.Controls/BreadcrumbBar.md",
       "kind": "reference",
-      "sha256": "57c2eb057f17d09eb7a28fccd7281f3464606d6f443d75477f739e66421f4928",
+      "sha256": "af7f3bf57a8ab34b20cae6b340935ef99aaf7ac10d48c3edfccbc258188ce171",
       "provenance": "source-generated"
     },
     {
       "path": "docs/api/Fluence.Wpf.Controls/BreadcrumbBarItem.md",
       "kind": "reference",
-      "sha256": "4af2a0333de6f4e092921779121e2b1b7732e89966f2d18d3635cef34b079cea",
+      "sha256": "c07c4e768670b549c353d90dab5a6c8035e45bfc6d472a1daf7eaf0f42fd979b",
       "provenance": "source-generated"
     },
     {
@@ -262,7 +262,7 @@
     {
       "path": "docs/api/Fluence.Wpf.Controls/DataGrid.md",
       "kind": "reference",
-      "sha256": "561adde9b20be366382eec926c313406b1838f9e5cb022856ca179f63f234dd8",
+      "sha256": "9c668b2bbf40f0d5c2438a089424f8bbef68cdd811890a2f2f13f1eadd9fec9d",
       "provenance": "source-generated"
     },
     {
@@ -382,7 +382,7 @@
     {
       "path": "docs/api/Fluence.Wpf.Controls/NavigationViewItem.md",
       "kind": "reference",
-      "sha256": "53442989e12aa3f2a410cb3e1a3ed9e95e1d661f34f97f7194bcb24c92bed638",
+      "sha256": "34b039e268d52073c74300808c4c41517c1e13ada519bc6fe1d82cb477cca8e7",
       "provenance": "source-generated"
     },
     {
@@ -526,7 +526,7 @@
     {
       "path": "docs/api/Fluence.Wpf.Controls/TextBlock.md",
       "kind": "reference",
-      "sha256": "4aedf747cf369cc7efb9000831fc82cab2a44a163f9d1ae5c2720ed89be63705",
+      "sha256": "631730651fbf81cd497c7b31e3a94e154a6324a3dce3237c483c71315e2fee7f",
       "provenance": "source-generated"
     },
     {
@@ -964,7 +964,7 @@
     {
       "path": "docs/controls.md",
       "kind": "reference",
-      "sha256": "d7cbfc5a1e5aa507da5666d36db422c8f48837e73d1707a23df8630dc934bffd",
+      "sha256": "390cfdceeec58917cbacb38458f63bb2a3ed1e5e6e63f831fef51b8a07782ebb",
       "provenance": "source-generated"
     },
     {
@@ -1679,7 +1679,7 @@
       "path": "docs/screenshots/controls/breadcrumb-bar-dark.png",
       "kind": "capture",
       "sha256": "5b2da23a9eb62923ed793b2cc275fc1ee5cf26c07339b4eb2b7ce924c74d2706",
-      "provenance": "Independent contact-sheet review of all control captures and re-review of changed final captures; 96 DPI and light/dark dimensions checked.",
+      "provenance": "Independent before/after comparison: control appearance and state are materially equivalent; pixel/font raster or one-pixel extent differs only.",
       "theme": "dark",
       "state": "default",
       "mode": "WpfRender",
@@ -1692,16 +1692,16 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "ebecb2fcf2ea08a9632ac158feaedd0b6ff4028d13feba0715a18ab73465a627",
+      "checkedVisualInputSha256": "d3a2e30ad5793d267c541cdea963958d033d2349910844df54df19fabcba8a7c",
       "pngSha256": "5b2da23a9eb62923ed793b2cc275fc1ee5cf26c07339b4eb2b7ce924c74d2706",
       "decodedPixelSha256": "e6d4df276e64d41c356acfeca1c1ae9cf7216eb682e69804cd1a00dec088d988",
-      "decision": "material-change"
+      "decision": "visually-unchanged"
     },
     {
       "path": "docs/screenshots/controls/breadcrumb-bar-item-dark.png",
       "kind": "capture",
       "sha256": "daaa7a9d0efa30cbe348e29874686aacf67bb10d03fcd6fc13253cabf67ac812",
-      "provenance": "Independent contact-sheet review of all control captures and re-review of changed final captures; 96 DPI and light/dark dimensions checked.",
+      "provenance": "Independent before/after comparison: control appearance and state are materially equivalent; pixel/font raster or one-pixel extent differs only.",
       "theme": "dark",
       "state": "default",
       "mode": "WpfRender",
@@ -1714,16 +1714,16 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "ebecb2fcf2ea08a9632ac158feaedd0b6ff4028d13feba0715a18ab73465a627",
+      "checkedVisualInputSha256": "d3a2e30ad5793d267c541cdea963958d033d2349910844df54df19fabcba8a7c",
       "pngSha256": "daaa7a9d0efa30cbe348e29874686aacf67bb10d03fcd6fc13253cabf67ac812",
       "decodedPixelSha256": "b3ad2ea06a43f09b957962331d5e4be1dab8922c20c6cc5494733d5778df824f",
-      "decision": "material-change"
+      "decision": "visually-unchanged"
     },
     {
       "path": "docs/screenshots/controls/breadcrumb-bar-item-light.png",
       "kind": "capture",
       "sha256": "e3818bf29d8cd5cde45fda6bb539e8d126ecdfc9e540df163ac6fda9cee2c14e",
-      "provenance": "Independent contact-sheet review of all control captures and re-review of changed final captures; 96 DPI and light/dark dimensions checked.",
+      "provenance": "Independent before/after comparison: control appearance and state are materially equivalent; pixel/font raster or one-pixel extent differs only.",
       "theme": "light",
       "state": "default",
       "mode": "WpfRender",
@@ -1736,16 +1736,16 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "7ff9b91a6666c63bf79082a54ee8f1803ef547b59e96d3f76b8874680db585ab",
+      "checkedVisualInputSha256": "32ce9fbd309dfde66bfbda37305dfde1b4d516e5158432ef2e5ea2a85968865b",
       "pngSha256": "e3818bf29d8cd5cde45fda6bb539e8d126ecdfc9e540df163ac6fda9cee2c14e",
       "decodedPixelSha256": "0be7edb1c5d828ed335b293109124c74752d2a8ad412a0fe188c653b6c208ffe",
-      "decision": "material-change"
+      "decision": "visually-unchanged"
     },
     {
       "path": "docs/screenshots/controls/breadcrumb-bar-light.png",
       "kind": "capture",
       "sha256": "b48ffba69e126720ce0e4bd15f8b60a3d80725739d4313cb2158e351484250e7",
-      "provenance": "Independent contact-sheet review of all control captures and re-review of changed final captures; 96 DPI and light/dark dimensions checked.",
+      "provenance": "Independent before/after comparison: control appearance and state are materially equivalent; pixel/font raster or one-pixel extent differs only.",
       "theme": "light",
       "state": "default",
       "mode": "WpfRender",
@@ -1758,10 +1758,10 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "7ff9b91a6666c63bf79082a54ee8f1803ef547b59e96d3f76b8874680db585ab",
+      "checkedVisualInputSha256": "32ce9fbd309dfde66bfbda37305dfde1b4d516e5158432ef2e5ea2a85968865b",
       "pngSha256": "b48ffba69e126720ce0e4bd15f8b60a3d80725739d4313cb2158e351484250e7",
       "decodedPixelSha256": "b1a54c9c8c3762c84d7e9b0fb14161beecf572a2a249b8b9611acf99cd8f3a6b",
-      "decision": "material-change"
+      "decision": "visually-unchanged"
     },
     {
       "path": "docs/screenshots/controls/button-dark-accent-blue.png",
@@ -2383,7 +2383,7 @@
       "path": "docs/screenshots/controls/data-grid-dark.png",
       "kind": "capture",
       "sha256": "4f0d0efb2a78784622005d021f60157786a8c90f0e34b2ca53e13c49e90f88d5",
-      "provenance": "Visual review of new DataGrid control captures from 55eb6bbf: 96 DPI and matching 680x384 light and dark dimensions checked. The basic sample overflows horizontally by design, so the In stock column is cut at the right edge.",
+      "provenance": "decoded-pixel-identical",
       "theme": "dark",
       "state": "default",
       "mode": "WpfRender",
@@ -2396,16 +2396,16 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "ff26bac7b9f955298f02a6cb0cedb199882423cef1860e9ef7ebc29f9211dba2",
+      "checkedVisualInputSha256": "f6cd3a7e3cf4bd939a89abfc53436c8931ef34b8cd4eb6e6f1a49d87576ee34e",
       "pngSha256": "4f0d0efb2a78784622005d021f60157786a8c90f0e34b2ca53e13c49e90f88d5",
       "decodedPixelSha256": "aa712f32fde24e69ae1975bec992786ac0c768960b207efe7cc7398538b4746f",
-      "decision": "new-capture"
+      "decision": "visually-unchanged"
     },
     {
       "path": "docs/screenshots/controls/data-grid-light.png",
       "kind": "capture",
       "sha256": "f986cecbc965435611a70f07648f1837587632a8565c75d99140bba4571bf701",
-      "provenance": "Visual review of new DataGrid control captures from 55eb6bbf: 96 DPI and matching 680x384 light and dark dimensions checked. The basic sample overflows horizontally by design, so the In stock column is cut at the right edge.",
+      "provenance": "decoded-pixel-identical",
       "theme": "light",
       "state": "default",
       "mode": "WpfRender",
@@ -2418,10 +2418,10 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "ce1bc0c52fad71e9bd04d50c675c2c5513b4f2c2a5a563c1ba83be96029f85f1",
+      "checkedVisualInputSha256": "818d38f77b27ef371c70b4dd6e0ea292800f1f3a69fbe84b49e2f1f187a2bf70",
       "pngSha256": "f986cecbc965435611a70f07648f1837587632a8565c75d99140bba4571bf701",
       "decodedPixelSha256": "609b6b1a8312f8b85bc98c00b4c3f29212965ec5428f88ef5a63a2171fb81645",
-      "decision": "new-capture"
+      "decision": "visually-unchanged"
     },
     {
       "path": "docs/screenshots/controls/date-picker-dark-open.png",
@@ -3438,8 +3438,8 @@
     {
       "path": "docs/screenshots/controls/navigation-view-dark-compact.png",
       "kind": "capture",
-      "sha256": "8903e77556b7d5021e24fd286698e4f6479eb014e490ed04fba4e14d73598ebc",
-      "provenance": "Independent contact-sheet review of all control captures and re-review of changed final captures; 96 DPI and light/dark dimensions checked.",
+      "sha256": "31bfbb59c838479c983b12065963f9a6638d90eeece26c88da3291e1252fca20",
+      "provenance": "Independent before/after comparison: selected indicator and badge change from prior yellow/orange to current blue while layout remains readable.",
       "theme": "dark",
       "state": "compact",
       "mode": "WpfRender",
@@ -3452,16 +3452,16 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "9acc2056934193bce58739c10127fcd0c761c06510ae3e8aef3118d2b1175ef6",
-      "pngSha256": "8903e77556b7d5021e24fd286698e4f6479eb014e490ed04fba4e14d73598ebc",
-      "decodedPixelSha256": "346d53feefe699b7712455cb44dcc709986b76970c0b7af6a3ac1e7faffb1ca1",
+      "checkedVisualInputSha256": "dacfae1f2575a19bf2a01791fe4ae1a8f20b2703678220e9caeab46f954fc4a8",
+      "pngSha256": "31bfbb59c838479c983b12065963f9a6638d90eeece26c88da3291e1252fca20",
+      "decodedPixelSha256": "ceca01f461c9e72ec5609a9eb50a02a0dd6703bc476281560ed54968e8d31ea2",
       "decision": "material-change"
     },
     {
       "path": "docs/screenshots/controls/navigation-view-dark.png",
       "kind": "capture",
-      "sha256": "0a2a0521e0b6ff7b58b30bbf665e3fe4449aa8d8439fe54ca2a051a18edb0f33",
-      "provenance": "Independent contact-sheet review of all control captures and re-review of changed final captures; 96 DPI and light/dark dimensions checked.",
+      "sha256": "143d518de2cae09ebc2d483d9d22d0060c06558646f69d332399837a1fa8b76b",
+      "provenance": "Independent before/after comparison: selected indicator and badge change from prior yellow/orange to current blue while layout remains readable.",
       "theme": "dark",
       "state": "default",
       "mode": "WpfRender",
@@ -3474,16 +3474,16 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "9acc2056934193bce58739c10127fcd0c761c06510ae3e8aef3118d2b1175ef6",
-      "pngSha256": "0a2a0521e0b6ff7b58b30bbf665e3fe4449aa8d8439fe54ca2a051a18edb0f33",
-      "decodedPixelSha256": "dee862845faff3aac7296ee1d48127c368c4bf636fe4811d5a06ce717c3fd887",
+      "checkedVisualInputSha256": "dacfae1f2575a19bf2a01791fe4ae1a8f20b2703678220e9caeab46f954fc4a8",
+      "pngSha256": "143d518de2cae09ebc2d483d9d22d0060c06558646f69d332399837a1fa8b76b",
+      "decodedPixelSha256": "070da2083fee06e13980f24f612fbeb25a2f74272d3904cb6e658fd6b3fa5a62",
       "decision": "material-change"
     },
     {
       "path": "docs/screenshots/controls/navigation-view-item-dark.png",
       "kind": "capture",
-      "sha256": "d332fb3a43239d603353c763f6783a86d747cf91b144b30b613117e68f5c0be8",
-      "provenance": "Independent contact-sheet review of all control captures and re-review of changed final captures; 96 DPI and light/dark dimensions checked.",
+      "sha256": "b34276ee2e8b9490572913d6b40706c3eedf1da326b1efacc21abc2915731e03",
+      "provenance": "Independent before/after comparison: selected indicator and badge change from prior yellow/orange to current blue while layout remains readable.",
       "theme": "dark",
       "state": "default",
       "mode": "WpfRender",
@@ -3496,9 +3496,9 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "9acc2056934193bce58739c10127fcd0c761c06510ae3e8aef3118d2b1175ef6",
-      "pngSha256": "d332fb3a43239d603353c763f6783a86d747cf91b144b30b613117e68f5c0be8",
-      "decodedPixelSha256": "1c2d1e5f5c4dd6c81244aee582a84487ed4e17a3e6fd449227b68bf15addc04c",
+      "checkedVisualInputSha256": "dacfae1f2575a19bf2a01791fe4ae1a8f20b2703678220e9caeab46f954fc4a8",
+      "pngSha256": "b34276ee2e8b9490572913d6b40706c3eedf1da326b1efacc21abc2915731e03",
+      "decodedPixelSha256": "de56dbf5740403709af0335458f942028255830908b65313735087ecbd53d365",
       "decision": "material-change"
     },
     {
@@ -3548,8 +3548,8 @@
     {
       "path": "docs/screenshots/controls/navigation-view-item-light.png",
       "kind": "capture",
-      "sha256": "4ae03d45f652963b1f013cae17f8c98e930b4270bf79c794a9f4378751319136",
-      "provenance": "Independent contact-sheet review of all control captures and re-review of changed final captures; 96 DPI and light/dark dimensions checked.",
+      "sha256": "e64929bc815bb21a52705deb8dc95dff0415ba9a1aaf590387c7900430951946",
+      "provenance": "Independent before/after comparison: selected indicator and badge change from prior yellow/orange to current blue while layout remains readable.",
       "theme": "light",
       "state": "default",
       "mode": "WpfRender",
@@ -3562,9 +3562,9 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "abcf6aeabdece718e264d5c0fb1dbd80c38fc0d12dbb501c6a41d219d641316a",
-      "pngSha256": "4ae03d45f652963b1f013cae17f8c98e930b4270bf79c794a9f4378751319136",
-      "decodedPixelSha256": "c662df49abbf31ec58274343f14a2ed8528867f50b91815858fb034e6d877a0c",
+      "checkedVisualInputSha256": "c45f8d0890a8fa510c17fd5e52d849b0a57818c4801a372819c6b43b4f840213",
+      "pngSha256": "e64929bc815bb21a52705deb8dc95dff0415ba9a1aaf590387c7900430951946",
+      "decodedPixelSha256": "a3cbd7fce81fb6fce0b33ee5c02dc0aced76cd8dd588f65f68158c0174bc5257",
       "decision": "material-change"
     },
     {
@@ -3614,8 +3614,8 @@
     {
       "path": "docs/screenshots/controls/navigation-view-light-compact.png",
       "kind": "capture",
-      "sha256": "457daad0cec52953243cf536afa3c6894b0e8153d71e7f4e3580ca44f96de863",
-      "provenance": "Independent contact-sheet review of all control captures and re-review of changed final captures; 96 DPI and light/dark dimensions checked.",
+      "sha256": "b61ed4522533932c5e037b9d265ac0c8ad4090daf7c253f6a3be1131bdd98a08",
+      "provenance": "Independent before/after comparison: selected indicator and badge change from prior yellow/orange to current blue while layout remains readable.",
       "theme": "light",
       "state": "compact",
       "mode": "WpfRender",
@@ -3628,16 +3628,16 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "abcf6aeabdece718e264d5c0fb1dbd80c38fc0d12dbb501c6a41d219d641316a",
-      "pngSha256": "457daad0cec52953243cf536afa3c6894b0e8153d71e7f4e3580ca44f96de863",
-      "decodedPixelSha256": "5042229511bfb30f7c66f5f0d9475605d3ba149f1e11c226282e48ddca5c98dd",
+      "checkedVisualInputSha256": "c45f8d0890a8fa510c17fd5e52d849b0a57818c4801a372819c6b43b4f840213",
+      "pngSha256": "b61ed4522533932c5e037b9d265ac0c8ad4090daf7c253f6a3be1131bdd98a08",
+      "decodedPixelSha256": "3615dbb2b7c5ceb5cb7e9cbae7df69f18adef482d23d07f59cf129e0a6debf85",
       "decision": "material-change"
     },
     {
       "path": "docs/screenshots/controls/navigation-view-light.png",
       "kind": "capture",
-      "sha256": "2bd8e4ecd55d9c6fc8d4f9ab1041493b906a9b7bd4c47af8ffa84092f29f3e30",
-      "provenance": "Independent contact-sheet review of all control captures and re-review of changed final captures; 96 DPI and light/dark dimensions checked.",
+      "sha256": "ae95529101d9fd404369d2f4bff93782aa44bc8f3f9987533d6c76275ee406b1",
+      "provenance": "Independent before/after comparison: selected indicator and badge change from prior yellow/orange to current blue while layout remains readable.",
       "theme": "light",
       "state": "default",
       "mode": "WpfRender",
@@ -3650,16 +3650,16 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "abcf6aeabdece718e264d5c0fb1dbd80c38fc0d12dbb501c6a41d219d641316a",
-      "pngSha256": "2bd8e4ecd55d9c6fc8d4f9ab1041493b906a9b7bd4c47af8ffa84092f29f3e30",
-      "decodedPixelSha256": "301bdd95852fd1d38101f192dbfbc95eed16e35340c40e8b49dd7c7726ae33dd",
+      "checkedVisualInputSha256": "c45f8d0890a8fa510c17fd5e52d849b0a57818c4801a372819c6b43b4f840213",
+      "pngSha256": "ae95529101d9fd404369d2f4bff93782aa44bc8f3f9987533d6c76275ee406b1",
+      "decodedPixelSha256": "609e4fddc3571fa707480090bf1349452d61f922e71b1488546b1cd3c44b59d0",
       "decision": "material-change"
     },
     {
       "path": "docs/screenshots/controls/number-box-dark.png",
       "kind": "capture",
       "sha256": "b0055ddc6db64847a3bc25209cfe6ee0070e811648ded894b9b9451e5e4ebe4a",
-      "provenance": "Independent contact-sheet review of all control captures and re-review of changed final captures; 96 DPI and light/dark dimensions checked.",
+      "provenance": "Independent before/after comparison: control appearance and state are materially equivalent; pixel/font raster or one-pixel extent differs only.",
       "theme": "dark",
       "state": "default",
       "mode": "WpfRender",
@@ -3672,16 +3672,16 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "22cd081120196ff711ea3d87172606eaecf4e3b1ea2635516a5413869cc60765",
+      "checkedVisualInputSha256": "8148b8b0ee0beeaa9b6ca686dae19ed91404ddee67c5a20ebbdbea6a8475c055",
       "pngSha256": "b0055ddc6db64847a3bc25209cfe6ee0070e811648ded894b9b9451e5e4ebe4a",
       "decodedPixelSha256": "2cae6a61220de794d0a4c5f5ebecd5dd6a3fcd135e75f93bae5340fb8d818c86",
-      "decision": "material-change"
+      "decision": "visually-unchanged"
     },
     {
       "path": "docs/screenshots/controls/number-box-light.png",
       "kind": "capture",
       "sha256": "aab2dd4e6297009611e1c36ce4b0c6ac60d2cea755bd975251da9f2c2f9bff24",
-      "provenance": "Independent contact-sheet review of all control captures and re-review of changed final captures; 96 DPI and light/dark dimensions checked.",
+      "provenance": "Independent before/after comparison: control appearance and state are materially equivalent; pixel/font raster or one-pixel extent differs only.",
       "theme": "light",
       "state": "default",
       "mode": "WpfRender",
@@ -3694,10 +3694,10 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "c25993355bce4bc1e42a5d5b58528fd1e531a442191e1724fed6ba973d5e1fe2",
+      "checkedVisualInputSha256": "0f53d2a194ea0d9fb4e7d29cefdafc9279281e653102c4a768416d78e0ec8c73",
       "pngSha256": "aab2dd4e6297009611e1c36ce4b0c6ac60d2cea755bd975251da9f2c2f9bff24",
       "decodedPixelSha256": "30f34e542091183d6be1e195ebd942200103c4725aae0b6fa6bc1b42f217264d",
-      "decision": "material-change"
+      "decision": "visually-unchanged"
     },
     {
       "path": "docs/screenshots/controls/password-box-extensions-dark.png",
@@ -3747,7 +3747,7 @@
       "path": "docs/screenshots/controls/person-picture-dark.png",
       "kind": "capture",
       "sha256": "148ad983835b39b50bb90e5b0198c2b9fe39d811a261c4529e8d60e985e7bfe7",
-      "provenance": "Independent contact-sheet review of all control captures and re-review of changed final captures; 96 DPI and light/dark dimensions checked.",
+      "provenance": "Independent before/after comparison: control appearance and state are materially equivalent; pixel/font raster or one-pixel extent differs only.",
       "theme": "dark",
       "state": "default",
       "mode": "WpfRender",
@@ -3760,16 +3760,16 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "150fc197fb77f101e6230725f48a269948c9ed67599bc001a618848a9bd49126",
+      "checkedVisualInputSha256": "030a430a8cf51d1cf710124488c79d4223cf2e81ac32e86843123ed3b9b26cf1",
       "pngSha256": "148ad983835b39b50bb90e5b0198c2b9fe39d811a261c4529e8d60e985e7bfe7",
       "decodedPixelSha256": "0fa3233a06d80eb26bdac1fe7a6d8b37737adcbdb959c7db10b033a89d52f3c0",
-      "decision": "material-change"
+      "decision": "visually-unchanged"
     },
     {
       "path": "docs/screenshots/controls/person-picture-light.png",
       "kind": "capture",
       "sha256": "80c7e53292f2fbf452a1352b844b7146e94f305197465b8d0cf65b278c85a2e2",
-      "provenance": "Independent contact-sheet review of all control captures and re-review of changed final captures; 96 DPI and light/dark dimensions checked.",
+      "provenance": "Independent before/after comparison: control appearance and state are materially equivalent; pixel/font raster or one-pixel extent differs only.",
       "theme": "light",
       "state": "default",
       "mode": "WpfRender",
@@ -3782,10 +3782,10 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "1ca951e8818206be4c2f49dbef2a933c24bd7408186bcb1a60bce78c54c59a48",
+      "checkedVisualInputSha256": "01662a57d4bef12fe6279a7b7833763ee48db6146731b0dd2ff020ebdf5f480e",
       "pngSha256": "80c7e53292f2fbf452a1352b844b7146e94f305197465b8d0cf65b278c85a2e2",
       "decodedPixelSha256": "1414aea4cef67560566df594d0497b83645dfb165d073fd9e283de8b7ca2afd2",
-      "decision": "material-change"
+      "decision": "visually-unchanged"
     },
     {
       "path": "docs/screenshots/controls/pips-pager-dark-page-selected.png",
@@ -4752,8 +4752,8 @@
     {
       "path": "docs/screenshots/controls/text-block-dark.png",
       "kind": "capture",
-      "sha256": "3a2837e9b5d04321627ce8e4496ec416c5c666e71fa7f7074dbb5cdeb53da057",
-      "provenance": "Independent contact-sheet review of all control captures and re-review of changed final captures; 96 DPI and light/dark dimensions checked.",
+      "sha256": "70b71db2c569b09f34b3d13fd94fbb7d01c1b077cb9011845377c576eaf152a7",
+      "provenance": "Independent before/after comparison: named typography produces visibly larger text and wider capture.",
       "theme": "dark",
       "state": "default",
       "mode": "WpfRender",
@@ -4766,9 +4766,9 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "b452da8e55e9264af2f0cb10c5bb1670229a4daee4a63c9e2495c4d443657ccb",
-      "pngSha256": "3a2837e9b5d04321627ce8e4496ec416c5c666e71fa7f7074dbb5cdeb53da057",
-      "decodedPixelSha256": "3066c00b8d6948620243617defa5a79251272c3b972de6a3ade2949c755f05aa",
+      "checkedVisualInputSha256": "bcd488295a34064f06f0c0cca20e8a19f2af18416aa0bc7bffb3984460da2c7b",
+      "pngSha256": "70b71db2c569b09f34b3d13fd94fbb7d01c1b077cb9011845377c576eaf152a7",
+      "decodedPixelSha256": "df44f893c151b6babb3c665cefbfe1cb0a7864b20580fb791000b50825192855",
       "decision": "material-change"
     },
     {
@@ -4818,8 +4818,8 @@
     {
       "path": "docs/screenshots/controls/text-block-light.png",
       "kind": "capture",
-      "sha256": "5072bef77eb048013ed1ab9334dba2be4c9f9847913fc61d472209a79e4a1c84",
-      "provenance": "Independent contact-sheet review of all control captures and re-review of changed final captures; 96 DPI and light/dark dimensions checked.",
+      "sha256": "ef515586576b9747454becee6cefe80012fd2e386be59e818ca44ea8038f6028",
+      "provenance": "Independent before/after comparison: named typography produces visibly larger text and wider capture.",
       "theme": "light",
       "state": "default",
       "mode": "WpfRender",
@@ -4832,9 +4832,9 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "b78a6e6a0c7299fe775fca12e40c946f27c1b0fdf5d7e9b7291d9651b5293afb",
-      "pngSha256": "5072bef77eb048013ed1ab9334dba2be4c9f9847913fc61d472209a79e4a1c84",
-      "decodedPixelSha256": "f5fbfe86cab7a08152eee09c5e2c6205da58b61b5921100fe2e31bb5f5989c2c",
+      "checkedVisualInputSha256": "7140d1b9bfcc0c0470e2aca64e138db06c823fc32710292c7efe5dfddfc3fb59",
+      "pngSha256": "ef515586576b9747454becee6cefe80012fd2e386be59e818ca44ea8038f6028",
+      "decodedPixelSha256": "b0a1fa40cabe8313ac1690d3639f0f840954a9a13baa1c2ae75e8ff8a2a79bf4",
       "decision": "material-change"
     },
     {
@@ -5016,8 +5016,8 @@
     {
       "path": "docs/screenshots/controls/title-bar-dark.png",
       "kind": "capture",
-      "sha256": "98d8fa0fff6c08879b513ac7bccf78e826aebe4fe5748b8b0f708cf666191749",
-      "provenance": "Independent contact-sheet review of all control captures and re-review of changed final captures; 96 DPI and light/dark dimensions checked.",
+      "sha256": "8b591b7cb1d5d6a23ad536bb468aa14b0ae2696438e54f156f3712e98e9b97b9",
+      "provenance": "Independent before/after comparison: inactive title and caption controls visibly dim; content remains readable.",
       "theme": "dark",
       "state": "default",
       "mode": "WpfRender",
@@ -5031,16 +5031,16 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "657f326d6ea23b488dc8aef3189e7b949f07e4c70edfc5ec23abefc97bbf480a",
-      "pngSha256": "98d8fa0fff6c08879b513ac7bccf78e826aebe4fe5748b8b0f708cf666191749",
-      "decodedPixelSha256": "5980f23ea17f2a1a4a06acb89d1d7008e828a2985086117585911136fcd2aed0",
+      "checkedVisualInputSha256": "fcfe0462da3abb120758fd7345f75fdc5a1fcd0971d1b84da7dfe45c2e7a0c96",
+      "pngSha256": "8b591b7cb1d5d6a23ad536bb468aa14b0ae2696438e54f156f3712e98e9b97b9",
+      "decodedPixelSha256": "7d12110c13815636b4d81fc684d2b3844e07cadcf9733e0fe37955446b0a7141",
       "decision": "material-change"
     },
     {
       "path": "docs/screenshots/controls/title-bar-light.png",
       "kind": "capture",
-      "sha256": "ec7f835055a1bca54d29c3bbd0a767b4b8f3b7c831055f1226a054bbe0ecf7c4",
-      "provenance": "Independent contact-sheet review of all control captures and re-review of changed final captures; 96 DPI and light/dark dimensions checked.",
+      "sha256": "97dbc2466f06b6e511447b562886d17b288b230b571ad0c8c2de65dd1aef561a",
+      "provenance": "Independent before/after comparison: inactive title and caption controls visibly dim; content remains readable.",
       "theme": "light",
       "state": "default",
       "mode": "WpfRender",
@@ -5054,9 +5054,9 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "59f4086b14148cbd93b2e13c4344ee5432b4d992b356593a7f2dbd6a0edee01f",
-      "pngSha256": "ec7f835055a1bca54d29c3bbd0a767b4b8f3b7c831055f1226a054bbe0ecf7c4",
-      "decodedPixelSha256": "28066c64b36421a2036fd7d950a4b0eca35ad3ef5b5a1cd122f7c30c3b603606",
+      "checkedVisualInputSha256": "543f0f1355f2b5cfc63c291b68a943067f60a79e242be0237940922b367384cf",
+      "pngSha256": "97dbc2466f06b6e511447b562886d17b288b230b571ad0c8c2de65dd1aef561a",
+      "decodedPixelSha256": "f1210ec07f4a886f30c6ba28314f85aa94dec4e6e91ea33f1e585c57ed840f5b",
       "decision": "material-change"
     },
     {
@@ -6705,6 +6705,176 @@
       "decision": "legacy-unverified"
     },
     {
+      "path": "docs/screenshots/gallery/data-grid-dark.png",
+      "kind": "capture",
+      "sha256": "e698832b2336fa7d1968b8dea4bdee063186e18d6f52bf607e8520266278ea1a",
+      "provenance": "Independent inspection of fresh complete Gallery image; readable themed content and settled selected navigation state.",
+      "theme": "dark",
+      "state": "default",
+      "mode": "WpfRender",
+      "inputs": [
+        "Fluence.Wpf.Demo/MainWindow.xaml",
+        "Fluence.Wpf.Demo/Pages/GalleryDataGridPage.xaml",
+        "Fluence.Wpf.Demo/Resources/DemoSharedStyles.xaml",
+        "Fluence.Wpf/Themes/Colors/Theme.Dark.xaml",
+        "Fluence.Wpf/Themes/Controls/DataGrid.xaml",
+        "Fluence.Wpf/Themes/Generic.xaml",
+        "Fluence.Wpf/Themes/Typography/Typography.xaml"
+      ],
+      "checkedVisualInputSha256": "df2faa28d0b1fbb91ded6f3cf741eb06dbd83f6311122ca96cacf2ebd6bf3ce3",
+      "pngSha256": "e698832b2336fa7d1968b8dea4bdee063186e18d6f52bf607e8520266278ea1a",
+      "decodedPixelSha256": "58c1964cf61a454e776b990f400a6f217bb342a83c9bb4c6f1a4d964c91d135a",
+      "decision": "new-capture"
+    },
+    {
+      "path": "docs/screenshots/gallery/data-grid-light.png",
+      "kind": "capture",
+      "sha256": "8b5776c498038c39e8e29a1de58596843f39520c236a4c329012b493ac322936",
+      "provenance": "Independent inspection of fresh complete Gallery image; readable themed content and settled selected navigation state.",
+      "theme": "light",
+      "state": "default",
+      "mode": "WpfRender",
+      "inputs": [
+        "Fluence.Wpf.Demo/MainWindow.xaml",
+        "Fluence.Wpf.Demo/Pages/GalleryDataGridPage.xaml",
+        "Fluence.Wpf.Demo/Resources/DemoSharedStyles.xaml",
+        "Fluence.Wpf/Themes/Colors/Theme.Light.xaml",
+        "Fluence.Wpf/Themes/Controls/DataGrid.xaml",
+        "Fluence.Wpf/Themes/Generic.xaml",
+        "Fluence.Wpf/Themes/Typography/Typography.xaml"
+      ],
+      "checkedVisualInputSha256": "d7c04b22f92c3804274c58adf38176671ec62fde44f65e3032306990d3582be9",
+      "pngSha256": "8b5776c498038c39e8e29a1de58596843f39520c236a4c329012b493ac322936",
+      "decodedPixelSha256": "1556ab7918b2bcfda1b1449a03595d9cd51ccdf363668fbbdb3095211d90d770",
+      "decision": "new-capture"
+    },
+    {
+      "path": "docs/screenshots/gallery/data-grid-sample-01-dark.png",
+      "kind": "capture",
+      "sha256": "4e3d295c04a547ca155defe7ed466f313f205f94ba9e40800e9e09e9cff705d7",
+      "provenance": "Independent inspection of fresh complete Gallery image; readable themed content and settled selected navigation state.",
+      "theme": "dark",
+      "state": "default",
+      "mode": "WpfRender",
+      "inputs": [
+        "Fluence.Wpf.Demo/Pages/GalleryDataGridPage.xaml",
+        "Fluence.Wpf.Demo/Resources/DemoSharedStyles.xaml",
+        "Fluence.Wpf/Themes/Colors/Theme.Dark.xaml",
+        "Fluence.Wpf/Themes/Controls/DataGrid.xaml",
+        "Fluence.Wpf/Themes/Generic.xaml",
+        "Fluence.Wpf/Themes/Typography/Typography.xaml"
+      ],
+      "checkedVisualInputSha256": "be1efd657229eb3b44ac0f13bc69d8b3cf9fed7f6063b80828a265ee184c8842",
+      "pngSha256": "4e3d295c04a547ca155defe7ed466f313f205f94ba9e40800e9e09e9cff705d7",
+      "decodedPixelSha256": "5d47d5873a56548b8fc52eeeca4fdf6eaa53c1211e767085b4e20119f3692a45",
+      "decision": "new-capture"
+    },
+    {
+      "path": "docs/screenshots/gallery/data-grid-sample-01-light.png",
+      "kind": "capture",
+      "sha256": "0684d1e96147feaf703940f26e022344ed4cfc93f33c6e977f6d1b98ddc1ca65",
+      "provenance": "Independent inspection of fresh complete Gallery image; readable themed content and settled selected navigation state.",
+      "theme": "light",
+      "state": "default",
+      "mode": "WpfRender",
+      "inputs": [
+        "Fluence.Wpf.Demo/Pages/GalleryDataGridPage.xaml",
+        "Fluence.Wpf.Demo/Resources/DemoSharedStyles.xaml",
+        "Fluence.Wpf/Themes/Colors/Theme.Light.xaml",
+        "Fluence.Wpf/Themes/Controls/DataGrid.xaml",
+        "Fluence.Wpf/Themes/Generic.xaml",
+        "Fluence.Wpf/Themes/Typography/Typography.xaml"
+      ],
+      "checkedVisualInputSha256": "7ed60658bfc106a1f57235b84d51bbe9778e7d14059c61f1dd1131462f6ce469",
+      "pngSha256": "0684d1e96147feaf703940f26e022344ed4cfc93f33c6e977f6d1b98ddc1ca65",
+      "decodedPixelSha256": "8f65bffe75e36bebb8a6d5a1ab039d87393b28262d8f6d6d48f22199ded0be87",
+      "decision": "new-capture"
+    },
+    {
+      "path": "docs/screenshots/gallery/data-grid-sample-02-dark.png",
+      "kind": "capture",
+      "sha256": "1da25f320d1eeffe40935397a6acf294d52b51547b9435d255c8b1bd77406633",
+      "provenance": "Independent inspection of fresh complete Gallery image; readable themed content and settled selected navigation state.",
+      "theme": "dark",
+      "state": "default",
+      "mode": "WpfRender",
+      "inputs": [
+        "Fluence.Wpf.Demo/Pages/GalleryDataGridPage.xaml",
+        "Fluence.Wpf.Demo/Resources/DemoSharedStyles.xaml",
+        "Fluence.Wpf/Themes/Colors/Theme.Dark.xaml",
+        "Fluence.Wpf/Themes/Controls/DataGrid.xaml",
+        "Fluence.Wpf/Themes/Generic.xaml",
+        "Fluence.Wpf/Themes/Typography/Typography.xaml"
+      ],
+      "checkedVisualInputSha256": "be1efd657229eb3b44ac0f13bc69d8b3cf9fed7f6063b80828a265ee184c8842",
+      "pngSha256": "1da25f320d1eeffe40935397a6acf294d52b51547b9435d255c8b1bd77406633",
+      "decodedPixelSha256": "f2507610b467159fa113ddf2e0806c1d0da532abe92ba641f1e62c7d48cd5b9c",
+      "decision": "new-capture"
+    },
+    {
+      "path": "docs/screenshots/gallery/data-grid-sample-02-light.png",
+      "kind": "capture",
+      "sha256": "fcc512c0575c9f4ddbced5d77b6ce516a4fefa8708d86bcc13a3996c54c6199f",
+      "provenance": "Independent inspection of fresh complete Gallery image; readable themed content and settled selected navigation state.",
+      "theme": "light",
+      "state": "default",
+      "mode": "WpfRender",
+      "inputs": [
+        "Fluence.Wpf.Demo/Pages/GalleryDataGridPage.xaml",
+        "Fluence.Wpf.Demo/Resources/DemoSharedStyles.xaml",
+        "Fluence.Wpf/Themes/Colors/Theme.Light.xaml",
+        "Fluence.Wpf/Themes/Controls/DataGrid.xaml",
+        "Fluence.Wpf/Themes/Generic.xaml",
+        "Fluence.Wpf/Themes/Typography/Typography.xaml"
+      ],
+      "checkedVisualInputSha256": "7ed60658bfc106a1f57235b84d51bbe9778e7d14059c61f1dd1131462f6ce469",
+      "pngSha256": "fcc512c0575c9f4ddbced5d77b6ce516a4fefa8708d86bcc13a3996c54c6199f",
+      "decodedPixelSha256": "03d11e39866779af05dc50f9f4410e5c5772a411e27fb307c0139ff325e40bd5",
+      "decision": "new-capture"
+    },
+    {
+      "path": "docs/screenshots/gallery/data-grid-sample-03-dark.png",
+      "kind": "capture",
+      "sha256": "1e2eb42430ea15909d1e4c20a12853713222ba7146930b7dc3fde15bd55190b7",
+      "provenance": "Independent inspection of fresh complete Gallery image; readable themed content and settled selected navigation state.",
+      "theme": "dark",
+      "state": "default",
+      "mode": "WpfRender",
+      "inputs": [
+        "Fluence.Wpf.Demo/Pages/GalleryDataGridPage.xaml",
+        "Fluence.Wpf.Demo/Resources/DemoSharedStyles.xaml",
+        "Fluence.Wpf/Themes/Colors/Theme.Dark.xaml",
+        "Fluence.Wpf/Themes/Controls/DataGrid.xaml",
+        "Fluence.Wpf/Themes/Generic.xaml",
+        "Fluence.Wpf/Themes/Typography/Typography.xaml"
+      ],
+      "checkedVisualInputSha256": "be1efd657229eb3b44ac0f13bc69d8b3cf9fed7f6063b80828a265ee184c8842",
+      "pngSha256": "1e2eb42430ea15909d1e4c20a12853713222ba7146930b7dc3fde15bd55190b7",
+      "decodedPixelSha256": "e9e9071259d1959ca5efcd9ddc7eb0f141d2d314b9950d1f6671ea5f6f71464c",
+      "decision": "new-capture"
+    },
+    {
+      "path": "docs/screenshots/gallery/data-grid-sample-03-light.png",
+      "kind": "capture",
+      "sha256": "c042c64c37bb020fa74e206872a035206de9cf8632d66704ae53583daa60cc34",
+      "provenance": "Independent inspection of fresh complete Gallery image; readable themed content and settled selected navigation state.",
+      "theme": "light",
+      "state": "default",
+      "mode": "WpfRender",
+      "inputs": [
+        "Fluence.Wpf.Demo/Pages/GalleryDataGridPage.xaml",
+        "Fluence.Wpf.Demo/Resources/DemoSharedStyles.xaml",
+        "Fluence.Wpf/Themes/Colors/Theme.Light.xaml",
+        "Fluence.Wpf/Themes/Controls/DataGrid.xaml",
+        "Fluence.Wpf/Themes/Generic.xaml",
+        "Fluence.Wpf/Themes/Typography/Typography.xaml"
+      ],
+      "checkedVisualInputSha256": "7ed60658bfc106a1f57235b84d51bbe9778e7d14059c61f1dd1131462f6ce469",
+      "pngSha256": "c042c64c37bb020fa74e206872a035206de9cf8632d66704ae53583daa60cc34",
+      "decodedPixelSha256": "f9f49c5e298d81c8baabb7cacdc16dcb8e491ccc5bd2f7f1c4ba9cd6741bd86d",
+      "decision": "new-capture"
+    },
+    {
       "path": "docs/screenshots/gallery/data-light.png",
       "kind": "capture",
       "sha256": "61cc97aa463088e5b5f106ba37902c5543390c9a897f9d1a95ebedbcd345d615",
@@ -8094,7 +8264,7 @@
     {
       "path": "docs/screenshots/gallery/manifest.json",
       "kind": "gallery-manifest",
-      "sha256": "a44d623faba414e6f0fa03c90fe0995c1eeb2c74024ff2104fc89b88974426d2",
+      "sha256": "fd22edc0bc5e7c974b7aa8d7c29b31dddc170fca2e7c3a39d0ba0ba1d19095b3",
       "provenance": "website-gallery"
     },
     {
@@ -9044,8 +9214,8 @@
     {
       "path": "docs/screenshots/gallery/selection-dark.png",
       "kind": "capture",
-      "sha256": "bbcdb8bddfb0fb18651fcfb822db63f86a717dd51a810d684b4a06ee68c8f01c",
-      "provenance": "legacy-unverified",
+      "sha256": "acb7a6932b44b078280b2b4a79cd078ee267d76d96ed893463dbf0be6dca5c3e",
+      "provenance": "Independent before/after inspection: corrected selection indicator and increased control spacing; readable content and no visible clipping.",
       "theme": "dark",
       "state": "default",
       "mode": "WpfRender",
@@ -9062,15 +9232,16 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": null,
-      "pngSha256": "bbcdb8bddfb0fb18651fcfb822db63f86a717dd51a810d684b4a06ee68c8f01c",
-      "decision": "legacy-unverified"
+      "checkedVisualInputSha256": "38e6fc036c55bae745a7f79cec78464390d8f0239767acc8f473db8069667b9b",
+      "pngSha256": "acb7a6932b44b078280b2b4a79cd078ee267d76d96ed893463dbf0be6dca5c3e",
+      "decodedPixelSha256": "161a3c128b9c6d0428ee220ff8518cabf5a593e69f3cbd7a8541d8cf353a89e6",
+      "decision": "material-change"
     },
     {
       "path": "docs/screenshots/gallery/selection-light.png",
       "kind": "capture",
-      "sha256": "72ad855169bf57a047d04d1093ebea7ec3c3918646f1142f226940e6dd7a38ad",
-      "provenance": "legacy-unverified",
+      "sha256": "2348cc304ca7a0983d4704c5f87db03ab81fd1eef5202d9c05604f0d623c7e86",
+      "provenance": "Independent before/after inspection: corrected selection indicator and increased control spacing; readable content and no visible clipping.",
       "theme": "light",
       "state": "default",
       "mode": "WpfRender",
@@ -9087,15 +9258,16 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": null,
-      "pngSha256": "72ad855169bf57a047d04d1093ebea7ec3c3918646f1142f226940e6dd7a38ad",
-      "decision": "legacy-unverified"
+      "checkedVisualInputSha256": "061b8f841cf582f78aa3cdec935a7936b073b99f8f6de53042c1795528fcf613",
+      "pngSha256": "2348cc304ca7a0983d4704c5f87db03ab81fd1eef5202d9c05604f0d623c7e86",
+      "decodedPixelSha256": "6aee9309e01ddc1ba25888683f86f014a9f360c8fffad327d51781dc9e7093c3",
+      "decision": "material-change"
     },
     {
       "path": "docs/screenshots/gallery/selection-sample-01-dark.png",
       "kind": "capture",
-      "sha256": "dd12f8b4e31f1270b40dd7e572fd3e2995801040456899fca03ed5cc55e2effc",
-      "provenance": "legacy-unverified",
+      "sha256": "29384253cd168e68f0ae37cec95e9c18c31f2695d5d985d8b2bd598d07703a87",
+      "provenance": "Independent before/after inspection: corrected selection indicator and increased control spacing; readable content and no visible clipping.",
       "theme": "dark",
       "state": "default",
       "mode": "WpfRender",
@@ -9107,15 +9279,16 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": null,
-      "pngSha256": "dd12f8b4e31f1270b40dd7e572fd3e2995801040456899fca03ed5cc55e2effc",
-      "decision": "legacy-unverified"
+      "checkedVisualInputSha256": "85915dc992b5f536df0351326e59835da8942549d31f1284f3c8764147138148",
+      "pngSha256": "29384253cd168e68f0ae37cec95e9c18c31f2695d5d985d8b2bd598d07703a87",
+      "decodedPixelSha256": "f3a789d3c597a21376decfb84d610f3a50b358daf3bf01417af4b7fad5f29070",
+      "decision": "material-change"
     },
     {
       "path": "docs/screenshots/gallery/selection-sample-01-light.png",
       "kind": "capture",
-      "sha256": "7b27b37f6f8be35fb4a495aab282630a5f7be3137a1dd3a6b7cb9eaeed497ae3",
-      "provenance": "legacy-unverified",
+      "sha256": "38cacf919b6b2a94774f12450888f03e9913c4429996b7e01292cd4701d13635",
+      "provenance": "Independent before/after inspection: corrected selection indicator and increased control spacing; readable content and no visible clipping.",
       "theme": "light",
       "state": "default",
       "mode": "WpfRender",
@@ -9127,15 +9300,16 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": null,
-      "pngSha256": "7b27b37f6f8be35fb4a495aab282630a5f7be3137a1dd3a6b7cb9eaeed497ae3",
-      "decision": "legacy-unverified"
+      "checkedVisualInputSha256": "bd156aa12b1c501e281f525e6dd2d31f51b98a0442ed6f754efe90c4ec994fac",
+      "pngSha256": "38cacf919b6b2a94774f12450888f03e9913c4429996b7e01292cd4701d13635",
+      "decodedPixelSha256": "41ead010cc59df70063fe55623da5ade03f66d05af6b6850b71077ac48057879",
+      "decision": "material-change"
     },
     {
       "path": "docs/screenshots/gallery/selection-sample-02-dark.png",
       "kind": "capture",
-      "sha256": "d50adb27c557b3f56cccbc7f60d73d8e1dbbfcd1f3c3f2063efc0a0eaccc7114",
-      "provenance": "legacy-unverified",
+      "sha256": "b39bb9c5c945da6ab2189eb6822ba0000d21b9f28dc24d52ed003c1a6be2c65b",
+      "provenance": "Independent before/after inspection: corrected selection indicator and increased control spacing; readable content and no visible clipping.",
       "theme": "dark",
       "state": "default",
       "mode": "WpfRender",
@@ -9147,15 +9321,16 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": null,
-      "pngSha256": "d50adb27c557b3f56cccbc7f60d73d8e1dbbfcd1f3c3f2063efc0a0eaccc7114",
-      "decision": "legacy-unverified"
+      "checkedVisualInputSha256": "1d062f488ae980616939a941bb7a14302b9a5ab07a6b8b2d497f924b2b682723",
+      "pngSha256": "b39bb9c5c945da6ab2189eb6822ba0000d21b9f28dc24d52ed003c1a6be2c65b",
+      "decodedPixelSha256": "c0e56bc3800fb1422c65f0634c2dbf74d4fd1dfc0350e7607c997303a6a7bb49",
+      "decision": "material-change"
     },
     {
       "path": "docs/screenshots/gallery/selection-sample-02-light.png",
       "kind": "capture",
-      "sha256": "57c7ed81ba8afadff1ac81a52cc8e298fb74d46934fff858f6aaed3c9288697b",
-      "provenance": "legacy-unverified",
+      "sha256": "4e59cb4b03341507f2807e496743062521ccd7ad767928c6b51b546d7ab5d0f1",
+      "provenance": "Independent before/after inspection: corrected selection indicator and increased control spacing; readable content and no visible clipping.",
       "theme": "light",
       "state": "default",
       "mode": "WpfRender",
@@ -9167,15 +9342,16 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": null,
-      "pngSha256": "57c7ed81ba8afadff1ac81a52cc8e298fb74d46934fff858f6aaed3c9288697b",
-      "decision": "legacy-unverified"
+      "checkedVisualInputSha256": "20a48c41e56dd033ca4bcb04ca6b309eb5fcd0a0e994ab2e18c813465a14a9cd",
+      "pngSha256": "4e59cb4b03341507f2807e496743062521ccd7ad767928c6b51b546d7ab5d0f1",
+      "decodedPixelSha256": "a4acd70eca49fc467bec120e8a98f06e404b5cb550a604069013a41c6564024a",
+      "decision": "material-change"
     },
     {
       "path": "docs/screenshots/gallery/selection-sample-03-dark-toggled.png",
       "kind": "capture",
       "sha256": "d6d1dc3e34be44682027da3c8764a448b60e2011cf2a183f351b7ccdafb15b45",
-      "provenance": "legacy-unverified",
+      "provenance": "decoded-pixel-identical",
       "theme": "dark",
       "state": "toggled",
       "mode": "WpfRender",
@@ -9187,15 +9363,16 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": null,
+      "checkedVisualInputSha256": "29c023b35ec3e47043d95de4f6e58a8aa3cbf4dc6eb63eed34db76d6ef161bd9",
       "pngSha256": "d6d1dc3e34be44682027da3c8764a448b60e2011cf2a183f351b7ccdafb15b45",
-      "decision": "legacy-unverified"
+      "decodedPixelSha256": "077ae852a767b219585db75e9e544b734cf56a96a9b6822f70d21f2c70182bef",
+      "decision": "visually-unchanged"
     },
     {
       "path": "docs/screenshots/gallery/selection-sample-03-dark.png",
       "kind": "capture",
       "sha256": "17aca6d69f9804d92a95e5b4cd367973a4756974453fb2f1a54cf958f927c86b",
-      "provenance": "legacy-unverified",
+      "provenance": "Independent before/after inspection: same ToggleSwitch On state and layout; only animated ProgressRing phase differs.",
       "theme": "dark",
       "state": "default",
       "mode": "WpfRender",
@@ -9207,15 +9384,16 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": null,
+      "checkedVisualInputSha256": "29c023b35ec3e47043d95de4f6e58a8aa3cbf4dc6eb63eed34db76d6ef161bd9",
       "pngSha256": "17aca6d69f9804d92a95e5b4cd367973a4756974453fb2f1a54cf958f927c86b",
-      "decision": "legacy-unverified"
+      "decodedPixelSha256": "f5b3848663462c859a93e0910ea32798daf5e251a85910d2a3ba6705faff03a1",
+      "decision": "visually-unchanged"
     },
     {
       "path": "docs/screenshots/gallery/selection-sample-03-light-toggled.png",
       "kind": "capture",
       "sha256": "9b6ead8ac2bd13d259b2cf4669dc12adb258127cb834564c52ae6b0d956fffbc",
-      "provenance": "legacy-unverified",
+      "provenance": "decoded-pixel-identical",
       "theme": "light",
       "state": "toggled",
       "mode": "WpfRender",
@@ -9227,15 +9405,16 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": null,
+      "checkedVisualInputSha256": "72a4c5af9df8de4c93ba4027d61320d94cd14ded1ef12d951cab870b18ca41f9",
       "pngSha256": "9b6ead8ac2bd13d259b2cf4669dc12adb258127cb834564c52ae6b0d956fffbc",
-      "decision": "legacy-unverified"
+      "decodedPixelSha256": "ae7aea32c0a687cd0ae42d8de3964c28971489b27a855b8bc0dc323aa3a07ac7",
+      "decision": "visually-unchanged"
     },
     {
       "path": "docs/screenshots/gallery/selection-sample-03-light.png",
       "kind": "capture",
       "sha256": "23e32b766df20f79480518239c4373359c1cbc82cb651d74422a5f86104b8caf",
-      "provenance": "legacy-unverified",
+      "provenance": "Independent before/after inspection: same ToggleSwitch On state and layout; only animated ProgressRing phase differs.",
       "theme": "light",
       "state": "default",
       "mode": "WpfRender",
@@ -9247,15 +9426,16 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": null,
+      "checkedVisualInputSha256": "72a4c5af9df8de4c93ba4027d61320d94cd14ded1ef12d951cab870b18ca41f9",
       "pngSha256": "23e32b766df20f79480518239c4373359c1cbc82cb651d74422a5f86104b8caf",
-      "decision": "legacy-unverified"
+      "decodedPixelSha256": "0b114d2f0e681801aac82efd8793e9aad4ba662e5abc6329249c94552b1683d2",
+      "decision": "visually-unchanged"
     },
     {
       "path": "docs/screenshots/gallery/selection-sample-04-dark.png",
       "kind": "capture",
       "sha256": "f15d309f2e902e30bfaa00eeebd4db86b10606329e61026d07cec41d55e713c8",
-      "provenance": "legacy-unverified",
+      "provenance": "decoded-pixel-identical",
       "theme": "dark",
       "state": "default",
       "mode": "WpfRender",
@@ -9267,15 +9447,16 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": null,
+      "checkedVisualInputSha256": "5b13d52519af46c5e9eeb9d968df0ddece0a7d47a57c5d74c14b32278749d330",
       "pngSha256": "f15d309f2e902e30bfaa00eeebd4db86b10606329e61026d07cec41d55e713c8",
-      "decision": "legacy-unverified"
+      "decodedPixelSha256": "1719a0c6d0662480d7d98cd87e399e8f4d1e537b35ef6f90bffdc97ba4adeddf",
+      "decision": "visually-unchanged"
     },
     {
       "path": "docs/screenshots/gallery/selection-sample-04-light.png",
       "kind": "capture",
       "sha256": "ddc856928c168386ed16aa447dc578a916cde155c90b2e8b0a0d49ef217a3aa0",
-      "provenance": "legacy-unverified",
+      "provenance": "decoded-pixel-identical",
       "theme": "light",
       "state": "default",
       "mode": "WpfRender",
@@ -9287,15 +9468,16 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": null,
+      "checkedVisualInputSha256": "e7f2f5cc04b2e2cda632250f16d1c7dc99a5cb9b8ea9e68be568294bc3fbe6db",
       "pngSha256": "ddc856928c168386ed16aa447dc578a916cde155c90b2e8b0a0d49ef217a3aa0",
-      "decision": "legacy-unverified"
+      "decodedPixelSha256": "8b78c252a1870e9c7191858a182e1109ff58d3080f2e9fbbf847803204399ecc",
+      "decision": "visually-unchanged"
     },
     {
       "path": "docs/screenshots/gallery/selection-sample-05-dark.png",
       "kind": "capture",
       "sha256": "03a05a965987fff9ca2faf165dc0ca8829a7bc7915b7f42e7ee43fd6429968ee",
-      "provenance": "legacy-unverified",
+      "provenance": "decoded-pixel-identical",
       "theme": "dark",
       "state": "default",
       "mode": "WpfRender",
@@ -9307,15 +9489,16 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": null,
+      "checkedVisualInputSha256": "2e571ec919cabc727cb84f337eb16f65a0bdb405f69de586f46f1cbc97d9c9e5",
       "pngSha256": "03a05a965987fff9ca2faf165dc0ca8829a7bc7915b7f42e7ee43fd6429968ee",
-      "decision": "legacy-unverified"
+      "decodedPixelSha256": "279e90404de7356f09c8c1066d515b3a43e6951917c506ffb3fdd7b4da854620",
+      "decision": "visually-unchanged"
     },
     {
       "path": "docs/screenshots/gallery/selection-sample-05-light.png",
       "kind": "capture",
       "sha256": "4fa24b0181f704a58710143f6f82eb30b1ada9906f1a9c5ffa74f5a1aad4dc1c",
-      "provenance": "legacy-unverified",
+      "provenance": "decoded-pixel-identical",
       "theme": "light",
       "state": "default",
       "mode": "WpfRender",
@@ -9327,9 +9510,54 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": null,
+      "checkedVisualInputSha256": "2c9b977af79d85c8a7a47a75352e66a682d6d1e50433022c9356e672c2276aae",
       "pngSha256": "4fa24b0181f704a58710143f6f82eb30b1ada9906f1a9c5ffa74f5a1aad4dc1c",
-      "decision": "legacy-unverified"
+      "decodedPixelSha256": "4c29f5d3de4978df9eb4b9c2169641d51c055d4e3574011d95e95c7397b132ed",
+      "decision": "visually-unchanged"
+    },
+    {
+      "path": "docs/screenshots/gallery/selection-sample-06-dark.png",
+      "kind": "capture",
+      "sha256": "0f39a1c44df2f1feb4177a2f159339983351ff7aa15f7e7f0354bd779e8bf402",
+      "provenance": "Independent inspection of fresh complete Gallery image; readable themed content and settled selected navigation state.",
+      "theme": "dark",
+      "state": "default",
+      "mode": "WpfRender",
+      "inputs": [
+        "Fluence.Wpf.Demo/Pages/GallerySelectionPage.xaml",
+        "Fluence.Wpf.Demo/Resources/DemoSharedStyles.xaml",
+        "Fluence.Wpf/Themes/Colors/Theme.Dark.xaml",
+        "Fluence.Wpf/Themes/Controls/Button.xaml",
+        "Fluence.Wpf/Themes/Controls/ComboBox.xaml",
+        "Fluence.Wpf/Themes/Generic.xaml",
+        "Fluence.Wpf/Themes/Typography/Typography.xaml"
+      ],
+      "checkedVisualInputSha256": "110d94e30b6d5c0a90bcc0f19b4a7ff3595fd5f0dcf5236f33d2ed7a43abf617",
+      "pngSha256": "0f39a1c44df2f1feb4177a2f159339983351ff7aa15f7e7f0354bd779e8bf402",
+      "decodedPixelSha256": "079e25d363cfe3520a728e2a804ed74d0ab3a11ca055cc96201326b5f5732fdb",
+      "decision": "new-capture"
+    },
+    {
+      "path": "docs/screenshots/gallery/selection-sample-06-light.png",
+      "kind": "capture",
+      "sha256": "d0672866c435ed9a06528d4ef1c87e7d05e0c6bf00ca04347d549d3809d1ba5c",
+      "provenance": "Independent inspection of fresh complete Gallery image; readable themed content and settled selected navigation state.",
+      "theme": "light",
+      "state": "default",
+      "mode": "WpfRender",
+      "inputs": [
+        "Fluence.Wpf.Demo/Pages/GallerySelectionPage.xaml",
+        "Fluence.Wpf.Demo/Resources/DemoSharedStyles.xaml",
+        "Fluence.Wpf/Themes/Colors/Theme.Light.xaml",
+        "Fluence.Wpf/Themes/Controls/Button.xaml",
+        "Fluence.Wpf/Themes/Controls/ComboBox.xaml",
+        "Fluence.Wpf/Themes/Generic.xaml",
+        "Fluence.Wpf/Themes/Typography/Typography.xaml"
+      ],
+      "checkedVisualInputSha256": "b564728d255f6937f93cc2a6a85c4d21c10958493c9f7fa1f07f9476276bc6a2",
+      "pngSha256": "d0672866c435ed9a06528d4ef1c87e7d05e0c6bf00ca04347d549d3809d1ba5c",
+      "decodedPixelSha256": "dc33cc455dc2631c0697e83e6949d0ded2979d5ab10bc4e341ff44112b0a8576",
+      "decision": "new-capture"
     },
     {
       "path": "docs/screenshots/gallery/settings-dark.png",
@@ -10204,57 +10432,587 @@
       "decision": "legacy-unverified"
     },
     {
+      "path": "docs/screenshots/powershell-color-dark.png",
+      "kind": "capture",
+      "sha256": "0146b51547c98ac55098c80728c687a180c25f42e5b7f27c6d3e049b1bf813ea",
+      "provenance": "Independent review of final net472 1120x900 themed category image; two-column no-scroll design, visible labels, navigation, and status bar compared with published draft.",
+      "theme": "dark",
+      "state": "color",
+      "mode": "WpfRender",
+      "inputs": [
+        "Fluence.Wpf.PowerShell.Module/build/Capture-ControlsTour.ps1",
+        "Fluence.Wpf.PowerShell.Module/examples/06-ControlsTour.ps1",
+        "Fluence.Wpf.PowerShell.Module/src/Fluence.Wpf.PowerShell/Public/Show-FluenceWindow.ps1",
+        "Fluence.Wpf/Themes/Colors/Theme.Dark.xaml",
+        "Fluence.Wpf/Themes/Controls/Button.xaml",
+        "Fluence.Wpf/Themes/Controls/Card.xaml",
+        "Fluence.Wpf/Themes/Controls/ColorPicker.xaml",
+        "Fluence.Wpf/Themes/Controls/FluenceWindow.xaml",
+        "Fluence.Wpf/Themes/Controls/InfoBar.xaml",
+        "Fluence.Wpf/Themes/Controls/TextBlock.xaml",
+        "Fluence.Wpf/Themes/Generic.xaml",
+        "Fluence.Wpf/Themes/Typography/Typography.xaml"
+      ],
+      "checkedVisualInputSha256": "e06abc9ff0dd49020d78793734d77c19f999b9612155fbd0657c7e4ded70b447",
+      "pngSha256": "0146b51547c98ac55098c80728c687a180c25f42e5b7f27c6d3e049b1bf813ea",
+      "decodedPixelSha256": "acf0df66486d9436196146d2f18249fc2986c39a322f30489c80d93e1105650d",
+      "decision": "material-change"
+    },
+    {
+      "path": "docs/screenshots/powershell-color-light.png",
+      "kind": "capture",
+      "sha256": "25f81dec21035c6e80f10cd80a4f13b6d6d619334225b3f561e10b7dd41b972e",
+      "provenance": "Independent review of final net472 1120x900 themed category image; two-column no-scroll design, visible labels, navigation, and status bar compared with published draft.",
+      "theme": "light",
+      "state": "color",
+      "mode": "WpfRender",
+      "inputs": [
+        "Fluence.Wpf.PowerShell.Module/build/Capture-ControlsTour.ps1",
+        "Fluence.Wpf.PowerShell.Module/examples/06-ControlsTour.ps1",
+        "Fluence.Wpf.PowerShell.Module/src/Fluence.Wpf.PowerShell/Public/Show-FluenceWindow.ps1",
+        "Fluence.Wpf/Themes/Colors/Theme.Light.xaml",
+        "Fluence.Wpf/Themes/Controls/Button.xaml",
+        "Fluence.Wpf/Themes/Controls/Card.xaml",
+        "Fluence.Wpf/Themes/Controls/ColorPicker.xaml",
+        "Fluence.Wpf/Themes/Controls/FluenceWindow.xaml",
+        "Fluence.Wpf/Themes/Controls/InfoBar.xaml",
+        "Fluence.Wpf/Themes/Controls/TextBlock.xaml",
+        "Fluence.Wpf/Themes/Generic.xaml",
+        "Fluence.Wpf/Themes/Typography/Typography.xaml"
+      ],
+      "checkedVisualInputSha256": "d37b84c1e4657ce51aba687605bc28570cebccd568fe352d2cf9560d1e0b93c5",
+      "pngSha256": "25f81dec21035c6e80f10cd80a4f13b6d6d619334225b3f561e10b7dd41b972e",
+      "decodedPixelSha256": "f68895f10e42688b9733785375947e86372ddb5d9ef8a310c9f5521c7345faf6",
+      "decision": "material-change"
+    },
+    {
+      "path": "docs/screenshots/powershell-commands-dark.png",
+      "kind": "capture",
+      "sha256": "282fb607d26c794e7efe99aec8f7f3a849eb56b8d511849dd9433197caa49778",
+      "provenance": "Independent review of final net472 1120x900 themed category image; two-column no-scroll design, visible labels, navigation, and status bar compared with published draft.",
+      "theme": "dark",
+      "state": "commands",
+      "mode": "WpfRender",
+      "inputs": [
+        "Fluence.Wpf.PowerShell.Module/build/Capture-ControlsTour.ps1",
+        "Fluence.Wpf.PowerShell.Module/examples/06-ControlsTour.ps1",
+        "Fluence.Wpf.PowerShell.Module/src/Fluence.Wpf.PowerShell/Public/Show-FluenceWindow.ps1",
+        "Fluence.Wpf/Themes/Colors/Theme.Dark.xaml",
+        "Fluence.Wpf/Themes/Controls/Button.xaml",
+        "Fluence.Wpf/Themes/Controls/Card.xaml",
+        "Fluence.Wpf/Themes/Controls/CommandBarFlyout.xaml",
+        "Fluence.Wpf/Themes/Controls/ContextMenu.xaml",
+        "Fluence.Wpf/Themes/Controls/DropDownButton.xaml",
+        "Fluence.Wpf/Themes/Controls/FluenceWindow.xaml",
+        "Fluence.Wpf/Themes/Controls/FlyoutPresenter.xaml",
+        "Fluence.Wpf/Themes/Controls/FontIcon.xaml",
+        "Fluence.Wpf/Themes/Controls/HyperlinkButton.xaml",
+        "Fluence.Wpf/Themes/Controls/InfoBar.xaml",
+        "Fluence.Wpf/Themes/Controls/Menu.xaml",
+        "Fluence.Wpf/Themes/Controls/RepeatButton.xaml",
+        "Fluence.Wpf/Themes/Controls/Separator.xaml",
+        "Fluence.Wpf/Themes/Controls/SplitButton.xaml",
+        "Fluence.Wpf/Themes/Controls/TextBlock.xaml",
+        "Fluence.Wpf/Themes/Controls/ToggleSplitButton.xaml",
+        "Fluence.Wpf/Themes/Controls/ToolTip.xaml",
+        "Fluence.Wpf/Themes/Generic.xaml",
+        "Fluence.Wpf/Themes/Typography/Typography.xaml"
+      ],
+      "checkedVisualInputSha256": "ad2ab937cff0877f02ff355d3a459af475d5cce6ce4b262d9b3a662ca1eb0fd5",
+      "pngSha256": "282fb607d26c794e7efe99aec8f7f3a849eb56b8d511849dd9433197caa49778",
+      "decodedPixelSha256": "5f8e9938fbb387f5469602acab27d413e94a800de50c923407f009a238030b13",
+      "decision": "material-change"
+    },
+    {
+      "path": "docs/screenshots/powershell-commands-light.png",
+      "kind": "capture",
+      "sha256": "b18626c4ab8b9b0dfc8f729f1be813f9055caa72ddbe34782785b09dfd1361d0",
+      "provenance": "Independent review of final net472 1120x900 themed category image; two-column no-scroll design, visible labels, navigation, and status bar compared with published draft.",
+      "theme": "light",
+      "state": "commands",
+      "mode": "WpfRender",
+      "inputs": [
+        "Fluence.Wpf.PowerShell.Module/build/Capture-ControlsTour.ps1",
+        "Fluence.Wpf.PowerShell.Module/examples/06-ControlsTour.ps1",
+        "Fluence.Wpf.PowerShell.Module/src/Fluence.Wpf.PowerShell/Public/Show-FluenceWindow.ps1",
+        "Fluence.Wpf/Themes/Colors/Theme.Light.xaml",
+        "Fluence.Wpf/Themes/Controls/Button.xaml",
+        "Fluence.Wpf/Themes/Controls/Card.xaml",
+        "Fluence.Wpf/Themes/Controls/CommandBarFlyout.xaml",
+        "Fluence.Wpf/Themes/Controls/ContextMenu.xaml",
+        "Fluence.Wpf/Themes/Controls/DropDownButton.xaml",
+        "Fluence.Wpf/Themes/Controls/FluenceWindow.xaml",
+        "Fluence.Wpf/Themes/Controls/FlyoutPresenter.xaml",
+        "Fluence.Wpf/Themes/Controls/FontIcon.xaml",
+        "Fluence.Wpf/Themes/Controls/HyperlinkButton.xaml",
+        "Fluence.Wpf/Themes/Controls/InfoBar.xaml",
+        "Fluence.Wpf/Themes/Controls/Menu.xaml",
+        "Fluence.Wpf/Themes/Controls/RepeatButton.xaml",
+        "Fluence.Wpf/Themes/Controls/Separator.xaml",
+        "Fluence.Wpf/Themes/Controls/SplitButton.xaml",
+        "Fluence.Wpf/Themes/Controls/TextBlock.xaml",
+        "Fluence.Wpf/Themes/Controls/ToggleSplitButton.xaml",
+        "Fluence.Wpf/Themes/Controls/ToolTip.xaml",
+        "Fluence.Wpf/Themes/Generic.xaml",
+        "Fluence.Wpf/Themes/Typography/Typography.xaml"
+      ],
+      "checkedVisualInputSha256": "6fc0bb8415a7a4a56431773392dc7214452bb31b3980b8f1f809dfc49fb3f6d6",
+      "pngSha256": "b18626c4ab8b9b0dfc8f729f1be813f9055caa72ddbe34782785b09dfd1361d0",
+      "decodedPixelSha256": "c6f8ab7bed1373a634f6ed89c70d8b9134fc0711e509e78dee117ddee0edaf10",
+      "decision": "material-change"
+    },
+    {
       "path": "docs/screenshots/powershell-dark.png",
       "kind": "capture",
-      "sha256": "9a211ef5fec0548aadad567c76bec3d1c868fe7584cd7a9b58d54a752d091265",
-      "provenance": "legacy-unverified",
+      "sha256": "435034f12fa568a810a119e9a9f3c98fccf002ed508b5c343173c299e35c1558",
+      "provenance": "Independent review of final net472 1120x900 themed category image; two-column no-scroll design, visible labels, navigation, and status bar compared with published draft.",
       "theme": "dark",
       "state": "default",
       "mode": "WpfRender",
       "inputs": [
+        "Fluence.Wpf.PowerShell.Module/build/Capture-ControlsTour.ps1",
         "Fluence.Wpf.PowerShell.Module/examples/06-ControlsTour.ps1",
+        "Fluence.Wpf.PowerShell.Module/src/Fluence.Wpf.PowerShell/Public/Show-FluenceWindow.ps1",
         "Fluence.Wpf/Themes/Colors/Theme.Dark.xaml",
+        "Fluence.Wpf/Themes/Controls/AutoSuggestBox.xaml",
         "Fluence.Wpf/Themes/Controls/Button.xaml",
+        "Fluence.Wpf/Themes/Controls/Card.xaml",
+        "Fluence.Wpf/Themes/Controls/ComboBox.xaml",
+        "Fluence.Wpf/Themes/Controls/DatePicker.xaml",
         "Fluence.Wpf/Themes/Controls/FluenceWindow.xaml",
-        "Fluence.Wpf/Themes/Controls/TitleBar.xaml",
+        "Fluence.Wpf/Themes/Controls/InfoBar.xaml",
+        "Fluence.Wpf/Themes/Controls/NumberBox.xaml",
+        "Fluence.Wpf/Themes/Controls/PasswordBox.xaml",
+        "Fluence.Wpf/Themes/Controls/TextBlock.xaml",
+        "Fluence.Wpf/Themes/Controls/TextBox.xaml",
+        "Fluence.Wpf/Themes/Controls/TimePicker.xaml",
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": null,
-      "pngSha256": "9a211ef5fec0548aadad567c76bec3d1c868fe7584cd7a9b58d54a752d091265",
-      "decision": "legacy-unverified"
+      "checkedVisualInputSha256": "bd466a976f7a13f7d13c25e3db5a76d2dcbe275207a5cfcef7e5999231103d22",
+      "pngSha256": "435034f12fa568a810a119e9a9f3c98fccf002ed508b5c343173c299e35c1558",
+      "decodedPixelSha256": "b4675c91bf4a661a4ddd2eefd01a09390e1bc3e4803bcaa327b25f988f7d16fb",
+      "decision": "material-change"
+    },
+    {
+      "path": "docs/screenshots/powershell-data-dark.png",
+      "kind": "capture",
+      "sha256": "29d14430fedd280a6fe3ad43f5c908b836981c86a542fea58da4fae243a8a5cf",
+      "provenance": "Independent review of final net472 1120x900 themed category image; two-column no-scroll design, visible labels, navigation, and status bar compared with published draft.",
+      "theme": "dark",
+      "state": "data",
+      "mode": "WpfRender",
+      "inputs": [
+        "Fluence.Wpf.PowerShell.Module/build/Capture-ControlsTour.ps1",
+        "Fluence.Wpf.PowerShell.Module/examples/06-ControlsTour.ps1",
+        "Fluence.Wpf.PowerShell.Module/src/Fluence.Wpf.PowerShell/Public/Show-FluenceWindow.ps1",
+        "Fluence.Wpf/Themes/Colors/Theme.Dark.xaml",
+        "Fluence.Wpf/Themes/Controls/BreadcrumbBar.xaml",
+        "Fluence.Wpf/Themes/Controls/Button.xaml",
+        "Fluence.Wpf/Themes/Controls/Card.xaml",
+        "Fluence.Wpf/Themes/Controls/DataGrid.xaml",
+        "Fluence.Wpf/Themes/Controls/FluenceWindow.xaml",
+        "Fluence.Wpf/Themes/Controls/InfoBar.xaml",
+        "Fluence.Wpf/Themes/Controls/PipsPager.xaml",
+        "Fluence.Wpf/Themes/Controls/SelectorBar.xaml",
+        "Fluence.Wpf/Themes/Controls/SlideNavigationPresenter.xaml",
+        "Fluence.Wpf/Themes/Controls/TabView.xaml",
+        "Fluence.Wpf/Themes/Controls/TextBlock.xaml",
+        "Fluence.Wpf/Themes/Generic.xaml",
+        "Fluence.Wpf/Themes/Typography/Typography.xaml"
+      ],
+      "checkedVisualInputSha256": "b925952d0dc211a6b74bce8531235cf33d658e5bbfd08dd9d7297276b6266aaa",
+      "pngSha256": "29d14430fedd280a6fe3ad43f5c908b836981c86a542fea58da4fae243a8a5cf",
+      "decodedPixelSha256": "a2af9b6f53dbada213e536635e86b0edf7790a978c4a74f780038bb1ed365f05",
+      "decision": "material-change"
+    },
+    {
+      "path": "docs/screenshots/powershell-data-light.png",
+      "kind": "capture",
+      "sha256": "cbe09385496f9db52fe80e01644aa61b961fb28d3644eae8a127fb6f9acbdb3c",
+      "provenance": "Independent review of final net472 1120x900 themed category image; two-column no-scroll design, visible labels, navigation, and status bar compared with published draft.",
+      "theme": "light",
+      "state": "data",
+      "mode": "WpfRender",
+      "inputs": [
+        "Fluence.Wpf.PowerShell.Module/build/Capture-ControlsTour.ps1",
+        "Fluence.Wpf.PowerShell.Module/examples/06-ControlsTour.ps1",
+        "Fluence.Wpf.PowerShell.Module/src/Fluence.Wpf.PowerShell/Public/Show-FluenceWindow.ps1",
+        "Fluence.Wpf/Themes/Colors/Theme.Light.xaml",
+        "Fluence.Wpf/Themes/Controls/BreadcrumbBar.xaml",
+        "Fluence.Wpf/Themes/Controls/Button.xaml",
+        "Fluence.Wpf/Themes/Controls/Card.xaml",
+        "Fluence.Wpf/Themes/Controls/DataGrid.xaml",
+        "Fluence.Wpf/Themes/Controls/FluenceWindow.xaml",
+        "Fluence.Wpf/Themes/Controls/InfoBar.xaml",
+        "Fluence.Wpf/Themes/Controls/PipsPager.xaml",
+        "Fluence.Wpf/Themes/Controls/SelectorBar.xaml",
+        "Fluence.Wpf/Themes/Controls/SlideNavigationPresenter.xaml",
+        "Fluence.Wpf/Themes/Controls/TabView.xaml",
+        "Fluence.Wpf/Themes/Controls/TextBlock.xaml",
+        "Fluence.Wpf/Themes/Generic.xaml",
+        "Fluence.Wpf/Themes/Typography/Typography.xaml"
+      ],
+      "checkedVisualInputSha256": "951e7fa3142ab46d270645bf3daafbd7882f1e977625a7f97d7e6cf8e43eb052",
+      "pngSha256": "cbe09385496f9db52fe80e01644aa61b961fb28d3644eae8a127fb6f9acbdb3c",
+      "decodedPixelSha256": "5f31f06b8f51418f13ce3ad99b89bff1ccc9f8edff368367ea3348ffc5ab5d96",
+      "decision": "material-change"
+    },
+    {
+      "path": "docs/screenshots/powershell-layout-dark.png",
+      "kind": "capture",
+      "sha256": "4f9562b526d88a8710d40d3c5150fcd630ac2602f193e293daf29668628f85d1",
+      "provenance": "Independent review of final net472 1120x900 themed category image; two-column no-scroll design, visible labels, navigation, and status bar compared with published draft.",
+      "theme": "dark",
+      "state": "layout",
+      "mode": "WpfRender",
+      "inputs": [
+        "Fluence.Wpf.PowerShell.Module/build/Capture-ControlsTour.ps1",
+        "Fluence.Wpf.PowerShell.Module/examples/06-ControlsTour.ps1",
+        "Fluence.Wpf.PowerShell.Module/src/Fluence.Wpf.PowerShell/Public/Show-FluenceWindow.ps1",
+        "Fluence.Wpf/Themes/Colors/Theme.Dark.xaml",
+        "Fluence.Wpf/Themes/Controls/Button.xaml",
+        "Fluence.Wpf/Themes/Controls/Card.xaml",
+        "Fluence.Wpf/Themes/Controls/FluenceWindow.xaml",
+        "Fluence.Wpf/Themes/Controls/FontIcon.xaml",
+        "Fluence.Wpf/Themes/Controls/Image.xaml",
+        "Fluence.Wpf/Themes/Controls/InfoBar.xaml",
+        "Fluence.Wpf/Themes/Controls/ScrollBar.xaml",
+        "Fluence.Wpf/Themes/Controls/Separator.xaml",
+        "Fluence.Wpf/Themes/Controls/TextBlock.xaml",
+        "Fluence.Wpf/Themes/Generic.xaml",
+        "Fluence.Wpf/Themes/Typography/Typography.xaml"
+      ],
+      "checkedVisualInputSha256": "3cde251239ae27007051b5fae536b8b61fcd52f0f21abb8a85b83a6a802fb47d",
+      "pngSha256": "4f9562b526d88a8710d40d3c5150fcd630ac2602f193e293daf29668628f85d1",
+      "decodedPixelSha256": "1931279ec7d87f4c843ef036313b425c39852842347dce63ca7335cc32ad4423",
+      "decision": "material-change"
+    },
+    {
+      "path": "docs/screenshots/powershell-layout-light.png",
+      "kind": "capture",
+      "sha256": "92473e35e89d18c3f47517395ac51fcbb18e31e497f8d27f944758a810ea181e",
+      "provenance": "Independent review of final net472 1120x900 themed category image; two-column no-scroll design, visible labels, navigation, and status bar compared with published draft.",
+      "theme": "light",
+      "state": "layout",
+      "mode": "WpfRender",
+      "inputs": [
+        "Fluence.Wpf.PowerShell.Module/build/Capture-ControlsTour.ps1",
+        "Fluence.Wpf.PowerShell.Module/examples/06-ControlsTour.ps1",
+        "Fluence.Wpf.PowerShell.Module/src/Fluence.Wpf.PowerShell/Public/Show-FluenceWindow.ps1",
+        "Fluence.Wpf/Themes/Colors/Theme.Light.xaml",
+        "Fluence.Wpf/Themes/Controls/Button.xaml",
+        "Fluence.Wpf/Themes/Controls/Card.xaml",
+        "Fluence.Wpf/Themes/Controls/FluenceWindow.xaml",
+        "Fluence.Wpf/Themes/Controls/FontIcon.xaml",
+        "Fluence.Wpf/Themes/Controls/Image.xaml",
+        "Fluence.Wpf/Themes/Controls/InfoBar.xaml",
+        "Fluence.Wpf/Themes/Controls/ScrollBar.xaml",
+        "Fluence.Wpf/Themes/Controls/Separator.xaml",
+        "Fluence.Wpf/Themes/Controls/TextBlock.xaml",
+        "Fluence.Wpf/Themes/Generic.xaml",
+        "Fluence.Wpf/Themes/Typography/Typography.xaml"
+      ],
+      "checkedVisualInputSha256": "31a08bc6f27bbf1db4a4a8b7413f8c6f19e1f5830a33248d12350a7d59509597",
+      "pngSha256": "92473e35e89d18c3f47517395ac51fcbb18e31e497f8d27f944758a810ea181e",
+      "decodedPixelSha256": "bbc4d0f0d9b5fbebb52de67618122304e2fb38feaa3096427cf242d079e03ce7",
+      "decision": "material-change"
     },
     {
       "path": "docs/screenshots/powershell-light.png",
       "kind": "capture",
-      "sha256": "b837e21a9f250f52e53b39ba9fe5726e8afc43bc24f0b770b5c0740dd427291a",
-      "provenance": "legacy-unverified",
+      "sha256": "eebec18e0a0f0616f0631ddc3669d6adb718fee141bba8849f039e51bb41efca",
+      "provenance": "Independent review of final net472 1120x900 themed category image; two-column no-scroll design, visible labels, navigation, and status bar compared with published draft.",
       "theme": "light",
       "state": "default",
       "mode": "WpfRender",
       "inputs": [
+        "Fluence.Wpf.PowerShell.Module/build/Capture-ControlsTour.ps1",
         "Fluence.Wpf.PowerShell.Module/examples/06-ControlsTour.ps1",
+        "Fluence.Wpf.PowerShell.Module/src/Fluence.Wpf.PowerShell/Public/Show-FluenceWindow.ps1",
+        "Fluence.Wpf/Themes/Colors/Theme.Light.xaml",
+        "Fluence.Wpf/Themes/Controls/AutoSuggestBox.xaml",
+        "Fluence.Wpf/Themes/Controls/Button.xaml",
+        "Fluence.Wpf/Themes/Controls/Card.xaml",
+        "Fluence.Wpf/Themes/Controls/ComboBox.xaml",
+        "Fluence.Wpf/Themes/Controls/DatePicker.xaml",
+        "Fluence.Wpf/Themes/Controls/FluenceWindow.xaml",
+        "Fluence.Wpf/Themes/Controls/InfoBar.xaml",
+        "Fluence.Wpf/Themes/Controls/NumberBox.xaml",
+        "Fluence.Wpf/Themes/Controls/PasswordBox.xaml",
+        "Fluence.Wpf/Themes/Controls/TextBlock.xaml",
+        "Fluence.Wpf/Themes/Controls/TextBox.xaml",
+        "Fluence.Wpf/Themes/Controls/TimePicker.xaml",
+        "Fluence.Wpf/Themes/Generic.xaml",
+        "Fluence.Wpf/Themes/Typography/Typography.xaml"
+      ],
+      "checkedVisualInputSha256": "b71aea40cfe117081d26ea51fbcc3dad1cc65350c2340622d64105fcd685aa2b",
+      "pngSha256": "eebec18e0a0f0616f0631ddc3669d6adb718fee141bba8849f039e51bb41efca",
+      "decodedPixelSha256": "0442d9f42d6205c25ffa6c91430b9be273f961c9130a92739fc57702c4c206ef",
+      "decision": "material-change"
+    },
+    {
+      "path": "docs/screenshots/powershell-navigation-dark.png",
+      "kind": "capture",
+      "sha256": "da58fa3a64093796c08d59b3a0cb8da899c7d125047a610a36fb4b58072ace74",
+      "provenance": "Independent review of final net472 1120x900 themed category image; two-column no-scroll design, visible labels, navigation, and status bar compared with published draft.",
+      "theme": "dark",
+      "state": "navigation",
+      "mode": "WpfRender",
+      "inputs": [
+        "Fluence.Wpf.PowerShell.Module/build/Capture-ControlsTour.ps1",
+        "Fluence.Wpf.PowerShell.Module/examples/06-ControlsTour.ps1",
+        "Fluence.Wpf.PowerShell.Module/src/Fluence.Wpf.PowerShell/Public/Show-FluenceWindow.ps1",
+        "Fluence.Wpf/Themes/Colors/Theme.Dark.xaml",
+        "Fluence.Wpf/Themes/Controls/Button.xaml",
+        "Fluence.Wpf/Themes/Controls/Card.xaml",
+        "Fluence.Wpf/Themes/Controls/FluenceWindow.xaml",
+        "Fluence.Wpf/Themes/Controls/FontIcon.xaml",
+        "Fluence.Wpf/Themes/Controls/InfoBadge.xaml",
+        "Fluence.Wpf/Themes/Controls/InfoBar.xaml",
+        "Fluence.Wpf/Themes/Controls/NavigationView.xaml",
+        "Fluence.Wpf/Themes/Controls/TextBlock.xaml",
+        "Fluence.Wpf/Themes/Generic.xaml",
+        "Fluence.Wpf/Themes/Typography/Typography.xaml"
+      ],
+      "checkedVisualInputSha256": "6e0751772eedde2361442f9580dcea4a9c3ff03c9f2aafa79101bf43bc2a697b",
+      "pngSha256": "da58fa3a64093796c08d59b3a0cb8da899c7d125047a610a36fb4b58072ace74",
+      "decodedPixelSha256": "037ce7036fb3e9763af1bb7955c1e3e1b5603336f31008035449111ca31e5d5e",
+      "decision": "material-change"
+    },
+    {
+      "path": "docs/screenshots/powershell-navigation-light.png",
+      "kind": "capture",
+      "sha256": "fc884df1880c81c1e988832faeab9512dd28ac3c71e0fb3cbeab6c8f5f115ed7",
+      "provenance": "Independent review of final net472 1120x900 themed category image; two-column no-scroll design, visible labels, navigation, and status bar compared with published draft.",
+      "theme": "light",
+      "state": "navigation",
+      "mode": "WpfRender",
+      "inputs": [
+        "Fluence.Wpf.PowerShell.Module/build/Capture-ControlsTour.ps1",
+        "Fluence.Wpf.PowerShell.Module/examples/06-ControlsTour.ps1",
+        "Fluence.Wpf.PowerShell.Module/src/Fluence.Wpf.PowerShell/Public/Show-FluenceWindow.ps1",
         "Fluence.Wpf/Themes/Colors/Theme.Light.xaml",
         "Fluence.Wpf/Themes/Controls/Button.xaml",
+        "Fluence.Wpf/Themes/Controls/Card.xaml",
         "Fluence.Wpf/Themes/Controls/FluenceWindow.xaml",
+        "Fluence.Wpf/Themes/Controls/FontIcon.xaml",
+        "Fluence.Wpf/Themes/Controls/InfoBadge.xaml",
+        "Fluence.Wpf/Themes/Controls/InfoBar.xaml",
+        "Fluence.Wpf/Themes/Controls/NavigationView.xaml",
+        "Fluence.Wpf/Themes/Controls/TextBlock.xaml",
+        "Fluence.Wpf/Themes/Generic.xaml",
+        "Fluence.Wpf/Themes/Typography/Typography.xaml"
+      ],
+      "checkedVisualInputSha256": "9016299384b94b68864c1b92728a30f428ac8469911934bc1767c9439b668d95",
+      "pngSha256": "fc884df1880c81c1e988832faeab9512dd28ac3c71e0fb3cbeab6c8f5f115ed7",
+      "decodedPixelSha256": "e0b37186aee33eb19df3933f4e94ee1e14e3f1df94fba30b092f0efe0ce6f8a6",
+      "decision": "material-change"
+    },
+    {
+      "path": "docs/screenshots/powershell-selection-dark.png",
+      "kind": "capture",
+      "sha256": "30d8f727ee0684ffdec6c27505e77aea4c959f25773f6e546d4221fe6ba76ac4",
+      "provenance": "Independent review of final net472 1120x900 themed category image; two-column no-scroll design, visible labels, navigation, and status bar compared with published draft.",
+      "theme": "dark",
+      "state": "selection",
+      "mode": "WpfRender",
+      "inputs": [
+        "Fluence.Wpf.PowerShell.Module/build/Capture-ControlsTour.ps1",
+        "Fluence.Wpf.PowerShell.Module/examples/06-ControlsTour.ps1",
+        "Fluence.Wpf.PowerShell.Module/src/Fluence.Wpf.PowerShell/Public/Show-FluenceWindow.ps1",
+        "Fluence.Wpf/Themes/Colors/Theme.Dark.xaml",
+        "Fluence.Wpf/Themes/Controls/Button.xaml",
+        "Fluence.Wpf/Themes/Controls/Card.xaml",
+        "Fluence.Wpf/Themes/Controls/CheckBox.xaml",
+        "Fluence.Wpf/Themes/Controls/FluenceWindow.xaml",
+        "Fluence.Wpf/Themes/Controls/InfoBar.xaml",
+        "Fluence.Wpf/Themes/Controls/ListBox.xaml",
+        "Fluence.Wpf/Themes/Controls/ListView.xaml",
+        "Fluence.Wpf/Themes/Controls/RadioButton.xaml",
+        "Fluence.Wpf/Themes/Controls/RatingControl.xaml",
+        "Fluence.Wpf/Themes/Controls/Slider.xaml",
+        "Fluence.Wpf/Themes/Controls/TextBlock.xaml",
+        "Fluence.Wpf/Themes/Controls/ToggleButton.xaml",
+        "Fluence.Wpf/Themes/Controls/ToggleSwitch.xaml",
+        "Fluence.Wpf/Themes/Controls/TreeView.xaml",
+        "Fluence.Wpf/Themes/Generic.xaml",
+        "Fluence.Wpf/Themes/Typography/Typography.xaml"
+      ],
+      "checkedVisualInputSha256": "fed53ff43aab754123c906d0f8de109a97c10859bb30a31af7e4c94feb66f0af",
+      "pngSha256": "30d8f727ee0684ffdec6c27505e77aea4c959f25773f6e546d4221fe6ba76ac4",
+      "decodedPixelSha256": "eddbaa14457596ee474e3abaa38474afcae42458b058adc5951d4b23d349b833",
+      "decision": "material-change"
+    },
+    {
+      "path": "docs/screenshots/powershell-selection-light.png",
+      "kind": "capture",
+      "sha256": "9c4586542ddc45f998c2a74c3b40adc95ba15fe5674e41951f1f03946be97be1",
+      "provenance": "Independent review of final net472 1120x900 themed category image; two-column no-scroll design, visible labels, navigation, and status bar compared with published draft.",
+      "theme": "light",
+      "state": "selection",
+      "mode": "WpfRender",
+      "inputs": [
+        "Fluence.Wpf.PowerShell.Module/build/Capture-ControlsTour.ps1",
+        "Fluence.Wpf.PowerShell.Module/examples/06-ControlsTour.ps1",
+        "Fluence.Wpf.PowerShell.Module/src/Fluence.Wpf.PowerShell/Public/Show-FluenceWindow.ps1",
+        "Fluence.Wpf/Themes/Colors/Theme.Light.xaml",
+        "Fluence.Wpf/Themes/Controls/Button.xaml",
+        "Fluence.Wpf/Themes/Controls/Card.xaml",
+        "Fluence.Wpf/Themes/Controls/CheckBox.xaml",
+        "Fluence.Wpf/Themes/Controls/FluenceWindow.xaml",
+        "Fluence.Wpf/Themes/Controls/InfoBar.xaml",
+        "Fluence.Wpf/Themes/Controls/ListBox.xaml",
+        "Fluence.Wpf/Themes/Controls/ListView.xaml",
+        "Fluence.Wpf/Themes/Controls/RadioButton.xaml",
+        "Fluence.Wpf/Themes/Controls/RatingControl.xaml",
+        "Fluence.Wpf/Themes/Controls/Slider.xaml",
+        "Fluence.Wpf/Themes/Controls/TextBlock.xaml",
+        "Fluence.Wpf/Themes/Controls/ToggleButton.xaml",
+        "Fluence.Wpf/Themes/Controls/ToggleSwitch.xaml",
+        "Fluence.Wpf/Themes/Controls/TreeView.xaml",
+        "Fluence.Wpf/Themes/Generic.xaml",
+        "Fluence.Wpf/Themes/Typography/Typography.xaml"
+      ],
+      "checkedVisualInputSha256": "98ef0d6d19cc94dbd7c4c70c46cf40c80743b1064b4798f7aaba16440225506a",
+      "pngSha256": "9c4586542ddc45f998c2a74c3b40adc95ba15fe5674e41951f1f03946be97be1",
+      "decodedPixelSha256": "0bd4cceb7a1d261391a74081cda1f11f90d427e12d7881eecbb4f6df88d8397b",
+      "decision": "material-change"
+    },
+    {
+      "path": "docs/screenshots/powershell-status-dark.png",
+      "kind": "capture",
+      "sha256": "66268532b326d1d84580d43c6afbec5d5e2cef724069d8e6ff3d8dd1b1d631e0",
+      "provenance": "Independent review of final net472 1120x900 themed category image; two-column no-scroll design, visible labels, navigation, and status bar compared with published draft.",
+      "theme": "dark",
+      "state": "status",
+      "mode": "WpfRender",
+      "inputs": [
+        "Fluence.Wpf.PowerShell.Module/build/Capture-ControlsTour.ps1",
+        "Fluence.Wpf.PowerShell.Module/examples/06-ControlsTour.ps1",
+        "Fluence.Wpf.PowerShell.Module/src/Fluence.Wpf.PowerShell/Public/Show-FluenceWindow.ps1",
+        "Fluence.Wpf/Themes/Colors/Theme.Dark.xaml",
+        "Fluence.Wpf/Themes/Controls/Button.xaml",
+        "Fluence.Wpf/Themes/Controls/Card.xaml",
+        "Fluence.Wpf/Themes/Controls/FluenceWindow.xaml",
+        "Fluence.Wpf/Themes/Controls/FontIcon.xaml",
+        "Fluence.Wpf/Themes/Controls/InfoBadge.xaml",
+        "Fluence.Wpf/Themes/Controls/InfoBar.xaml",
+        "Fluence.Wpf/Themes/Controls/PersonPicture.xaml",
+        "Fluence.Wpf/Themes/Controls/ProgressBar.xaml",
+        "Fluence.Wpf/Themes/Controls/ProgressRing.xaml",
+        "Fluence.Wpf/Themes/Controls/TextBlock.xaml",
+        "Fluence.Wpf/Themes/Generic.xaml",
+        "Fluence.Wpf/Themes/Typography/Typography.xaml"
+      ],
+      "checkedVisualInputSha256": "e70ebf136a3c58c0d15d2f6dd07a4205d4b9fb1cd57d2406ce546729d7f56c0a",
+      "pngSha256": "66268532b326d1d84580d43c6afbec5d5e2cef724069d8e6ff3d8dd1b1d631e0",
+      "decodedPixelSha256": "73f33721c3517248bd7fc8a7a590a66bac2d97e65b8735f72f75519f373fd700",
+      "decision": "material-change"
+    },
+    {
+      "path": "docs/screenshots/powershell-status-light.png",
+      "kind": "capture",
+      "sha256": "245d47e90e7ceec708853c20f2e38b3b05aa01fd22c1cddc822bdd0380f1f8b7",
+      "provenance": "Independent review of final net472 1120x900 themed category image; two-column no-scroll design, visible labels, navigation, and status bar compared with published draft.",
+      "theme": "light",
+      "state": "status",
+      "mode": "WpfRender",
+      "inputs": [
+        "Fluence.Wpf.PowerShell.Module/build/Capture-ControlsTour.ps1",
+        "Fluence.Wpf.PowerShell.Module/examples/06-ControlsTour.ps1",
+        "Fluence.Wpf.PowerShell.Module/src/Fluence.Wpf.PowerShell/Public/Show-FluenceWindow.ps1",
+        "Fluence.Wpf/Themes/Colors/Theme.Light.xaml",
+        "Fluence.Wpf/Themes/Controls/Button.xaml",
+        "Fluence.Wpf/Themes/Controls/Card.xaml",
+        "Fluence.Wpf/Themes/Controls/FluenceWindow.xaml",
+        "Fluence.Wpf/Themes/Controls/FontIcon.xaml",
+        "Fluence.Wpf/Themes/Controls/InfoBadge.xaml",
+        "Fluence.Wpf/Themes/Controls/InfoBar.xaml",
+        "Fluence.Wpf/Themes/Controls/PersonPicture.xaml",
+        "Fluence.Wpf/Themes/Controls/ProgressBar.xaml",
+        "Fluence.Wpf/Themes/Controls/ProgressRing.xaml",
+        "Fluence.Wpf/Themes/Controls/TextBlock.xaml",
+        "Fluence.Wpf/Themes/Generic.xaml",
+        "Fluence.Wpf/Themes/Typography/Typography.xaml"
+      ],
+      "checkedVisualInputSha256": "c7ca44e88964472c125f921d98bc39f7bf89995097d12955909f3ff5c9e3955b",
+      "pngSha256": "245d47e90e7ceec708853c20f2e38b3b05aa01fd22c1cddc822bdd0380f1f8b7",
+      "decodedPixelSha256": "5c339e3e5bd41e5f3f91a5c1a9ac783a7e40783f162a1ee6da2efee229d56048",
+      "decision": "material-change"
+    },
+    {
+      "path": "docs/screenshots/powershell-surfaces-dark.png",
+      "kind": "capture",
+      "sha256": "d275113d3f484cfe136e4886b207e5643f608b7d0f53e150098fb8c4cdb85627",
+      "provenance": "Independent review of final net472 1120x900 themed category image; two-column no-scroll design, visible labels, navigation, and status bar compared with published draft.",
+      "theme": "dark",
+      "state": "surfaces",
+      "mode": "WpfRender",
+      "inputs": [
+        "Fluence.Wpf.PowerShell.Module/build/Capture-ControlsTour.ps1",
+        "Fluence.Wpf.PowerShell.Module/examples/06-ControlsTour.ps1",
+        "Fluence.Wpf.PowerShell.Module/src/Fluence.Wpf.PowerShell/Public/Show-FluenceWindow.ps1",
+        "Fluence.Wpf/Themes/Colors/Theme.Dark.xaml",
+        "Fluence.Wpf/Themes/Controls/Button.xaml",
+        "Fluence.Wpf/Themes/Controls/Card.xaml",
+        "Fluence.Wpf/Themes/Controls/ContentDialog.xaml",
+        "Fluence.Wpf/Themes/Controls/Expander.xaml",
+        "Fluence.Wpf/Themes/Controls/FluenceWindow.xaml",
+        "Fluence.Wpf/Themes/Controls/FlyoutPresenter.xaml",
+        "Fluence.Wpf/Themes/Controls/InfoBar.xaml",
+        "Fluence.Wpf/Themes/Controls/TeachingTip.xaml",
+        "Fluence.Wpf/Themes/Controls/TextBlock.xaml",
         "Fluence.Wpf/Themes/Controls/TitleBar.xaml",
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": null,
-      "pngSha256": "b837e21a9f250f52e53b39ba9fe5726e8afc43bc24f0b770b5c0740dd427291a",
-      "decision": "legacy-unverified"
+      "checkedVisualInputSha256": "3372448115f2a99a858a686e5eaf0cd60e4650c6ddbc70770f00b4fe86977695",
+      "pngSha256": "d275113d3f484cfe136e4886b207e5643f608b7d0f53e150098fb8c4cdb85627",
+      "decodedPixelSha256": "08f3b68bbf1070c55801a9c84aac6aa7475d47c1cf41da4066f9a2b9d18fd665",
+      "decision": "material-change"
+    },
+    {
+      "path": "docs/screenshots/powershell-surfaces-light.png",
+      "kind": "capture",
+      "sha256": "9e01271790e0c3011eca99a9f23a388e6bf7f74ada0f36fdbcd78082fa59ad57",
+      "provenance": "Independent review of final net472 1120x900 themed category image; two-column no-scroll design, visible labels, navigation, and status bar compared with published draft.",
+      "theme": "light",
+      "state": "surfaces",
+      "mode": "WpfRender",
+      "inputs": [
+        "Fluence.Wpf.PowerShell.Module/build/Capture-ControlsTour.ps1",
+        "Fluence.Wpf.PowerShell.Module/examples/06-ControlsTour.ps1",
+        "Fluence.Wpf.PowerShell.Module/src/Fluence.Wpf.PowerShell/Public/Show-FluenceWindow.ps1",
+        "Fluence.Wpf/Themes/Colors/Theme.Light.xaml",
+        "Fluence.Wpf/Themes/Controls/Button.xaml",
+        "Fluence.Wpf/Themes/Controls/Card.xaml",
+        "Fluence.Wpf/Themes/Controls/ContentDialog.xaml",
+        "Fluence.Wpf/Themes/Controls/Expander.xaml",
+        "Fluence.Wpf/Themes/Controls/FluenceWindow.xaml",
+        "Fluence.Wpf/Themes/Controls/FlyoutPresenter.xaml",
+        "Fluence.Wpf/Themes/Controls/InfoBar.xaml",
+        "Fluence.Wpf/Themes/Controls/TeachingTip.xaml",
+        "Fluence.Wpf/Themes/Controls/TextBlock.xaml",
+        "Fluence.Wpf/Themes/Controls/TitleBar.xaml",
+        "Fluence.Wpf/Themes/Generic.xaml",
+        "Fluence.Wpf/Themes/Typography/Typography.xaml"
+      ],
+      "checkedVisualInputSha256": "83368f51cd2eea85d7c906002ebc61c226d0503b2fbd46fe2113f45b7744167e",
+      "pngSha256": "9e01271790e0c3011eca99a9f23a388e6bf7f74ada0f36fdbcd78082fa59ad57",
+      "decodedPixelSha256": "359158ccbba224054f5be425d3093c7638ececab38aa279ae34c8e53830f1080",
+      "decision": "material-change"
     },
     {
       "path": "docs/theming.md",
       "kind": "reference",
-      "sha256": "ed991f4df02ed11cf5c27aa668274df20728d5acbb68b03fed48e57e56e4adcd",
+      "sha256": "11531d9e9cd7802cedacab91f76d8973c8ba8aa1d6166ad5c432e95bab546f4e",
       "provenance": "source-generated"
     },
     {
       "path": "docs/winui-parity.md",
       "kind": "reference",
-      "sha256": "f43b317fbecb1590a774b507cb43cdd8bb4e1335939b98d77b8e31490373d48c",
+      "sha256": "deada833673c589d4f38a097ee60771cdeedefaa6e0e975620e94838782b00ee",
       "provenance": "source-generated"
     }
   ]

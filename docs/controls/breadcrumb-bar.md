@@ -28,7 +28,7 @@ path.Items.Add("Home");
 
 ## State and behavior
 
-The current path is displayed as clickable ancestors; ItemClicked identifies a navigation target.
+The current path is displayed as clickable ancestors. At constrained widths, the trail scrolls to keep the current item in view and an overflow button opens a menu of the full trail. Choosing a menu item raises `ItemClicked` with the original data item and its zero-based index. The menu respects `DisplayMemberPath`, `ItemTemplate`, `ItemTemplateSelector`, and `ItemStringFormat` when set. UIElement content stays in the trail; the menu uses its `TextBlock.Text` when available or a numbered location label. Resizing updates the visible trail.
 
 ## Parts
 
