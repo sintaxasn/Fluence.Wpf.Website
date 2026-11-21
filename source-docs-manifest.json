@@ -982,7 +982,7 @@
     {
       "path": "docs/controls.md",
       "kind": "reference",
-      "sha256": "de2b3f2aa84fe8e907d5d53cdae9062ee1365a961481902c13dc1b92479755b8",
+      "sha256": "9dd8ff1161e30ee69e6899460d55f3d6eb85762bc3319439e23c2d79f8217133",
       "provenance": "source-generated"
     },
     {
@@ -10266,7 +10266,7 @@
     {
       "path": "docs/theming.md",
       "kind": "reference",
-      "sha256": "bcbc2cbc4e0b6939e65097f232a48f03ce7c4c4853711e6d65465b311a8e090a",
+      "sha256": "675d10ce72acb4416ea20780034f1e043f4376f14379a8308d22c0211b4d7b81",
       "provenance": "source-generated"
     },
     {
