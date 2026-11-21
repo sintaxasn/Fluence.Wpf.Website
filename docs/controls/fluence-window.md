@@ -190,6 +190,8 @@ The XAML declares `MainFrame` inside `AppNavigation`, so the handlers can use th
 | `BackCommandParameter`, `PaneToggleCommandParameter` | `null` | Parameters passed to those commands. |
 | `BackRequested`, `PaneToggleRequested` | Not applicable | Events for handling button requests in code. |
 
+When hosted by `FluenceWindow`, `TitleBar` dims its built-in title text, subtitle, glyph buttons, and four content slots while the window is inactive. Each slot's opacity becomes 0.5; hosted child foreground values are left unchanged. Reactivation restores the active title-bar presentation.
+
 Interactive custom content placed in the extended chrome must set `WindowChrome.IsHitTestVisibleInChrome="True"` so WPF can route pointer input to it. The [gallery title bar](../../Fluence.Wpf.Demo/MainWindow.xaml) demonstrates this on its search control. Keep the title bar's content within the available space beside the caption controls.
 
 ### Additional behavior {#title-bar-additional-behavior}

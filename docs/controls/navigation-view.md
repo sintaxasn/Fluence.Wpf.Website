@@ -40,6 +40,10 @@ navigation.Items.Add(new Fluence.Wpf.Controls.NavigationViewItem { Content = "Ho
 
 ## State and behavior
 
+### Top-mode overflow
+
+In Top mode, items that do not fit move into the overflow menu. The control keeps first-fit item order and remeasures an overflowed item when its `Content` is replaced or when the `Text` property changes on a hidden WPF `TextBlock` content object. `TextBlock` content uses its text as the menu label. For other visual content, set `AutomationProperties.Name` when you need a specific readable label. Data items keep their source item template in the menu; changes inside arbitrary templates or `TextBlock.Inlines` are not tracked automatically.
+
 Selection moves the indicator; pane display mode changes the shell layout and back requests are explicit.
 
 Assign the page host explicitly to `NavigationView.Content`: an unnamed child is added to the item collection instead of becoming the page host. The application controls page history.

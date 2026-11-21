@@ -31,7 +31,7 @@ var avatar = new Fluence.Wpf.Controls.PersonPicture { DisplayName = "Ana Bowman"
 
 ## State and behavior
 
-`ProfilePicture` shows a photo. Without one, the control shows initials, derived from `DisplayName` unless `Initials` is set. `IsGroup` shows the group glyph. `BadgeNumber` or `BadgeGlyph` adds a badge.
+`ProfilePicture` shows a photo. Without one, the control shows initials, derived from `DisplayName` unless `Initials` is set. `IsGroup` shows the group glyph in the icon font; initials continue to use the body font. `BadgeNumber` or `BadgeGlyph` adds a badge.
 
 ## Related
 

@@ -35,7 +35,9 @@ var field = new Fluence.Wpf.Controls.TextBox { PlaceholderText = "With helper te
 
 ## State and behavior
 
-Focus, text entry, helper text, and validation states change the field presentation. A caller-supplied `AutomationProperties.HelpText` stays in place during validation. A validation message supplies fallback HelpText when the caller leaves it unset. Give the editor a visible label and connect it with `AutomationProperties.LabeledBy`. [Accessibility guidance](../reference/accessibility.md)
+Focus, text entry, helper text, and validation states change the field presentation. See the [accessibility guidance](../reference/accessibility.md).
+
+Use `AutomationProperties.LabeledBy` to connect the field to its visible label, and `AutomationProperties.HelpText` for app guidance. App-supplied help text, bindings, and styles take precedence over the validation HelpText fallback; loading or clearing validation preserves them. Visible validation text and the helper live region continue to represent validation status.
 
 ## Events
 

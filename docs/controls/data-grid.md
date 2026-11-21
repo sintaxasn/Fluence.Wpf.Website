@@ -69,7 +69,15 @@ For cell content other than text or a check box, use a `DataGridTemplateColumn` 
 
 On an editable source, set `CanUserAddRows` to `false`. Otherwise the new-item row counts as a row and `EmptyContent` stays hidden.
 
-With `IsItemSelectable` set to `false`, keyboard navigation and F2 editing still work, but a mouse click does not begin editing. The native selected-item and selected-cell collections can briefly report a rejected selection. [DataGrid selection limitation](https://github.com/sintaxasn/Fluence.Wpf/blob/main/KNOWN_ISSUES.md#datagrid-can-briefly-report-a-rejected-selection-in-native-collections)
+### Selection
+
+Setting `IsItemSelectable` to `false` clears the selection, keeps `SelectedItem`, `SelectedIndex`, and `SelectedValue` empty, and suppresses public and UI Automation selection events for rejected row and cell selections. If you turn the property off while an item is selected, the grid still reports that selection's removal. The grid retains its current-cell APIs, and programmatic editing through `BeginEdit()` remains available. Test input interactions in your application when `IsItemSelectable` is `false`.
+
+Keyboard navigation and F2 editing still work, but a mouse click does not begin editing. WPF can briefly add a rejected entry to its native `SelectedItems` or `SelectedCells` collection before Fluence clears it. The public single-selection properties remain empty, and rejected selection events are suppressed, but the collections are not guaranteed to stay unchanged at every instant. See the [DataGrid selection limitation](https://github.com/sintaxasn/Fluence.Wpf/blob/main/KNOWN_ISSUES.md#datagrid-can-briefly-report-a-rejected-selection-in-native-collections).
+
+### Grid lines across theme changes
+
+A frozen `SolidColorBrush` assigned to `HorizontalGridLinesBrush` or `VerticalGridLinesBrush` reads back as a grid-owned copy with the same color. This keeps an open cell edit when the theme or accent changes.
 
 ## Events
 

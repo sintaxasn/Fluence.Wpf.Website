@@ -3955,8 +3955,8 @@
     {
       "path": "docs/screenshots/controls/navigation-view-dark-compact.png",
       "kind": "capture",
-      "sha256": "8903e77556b7d5021e24fd286698e4f6479eb014e490ed04fba4e14d73598ebc",
-      "provenance": "Side-by-side review retained the published state. Differences are attributable to capture accent, framing, shadows or animation timing.",
+      "sha256": "31bfbb59c838479c983b12065963f9a6638d90eeece26c88da3291e1252fca20",
+      "provenance": "Independent before/after comparison: selected indicator and badge change from prior yellow/orange to current blue while layout remains readable.",
       "theme": "dark",
       "state": "compact",
       "mode": "WpfRender",
@@ -3969,16 +3969,16 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "655e383bbb0c3edefc49a492149732065d2ee20eb83a881e201af729ffabf70f",
-      "pngSha256": "8903e77556b7d5021e24fd286698e4f6479eb014e490ed04fba4e14d73598ebc",
-      "decodedPixelSha256": "346d53feefe699b7712455cb44dcc709986b76970c0b7af6a3ac1e7faffb1ca1",
-      "decision": "visually-unchanged"
+      "checkedVisualInputSha256": "dacfae1f2575a19bf2a01791fe4ae1a8f20b2703678220e9caeab46f954fc4a8",
+      "pngSha256": "31bfbb59c838479c983b12065963f9a6638d90eeece26c88da3291e1252fca20",
+      "decodedPixelSha256": "ceca01f461c9e72ec5609a9eb50a02a0dd6703bc476281560ed54968e8d31ea2",
+      "decision": "material-change"
     },
     {
       "path": "docs/screenshots/controls/navigation-view-dark.png",
       "kind": "capture",
-      "sha256": "0a2a0521e0b6ff7b58b30bbf665e3fe4449aa8d8439fe54ca2a051a18edb0f33",
-      "provenance": "Side-by-side review retained the published state. Differences are attributable to capture accent, framing, shadows or animation timing.",
+      "sha256": "143d518de2cae09ebc2d483d9d22d0060c06558646f69d332399837a1fa8b76b",
+      "provenance": "Independent before/after comparison: selected indicator and badge change from prior yellow/orange to current blue while layout remains readable.",
       "theme": "dark",
       "state": "default",
       "mode": "WpfRender",
@@ -3991,16 +3991,16 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "655e383bbb0c3edefc49a492149732065d2ee20eb83a881e201af729ffabf70f",
-      "pngSha256": "0a2a0521e0b6ff7b58b30bbf665e3fe4449aa8d8439fe54ca2a051a18edb0f33",
-      "decodedPixelSha256": "dee862845faff3aac7296ee1d48127c368c4bf636fe4811d5a06ce717c3fd887",
-      "decision": "visually-unchanged"
+      "checkedVisualInputSha256": "dacfae1f2575a19bf2a01791fe4ae1a8f20b2703678220e9caeab46f954fc4a8",
+      "pngSha256": "143d518de2cae09ebc2d483d9d22d0060c06558646f69d332399837a1fa8b76b",
+      "decodedPixelSha256": "070da2083fee06e13980f24f612fbeb25a2f74272d3904cb6e658fd6b3fa5a62",
+      "decision": "material-change"
     },
     {
       "path": "docs/screenshots/controls/navigation-view-item-dark.png",
       "kind": "capture",
-      "sha256": "d332fb3a43239d603353c763f6783a86d747cf91b144b30b613117e68f5c0be8",
-      "provenance": "Side-by-side review retained the published state. Differences are attributable to capture accent, framing, shadows or animation timing.",
+      "sha256": "b34276ee2e8b9490572913d6b40706c3eedf1da326b1efacc21abc2915731e03",
+      "provenance": "Independent before/after comparison: selected indicator and badge change from prior yellow/orange to current blue while layout remains readable.",
       "theme": "dark",
       "state": "default",
       "mode": "WpfRender",
@@ -4013,10 +4013,10 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "655e383bbb0c3edefc49a492149732065d2ee20eb83a881e201af729ffabf70f",
-      "pngSha256": "d332fb3a43239d603353c763f6783a86d747cf91b144b30b613117e68f5c0be8",
-      "decodedPixelSha256": "1c2d1e5f5c4dd6c81244aee582a84487ed4e17a3e6fd449227b68bf15addc04c",
-      "decision": "visually-unchanged"
+      "checkedVisualInputSha256": "dacfae1f2575a19bf2a01791fe4ae1a8f20b2703678220e9caeab46f954fc4a8",
+      "pngSha256": "b34276ee2e8b9490572913d6b40706c3eedf1da326b1efacc21abc2915731e03",
+      "decodedPixelSha256": "de56dbf5740403709af0335458f942028255830908b65313735087ecbd53d365",
+      "decision": "material-change"
     },
     {
       "path": "docs/screenshots/controls/navigation-view-item-header-dark.png",
@@ -4065,8 +4065,8 @@
     {
       "path": "docs/screenshots/controls/navigation-view-item-light.png",
       "kind": "capture",
-      "sha256": "4ae03d45f652963b1f013cae17f8c98e930b4270bf79c794a9f4378751319136",
-      "provenance": "Side-by-side review retained the published state. Differences are attributable to capture accent, framing, shadows or animation timing.",
+      "sha256": "e64929bc815bb21a52705deb8dc95dff0415ba9a1aaf590387c7900430951946",
+      "provenance": "Independent before/after comparison: selected indicator and badge change from prior yellow/orange to current blue while layout remains readable.",
       "theme": "light",
       "state": "default",
       "mode": "WpfRender",
@@ -4079,10 +4079,10 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "2ae6433085dd1618d19a18f4c58db47813a1470b23c7cb7848df163c8a656c8b",
-      "pngSha256": "4ae03d45f652963b1f013cae17f8c98e930b4270bf79c794a9f4378751319136",
-      "decodedPixelSha256": "c662df49abbf31ec58274343f14a2ed8528867f50b91815858fb034e6d877a0c",
-      "decision": "visually-unchanged"
+      "checkedVisualInputSha256": "c45f8d0890a8fa510c17fd5e52d849b0a57818c4801a372819c6b43b4f840213",
+      "pngSha256": "e64929bc815bb21a52705deb8dc95dff0415ba9a1aaf590387c7900430951946",
+      "decodedPixelSha256": "a3cbd7fce81fb6fce0b33ee5c02dc0aced76cd8dd588f65f68158c0174bc5257",
+      "decision": "material-change"
     },
     {
       "path": "docs/screenshots/controls/navigation-view-item-separator-dark.png",
@@ -4131,8 +4131,8 @@
     {
       "path": "docs/screenshots/controls/navigation-view-light-compact.png",
       "kind": "capture",
-      "sha256": "457daad0cec52953243cf536afa3c6894b0e8153d71e7f4e3580ca44f96de863",
-      "provenance": "Side-by-side review retained the published state. Differences are attributable to capture accent, framing, shadows or animation timing.",
+      "sha256": "b61ed4522533932c5e037b9d265ac0c8ad4090daf7c253f6a3be1131bdd98a08",
+      "provenance": "Independent before/after comparison: selected indicator and badge change from prior yellow/orange to current blue while layout remains readable.",
       "theme": "light",
       "state": "compact",
       "mode": "WpfRender",
@@ -4145,16 +4145,16 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "2ae6433085dd1618d19a18f4c58db47813a1470b23c7cb7848df163c8a656c8b",
-      "pngSha256": "457daad0cec52953243cf536afa3c6894b0e8153d71e7f4e3580ca44f96de863",
-      "decodedPixelSha256": "5042229511bfb30f7c66f5f0d9475605d3ba149f1e11c226282e48ddca5c98dd",
-      "decision": "visually-unchanged"
+      "checkedVisualInputSha256": "c45f8d0890a8fa510c17fd5e52d849b0a57818c4801a372819c6b43b4f840213",
+      "pngSha256": "b61ed4522533932c5e037b9d265ac0c8ad4090daf7c253f6a3be1131bdd98a08",
+      "decodedPixelSha256": "3615dbb2b7c5ceb5cb7e9cbae7df69f18adef482d23d07f59cf129e0a6debf85",
+      "decision": "material-change"
     },
     {
       "path": "docs/screenshots/controls/navigation-view-light.png",
       "kind": "capture",
-      "sha256": "2bd8e4ecd55d9c6fc8d4f9ab1041493b906a9b7bd4c47af8ffa84092f29f3e30",
-      "provenance": "Side-by-side review retained the published state. Differences are attributable to capture accent, framing, shadows or animation timing.",
+      "sha256": "ae95529101d9fd404369d2f4bff93782aa44bc8f3f9987533d6c76275ee406b1",
+      "provenance": "Independent before/after comparison: selected indicator and badge change from prior yellow/orange to current blue while layout remains readable.",
       "theme": "light",
       "state": "default",
       "mode": "WpfRender",
@@ -4167,10 +4167,10 @@
         "Fluence.Wpf/Themes/Generic.xaml",
         "Fluence.Wpf/Themes/Typography/Typography.xaml"
       ],
-      "checkedVisualInputSha256": "2ae6433085dd1618d19a18f4c58db47813a1470b23c7cb7848df163c8a656c8b",
-      "pngSha256": "2bd8e4ecd55d9c6fc8d4f9ab1041493b906a9b7bd4c47af8ffa84092f29f3e30",
-      "decodedPixelSha256": "301bdd95852fd1d38101f192dbfbc95eed16e35340c40e8b49dd7c7726ae33dd",
-      "decision": "visually-unchanged"
+      "checkedVisualInputSha256": "c45f8d0890a8fa510c17fd5e52d849b0a57818c4801a372819c6b43b4f840213",
+      "pngSha256": "ae95529101d9fd404369d2f4bff93782aa44bc8f3f9987533d6c76275ee406b1",
+      "decodedPixelSha256": "609e4fddc3571fa707480090bf1349452d61f922e71b1488546b1cd3c44b59d0",
+      "decision": "material-change"
     },
     {
       "path": "docs/screenshots/controls/number-box-dark.png",
