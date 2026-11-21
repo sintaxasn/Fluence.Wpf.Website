@@ -69,7 +69,7 @@ For cell content other than text or a check box, use a `DataGridTemplateColumn` 
 
 On an editable source, set `CanUserAddRows` to `false`. Otherwise the new-item row counts as a row and `EmptyContent` stays hidden.
 
-With `IsItemSelectable` set to `false`, keyboard navigation and F2 editing still work, but a mouse click does not begin editing. See the [native grid behavior](../../KNOWN_ISSUES.md#current-follow-ups-not-defects) in known issues.
+With `IsItemSelectable` set to `false`, keyboard navigation and F2 editing still work, but a mouse click does not begin editing. The native selected-item and selected-cell collections can briefly report a rejected selection. [DataGrid selection limitation](https://github.com/sintaxasn/Fluence.Wpf/blob/main/KNOWN_ISSUES.md#datagrid-can-briefly-report-a-rejected-selection-in-native-collections)
 
 ## Events
 

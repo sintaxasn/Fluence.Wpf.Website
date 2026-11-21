@@ -35,7 +35,7 @@ var field = new Fluence.Wpf.Controls.TextBox { PlaceholderText = "With helper te
 
 ## State and behavior
 
-Focus, text entry, helper text, and validation states change the field presentation.
+Focus, text entry, helper text, and validation states change the field presentation. A caller-supplied `AutomationProperties.HelpText` stays in place during validation. A validation message supplies fallback HelpText when the caller leaves it unset. Give the editor a visible label and connect it with `AutomationProperties.LabeledBy`. [Accessibility guidance](../reference/accessibility.md)
 
 ## Events
 
@@ -57,7 +57,7 @@ The inherited `TextChanged` event reports changes to the text.
 
 ### Selected text
 
-`TextBox`, `PasswordBox`, and `NumberBox`'s native text editor use WPF's default translucent selection overlay and WPF selected-text foreground behavior. The `net472` baseline cannot use the `SelectionTextBrush` property added in .NET Framework 4.8. Published selection color roles alone do not guarantee identical WinUI selected-text rendering; see [known issues](https://github.com/sintaxasn/Fluence.Wpf/blob/main/KNOWN_ISSUES.md#selected-text-rendering-in-native-wpf-editors).
+Fluence supplies the selection highlight for `TextBox`, native `PasswordBox`, and the editor inside `NumberBox`. WPF draws the highlight and selected glyphs. Legacy adorner rendering uses a translucent overlay by default. Non-adorner rendering draws the highlight behind the glyphs. Use the native selection appearance on `net472`. On WPF versions that expose `SelectionTextBrush`, enable non-adorner selection to set the glyph color. [Selected-text behavior](https://github.com/sintaxasn/Fluence.Wpf/blob/main/KNOWN_ISSUES.md#selected-text-can-look-different-from-winui)
 
 ## Reference
 

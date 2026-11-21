@@ -36,12 +36,12 @@ dotnet add $appProject reference ./Fluence.Wpf/Fluence.Wpf.csproj
 
 ## Build a local NuGet package
 
-Pack the library checkout and add the resulting local package to your application. Set `$version` to the version in the package file name that `dotnet pack` writes to `./artifacts`:
+Pack the library checkout and add the resulting local package to your application. Read the package version from the same project and configuration.
 
 ```powershell
 dotnet pack ./Fluence.Wpf/Fluence.Wpf.csproj -c Release -o ./artifacts
 $packageSource = (Resolve-Path ./artifacts).Path
-$version = '0.9.4' # Replace with the version of the package in ./artifacts.
+$version = (dotnet msbuild ./Fluence.Wpf/Fluence.Wpf.csproj -getProperty:PackageVersion -p:Configuration=Release -p:TargetFramework=net472 -nologo).Trim()
 dotnet add $appProject package Fluence.Wpf --version $version --no-restore
 dotnet restore $appProject --source $packageSource --source https://api.nuget.org/v3/index.json
 ```

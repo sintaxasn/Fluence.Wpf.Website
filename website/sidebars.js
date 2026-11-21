@@ -154,6 +154,7 @@ const sidebars = {
       "label": "Windows and layout",
       "items": [
         "controls/fluence-window",
+        "controls/acrylic-element",
         "controls/border",
         "controls/card",
         "controls/expander",

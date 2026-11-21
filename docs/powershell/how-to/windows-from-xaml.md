@@ -110,6 +110,10 @@ Show-FluenceWindow -Xaml $xaml -Initialize {
 
 `SelectedItem` returns the selected row object, so the handler reads its properties directly. The [ControlsTour example](../../../Fluence.Wpf.PowerShell.Module/examples/06-ControlsTour.ps1) shows the same grid inside a larger window and reports the selection in an `InfoBar`.
 
+## Add an in-app acrylic surface
+
+In `Show-FluenceWindow` XAML, place a named source visual before `fluence:AcrylicElement` as an overlapping sibling. Bind the host's `BackdropSource` to that name and set `Recipe="{DynamicResource AcrylicInAppDefaultRecipe}"`. Add the controls you want to keep sharp as the host's content. The [AcrylicElement example](../../controls/acrylic-element.md#add-acrylic-behind-content) shows the layout. The [Controls Tour Acrylic page](../controls.md#explore-the-controls-tour) demonstrates moving the source and forcing a solid fill.
+
 ## Return a result
 
 `Close-FluenceWindow -Result <value>` stores a value before closing. `Show-FluenceWindow` returns that value; a title bar close returns `$null`. Add `-PassThru` to return a `Fluence.WindowResult` with `Result` and `Closed` properties.

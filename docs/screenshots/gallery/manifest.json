@@ -2,217 +2,2053 @@
   "captureMethod": "WPF RenderTargetBitmap",
   "limitation": "Offscreen WPF captures omit DWM window shadow and Mica or Acrylic backdrop; no shadow has been simulated.",
   "entries": [
-    {"kind": "route", "route": "home", "title": "Home", "theme": "light", "state": "default", "file": "home-light.png"},
-    {"kind": "route", "route": "colors", "title": "Colors", "theme": "light", "state": "default", "file": "colors-light.png"},
-    {"kind": "route", "route": "icons", "title": "Icons", "theme": "light", "state": "default", "file": "icons-light.png"},
-    {"kind": "route", "route": "typography", "title": "Typography", "theme": "light", "state": "default", "file": "typography-light.png"},
-    {"kind": "card", "route": "typography", "title": "Type ramp", "theme": "light", "state": "default", "file": "typography-sample-01-light.png"},
-    {"kind": "route", "route": "buttons", "title": "Buttons", "theme": "light", "state": "default", "file": "buttons-light.png"},
-    {"kind": "card", "route": "buttons", "title": "A simple Button with text content.", "theme": "light", "state": "default", "file": "buttons-sample-01-light.png"},
-    {"kind": "card", "route": "buttons", "title": "A Button with graphical content.", "theme": "light", "state": "default", "file": "buttons-sample-02-light.png"},
-    {"kind": "card", "route": "buttons", "title": "Built-in appearances applied to Button: Accent for the primary action, Subtle for low-emphasis commands.", "theme": "light", "state": "default", "file": "buttons-sample-03-light.png"},
-    {"kind": "card", "route": "buttons", "title": "Place icons before or after text when the symbol helps the action scan faster.", "theme": "light", "state": "default", "file": "buttons-sample-04-light.png"},
-    {"kind": "card", "route": "buttons", "title": "Use HyperlinkButton for lightweight navigation and related secondary actions.", "theme": "light", "state": "default", "file": "buttons-sample-05-light.png"},
-    {"kind": "card", "route": "buttons", "title": "Use DropDownButton when all available actions live in the flyout.", "theme": "light", "state": "default", "file": "buttons-sample-06-light.png"},
-    {"kind": "card", "route": "buttons", "title": "Use SplitButton when there is one default action plus alternate actions in the flyout.", "theme": "light", "state": "default", "file": "buttons-sample-07-light.png"},
-    {"kind": "card", "route": "buttons", "title": "Use RepeatButton when holding the pointer should raise Click repeatedly.", "theme": "light", "state": "default", "file": "buttons-sample-08-light.png"},
-    {"kind": "card", "route": "buttons", "title": "Use ToggleButton when a command switches a state on or off and should look pressed while active.", "theme": "light", "state": "default", "file": "buttons-sample-09-light.png"},
-    {"kind": "card", "route": "buttons", "title": "Use ToggleSplitButton when the primary half toggles a state and the flyout chooses which variant of that state to apply.", "theme": "light", "state": "default", "file": "buttons-sample-10-light.png"},
-    {"kind": "accent", "route": "buttons", "title": "Buttons", "theme": "light", "state": "blue", "file": "buttons-light-accent-blue.png"},
-    {"kind": "accent", "route": "buttons", "title": "Buttons", "theme": "light", "state": "orange", "file": "buttons-light-accent-orange.png"},
-    {"kind": "card", "route": "buttons", "title": "A simple Button with text content.", "theme": "light", "state": "disabled", "file": "buttons-sample-01-light-disabled.png"},
-    {"kind": "route", "route": "selection", "title": "Selection", "theme": "light", "state": "default", "file": "selection-light.png"},
-    {"kind": "card", "route": "selection", "title": "Use check boxes for independent options. Add three-state only when an indeterminate value has meaning.", "theme": "light", "state": "default", "file": "selection-sample-01-light.png"},
-    {"kind": "card", "route": "selection", "title": "Use radio buttons when people must choose exactly one option from a visible group.", "theme": "light", "state": "default", "file": "selection-sample-02-light.png"},
-    {"kind": "card", "route": "selection", "title": "Use toggle switches for settings that take effect immediately.", "theme": "light", "state": "default", "file": "selection-sample-03-light.png"},
-    {"kind": "card", "route": "selection", "title": "Use rating when a compact ordered preference is more natural than a numeric input.", "theme": "light", "state": "default", "file": "selection-sample-04-light.png"},
-    {"kind": "card", "route": "selection", "title": "Use a combo box when the choices are useful but do not need to stay visible.", "theme": "light", "state": "default", "file": "selection-sample-05-light.png"},
-    {"kind": "card", "route": "selection", "title": "Use toggle switches for settings that take effect immediately.", "theme": "light", "state": "toggled", "file": "selection-sample-03-light-toggled.png"},
-    {"kind": "route", "route": "inputs", "title": "Inputs", "theme": "light", "state": "default", "file": "inputs-light.png"},
-    {"kind": "card", "route": "inputs", "title": "Use text boxes for short text entry. Add icons, clear buttons, and limits when they clarify the expected input.", "theme": "light", "state": "default", "file": "inputs-sample-01-light.png"},
-    {"kind": "card", "route": "inputs", "title": "Show helper text for guidance and validation states for committed feedback.", "theme": "light", "state": "default", "file": "inputs-sample-02-light.png"},
-    {"kind": "card", "route": "inputs", "title": "Use AutoSuggestBox for search and autocomplete: handle TextChanged to filter suggestions and QuerySubmitted to act on the choice.", "theme": "light", "state": "default", "file": "inputs-sample-03-light.png"},
-    {"kind": "card", "route": "inputs", "title": "Use password boxes for protected text entry, with reveal and strength affordances when appropriate.", "theme": "light", "state": "default", "file": "inputs-sample-04-light.png"},
-    {"kind": "card", "route": "inputs", "title": "Use number boxes for numeric entry with optional spin buttons, bounds, and supporting descriptions.", "theme": "light", "state": "default", "file": "inputs-sample-05-light.png"},
-    {"kind": "card", "route": "inputs", "title": "Use sliders when a relative value is easier to choose visually than typing a precise number.", "theme": "light", "state": "default", "file": "inputs-sample-06-light.png"},
-    {"kind": "card", "route": "inputs", "title": "Use text boxes for short text entry. Add icons, clear buttons, and limits when they clarify the expected input.", "theme": "light", "state": "entered", "file": "inputs-sample-01-light-entered.png"},
-    {"kind": "route", "route": "forms", "title": "Forms", "theme": "light", "state": "default", "file": "forms-light.png"},
-    {"kind": "card", "route": "forms", "title": "Use TimePicker for choosing a time from hour, minute, and AM/PM columns in a flyout.", "theme": "light", "state": "default", "file": "forms-sample-01-light.png"},
-    {"kind": "card", "route": "forms", "title": "Use DatePicker for choosing a date from day, month, and year columns in a flyout.", "theme": "light", "state": "default", "file": "forms-sample-02-light.png"},
-    {"kind": "card", "route": "forms", "title": "Use ColorPicker for choosing a color from a saturation/value spectrum with a hue slider, alpha, RGB/HSV channel text input, and hex input.", "theme": "light", "state": "default", "file": "forms-sample-03-light.png"},
-    {"kind": "card", "route": "forms", "title": "Use a compact form for account access, with clear labels and a primary action.", "theme": "light", "state": "default", "file": "forms-sample-04-light.png"},
-    {"kind": "card", "route": "forms", "title": "Combine contact, shipping, and quantity fields when a form needs several related decisions.", "theme": "light", "state": "default", "file": "forms-sample-05-light.png"},
-    {"kind": "card", "route": "forms", "title": "Use form controls to edit a small set of preferences and show confirmation after saving.", "theme": "light", "state": "default", "file": "forms-sample-06-light.png"},
-    {"kind": "route", "route": "data", "title": "Data", "theme": "light", "state": "default", "file": "data-light.png"},
-    {"kind": "card", "route": "data", "title": "Use ListView for compact single-column collections and richer item layouts.", "theme": "light", "state": "default", "file": "data-sample-01-light.png"},
-    {"kind": "card", "route": "data", "title": "Set EmptyContent for an intentional no-data state and animate removals when items leave the list.", "theme": "light", "state": "default", "file": "data-sample-02-light.png"},
-    {"kind": "card", "route": "data", "title": "Use ListBox for compact selection lists; set SelectionMode to Extended to allow selecting multiple items.", "theme": "light", "state": "default", "file": "data-sample-03-light.png"},
-    {"kind": "card", "route": "data", "title": "Use PersonPicture to represent people and contact status in data-heavy views.", "theme": "light", "state": "default", "file": "data-sample-04-light.png"},
-    {"kind": "card", "route": "data", "title": "Use Card variants to group related data with different levels of visual emphasis.", "theme": "light", "state": "default", "file": "data-sample-05-light.png"},
-    {"kind": "card", "route": "data", "title": "Use Image to present pictures with a theme-aware stroke; CornerRadius drives the rounded clip from square to circular.", "theme": "light", "state": "default", "file": "data-sample-06-light.png"},
-    {"kind": "card", "route": "data", "title": "Set ItemsLayout to Grid when items read better as tiles that wrap across the list; List keeps one item per row.", "theme": "light", "state": "default", "file": "data-sample-07-light.png"},
-    {"kind": "route", "route": "data-binding", "title": "Data binding", "theme": "light", "state": "default", "file": "data-binding-light.png"},
-    {"kind": "card", "route": "data-binding", "title": "Add or remove items at runtime. The list updates through INotifyCollectionChanged.", "theme": "light", "state": "default", "file": "data-binding-sample-01-light.png"},
-    {"kind": "card", "route": "data-binding", "title": "Switch between Single, Multiple, and Extended selection modes.", "theme": "light", "state": "default", "file": "data-binding-sample-02-light.png"},
-    {"kind": "card", "route": "data-binding", "title": "Use an inline DataTemplate when every item shares the same row shape.", "theme": "light", "state": "default", "file": "data-binding-sample-03-light.png"},
-    {"kind": "route", "route": "trees", "title": "Trees", "theme": "light", "state": "default", "file": "trees-light.png"},
-    {"kind": "card", "route": "trees", "title": "Use TreeViewItem nesting for compact folder, outline, or category hierarchies.", "theme": "light", "state": "default", "file": "trees-sample-01-light.png"},
-    {"kind": "card", "route": "trees", "title": "Handle SelectedItemChanged when selecting a node should update related content.", "theme": "light", "state": "default", "file": "trees-sample-02-light.png"},
-    {"kind": "card", "route": "trees", "title": "Use multiple selection when people need to select several nodes from the same hierarchy.", "theme": "light", "state": "default", "file": "trees-sample-03-light.png"},
-    {"kind": "card", "route": "trees", "title": "Set IsExpanded directly, or walk the item collection when a command controls the tree.", "theme": "light", "state": "default", "file": "trees-sample-04-light.png"},
-    {"kind": "route", "route": "menus", "title": "Menus", "theme": "light", "state": "default", "file": "menus-light.png"},
-    {"kind": "card", "route": "menus", "title": "Use Menu for persistent command groups with submenus, keyboard cues, separators, and checked states.", "theme": "light", "state": "default", "file": "menus-sample-01-light.png"},
-    {"kind": "card", "route": "menus", "title": "Use ContextMenu for actions that apply to a selected item or region.", "theme": "light", "state": "default", "file": "menus-sample-02-light.png"},
-    {"kind": "card", "route": "menus", "title": "Use ToolTip for short hints that clarify icons, disabled commands, or risky actions.", "theme": "light", "state": "default", "file": "menus-sample-03-light.png"},
-    {"kind": "card", "route": "menus", "title": "Use Flyout for lightweight, light-dismiss popups (details, quick forms, confirmations) anchored to a control.", "theme": "light", "state": "default", "file": "menus-sample-04-light.png"},
-    {"kind": "card", "route": "menus", "title": "Use ContentDialog for modal prompts that require an explicit choice (confirmations, errors, sign-in).", "theme": "light", "state": "default", "file": "menus-sample-05-light.png"},
-    {"kind": "card", "route": "menus", "title": "Use TeachingTip for contextual, non-blocking coaching anchored to a UI element.", "theme": "light", "state": "default", "file": "menus-sample-06-light.png"},
-    {"kind": "card", "route": "menus", "title": "Use CommandBarFlyout for a compact command strip with an overflow menu; commands dismiss the flyout when invoked.", "theme": "light", "state": "default", "file": "menus-sample-07-light.png"},
-    {"kind": "popup", "route": "menus", "title": "Context menu open", "theme": "light", "state": "open", "file": "menus-context-menu-open-light.png"},
-    {"kind": "popup", "route": "menus", "title": "Flyout open", "theme": "light", "state": "open", "file": "menus-flyout-open-light.png"},
-    {"kind": "popup", "route": "menus", "title": "Command bar flyout open", "theme": "light", "state": "open", "file": "menus-command-bar-flyout-open-light.png"},
-    {"kind": "overlay", "route": "menus", "title": "Content dialog open", "theme": "light", "state": "open", "file": "menus-content-dialog-open-light.png"},
-    {"kind": "route", "route": "navigation", "title": "Navigation", "theme": "light", "state": "default", "file": "navigation-light.png"},
-    {"kind": "card", "route": "navigation", "title": "Use a left pane for persistent destinations, with a header and separator to group the items.", "theme": "light", "state": "default", "file": "navigation-sample-01-light.png"},
-    {"kind": "card", "route": "navigation", "title": "Use top navigation for a small set of peer destinations that should leave the full width for content.", "theme": "light", "state": "default", "file": "navigation-sample-02-light.png"},
-    {"kind": "card", "route": "navigation", "title": "Use compact mode to preserve space, and enable the back button when the current view can navigate backward.", "theme": "light", "state": "default", "file": "navigation-sample-03-light.png"},
-    {"kind": "card", "route": "navigation", "title": "Use InfoBadge in NavigationViewItem to call attention to item state without changing the item label.", "theme": "light", "state": "default", "file": "navigation-sample-04-light.png"},
-    {"kind": "card", "route": "navigation", "title": "Use BreadcrumbBar to show the path to the current location and jump back to any ancestor.", "theme": "light", "state": "default", "file": "navigation-sample-05-light.png"},
-    {"kind": "card", "route": "navigation", "title": "Use PipsPager for compact page indication and switching, as in carousels and onboarding flows.", "theme": "light", "state": "default", "file": "navigation-sample-06-light.png"},
-    {"kind": "card", "route": "navigation", "title": "Use SelectorBar to switch between peer views of one page, and SlideNavigationPresenter to slide the view in from the side the selection moved.", "theme": "light", "state": "default", "file": "navigation-sample-07-light.png"},
-    {"kind": "card", "route": "navigation", "title": "Use PipsPager for compact page indication and switching, as in carousels and onboarding flows.", "theme": "light", "state": "page-selected", "file": "navigation-sample-06-light-page-selected.png"},
-    {"kind": "route", "route": "tabs", "title": "Tabs", "theme": "light", "state": "default", "file": "tabs-light.png"},
-    {"kind": "card", "route": "tabs", "title": "Use TabControl for a small set of peer panels that share the same space.", "theme": "light", "state": "default", "file": "tabs-sample-01-light.png"},
-    {"kind": "card", "route": "tabs", "title": "Use TabStripPlacement to move the tab row when the layout benefits from a side rail.", "theme": "light", "state": "default", "file": "tabs-sample-02-light.png"},
-    {"kind": "card", "route": "tabs", "title": "Use TabView for document-style tabs with add and close affordances.", "theme": "light", "state": "default", "file": "tabs-sample-03-light.png"},
-    {"kind": "card", "route": "tabs", "title": "Use TabControl for a small set of peer panels that share the same space.", "theme": "light", "state": "selected", "file": "tabs-sample-01-light-selected.png"},
-    {"kind": "route", "route": "layout", "title": "Layout", "theme": "light", "state": "default", "file": "layout-light.png"},
-    {"kind": "card", "route": "layout", "title": "Use Border to frame a region, StackPanel spacing for readable rows, and Separator to divide related content.", "theme": "light", "state": "default", "file": "layout-sample-01-light.png"},
-    {"kind": "card", "route": "layout", "title": "Use DockPanel when one element should pin to an edge while the remaining content fills the available space.", "theme": "light", "state": "default", "file": "layout-sample-02-light.png"},
-    {"kind": "card", "route": "layout", "title": "Use Expander for secondary settings that should start collapsed until needed.", "theme": "light", "state": "default", "file": "layout-sample-03-light.png"},
-    {"kind": "card", "route": "layout", "title": "Use DockPanel inside Expander headers and content when the summary and secondary action need edge alignment.", "theme": "light", "state": "default", "file": "layout-sample-04-light.png"},
-    {"kind": "card", "route": "layout", "title": "Use SmoothScrollViewer for a constrained list; its Fluence scrollbar shows the scroll position.", "theme": "light", "state": "default", "file": "layout-sample-05-light.png"},
-    {"kind": "card", "route": "layout", "title": "Use Expander for secondary settings that should start collapsed until needed.", "theme": "light", "state": "expanded", "file": "layout-sample-03-light-expanded.png"},
-    {"kind": "card", "route": "layout", "title": "Use SmoothScrollViewer for a constrained list; its Fluence scrollbar shows the scroll position.", "theme": "light", "state": "scrolled", "file": "layout-sample-05-light-scrolled.png"},
-    {"kind": "route", "route": "status", "title": "Status", "theme": "light", "state": "default", "file": "status-light.png"},
-    {"kind": "card", "route": "status", "title": "Use ProgressBar for measurable work where the current value can be reported.", "theme": "light", "state": "default", "file": "status-sample-01-light.png"},
-    {"kind": "card", "route": "status", "title": "Use indeterminate mode when work is active but no reliable percentage is available.", "theme": "light", "state": "default", "file": "status-sample-02-light.png"},
-    {"kind": "card", "route": "status", "title": "Use step progress for ordered tasks where users understand the current milestone.", "theme": "light", "state": "default", "file": "status-sample-03-light.png"},
-    {"kind": "card", "route": "status", "title": "Use ProgressRing when space is tight or when progress belongs next to compact content.", "theme": "light", "state": "default", "file": "status-sample-04-light.png"},
-    {"kind": "card", "route": "status", "title": "Use InfoBar for inline messages that explain status, validation, or recoverable outcomes.", "theme": "light", "state": "default", "file": "status-sample-05-light.png"},
-    {"kind": "card", "route": "status", "title": "Use InfoBar for inline messages that explain status, validation, or recoverable outcomes.", "theme": "light", "state": "dismissed", "file": "status-sample-05-light-dismissed.png"},
-    {"kind": "route", "route": "accessibility", "title": "Accessibility", "theme": "light", "state": "default", "file": "accessibility-light.png"},
-    {"kind": "card", "route": "accessibility", "title": "Keyboard focus and explicit tab order.", "theme": "light", "state": "default", "file": "accessibility-sample-01-light.png"},
-    {"kind": "card", "route": "accessibility", "title": "High contrast remaps Fluence semantic brushes to Windows system colors.", "theme": "light", "state": "default", "file": "accessibility-sample-02-light.png"},
-    {"kind": "card", "route": "accessibility", "title": "Icon-only buttons expose AutomationProperties.Name for screen readers.", "theme": "light", "state": "default", "file": "accessibility-sample-03-light.png"},
-    {"kind": "card", "route": "accessibility", "title": "Right-to-left layout mirrors Fluence controls for RTL locales.", "theme": "light", "state": "default", "file": "accessibility-sample-04-light.png"},
-    {"kind": "card", "route": "accessibility", "title": "InfoBar and TextBox validation use LiveRegionChanged to announce status changes without interrupting the user.", "theme": "light", "state": "default", "file": "accessibility-sample-05-light.png"},
-    {"kind": "card", "route": "accessibility", "title": "RatingControl supports full keyboard navigation and exposes the RangeValue automation pattern.", "theme": "light", "state": "default", "file": "accessibility-sample-06-light.png"},
-    {"kind": "route", "route": "settings", "title": "Settings", "theme": "light", "state": "default", "file": "settings-light.png"},
-    {"kind": "route", "route": "home", "title": "Home", "theme": "dark", "state": "default", "file": "home-dark.png"},
-    {"kind": "route", "route": "colors", "title": "Colors", "theme": "dark", "state": "default", "file": "colors-dark.png"},
-    {"kind": "route", "route": "icons", "title": "Icons", "theme": "dark", "state": "default", "file": "icons-dark.png"},
-    {"kind": "route", "route": "typography", "title": "Typography", "theme": "dark", "state": "default", "file": "typography-dark.png"},
-    {"kind": "card", "route": "typography", "title": "Type ramp", "theme": "dark", "state": "default", "file": "typography-sample-01-dark.png"},
-    {"kind": "route", "route": "buttons", "title": "Buttons", "theme": "dark", "state": "default", "file": "buttons-dark.png"},
-    {"kind": "card", "route": "buttons", "title": "A simple Button with text content.", "theme": "dark", "state": "default", "file": "buttons-sample-01-dark.png"},
-    {"kind": "card", "route": "buttons", "title": "A Button with graphical content.", "theme": "dark", "state": "default", "file": "buttons-sample-02-dark.png"},
-    {"kind": "card", "route": "buttons", "title": "Built-in appearances applied to Button: Accent for the primary action, Subtle for low-emphasis commands.", "theme": "dark", "state": "default", "file": "buttons-sample-03-dark.png"},
-    {"kind": "card", "route": "buttons", "title": "Place icons before or after text when the symbol helps the action scan faster.", "theme": "dark", "state": "default", "file": "buttons-sample-04-dark.png"},
-    {"kind": "card", "route": "buttons", "title": "Use HyperlinkButton for lightweight navigation and related secondary actions.", "theme": "dark", "state": "default", "file": "buttons-sample-05-dark.png"},
-    {"kind": "card", "route": "buttons", "title": "Use DropDownButton when all available actions live in the flyout.", "theme": "dark", "state": "default", "file": "buttons-sample-06-dark.png"},
-    {"kind": "card", "route": "buttons", "title": "Use SplitButton when there is one default action plus alternate actions in the flyout.", "theme": "dark", "state": "default", "file": "buttons-sample-07-dark.png"},
-    {"kind": "card", "route": "buttons", "title": "Use RepeatButton when holding the pointer should raise Click repeatedly.", "theme": "dark", "state": "default", "file": "buttons-sample-08-dark.png"},
-    {"kind": "card", "route": "buttons", "title": "Use ToggleButton when a command switches a state on or off and should look pressed while active.", "theme": "dark", "state": "default", "file": "buttons-sample-09-dark.png"},
-    {"kind": "card", "route": "buttons", "title": "Use ToggleSplitButton when the primary half toggles a state and the flyout chooses which variant of that state to apply.", "theme": "dark", "state": "default", "file": "buttons-sample-10-dark.png"},
-    {"kind": "card", "route": "buttons", "title": "A simple Button with text content.", "theme": "dark", "state": "disabled", "file": "buttons-sample-01-dark-disabled.png"},
-    {"kind": "route", "route": "selection", "title": "Selection", "theme": "dark", "state": "default", "file": "selection-dark.png"},
-    {"kind": "card", "route": "selection", "title": "Use check boxes for independent options. Add three-state only when an indeterminate value has meaning.", "theme": "dark", "state": "default", "file": "selection-sample-01-dark.png"},
-    {"kind": "card", "route": "selection", "title": "Use radio buttons when people must choose exactly one option from a visible group.", "theme": "dark", "state": "default", "file": "selection-sample-02-dark.png"},
-    {"kind": "card", "route": "selection", "title": "Use toggle switches for settings that take effect immediately.", "theme": "dark", "state": "default", "file": "selection-sample-03-dark.png"},
-    {"kind": "card", "route": "selection", "title": "Use rating when a compact ordered preference is more natural than a numeric input.", "theme": "dark", "state": "default", "file": "selection-sample-04-dark.png"},
-    {"kind": "card", "route": "selection", "title": "Use a combo box when the choices are useful but do not need to stay visible.", "theme": "dark", "state": "default", "file": "selection-sample-05-dark.png"},
-    {"kind": "card", "route": "selection", "title": "Use toggle switches for settings that take effect immediately.", "theme": "dark", "state": "toggled", "file": "selection-sample-03-dark-toggled.png"},
-    {"kind": "route", "route": "inputs", "title": "Inputs", "theme": "dark", "state": "default", "file": "inputs-dark.png"},
-    {"kind": "card", "route": "inputs", "title": "Use text boxes for short text entry. Add icons, clear buttons, and limits when they clarify the expected input.", "theme": "dark", "state": "default", "file": "inputs-sample-01-dark.png"},
-    {"kind": "card", "route": "inputs", "title": "Show helper text for guidance and validation states for committed feedback.", "theme": "dark", "state": "default", "file": "inputs-sample-02-dark.png"},
-    {"kind": "card", "route": "inputs", "title": "Use AutoSuggestBox for search and autocomplete: handle TextChanged to filter suggestions and QuerySubmitted to act on the choice.", "theme": "dark", "state": "default", "file": "inputs-sample-03-dark.png"},
-    {"kind": "card", "route": "inputs", "title": "Use password boxes for protected text entry, with reveal and strength affordances when appropriate.", "theme": "dark", "state": "default", "file": "inputs-sample-04-dark.png"},
-    {"kind": "card", "route": "inputs", "title": "Use number boxes for numeric entry with optional spin buttons, bounds, and supporting descriptions.", "theme": "dark", "state": "default", "file": "inputs-sample-05-dark.png"},
-    {"kind": "card", "route": "inputs", "title": "Use sliders when a relative value is easier to choose visually than typing a precise number.", "theme": "dark", "state": "default", "file": "inputs-sample-06-dark.png"},
-    {"kind": "card", "route": "inputs", "title": "Use text boxes for short text entry. Add icons, clear buttons, and limits when they clarify the expected input.", "theme": "dark", "state": "entered", "file": "inputs-sample-01-dark-entered.png"},
-    {"kind": "route", "route": "forms", "title": "Forms", "theme": "dark", "state": "default", "file": "forms-dark.png"},
-    {"kind": "card", "route": "forms", "title": "Use TimePicker for choosing a time from hour, minute, and AM/PM columns in a flyout.", "theme": "dark", "state": "default", "file": "forms-sample-01-dark.png"},
-    {"kind": "card", "route": "forms", "title": "Use DatePicker for choosing a date from day, month, and year columns in a flyout.", "theme": "dark", "state": "default", "file": "forms-sample-02-dark.png"},
-    {"kind": "card", "route": "forms", "title": "Use ColorPicker for choosing a color from a saturation/value spectrum with a hue slider, alpha, RGB/HSV channel text input, and hex input.", "theme": "dark", "state": "default", "file": "forms-sample-03-dark.png"},
-    {"kind": "card", "route": "forms", "title": "Use a compact form for account access, with clear labels and a primary action.", "theme": "dark", "state": "default", "file": "forms-sample-04-dark.png"},
-    {"kind": "card", "route": "forms", "title": "Combine contact, shipping, and quantity fields when a form needs several related decisions.", "theme": "dark", "state": "default", "file": "forms-sample-05-dark.png"},
-    {"kind": "card", "route": "forms", "title": "Use form controls to edit a small set of preferences and show confirmation after saving.", "theme": "dark", "state": "default", "file": "forms-sample-06-dark.png"},
-    {"kind": "route", "route": "data", "title": "Data", "theme": "dark", "state": "default", "file": "data-dark.png"},
-    {"kind": "card", "route": "data", "title": "Use ListView for compact single-column collections and richer item layouts.", "theme": "dark", "state": "default", "file": "data-sample-01-dark.png"},
-    {"kind": "card", "route": "data", "title": "Set EmptyContent for an intentional no-data state and animate removals when items leave the list.", "theme": "dark", "state": "default", "file": "data-sample-02-dark.png"},
-    {"kind": "card", "route": "data", "title": "Use ListBox for compact selection lists; set SelectionMode to Extended to allow selecting multiple items.", "theme": "dark", "state": "default", "file": "data-sample-03-dark.png"},
-    {"kind": "card", "route": "data", "title": "Use PersonPicture to represent people and contact status in data-heavy views.", "theme": "dark", "state": "default", "file": "data-sample-04-dark.png"},
-    {"kind": "card", "route": "data", "title": "Use Card variants to group related data with different levels of visual emphasis.", "theme": "dark", "state": "default", "file": "data-sample-05-dark.png"},
-    {"kind": "card", "route": "data", "title": "Use Image to present pictures with a theme-aware stroke; CornerRadius drives the rounded clip from square to circular.", "theme": "dark", "state": "default", "file": "data-sample-06-dark.png"},
-    {"kind": "card", "route": "data", "title": "Set ItemsLayout to Grid when items read better as tiles that wrap across the list; List keeps one item per row.", "theme": "dark", "state": "default", "file": "data-sample-07-dark.png"},
-    {"kind": "route", "route": "data-binding", "title": "Data binding", "theme": "dark", "state": "default", "file": "data-binding-dark.png"},
-    {"kind": "card", "route": "data-binding", "title": "Add or remove items at runtime. The list updates through INotifyCollectionChanged.", "theme": "dark", "state": "default", "file": "data-binding-sample-01-dark.png"},
-    {"kind": "card", "route": "data-binding", "title": "Switch between Single, Multiple, and Extended selection modes.", "theme": "dark", "state": "default", "file": "data-binding-sample-02-dark.png"},
-    {"kind": "card", "route": "data-binding", "title": "Use an inline DataTemplate when every item shares the same row shape.", "theme": "dark", "state": "default", "file": "data-binding-sample-03-dark.png"},
-    {"kind": "route", "route": "trees", "title": "Trees", "theme": "dark", "state": "default", "file": "trees-dark.png"},
-    {"kind": "card", "route": "trees", "title": "Use TreeViewItem nesting for compact folder, outline, or category hierarchies.", "theme": "dark", "state": "default", "file": "trees-sample-01-dark.png"},
-    {"kind": "card", "route": "trees", "title": "Handle SelectedItemChanged when selecting a node should update related content.", "theme": "dark", "state": "default", "file": "trees-sample-02-dark.png"},
-    {"kind": "card", "route": "trees", "title": "Use multiple selection when people need to select several nodes from the same hierarchy.", "theme": "dark", "state": "default", "file": "trees-sample-03-dark.png"},
-    {"kind": "card", "route": "trees", "title": "Set IsExpanded directly, or walk the item collection when a command controls the tree.", "theme": "dark", "state": "default", "file": "trees-sample-04-dark.png"},
-    {"kind": "route", "route": "menus", "title": "Menus", "theme": "dark", "state": "default", "file": "menus-dark.png"},
-    {"kind": "card", "route": "menus", "title": "Use Menu for persistent command groups with submenus, keyboard cues, separators, and checked states.", "theme": "dark", "state": "default", "file": "menus-sample-01-dark.png"},
-    {"kind": "card", "route": "menus", "title": "Use ContextMenu for actions that apply to a selected item or region.", "theme": "dark", "state": "default", "file": "menus-sample-02-dark.png"},
-    {"kind": "card", "route": "menus", "title": "Use ToolTip for short hints that clarify icons, disabled commands, or risky actions.", "theme": "dark", "state": "default", "file": "menus-sample-03-dark.png"},
-    {"kind": "card", "route": "menus", "title": "Use Flyout for lightweight, light-dismiss popups (details, quick forms, confirmations) anchored to a control.", "theme": "dark", "state": "default", "file": "menus-sample-04-dark.png"},
-    {"kind": "card", "route": "menus", "title": "Use ContentDialog for modal prompts that require an explicit choice (confirmations, errors, sign-in).", "theme": "dark", "state": "default", "file": "menus-sample-05-dark.png"},
-    {"kind": "card", "route": "menus", "title": "Use TeachingTip for contextual, non-blocking coaching anchored to a UI element.", "theme": "dark", "state": "default", "file": "menus-sample-06-dark.png"},
-    {"kind": "card", "route": "menus", "title": "Use CommandBarFlyout for a compact command strip with an overflow menu; commands dismiss the flyout when invoked.", "theme": "dark", "state": "default", "file": "menus-sample-07-dark.png"},
-    {"kind": "popup", "route": "menus", "title": "Context menu open", "theme": "dark", "state": "open", "file": "menus-context-menu-open-dark.png"},
-    {"kind": "popup", "route": "menus", "title": "Flyout open", "theme": "dark", "state": "open", "file": "menus-flyout-open-dark.png"},
-    {"kind": "popup", "route": "menus", "title": "Command bar flyout open", "theme": "dark", "state": "open", "file": "menus-command-bar-flyout-open-dark.png"},
-    {"kind": "overlay", "route": "menus", "title": "Content dialog open", "theme": "dark", "state": "open", "file": "menus-content-dialog-open-dark.png"},
-    {"kind": "route", "route": "navigation", "title": "Navigation", "theme": "dark", "state": "default", "file": "navigation-dark.png"},
-    {"kind": "card", "route": "navigation", "title": "Use a left pane for persistent destinations, with a header and separator to group the items.", "theme": "dark", "state": "default", "file": "navigation-sample-01-dark.png"},
-    {"kind": "card", "route": "navigation", "title": "Use top navigation for a small set of peer destinations that should leave the full width for content.", "theme": "dark", "state": "default", "file": "navigation-sample-02-dark.png"},
-    {"kind": "card", "route": "navigation", "title": "Use compact mode to preserve space, and enable the back button when the current view can navigate backward.", "theme": "dark", "state": "default", "file": "navigation-sample-03-dark.png"},
-    {"kind": "card", "route": "navigation", "title": "Use InfoBadge in NavigationViewItem to call attention to item state without changing the item label.", "theme": "dark", "state": "default", "file": "navigation-sample-04-dark.png"},
-    {"kind": "card", "route": "navigation", "title": "Use BreadcrumbBar to show the path to the current location and jump back to any ancestor.", "theme": "dark", "state": "default", "file": "navigation-sample-05-dark.png"},
-    {"kind": "card", "route": "navigation", "title": "Use PipsPager for compact page indication and switching, as in carousels and onboarding flows.", "theme": "dark", "state": "default", "file": "navigation-sample-06-dark.png"},
-    {"kind": "card", "route": "navigation", "title": "Use SelectorBar to switch between peer views of one page, and SlideNavigationPresenter to slide the view in from the side the selection moved.", "theme": "dark", "state": "default", "file": "navigation-sample-07-dark.png"},
-    {"kind": "card", "route": "navigation", "title": "Use PipsPager for compact page indication and switching, as in carousels and onboarding flows.", "theme": "dark", "state": "page-selected", "file": "navigation-sample-06-dark-page-selected.png"},
-    {"kind": "route", "route": "tabs", "title": "Tabs", "theme": "dark", "state": "default", "file": "tabs-dark.png"},
-    {"kind": "card", "route": "tabs", "title": "Use TabControl for a small set of peer panels that share the same space.", "theme": "dark", "state": "default", "file": "tabs-sample-01-dark.png"},
-    {"kind": "card", "route": "tabs", "title": "Use TabStripPlacement to move the tab row when the layout benefits from a side rail.", "theme": "dark", "state": "default", "file": "tabs-sample-02-dark.png"},
-    {"kind": "card", "route": "tabs", "title": "Use TabView for document-style tabs with add and close affordances.", "theme": "dark", "state": "default", "file": "tabs-sample-03-dark.png"},
-    {"kind": "card", "route": "tabs", "title": "Use TabControl for a small set of peer panels that share the same space.", "theme": "dark", "state": "selected", "file": "tabs-sample-01-dark-selected.png"},
-    {"kind": "route", "route": "layout", "title": "Layout", "theme": "dark", "state": "default", "file": "layout-dark.png"},
-    {"kind": "card", "route": "layout", "title": "Use Border to frame a region, StackPanel spacing for readable rows, and Separator to divide related content.", "theme": "dark", "state": "default", "file": "layout-sample-01-dark.png"},
-    {"kind": "card", "route": "layout", "title": "Use DockPanel when one element should pin to an edge while the remaining content fills the available space.", "theme": "dark", "state": "default", "file": "layout-sample-02-dark.png"},
-    {"kind": "card", "route": "layout", "title": "Use Expander for secondary settings that should start collapsed until needed.", "theme": "dark", "state": "default", "file": "layout-sample-03-dark.png"},
-    {"kind": "card", "route": "layout", "title": "Use DockPanel inside Expander headers and content when the summary and secondary action need edge alignment.", "theme": "dark", "state": "default", "file": "layout-sample-04-dark.png"},
-    {"kind": "card", "route": "layout", "title": "Use SmoothScrollViewer for a constrained list; its Fluence scrollbar shows the scroll position.", "theme": "dark", "state": "default", "file": "layout-sample-05-dark.png"},
-    {"kind": "card", "route": "layout", "title": "Use Expander for secondary settings that should start collapsed until needed.", "theme": "dark", "state": "expanded", "file": "layout-sample-03-dark-expanded.png"},
-    {"kind": "card", "route": "layout", "title": "Use SmoothScrollViewer for a constrained list; its Fluence scrollbar shows the scroll position.", "theme": "dark", "state": "scrolled", "file": "layout-sample-05-dark-scrolled.png"},
-    {"kind": "route", "route": "status", "title": "Status", "theme": "dark", "state": "default", "file": "status-dark.png"},
-    {"kind": "card", "route": "status", "title": "Use ProgressBar for measurable work where the current value can be reported.", "theme": "dark", "state": "default", "file": "status-sample-01-dark.png"},
-    {"kind": "card", "route": "status", "title": "Use indeterminate mode when work is active but no reliable percentage is available.", "theme": "dark", "state": "default", "file": "status-sample-02-dark.png"},
-    {"kind": "card", "route": "status", "title": "Use step progress for ordered tasks where users understand the current milestone.", "theme": "dark", "state": "default", "file": "status-sample-03-dark.png"},
-    {"kind": "card", "route": "status", "title": "Use ProgressRing when space is tight or when progress belongs next to compact content.", "theme": "dark", "state": "default", "file": "status-sample-04-dark.png"},
-    {"kind": "card", "route": "status", "title": "Use InfoBar for inline messages that explain status, validation, or recoverable outcomes.", "theme": "dark", "state": "default", "file": "status-sample-05-dark.png"},
-    {"kind": "card", "route": "status", "title": "Use InfoBar for inline messages that explain status, validation, or recoverable outcomes.", "theme": "dark", "state": "dismissed", "file": "status-sample-05-dark-dismissed.png"},
-    {"kind": "route", "route": "accessibility", "title": "Accessibility", "theme": "dark", "state": "default", "file": "accessibility-dark.png"},
-    {"kind": "card", "route": "accessibility", "title": "Keyboard focus and explicit tab order.", "theme": "dark", "state": "default", "file": "accessibility-sample-01-dark.png"},
-    {"kind": "card", "route": "accessibility", "title": "High contrast remaps Fluence semantic brushes to Windows system colors.", "theme": "dark", "state": "default", "file": "accessibility-sample-02-dark.png"},
-    {"kind": "card", "route": "accessibility", "title": "Icon-only buttons expose AutomationProperties.Name for screen readers.", "theme": "dark", "state": "default", "file": "accessibility-sample-03-dark.png"},
-    {"kind": "card", "route": "accessibility", "title": "Right-to-left layout mirrors Fluence controls for RTL locales.", "theme": "dark", "state": "default", "file": "accessibility-sample-04-dark.png"},
-    {"kind": "card", "route": "accessibility", "title": "InfoBar and TextBox validation use LiveRegionChanged to announce status changes without interrupting the user.", "theme": "dark", "state": "default", "file": "accessibility-sample-05-dark.png"},
-    {"kind": "card", "route": "accessibility", "title": "RatingControl supports full keyboard navigation and exposes the RangeValue automation pattern.", "theme": "dark", "state": "default", "file": "accessibility-sample-06-dark.png"},
-    {"kind": "route", "route": "settings", "title": "Settings", "theme": "dark", "state": "default", "file": "settings-dark.png"}
+    {
+      "kind": "route",
+      "route": "home",
+      "title": "Home",
+      "theme": "light",
+      "state": "default",
+      "file": "home-light.png"
+    },
+    {
+      "kind": "route",
+      "route": "colors",
+      "title": "Colors",
+      "theme": "light",
+      "state": "default",
+      "file": "colors-light.png"
+    },
+    {
+      "kind": "route",
+      "route": "icons",
+      "title": "Icons",
+      "theme": "light",
+      "state": "default",
+      "file": "icons-light.png"
+    },
+    {
+      "kind": "route",
+      "route": "typography",
+      "title": "Typography",
+      "theme": "light",
+      "state": "default",
+      "file": "typography-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "typography",
+      "title": "Type ramp",
+      "theme": "light",
+      "state": "default",
+      "file": "typography-sample-01-light.png"
+    },
+    {
+      "kind": "route",
+      "route": "buttons",
+      "title": "Buttons",
+      "theme": "light",
+      "state": "default",
+      "file": "buttons-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "buttons",
+      "title": "A simple Button with text content.",
+      "theme": "light",
+      "state": "default",
+      "file": "buttons-sample-01-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "buttons",
+      "title": "A Button with graphical content.",
+      "theme": "light",
+      "state": "default",
+      "file": "buttons-sample-02-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "buttons",
+      "title": "Built-in appearances applied to Button: Accent for the primary action, Subtle for low-emphasis commands.",
+      "theme": "light",
+      "state": "default",
+      "file": "buttons-sample-03-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "buttons",
+      "title": "Place icons before or after text when the symbol helps the action scan faster.",
+      "theme": "light",
+      "state": "default",
+      "file": "buttons-sample-04-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "buttons",
+      "title": "Use HyperlinkButton for lightweight navigation and related secondary actions.",
+      "theme": "light",
+      "state": "default",
+      "file": "buttons-sample-05-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "buttons",
+      "title": "Use DropDownButton when all available actions live in the flyout.",
+      "theme": "light",
+      "state": "default",
+      "file": "buttons-sample-06-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "buttons",
+      "title": "Use SplitButton when there is one default action plus alternate actions in the flyout.",
+      "theme": "light",
+      "state": "default",
+      "file": "buttons-sample-07-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "buttons",
+      "title": "Use RepeatButton when holding the pointer should raise Click repeatedly.",
+      "theme": "light",
+      "state": "default",
+      "file": "buttons-sample-08-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "buttons",
+      "title": "Use ToggleButton when a command switches a state on or off and should look pressed while active.",
+      "theme": "light",
+      "state": "default",
+      "file": "buttons-sample-09-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "buttons",
+      "title": "Use ToggleSplitButton when the primary half toggles a state and the flyout chooses which variant of that state to apply.",
+      "theme": "light",
+      "state": "default",
+      "file": "buttons-sample-10-light.png"
+    },
+    {
+      "kind": "accent",
+      "route": "buttons",
+      "title": "Buttons",
+      "theme": "light",
+      "state": "blue",
+      "file": "buttons-light-accent-blue.png"
+    },
+    {
+      "kind": "accent",
+      "route": "buttons",
+      "title": "Buttons",
+      "theme": "light",
+      "state": "orange",
+      "file": "buttons-light-accent-orange.png"
+    },
+    {
+      "kind": "card",
+      "route": "buttons",
+      "title": "A simple Button with text content.",
+      "theme": "light",
+      "state": "disabled",
+      "file": "buttons-sample-01-light-disabled.png"
+    },
+    {
+      "kind": "route",
+      "route": "selection",
+      "title": "Selection",
+      "theme": "light",
+      "state": "default",
+      "file": "selection-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "selection",
+      "title": "Use check boxes for independent options. Add three-state only when an indeterminate value has meaning.",
+      "theme": "light",
+      "state": "default",
+      "file": "selection-sample-01-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "selection",
+      "title": "Use radio buttons when people must choose exactly one option from a visible group.",
+      "theme": "light",
+      "state": "default",
+      "file": "selection-sample-02-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "selection",
+      "title": "Use toggle switches for settings that take effect immediately.",
+      "theme": "light",
+      "state": "default",
+      "file": "selection-sample-03-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "selection",
+      "title": "Use rating when a compact ordered preference is more natural than a numeric input.",
+      "theme": "light",
+      "state": "default",
+      "file": "selection-sample-04-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "selection",
+      "title": "Use a combo box when the choices are useful but do not need to stay visible.",
+      "theme": "light",
+      "state": "default",
+      "file": "selection-sample-05-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "selection",
+      "title": "Use toggle switches for settings that take effect immediately.",
+      "theme": "light",
+      "state": "toggled",
+      "file": "selection-sample-03-light-toggled.png"
+    },
+    {
+      "kind": "route",
+      "route": "inputs",
+      "title": "Inputs",
+      "theme": "light",
+      "state": "default",
+      "file": "inputs-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "inputs",
+      "title": "Use text boxes for short text entry. Add icons, clear buttons, and limits when they clarify the expected input.",
+      "theme": "light",
+      "state": "default",
+      "file": "inputs-sample-01-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "inputs",
+      "title": "Show helper text for guidance and validation states for committed feedback.",
+      "theme": "light",
+      "state": "default",
+      "file": "inputs-sample-02-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "inputs",
+      "title": "Use AutoSuggestBox for search and autocomplete: handle TextChanged to filter suggestions and QuerySubmitted to act on the choice.",
+      "theme": "light",
+      "state": "default",
+      "file": "inputs-sample-03-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "inputs",
+      "title": "Use password boxes for protected text entry, with reveal and strength affordances when appropriate.",
+      "theme": "light",
+      "state": "default",
+      "file": "inputs-sample-04-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "inputs",
+      "title": "Use number boxes for numeric entry with optional spin buttons, bounds, and supporting descriptions.",
+      "theme": "light",
+      "state": "default",
+      "file": "inputs-sample-05-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "inputs",
+      "title": "Use sliders when a relative value is easier to choose visually than typing a precise number.",
+      "theme": "light",
+      "state": "default",
+      "file": "inputs-sample-06-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "inputs",
+      "title": "Use text boxes for short text entry. Add icons, clear buttons, and limits when they clarify the expected input.",
+      "theme": "light",
+      "state": "entered",
+      "file": "inputs-sample-01-light-entered.png"
+    },
+    {
+      "kind": "route",
+      "route": "forms",
+      "title": "Forms",
+      "theme": "light",
+      "state": "default",
+      "file": "forms-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "forms",
+      "title": "Use TimePicker for choosing a time from hour, minute, and AM/PM columns in a flyout.",
+      "theme": "light",
+      "state": "default",
+      "file": "forms-sample-01-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "forms",
+      "title": "Use DatePicker for choosing a date from day, month, and year columns in a flyout.",
+      "theme": "light",
+      "state": "default",
+      "file": "forms-sample-02-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "forms",
+      "title": "Use ColorPicker for choosing a color from a saturation/value spectrum with a hue slider, alpha, RGB/HSV channel text input, and hex input.",
+      "theme": "light",
+      "state": "default",
+      "file": "forms-sample-03-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "forms",
+      "title": "Use a compact form for account access, with clear labels and a primary action.",
+      "theme": "light",
+      "state": "default",
+      "file": "forms-sample-04-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "forms",
+      "title": "Combine contact, shipping, and quantity fields when a form needs several related decisions.",
+      "theme": "light",
+      "state": "default",
+      "file": "forms-sample-05-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "forms",
+      "title": "Use form controls to edit a small set of preferences and show confirmation after saving.",
+      "theme": "light",
+      "state": "default",
+      "file": "forms-sample-06-light.png"
+    },
+    {
+      "kind": "route",
+      "route": "data",
+      "title": "Data",
+      "theme": "light",
+      "state": "default",
+      "file": "data-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "data",
+      "title": "Use ListView for compact single-column collections and richer item layouts.",
+      "theme": "light",
+      "state": "default",
+      "file": "data-sample-01-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "data",
+      "title": "Set EmptyContent for an intentional no-data state and animate removals when items leave the list.",
+      "theme": "light",
+      "state": "default",
+      "file": "data-sample-02-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "data",
+      "title": "Use ListBox for compact selection lists; set SelectionMode to Extended to allow selecting multiple items.",
+      "theme": "light",
+      "state": "default",
+      "file": "data-sample-03-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "data",
+      "title": "Use PersonPicture to represent people and contact status in data-heavy views.",
+      "theme": "light",
+      "state": "default",
+      "file": "data-sample-04-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "data",
+      "title": "Use Card variants to group related data with different levels of visual emphasis.",
+      "theme": "light",
+      "state": "default",
+      "file": "data-sample-05-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "data",
+      "title": "Use Image to present pictures with a theme-aware stroke; CornerRadius drives the rounded clip from square to circular.",
+      "theme": "light",
+      "state": "default",
+      "file": "data-sample-06-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "data",
+      "title": "Set ItemsLayout to Grid when items read better as tiles that wrap across the list; List keeps one item per row.",
+      "theme": "light",
+      "state": "default",
+      "file": "data-sample-07-light.png"
+    },
+    {
+      "kind": "route",
+      "route": "data-binding",
+      "title": "Data binding",
+      "theme": "light",
+      "state": "default",
+      "file": "data-binding-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "data-binding",
+      "title": "Add or remove items at runtime. The list updates through INotifyCollectionChanged.",
+      "theme": "light",
+      "state": "default",
+      "file": "data-binding-sample-01-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "data-binding",
+      "title": "Switch between Single, Multiple, and Extended selection modes.",
+      "theme": "light",
+      "state": "default",
+      "file": "data-binding-sample-02-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "data-binding",
+      "title": "Use an inline DataTemplate when every item shares the same row shape.",
+      "theme": "light",
+      "state": "default",
+      "file": "data-binding-sample-03-light.png"
+    },
+    {
+      "kind": "route",
+      "route": "trees",
+      "title": "Trees",
+      "theme": "light",
+      "state": "default",
+      "file": "trees-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "trees",
+      "title": "Use TreeViewItem nesting for compact folder, outline, or category hierarchies.",
+      "theme": "light",
+      "state": "default",
+      "file": "trees-sample-01-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "trees",
+      "title": "Handle SelectedItemChanged when selecting a node should update related content.",
+      "theme": "light",
+      "state": "default",
+      "file": "trees-sample-02-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "trees",
+      "title": "Use multiple selection when people need to select several nodes from the same hierarchy.",
+      "theme": "light",
+      "state": "default",
+      "file": "trees-sample-03-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "trees",
+      "title": "Set IsExpanded directly, or walk the item collection when a command controls the tree.",
+      "theme": "light",
+      "state": "default",
+      "file": "trees-sample-04-light.png"
+    },
+    {
+      "kind": "route",
+      "route": "menus",
+      "title": "Menus",
+      "theme": "light",
+      "state": "default",
+      "file": "menus-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "menus",
+      "title": "Use Menu for persistent command groups with submenus, keyboard cues, separators, and checked states.",
+      "theme": "light",
+      "state": "default",
+      "file": "menus-sample-01-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "menus",
+      "title": "Use ContextMenu for actions that apply to a selected item or region.",
+      "theme": "light",
+      "state": "default",
+      "file": "menus-sample-02-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "menus",
+      "title": "Use ToolTip for short hints that clarify icons, disabled commands, or risky actions.",
+      "theme": "light",
+      "state": "default",
+      "file": "menus-sample-03-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "menus",
+      "title": "Use Flyout for lightweight, light-dismiss popups (details, quick forms, confirmations) anchored to a control.",
+      "theme": "light",
+      "state": "default",
+      "file": "menus-sample-04-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "menus",
+      "title": "Use ContentDialog for modal prompts that require an explicit choice (confirmations, errors, sign-in).",
+      "theme": "light",
+      "state": "default",
+      "file": "menus-sample-05-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "menus",
+      "title": "Use TeachingTip for contextual, non-blocking coaching anchored to a UI element.",
+      "theme": "light",
+      "state": "default",
+      "file": "menus-sample-06-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "menus",
+      "title": "Use CommandBarFlyout for a compact command strip with an overflow menu; commands dismiss the flyout when invoked.",
+      "theme": "light",
+      "state": "default",
+      "file": "menus-sample-07-light.png"
+    },
+    {
+      "kind": "popup",
+      "route": "menus",
+      "title": "Context menu open",
+      "theme": "light",
+      "state": "open",
+      "file": "menus-context-menu-open-light.png"
+    },
+    {
+      "kind": "popup",
+      "route": "menus",
+      "title": "Flyout open",
+      "theme": "light",
+      "state": "open",
+      "file": "menus-flyout-open-light.png"
+    },
+    {
+      "kind": "popup",
+      "route": "menus",
+      "title": "Command bar flyout open",
+      "theme": "light",
+      "state": "open",
+      "file": "menus-command-bar-flyout-open-light.png"
+    },
+    {
+      "kind": "overlay",
+      "route": "menus",
+      "title": "Content dialog open",
+      "theme": "light",
+      "state": "open",
+      "file": "menus-content-dialog-open-light.png"
+    },
+    {
+      "kind": "route",
+      "route": "navigation",
+      "title": "Navigation",
+      "theme": "light",
+      "state": "default",
+      "file": "navigation-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "navigation",
+      "title": "Use a left pane for persistent destinations, with a header and separator to group the items.",
+      "theme": "light",
+      "state": "default",
+      "file": "navigation-sample-01-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "navigation",
+      "title": "Use top navigation for a small set of peer destinations that should leave the full width for content.",
+      "theme": "light",
+      "state": "default",
+      "file": "navigation-sample-02-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "navigation",
+      "title": "Use compact mode to preserve space, and enable the back button when the current view can navigate backward.",
+      "theme": "light",
+      "state": "default",
+      "file": "navigation-sample-03-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "navigation",
+      "title": "Use InfoBadge in NavigationViewItem to call attention to item state without changing the item label.",
+      "theme": "light",
+      "state": "default",
+      "file": "navigation-sample-04-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "navigation",
+      "title": "Use BreadcrumbBar to show the path to the current location and jump back to any ancestor.",
+      "theme": "light",
+      "state": "default",
+      "file": "navigation-sample-05-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "navigation",
+      "title": "Use PipsPager for compact page indication and switching, as in carousels and onboarding flows.",
+      "theme": "light",
+      "state": "default",
+      "file": "navigation-sample-06-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "navigation",
+      "title": "Use SelectorBar to switch between peer views of one page, and SlideNavigationPresenter to slide the view in from the side the selection moved.",
+      "theme": "light",
+      "state": "default",
+      "file": "navigation-sample-07-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "navigation",
+      "title": "Use PipsPager for compact page indication and switching, as in carousels and onboarding flows.",
+      "theme": "light",
+      "state": "page-selected",
+      "file": "navigation-sample-06-light-page-selected.png"
+    },
+    {
+      "kind": "route",
+      "route": "tabs",
+      "title": "Tabs",
+      "theme": "light",
+      "state": "default",
+      "file": "tabs-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "tabs",
+      "title": "Use TabControl for a small set of peer panels that share the same space.",
+      "theme": "light",
+      "state": "default",
+      "file": "tabs-sample-01-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "tabs",
+      "title": "Use TabStripPlacement to move the tab row when the layout benefits from a side rail.",
+      "theme": "light",
+      "state": "default",
+      "file": "tabs-sample-02-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "tabs",
+      "title": "Use TabView for document-style tabs with add and close affordances.",
+      "theme": "light",
+      "state": "default",
+      "file": "tabs-sample-03-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "tabs",
+      "title": "Use TabControl for a small set of peer panels that share the same space.",
+      "theme": "light",
+      "state": "selected",
+      "file": "tabs-sample-01-light-selected.png"
+    },
+    {
+      "kind": "route",
+      "route": "layout",
+      "title": "Layout",
+      "theme": "light",
+      "state": "default",
+      "file": "layout-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "layout",
+      "title": "Use Border to frame a region, StackPanel spacing for readable rows, and Separator to divide related content.",
+      "theme": "light",
+      "state": "default",
+      "file": "layout-sample-01-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "layout",
+      "title": "Use DockPanel when one element should pin to an edge while the remaining content fills the available space.",
+      "theme": "light",
+      "state": "default",
+      "file": "layout-sample-02-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "layout",
+      "title": "Use Expander for secondary settings that should start collapsed until needed.",
+      "theme": "light",
+      "state": "default",
+      "file": "layout-sample-03-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "layout",
+      "title": "Use DockPanel inside Expander headers and content when the summary and secondary action need edge alignment.",
+      "theme": "light",
+      "state": "default",
+      "file": "layout-sample-04-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "layout",
+      "title": "Use SmoothScrollViewer for a constrained list; its Fluence scrollbar shows the scroll position.",
+      "theme": "light",
+      "state": "default",
+      "file": "layout-sample-05-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "layout",
+      "title": "Use Expander for secondary settings that should start collapsed until needed.",
+      "theme": "light",
+      "state": "expanded",
+      "file": "layout-sample-03-light-expanded.png"
+    },
+    {
+      "kind": "card",
+      "route": "layout",
+      "title": "Use SmoothScrollViewer for a constrained list; its Fluence scrollbar shows the scroll position.",
+      "theme": "light",
+      "state": "scrolled",
+      "file": "layout-sample-05-light-scrolled.png"
+    },
+    {
+      "kind": "route",
+      "route": "status",
+      "title": "Status",
+      "theme": "light",
+      "state": "default",
+      "file": "status-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "status",
+      "title": "Use ProgressBar for measurable work where the current value can be reported.",
+      "theme": "light",
+      "state": "default",
+      "file": "status-sample-01-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "status",
+      "title": "Use indeterminate mode when work is active but no reliable percentage is available.",
+      "theme": "light",
+      "state": "default",
+      "file": "status-sample-02-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "status",
+      "title": "Use step progress for ordered tasks where users understand the current milestone.",
+      "theme": "light",
+      "state": "default",
+      "file": "status-sample-03-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "status",
+      "title": "Use ProgressRing when space is tight or when progress belongs next to compact content.",
+      "theme": "light",
+      "state": "default",
+      "file": "status-sample-04-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "status",
+      "title": "Use InfoBar for inline messages that explain status, validation, or recoverable outcomes.",
+      "theme": "light",
+      "state": "default",
+      "file": "status-sample-05-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "status",
+      "title": "Use InfoBar for inline messages that explain status, validation, or recoverable outcomes.",
+      "theme": "light",
+      "state": "dismissed",
+      "file": "status-sample-05-light-dismissed.png"
+    },
+    {
+      "kind": "route",
+      "route": "accessibility",
+      "title": "Accessibility",
+      "theme": "light",
+      "state": "default",
+      "file": "accessibility-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "accessibility",
+      "title": "Keyboard focus and explicit tab order.",
+      "theme": "light",
+      "state": "default",
+      "file": "accessibility-sample-01-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "accessibility",
+      "title": "High contrast remaps Fluence semantic brushes to Windows system colors.",
+      "theme": "light",
+      "state": "default",
+      "file": "accessibility-sample-02-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "accessibility",
+      "title": "Icon-only buttons expose AutomationProperties.Name for screen readers.",
+      "theme": "light",
+      "state": "default",
+      "file": "accessibility-sample-03-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "accessibility",
+      "title": "Right-to-left layout mirrors Fluence controls for RTL locales.",
+      "theme": "light",
+      "state": "default",
+      "file": "accessibility-sample-04-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "accessibility",
+      "title": "InfoBar and TextBox validation use LiveRegionChanged to announce status changes without interrupting the user.",
+      "theme": "light",
+      "state": "default",
+      "file": "accessibility-sample-05-light.png"
+    },
+    {
+      "kind": "card",
+      "route": "accessibility",
+      "title": "RatingControl supports full keyboard navigation and exposes the RangeValue automation pattern.",
+      "theme": "light",
+      "state": "default",
+      "file": "accessibility-sample-06-light.png"
+    },
+    {
+      "kind": "route",
+      "route": "settings",
+      "title": "Settings",
+      "theme": "light",
+      "state": "default",
+      "file": "settings-light.png"
+    },
+    {
+      "kind": "route",
+      "route": "home",
+      "title": "Home",
+      "theme": "dark",
+      "state": "default",
+      "file": "home-dark.png"
+    },
+    {
+      "kind": "route",
+      "route": "colors",
+      "title": "Colors",
+      "theme": "dark",
+      "state": "default",
+      "file": "colors-dark.png"
+    },
+    {
+      "kind": "route",
+      "route": "icons",
+      "title": "Icons",
+      "theme": "dark",
+      "state": "default",
+      "file": "icons-dark.png"
+    },
+    {
+      "kind": "route",
+      "route": "typography",
+      "title": "Typography",
+      "theme": "dark",
+      "state": "default",
+      "file": "typography-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "typography",
+      "title": "Type ramp",
+      "theme": "dark",
+      "state": "default",
+      "file": "typography-sample-01-dark.png"
+    },
+    {
+      "kind": "route",
+      "route": "buttons",
+      "title": "Buttons",
+      "theme": "dark",
+      "state": "default",
+      "file": "buttons-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "buttons",
+      "title": "A simple Button with text content.",
+      "theme": "dark",
+      "state": "default",
+      "file": "buttons-sample-01-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "buttons",
+      "title": "A Button with graphical content.",
+      "theme": "dark",
+      "state": "default",
+      "file": "buttons-sample-02-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "buttons",
+      "title": "Built-in appearances applied to Button: Accent for the primary action, Subtle for low-emphasis commands.",
+      "theme": "dark",
+      "state": "default",
+      "file": "buttons-sample-03-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "buttons",
+      "title": "Place icons before or after text when the symbol helps the action scan faster.",
+      "theme": "dark",
+      "state": "default",
+      "file": "buttons-sample-04-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "buttons",
+      "title": "Use HyperlinkButton for lightweight navigation and related secondary actions.",
+      "theme": "dark",
+      "state": "default",
+      "file": "buttons-sample-05-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "buttons",
+      "title": "Use DropDownButton when all available actions live in the flyout.",
+      "theme": "dark",
+      "state": "default",
+      "file": "buttons-sample-06-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "buttons",
+      "title": "Use SplitButton when there is one default action plus alternate actions in the flyout.",
+      "theme": "dark",
+      "state": "default",
+      "file": "buttons-sample-07-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "buttons",
+      "title": "Use RepeatButton when holding the pointer should raise Click repeatedly.",
+      "theme": "dark",
+      "state": "default",
+      "file": "buttons-sample-08-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "buttons",
+      "title": "Use ToggleButton when a command switches a state on or off and should look pressed while active.",
+      "theme": "dark",
+      "state": "default",
+      "file": "buttons-sample-09-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "buttons",
+      "title": "Use ToggleSplitButton when the primary half toggles a state and the flyout chooses which variant of that state to apply.",
+      "theme": "dark",
+      "state": "default",
+      "file": "buttons-sample-10-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "buttons",
+      "title": "A simple Button with text content.",
+      "theme": "dark",
+      "state": "disabled",
+      "file": "buttons-sample-01-dark-disabled.png"
+    },
+    {
+      "kind": "route",
+      "route": "selection",
+      "title": "Selection",
+      "theme": "dark",
+      "state": "default",
+      "file": "selection-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "selection",
+      "title": "Use check boxes for independent options. Add three-state only when an indeterminate value has meaning.",
+      "theme": "dark",
+      "state": "default",
+      "file": "selection-sample-01-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "selection",
+      "title": "Use radio buttons when people must choose exactly one option from a visible group.",
+      "theme": "dark",
+      "state": "default",
+      "file": "selection-sample-02-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "selection",
+      "title": "Use toggle switches for settings that take effect immediately.",
+      "theme": "dark",
+      "state": "default",
+      "file": "selection-sample-03-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "selection",
+      "title": "Use rating when a compact ordered preference is more natural than a numeric input.",
+      "theme": "dark",
+      "state": "default",
+      "file": "selection-sample-04-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "selection",
+      "title": "Use a combo box when the choices are useful but do not need to stay visible.",
+      "theme": "dark",
+      "state": "default",
+      "file": "selection-sample-05-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "selection",
+      "title": "Use toggle switches for settings that take effect immediately.",
+      "theme": "dark",
+      "state": "toggled",
+      "file": "selection-sample-03-dark-toggled.png"
+    },
+    {
+      "kind": "route",
+      "route": "inputs",
+      "title": "Inputs",
+      "theme": "dark",
+      "state": "default",
+      "file": "inputs-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "inputs",
+      "title": "Use text boxes for short text entry. Add icons, clear buttons, and limits when they clarify the expected input.",
+      "theme": "dark",
+      "state": "default",
+      "file": "inputs-sample-01-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "inputs",
+      "title": "Show helper text for guidance and validation states for committed feedback.",
+      "theme": "dark",
+      "state": "default",
+      "file": "inputs-sample-02-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "inputs",
+      "title": "Use AutoSuggestBox for search and autocomplete: handle TextChanged to filter suggestions and QuerySubmitted to act on the choice.",
+      "theme": "dark",
+      "state": "default",
+      "file": "inputs-sample-03-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "inputs",
+      "title": "Use password boxes for protected text entry, with reveal and strength affordances when appropriate.",
+      "theme": "dark",
+      "state": "default",
+      "file": "inputs-sample-04-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "inputs",
+      "title": "Use number boxes for numeric entry with optional spin buttons, bounds, and supporting descriptions.",
+      "theme": "dark",
+      "state": "default",
+      "file": "inputs-sample-05-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "inputs",
+      "title": "Use sliders when a relative value is easier to choose visually than typing a precise number.",
+      "theme": "dark",
+      "state": "default",
+      "file": "inputs-sample-06-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "inputs",
+      "title": "Use text boxes for short text entry. Add icons, clear buttons, and limits when they clarify the expected input.",
+      "theme": "dark",
+      "state": "entered",
+      "file": "inputs-sample-01-dark-entered.png"
+    },
+    {
+      "kind": "route",
+      "route": "forms",
+      "title": "Forms",
+      "theme": "dark",
+      "state": "default",
+      "file": "forms-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "forms",
+      "title": "Use TimePicker for choosing a time from hour, minute, and AM/PM columns in a flyout.",
+      "theme": "dark",
+      "state": "default",
+      "file": "forms-sample-01-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "forms",
+      "title": "Use DatePicker for choosing a date from day, month, and year columns in a flyout.",
+      "theme": "dark",
+      "state": "default",
+      "file": "forms-sample-02-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "forms",
+      "title": "Use ColorPicker for choosing a color from a saturation/value spectrum with a hue slider, alpha, RGB/HSV channel text input, and hex input.",
+      "theme": "dark",
+      "state": "default",
+      "file": "forms-sample-03-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "forms",
+      "title": "Use a compact form for account access, with clear labels and a primary action.",
+      "theme": "dark",
+      "state": "default",
+      "file": "forms-sample-04-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "forms",
+      "title": "Combine contact, shipping, and quantity fields when a form needs several related decisions.",
+      "theme": "dark",
+      "state": "default",
+      "file": "forms-sample-05-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "forms",
+      "title": "Use form controls to edit a small set of preferences and show confirmation after saving.",
+      "theme": "dark",
+      "state": "default",
+      "file": "forms-sample-06-dark.png"
+    },
+    {
+      "kind": "route",
+      "route": "data",
+      "title": "Data",
+      "theme": "dark",
+      "state": "default",
+      "file": "data-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "data",
+      "title": "Use ListView for compact single-column collections and richer item layouts.",
+      "theme": "dark",
+      "state": "default",
+      "file": "data-sample-01-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "data",
+      "title": "Set EmptyContent for an intentional no-data state and animate removals when items leave the list.",
+      "theme": "dark",
+      "state": "default",
+      "file": "data-sample-02-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "data",
+      "title": "Use ListBox for compact selection lists; set SelectionMode to Extended to allow selecting multiple items.",
+      "theme": "dark",
+      "state": "default",
+      "file": "data-sample-03-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "data",
+      "title": "Use PersonPicture to represent people and contact status in data-heavy views.",
+      "theme": "dark",
+      "state": "default",
+      "file": "data-sample-04-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "data",
+      "title": "Use Card variants to group related data with different levels of visual emphasis.",
+      "theme": "dark",
+      "state": "default",
+      "file": "data-sample-05-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "data",
+      "title": "Use Image to present pictures with a theme-aware stroke; CornerRadius drives the rounded clip from square to circular.",
+      "theme": "dark",
+      "state": "default",
+      "file": "data-sample-06-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "data",
+      "title": "Set ItemsLayout to Grid when items read better as tiles that wrap across the list; List keeps one item per row.",
+      "theme": "dark",
+      "state": "default",
+      "file": "data-sample-07-dark.png"
+    },
+    {
+      "kind": "route",
+      "route": "data-binding",
+      "title": "Data binding",
+      "theme": "dark",
+      "state": "default",
+      "file": "data-binding-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "data-binding",
+      "title": "Add or remove items at runtime. The list updates through INotifyCollectionChanged.",
+      "theme": "dark",
+      "state": "default",
+      "file": "data-binding-sample-01-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "data-binding",
+      "title": "Switch between Single, Multiple, and Extended selection modes.",
+      "theme": "dark",
+      "state": "default",
+      "file": "data-binding-sample-02-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "data-binding",
+      "title": "Use an inline DataTemplate when every item shares the same row shape.",
+      "theme": "dark",
+      "state": "default",
+      "file": "data-binding-sample-03-dark.png"
+    },
+    {
+      "kind": "route",
+      "route": "trees",
+      "title": "Trees",
+      "theme": "dark",
+      "state": "default",
+      "file": "trees-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "trees",
+      "title": "Use TreeViewItem nesting for compact folder, outline, or category hierarchies.",
+      "theme": "dark",
+      "state": "default",
+      "file": "trees-sample-01-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "trees",
+      "title": "Handle SelectedItemChanged when selecting a node should update related content.",
+      "theme": "dark",
+      "state": "default",
+      "file": "trees-sample-02-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "trees",
+      "title": "Use multiple selection when people need to select several nodes from the same hierarchy.",
+      "theme": "dark",
+      "state": "default",
+      "file": "trees-sample-03-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "trees",
+      "title": "Set IsExpanded directly, or walk the item collection when a command controls the tree.",
+      "theme": "dark",
+      "state": "default",
+      "file": "trees-sample-04-dark.png"
+    },
+    {
+      "kind": "route",
+      "route": "menus",
+      "title": "Menus",
+      "theme": "dark",
+      "state": "default",
+      "file": "menus-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "menus",
+      "title": "Use Menu for persistent command groups with submenus, keyboard cues, separators, and checked states.",
+      "theme": "dark",
+      "state": "default",
+      "file": "menus-sample-01-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "menus",
+      "title": "Use ContextMenu for actions that apply to a selected item or region.",
+      "theme": "dark",
+      "state": "default",
+      "file": "menus-sample-02-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "menus",
+      "title": "Use ToolTip for short hints that clarify icons, disabled commands, or risky actions.",
+      "theme": "dark",
+      "state": "default",
+      "file": "menus-sample-03-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "menus",
+      "title": "Use Flyout for lightweight, light-dismiss popups (details, quick forms, confirmations) anchored to a control.",
+      "theme": "dark",
+      "state": "default",
+      "file": "menus-sample-04-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "menus",
+      "title": "Use ContentDialog for modal prompts that require an explicit choice (confirmations, errors, sign-in).",
+      "theme": "dark",
+      "state": "default",
+      "file": "menus-sample-05-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "menus",
+      "title": "Use TeachingTip for contextual, non-blocking coaching anchored to a UI element.",
+      "theme": "dark",
+      "state": "default",
+      "file": "menus-sample-06-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "menus",
+      "title": "Use CommandBarFlyout for a compact command strip with an overflow menu; commands dismiss the flyout when invoked.",
+      "theme": "dark",
+      "state": "default",
+      "file": "menus-sample-07-dark.png"
+    },
+    {
+      "kind": "popup",
+      "route": "menus",
+      "title": "Context menu open",
+      "theme": "dark",
+      "state": "open",
+      "file": "menus-context-menu-open-dark.png"
+    },
+    {
+      "kind": "popup",
+      "route": "menus",
+      "title": "Flyout open",
+      "theme": "dark",
+      "state": "open",
+      "file": "menus-flyout-open-dark.png"
+    },
+    {
+      "kind": "popup",
+      "route": "menus",
+      "title": "Command bar flyout open",
+      "theme": "dark",
+      "state": "open",
+      "file": "menus-command-bar-flyout-open-dark.png"
+    },
+    {
+      "kind": "overlay",
+      "route": "menus",
+      "title": "Content dialog open",
+      "theme": "dark",
+      "state": "open",
+      "file": "menus-content-dialog-open-dark.png"
+    },
+    {
+      "kind": "route",
+      "route": "navigation",
+      "title": "Navigation",
+      "theme": "dark",
+      "state": "default",
+      "file": "navigation-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "navigation",
+      "title": "Use a left pane for persistent destinations, with a header and separator to group the items.",
+      "theme": "dark",
+      "state": "default",
+      "file": "navigation-sample-01-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "navigation",
+      "title": "Use top navigation for a small set of peer destinations that should leave the full width for content.",
+      "theme": "dark",
+      "state": "default",
+      "file": "navigation-sample-02-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "navigation",
+      "title": "Use compact mode to preserve space, and enable the back button when the current view can navigate backward.",
+      "theme": "dark",
+      "state": "default",
+      "file": "navigation-sample-03-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "navigation",
+      "title": "Use InfoBadge in NavigationViewItem to call attention to item state without changing the item label.",
+      "theme": "dark",
+      "state": "default",
+      "file": "navigation-sample-04-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "navigation",
+      "title": "Use BreadcrumbBar to show the path to the current location and jump back to any ancestor.",
+      "theme": "dark",
+      "state": "default",
+      "file": "navigation-sample-05-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "navigation",
+      "title": "Use PipsPager for compact page indication and switching, as in carousels and onboarding flows.",
+      "theme": "dark",
+      "state": "default",
+      "file": "navigation-sample-06-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "navigation",
+      "title": "Use SelectorBar to switch between peer views of one page, and SlideNavigationPresenter to slide the view in from the side the selection moved.",
+      "theme": "dark",
+      "state": "default",
+      "file": "navigation-sample-07-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "navigation",
+      "title": "Use PipsPager for compact page indication and switching, as in carousels and onboarding flows.",
+      "theme": "dark",
+      "state": "page-selected",
+      "file": "navigation-sample-06-dark-page-selected.png"
+    },
+    {
+      "kind": "route",
+      "route": "tabs",
+      "title": "Tabs",
+      "theme": "dark",
+      "state": "default",
+      "file": "tabs-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "tabs",
+      "title": "Use TabControl for a small set of peer panels that share the same space.",
+      "theme": "dark",
+      "state": "default",
+      "file": "tabs-sample-01-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "tabs",
+      "title": "Use TabStripPlacement to move the tab row when the layout benefits from a side rail.",
+      "theme": "dark",
+      "state": "default",
+      "file": "tabs-sample-02-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "tabs",
+      "title": "Use TabView for document-style tabs with add and close affordances.",
+      "theme": "dark",
+      "state": "default",
+      "file": "tabs-sample-03-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "tabs",
+      "title": "Use TabControl for a small set of peer panels that share the same space.",
+      "theme": "dark",
+      "state": "selected",
+      "file": "tabs-sample-01-dark-selected.png"
+    },
+    {
+      "kind": "route",
+      "route": "layout",
+      "title": "Layout",
+      "theme": "dark",
+      "state": "default",
+      "file": "layout-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "layout",
+      "title": "Use Border to frame a region, StackPanel spacing for readable rows, and Separator to divide related content.",
+      "theme": "dark",
+      "state": "default",
+      "file": "layout-sample-01-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "layout",
+      "title": "Use DockPanel when one element should pin to an edge while the remaining content fills the available space.",
+      "theme": "dark",
+      "state": "default",
+      "file": "layout-sample-02-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "layout",
+      "title": "Use Expander for secondary settings that should start collapsed until needed.",
+      "theme": "dark",
+      "state": "default",
+      "file": "layout-sample-03-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "layout",
+      "title": "Use DockPanel inside Expander headers and content when the summary and secondary action need edge alignment.",
+      "theme": "dark",
+      "state": "default",
+      "file": "layout-sample-04-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "layout",
+      "title": "Use SmoothScrollViewer for a constrained list; its Fluence scrollbar shows the scroll position.",
+      "theme": "dark",
+      "state": "default",
+      "file": "layout-sample-05-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "layout",
+      "title": "Use Expander for secondary settings that should start collapsed until needed.",
+      "theme": "dark",
+      "state": "expanded",
+      "file": "layout-sample-03-dark-expanded.png"
+    },
+    {
+      "kind": "card",
+      "route": "layout",
+      "title": "Use SmoothScrollViewer for a constrained list; its Fluence scrollbar shows the scroll position.",
+      "theme": "dark",
+      "state": "scrolled",
+      "file": "layout-sample-05-dark-scrolled.png"
+    },
+    {
+      "kind": "route",
+      "route": "status",
+      "title": "Status",
+      "theme": "dark",
+      "state": "default",
+      "file": "status-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "status",
+      "title": "Use ProgressBar for measurable work where the current value can be reported.",
+      "theme": "dark",
+      "state": "default",
+      "file": "status-sample-01-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "status",
+      "title": "Use indeterminate mode when work is active but no reliable percentage is available.",
+      "theme": "dark",
+      "state": "default",
+      "file": "status-sample-02-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "status",
+      "title": "Use step progress for ordered tasks where users understand the current milestone.",
+      "theme": "dark",
+      "state": "default",
+      "file": "status-sample-03-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "status",
+      "title": "Use ProgressRing when space is tight or when progress belongs next to compact content.",
+      "theme": "dark",
+      "state": "default",
+      "file": "status-sample-04-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "status",
+      "title": "Use InfoBar for inline messages that explain status, validation, or recoverable outcomes.",
+      "theme": "dark",
+      "state": "default",
+      "file": "status-sample-05-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "status",
+      "title": "Use InfoBar for inline messages that explain status, validation, or recoverable outcomes.",
+      "theme": "dark",
+      "state": "dismissed",
+      "file": "status-sample-05-dark-dismissed.png"
+    },
+    {
+      "kind": "route",
+      "route": "accessibility",
+      "title": "Accessibility",
+      "theme": "dark",
+      "state": "default",
+      "file": "accessibility-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "accessibility",
+      "title": "Keyboard focus and explicit tab order.",
+      "theme": "dark",
+      "state": "default",
+      "file": "accessibility-sample-01-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "accessibility",
+      "title": "High contrast remaps Fluence semantic brushes to Windows system colors.",
+      "theme": "dark",
+      "state": "default",
+      "file": "accessibility-sample-02-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "accessibility",
+      "title": "Icon-only buttons expose AutomationProperties.Name for screen readers.",
+      "theme": "dark",
+      "state": "default",
+      "file": "accessibility-sample-03-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "accessibility",
+      "title": "Right-to-left layout mirrors Fluence controls for RTL locales.",
+      "theme": "dark",
+      "state": "default",
+      "file": "accessibility-sample-04-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "accessibility",
+      "title": "InfoBar and TextBox validation use LiveRegionChanged to announce status changes without interrupting the user.",
+      "theme": "dark",
+      "state": "default",
+      "file": "accessibility-sample-05-dark.png"
+    },
+    {
+      "kind": "card",
+      "route": "accessibility",
+      "title": "RatingControl supports full keyboard navigation and exposes the RangeValue automation pattern.",
+      "theme": "dark",
+      "state": "default",
+      "file": "accessibility-sample-06-dark.png"
+    },
+    {
+      "kind": "route",
+      "route": "settings",
+      "title": "Settings",
+      "theme": "dark",
+      "state": "default",
+      "file": "settings-dark.png"
+    },
+    {
+      "kind": "route",
+      "route": "acrylic",
+      "title": "Acrylic",
+      "theme": "dark",
+      "state": "default",
+      "requestedState": "default",
+      "file": "acrylic-dark.png",
+      "mode": "WpfRenderFallback",
+      "observedState": {
+        "selectedItem": "Acrylic",
+        "contentLoaded": true,
+        "indicatorAligned": true,
+        "indicatorCenterX": 7.5,
+        "indicatorCenterY": 470.12086839698713,
+        "selectedItemCenterX": 160,
+        "selectedItemCenterY": 472
+      },
+      "outputSha256": "3a3add8e3b6891d45b07b0abcffd4fea53c6afea8b3b0de7c2f75f8e0c00656d",
+      "pixelWidth": 1280,
+      "pixelHeight": 1080
+    },
+    {
+      "kind": "route",
+      "route": "acrylic",
+      "title": "Acrylic",
+      "theme": "light",
+      "state": "default",
+      "requestedState": "default",
+      "file": "acrylic-light.png",
+      "mode": "WpfRenderFallback",
+      "observedState": {
+        "selectedItem": "Acrylic",
+        "contentLoaded": true,
+        "indicatorAligned": true,
+        "indicatorCenterX": 7.5,
+        "indicatorCenterY": 471.86986513362666,
+        "selectedItemCenterX": 160,
+        "selectedItemCenterY": 472
+      },
+      "outputSha256": "822708d4514ee8ad9c76540356ca1c6b049e6a6a2d18beb8a25af04a5b3bc044",
+      "pixelWidth": 1280,
+      "pixelHeight": 1080
+    },
+    {
+      "kind": "card",
+      "route": "acrylic",
+      "title": "Compare a direct Border.Background brush with a bindable AcrylicElement host. The class-fixed direct recipe stays fixed; the host follows Default or Base theme resources. Text remains sharp above each material.",
+      "theme": "dark",
+      "state": "default",
+      "requestedState": "default",
+      "file": "acrylic-sample-01-dark.png",
+      "mode": "WpfRenderFallback",
+      "observedState": {
+        "selectedItem": "Acrylic",
+        "contentLoaded": true,
+        "indicatorAligned": true,
+        "indicatorCenterX": 7.5,
+        "indicatorCenterY": 472,
+        "selectedItemCenterX": 160,
+        "selectedItemCenterY": 472
+      },
+      "outputSha256": "d69d54857961e41f5449b70d399f9ba75d1fc01101f97cac7909b297e9c65427",
+      "pixelWidth": 697,
+      "pixelHeight": 316
+    },
+    {
+      "kind": "card",
+      "route": "acrylic",
+      "title": "Compare a direct Border.Background brush with a bindable AcrylicElement host. The class-fixed direct recipe stays fixed; the host follows Default or Base theme resources. Text remains sharp above each material.",
+      "theme": "light",
+      "state": "default",
+      "requestedState": "default",
+      "file": "acrylic-sample-01-light.png",
+      "mode": "WpfRenderFallback",
+      "observedState": {
+        "selectedItem": "Acrylic",
+        "contentLoaded": true,
+        "indicatorAligned": true,
+        "indicatorCenterX": 7.5,
+        "indicatorCenterY": 472,
+        "selectedItemCenterX": 160,
+        "selectedItemCenterY": 472
+      },
+      "outputSha256": "d1d03cca1d02e56737d0edab6f7d81a757e7eef1667bb944d761ae99b7ce9430",
+      "pixelWidth": 697,
+      "pixelHeight": 316
+    },
+    {
+      "kind": "card",
+      "route": "acrylic",
+      "title": "A WPF Popup has a separate HWND. Its AcrylicElement uses the main-window visual as an explicit source and displays the actual solid fallback reason instead of sampling across windows.",
+      "theme": "dark",
+      "state": "default",
+      "requestedState": "default",
+      "file": "acrylic-sample-02-dark.png",
+      "mode": "WpfRenderFallback",
+      "observedState": {
+        "selectedItem": "Acrylic",
+        "contentLoaded": true,
+        "indicatorAligned": true,
+        "indicatorCenterX": 7.5,
+        "indicatorCenterY": 472,
+        "selectedItemCenterX": 160,
+        "selectedItemCenterY": 472
+      },
+      "outputSha256": "13c6f06b1c8e323d25ddd56833c3abf52262d560b54ebb719d328606b0c7ccc4",
+      "pixelWidth": 697,
+      "pixelHeight": 268
+    },
+    {
+      "kind": "card",
+      "route": "acrylic",
+      "title": "A WPF Popup has a separate HWND. Its AcrylicElement uses the main-window visual as an explicit source and displays the actual solid fallback reason instead of sampling across windows.",
+      "theme": "light",
+      "state": "default",
+      "requestedState": "default",
+      "file": "acrylic-sample-02-light.png",
+      "mode": "WpfRenderFallback",
+      "observedState": {
+        "selectedItem": "Acrylic",
+        "contentLoaded": true,
+        "indicatorAligned": true,
+        "indicatorCenterX": 7.5,
+        "indicatorCenterY": 472,
+        "selectedItemCenterX": 160,
+        "selectedItemCenterY": 472
+      },
+      "outputSha256": "9354010a06ee2c84994604e9280a1667c7c1cb33d8f0e395f30c38ca03e5d9f5",
+      "pixelWidth": 697,
+      "pixelHeight": 268
+    },
+    {
+      "kind": "route",
+      "route": "data-grid",
+      "title": "DataGrid",
+      "theme": "dark",
+      "state": "default",
+      "requestedState": "default",
+      "file": "data-grid-dark.png",
+      "mode": "WpfRender",
+      "observedState": {
+        "selectedItem": "DataGrid",
+        "contentLoaded": true,
+        "indicatorAligned": true,
+        "indicatorCenterX": 7.5,
+        "indicatorCenterY": 430.03501060258657,
+        "selectedItemCenterX": 160,
+        "selectedItemCenterY": 432
+      },
+      "outputSha256": "9ff1a22c9021ef79b26aa8e8f72f59e9ce2d1c13a5f82f2744f5fb035497549c",
+      "pixelWidth": 1280,
+      "pixelHeight": 1080
+    },
+    {
+      "kind": "route",
+      "route": "data-grid",
+      "title": "DataGrid",
+      "theme": "light",
+      "state": "default",
+      "requestedState": "default",
+      "file": "data-grid-light.png",
+      "mode": "WpfRender",
+      "observedState": {
+        "selectedItem": "DataGrid",
+        "contentLoaded": true,
+        "indicatorAligned": true,
+        "indicatorCenterX": 7.5,
+        "indicatorCenterY": 431.6082496094592,
+        "selectedItemCenterX": 160,
+        "selectedItemCenterY": 432
+      },
+      "outputSha256": "e89bc240ac9d71d081cae1c2258cf67f40b08c61ea48b274646a362bdbc85445",
+      "pixelWidth": 1280,
+      "pixelHeight": 1080
+    },
+    {
+      "kind": "card",
+      "route": "data-grid",
+      "title": "A DataGrid with 1,000 rows. Click a header to sort, drag a header edge to resize, and scroll sideways: the first column stays frozen.",
+      "theme": "dark",
+      "state": "default",
+      "requestedState": "default",
+      "file": "data-grid-sample-01-dark.png",
+      "mode": "WpfRender",
+      "observedState": {
+        "selectedItem": "DataGrid",
+        "contentLoaded": true,
+        "indicatorAligned": true,
+        "indicatorCenterX": 7.5,
+        "indicatorCenterY": 431.9968004267376,
+        "selectedItemCenterX": 160,
+        "selectedItemCenterY": 432
+      },
+      "outputSha256": "4e3d295c04a547ca155defe7ed466f313f205f94ba9e40800e9e09e9cff705d7",
+      "pixelWidth": 697,
+      "pixelHeight": 364
+    },
+    {
+      "kind": "card",
+      "route": "data-grid",
+      "title": "A DataGrid with 1,000 rows. Click a header to sort, drag a header edge to resize, and scroll sideways: the first column stays frozen.",
+      "theme": "light",
+      "state": "default",
+      "requestedState": "default",
+      "file": "data-grid-sample-01-light.png",
+      "mode": "WpfRender",
+      "observedState": {
+        "selectedItem": "DataGrid",
+        "contentLoaded": true,
+        "indicatorAligned": true,
+        "indicatorCenterX": 7.5,
+        "indicatorCenterY": 431.99956672191564,
+        "selectedItemCenterX": 160,
+        "selectedItemCenterY": 432
+      },
+      "outputSha256": "0684d1e96147feaf703940f26e022344ed4cfc93f33c6e977f6d1b98ddc1ca65",
+      "pixelWidth": 697,
+      "pixelHeight": 364
+    },
+    {
+      "kind": "card",
+      "route": "data-grid",
+      "title": "Group rows through an ICollectionView and filter them as you type. Group headers collapse and expand.",
+      "theme": "dark",
+      "state": "default",
+      "requestedState": "default",
+      "file": "data-grid-sample-02-dark.png",
+      "mode": "WpfRender",
+      "observedState": {
+        "selectedItem": "DataGrid",
+        "contentLoaded": true,
+        "indicatorAligned": true,
+        "indicatorCenterX": 7.5,
+        "indicatorCenterY": 432,
+        "selectedItemCenterX": 160,
+        "selectedItemCenterY": 432
+      },
+      "outputSha256": "1da25f320d1eeffe40935397a6acf294d52b51547b9435d255c8b1bd77406633",
+      "pixelWidth": 697,
+      "pixelHeight": 364
+    },
+    {
+      "kind": "card",
+      "route": "data-grid",
+      "title": "Group rows through an ICollectionView and filter them as you type. Group headers collapse and expand.",
+      "theme": "light",
+      "state": "default",
+      "requestedState": "default",
+      "file": "data-grid-sample-02-light.png",
+      "mode": "WpfRender",
+      "observedState": {
+        "selectedItem": "DataGrid",
+        "contentLoaded": true,
+        "indicatorAligned": true,
+        "indicatorCenterX": 7.5,
+        "indicatorCenterY": 432,
+        "selectedItemCenterX": 160,
+        "selectedItemCenterY": 432
+      },
+      "outputSha256": "fcc512c0575c9f4ddbced5d77b6ce516a4fefa8708d86bcc13a3996c54c6199f",
+      "pixelWidth": 697,
+      "pixelHeight": 364
+    },
+    {
+      "kind": "card",
+      "route": "data-grid",
+      "title": "Edit text, check box, and validated cells: double-click a Product or Quantity cell, then clear the name or enter a negative quantity to see a validation error. Template columns host a RatingControl and a ProgressBar, and EmptyContent shows when the rows are cleared.",
+      "theme": "dark",
+      "state": "default",
+      "requestedState": "default",
+      "file": "data-grid-sample-03-dark.png",
+      "mode": "WpfRender",
+      "observedState": {
+        "selectedItem": "DataGrid",
+        "contentLoaded": true,
+        "indicatorAligned": true,
+        "indicatorCenterX": 7.5,
+        "indicatorCenterY": 432,
+        "selectedItemCenterX": 160,
+        "selectedItemCenterY": 432
+      },
+      "outputSha256": "1e2eb42430ea15909d1e4c20a12853713222ba7146930b7dc3fde15bd55190b7",
+      "pixelWidth": 697,
+      "pixelHeight": 348
+    },
+    {
+      "kind": "card",
+      "route": "data-grid",
+      "title": "Edit text, check box, and validated cells: double-click a Product or Quantity cell, then clear the name or enter a negative quantity to see a validation error. Template columns host a RatingControl and a ProgressBar, and EmptyContent shows when the rows are cleared.",
+      "theme": "light",
+      "state": "default",
+      "requestedState": "default",
+      "file": "data-grid-sample-03-light.png",
+      "mode": "WpfRender",
+      "observedState": {
+        "selectedItem": "DataGrid",
+        "contentLoaded": true,
+        "indicatorAligned": true,
+        "indicatorCenterX": 7.5,
+        "indicatorCenterY": 432,
+        "selectedItemCenterX": 160,
+        "selectedItemCenterY": 432
+      },
+      "outputSha256": "c042c64c37bb020fa74e206872a035206de9cf8632d66704ae53583daa60cc34",
+      "pixelWidth": 697,
+      "pixelHeight": 348
+    },
+    {
+      "kind": "card",
+      "route": "selection",
+      "title": "Bind to a changing list, or allow typing and commit the editable text.",
+      "theme": "dark",
+      "state": "default",
+      "requestedState": "default",
+      "file": "selection-sample-06-dark.png",
+      "mode": "WpfRender",
+      "observedState": {
+        "selectedItem": "Selection",
+        "contentLoaded": true,
+        "indicatorAligned": true,
+        "indicatorCenterX": 7.5,
+        "indicatorCenterY": 272,
+        "selectedItemCenterX": 160,
+        "selectedItemCenterY": 272
+      },
+      "outputSha256": "0f39a1c44df2f1feb4177a2f159339983351ff7aa15f7e7f0354bd779e8bf402",
+      "pixelWidth": 697,
+      "pixelHeight": 204
+    },
+    {
+      "kind": "card",
+      "route": "selection",
+      "title": "Bind to a changing list, or allow typing and commit the editable text.",
+      "theme": "light",
+      "state": "default",
+      "requestedState": "default",
+      "file": "selection-sample-06-light.png",
+      "mode": "WpfRender",
+      "observedState": {
+        "selectedItem": "Selection",
+        "contentLoaded": true,
+        "indicatorAligned": true,
+        "indicatorCenterX": 7.5,
+        "indicatorCenterY": 272,
+        "selectedItemCenterX": 160,
+        "selectedItemCenterY": 272
+      },
+      "outputSha256": "d0672866c435ed9a06528d4ef1c87e7d05e0c6bf00ca04347d549d3809d1ba5c",
+      "pixelWidth": 697,
+      "pixelHeight": 204
+    }
   ]
 }
