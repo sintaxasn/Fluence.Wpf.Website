@@ -24,7 +24,7 @@ The module keeps WPF work on its UI thread. Your script owns the work and decide
 
 The [runnable examples](../../Fluence.Wpf.PowerShell.Module/examples/README.md) provide complete scripts. [Architecture](explanation.md) explains the module's assembly and UI threading model, and [Contributing](contributing.md) covers source changes.
 
-The ControlsTour example shows the module's windows in both themes.
+The [Controls Tour](../../Fluence.Wpf.PowerShell.Module/examples/06-ControlsTour.ps1) opens on Inputs. Use the left rail to explore nine more categories, including the PowerShell-backed grid in Data and the moving source and solid fallback switch in Acrylic. The captures below show the Inputs page in Light and Dark.
 
 ![ControlsTour window in light mode](../screenshots/powershell-light.png)
 

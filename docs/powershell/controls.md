@@ -15,4 +15,12 @@ Choose the interface that gives your script the answer it needs. Images illustra
 
 The [input type reference](reference/input-types.md) lists prompt types, values, defaults, and validation behavior. The [result object reference](reference/result-objects.md) explains what commands return.
 
-For examples, use the [dialogs](how-to/dialogs.md), [forms](how-to/forms-and-validation.md), [progress](how-to/progress.md), and [custom window](how-to/windows-from-xaml.md) walkthroughs. The [ControlsTour example](../../Fluence.Wpf.PowerShell.Module/examples/06-ControlsTour.ps1) shows the visual surface. Browse the [control catalog](../controls.md) when you need underlying C# controls for a custom window.
+For examples, use the [dialogs](how-to/dialogs.md), [forms](how-to/forms-and-validation.md), [progress](how-to/progress.md), and [custom window](how-to/windows-from-xaml.md) walkthroughs. Browse the [control catalog](../controls.md) when you need underlying C# controls for a custom window.
+
+## Explore the Controls Tour
+
+Open the [Controls Tour script](../../Fluence.Wpf.PowerShell.Module/examples/06-ControlsTour.ps1) to try ten categories. On **Acrylic**, select **Move source colors** to see the backdrop change and **Use solid fallback** to switch it to an opaque fill. The current mode appears beside the sample. These captures show the solid fallback selected. [Add in-app acrylic to a custom window](how-to/windows-from-xaml.md#add-an-in-app-acrylic-surface)
+
+| Light | Dark |
+| --- | --- |
+| ![Controls Tour acrylic fallback in Light](../screenshots/powershell-acrylic-light.png) | ![Controls Tour acrylic fallback in Dark](../screenshots/powershell-acrylic-dark.png) |

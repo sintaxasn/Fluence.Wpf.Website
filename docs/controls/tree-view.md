@@ -34,13 +34,11 @@ tree.Items.Add(new Fluence.Wpf.Controls.TreeViewItem { Header = "Workspace" });
 | Property | Default | Purpose |
 | --- | --- | --- |
 | `SelectionMode` | `Single` | Selects single, multiple, or no selection. |
-| `SelectedItems` | Empty collection | Contains selected items in multiple-selection scenarios. |
+| `SelectedItems` | Empty collection | Stays the same list instance while the tree updates its contents. In Multiple mode it contains the checked items represented by current containers. |
 
 ## State and behavior
 
-Nodes expand and collapse; selection can be single or multiple.
-
-The default template uses physical scrolling. Single and None selection can opt into virtualization; the shipped Multiple template keeps physical scrolling because selection depends on realized containers. Bind selection and expansion state to the model when using recycling.
+In Multiple mode, check a branch to apply the same state to its descendants. Collapsed data-bound descendants receive a pending check or uncheck when WPF creates their containers. Until then, their bound values and `SelectedItems` can still omit the pending state. If a command needs the full checked hierarchy before expansion, keep that state in the data model. [Selection of unrealized descendants](https://github.com/sintaxasn/Fluence.Wpf/blob/main/KNOWN_ISSUES.md#treeview-selection-can-omit-unrealized-descendants)
 
 ## Events
 
@@ -74,7 +72,7 @@ See the parent control captures above for this part in context.
 
 #### State and behavior {#tree-view-item-state-and-behavior}
 
-IsExpanded reveals children; selection and pointer states change the row.
+`IsExpanded` reveals children. In Multiple mode, `IsSelectionChecked` can be checked, unchecked, or indeterminate when a parent has mixed descendants.
 
 #### Reference {#tree-view-item-reference}
 
@@ -86,7 +84,7 @@ IsExpanded reveals children; selection and pointer states change the row.
 
 ## Additional behavior
 
-`TreeView` retains physical scrolling by default. With `SelectionMode="Single"` or `"None"`, opt in using `VirtualizingPanel.IsVirtualizing="True"`; `VirtualizingPanel.VirtualizationMode="Recycling"` can reuse containers. Keep selection and expansion state in model-backed item bindings when it must survive recycling. `Multiple` mode uses physical scrolling in the shipped template even when logical scrolling and a virtualizing panel are requested, because checked selection and parent tri-state currently depend on realized containers. A fully custom control template is responsible for its own behavior. See the [tree-selection limitations](../../KNOWN_ISSUES.md#tree-selection-and-unrealized-data-bound-branches).
+`TreeView` uses physical scrolling by default. With `SelectionMode="Single"` or `"None"`, set `VirtualizingPanel.IsVirtualizing="True"` to opt in. Set `VirtualizingPanel.VirtualizationMode="Recycling"` to reuse containers. Bind selection and expansion to the data model if they must survive recycling. The shipped Multiple template keeps physical scrolling because checked selection and parent state depend on realized containers. [Multiple-selection virtualization limit](https://github.com/sintaxasn/Fluence.Wpf/blob/main/KNOWN_ISSUES.md#treeview-multiple-selection-can-realize-every-root-item)
 
 ## Reference
 
