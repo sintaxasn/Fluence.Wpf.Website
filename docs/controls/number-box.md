@@ -30,7 +30,7 @@ var number = new Fluence.Wpf.Controls.NumberBox { Value = 5, Minimum = 0 };
 
 ## State and behavior
 
-Spin buttons and text entry change `Value` within the configured bounds. Text that does not parse leaves `Value` unchanged, and clearing the field sets `Value` to `NaN`.
+Spin buttons and text entry change `Value` within the configured bounds. Text that does not parse leaves `Value` unchanged, and clearing the field sets `Value` to `NaN`. When the control is disabled, its header uses the disabled text brush.
 
 ## Events
 

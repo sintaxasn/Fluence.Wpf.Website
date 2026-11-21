@@ -22,9 +22,9 @@ The module keeps WPF work on its UI thread. Your script owns the work and decide
 - [Change theme, accent, and backdrop](how-to/theming-at-runtime.md)
 - [Use the module in an existing WPF host](how-to/use-in-existing-host.md)
 
-The [runnable examples](../../Fluence.Wpf.PowerShell.Module/examples/README.md) provide complete scripts. [Architecture](explanation.md) explains the module's assembly and UI threading model, and [Contributing](contributing.md) covers source changes.
+The [runnable examples](https://github.com/sintaxasn/Fluence.Wpf/blob/main/Fluence.Wpf.PowerShell.Module/examples/README.md) provide complete scripts. [Architecture](explanation.md) explains the module's assembly and UI threading model, and [Contributing](contributing.md) covers source changes.
 
-The [Controls Tour](https://github.com/sintaxasn/Fluence.Wpf/blob/60a59e29ee7e9fb206003e3759e369f85f704b90/Fluence.Wpf.PowerShell.Module/examples/06-ControlsTour.ps1#L31-L37) opens on Inputs. Use the left rail to explore nine more categories, including the PowerShell-backed grid in Data and the moving source and solid fallback switch in Acrylic. The captures below show the Inputs page in Light and Dark.
+The [Controls Tour](https://github.com/sintaxasn/Fluence.Wpf/blob/60a59e29ee7e9fb206003e3759e369f85f704b90/Fluence.Wpf.PowerShell.Module/examples/06-ControlsTour.ps1#L31-L37) opens on Inputs. Use the left rail to explore nine more categories, including the PowerShell-backed grid in Data and the moving source and solid fallback switch in Acrylic. To run it from a source checkout, follow the [module staging steps](https://github.com/sintaxasn/Fluence.Wpf/blob/main/Fluence.Wpf.PowerShell.Module/README.md#use-the-module-from-a-source-checkout), then use the commands in the [examples catalogue](https://github.com/sintaxasn/Fluence.Wpf/blob/main/Fluence.Wpf.PowerShell.Module/examples/README.md). The captures below show the Inputs page in Light and Dark.
 
 ![ControlsTour window in light mode](../screenshots/powershell-light.png)
 
