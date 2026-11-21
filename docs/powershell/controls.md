@@ -19,7 +19,7 @@ For examples, use the [dialogs](how-to/dialogs.md), [forms](how-to/forms-and-val
 
 ## Explore the Controls Tour
 
-Open the [Controls Tour script](../../Fluence.Wpf.PowerShell.Module/examples/06-ControlsTour.ps1) to try ten categories. On **Acrylic**, select **Move source colors** to see the backdrop change and **Use solid fallback** to switch it to an opaque fill. The current mode appears beside the sample. These captures show the solid fallback selected. [Add in-app acrylic to a custom window](how-to/windows-from-xaml.md#add-an-in-app-acrylic-surface)
+Open the [Controls Tour script](https://github.com/sintaxasn/Fluence.Wpf/blob/60a59e29ee7e9fb206003e3759e369f85f704b90/Fluence.Wpf.PowerShell.Module/examples/06-ControlsTour.ps1#L31-L37) to try ten categories. On **Acrylic**, select **Move source colors** to see the backdrop change and **Use solid fallback** to switch it to an opaque fill. The current mode appears beside the sample. These captures show the solid fallback selected. [Add in-app acrylic to a custom window](how-to/windows-from-xaml.md#add-an-in-app-acrylic-surface)
 
 | Light | Dark |
 | --- | --- |

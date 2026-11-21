@@ -37,7 +37,7 @@ Fluence.Wpf.Controls.PasswordBoxExtensions.SetPlaceholderText(password, "Passwor
 
 ## State and behavior
 
-The reveal button shows the password while the pointer holds it down. Keyboard activation toggles the reveal state. Set `RevealButtonEnabled="False"` to disable the reveal action and clear any displayed password.
+The reveal button shows the password while the pointer holds it down. Keyboard activation toggles the reveal state. Set `fluence:PasswordBoxExtensions.RevealButtonEnabled="False"` to disable the reveal action and clear any displayed password.
 
 ## Events
 
