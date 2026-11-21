@@ -2,6 +2,8 @@
 
 ## Types
 
+- [AcrylicBrushExtension](AcrylicBrushExtension.md)
+- [AcrylicMaterialRecipe](AcrylicMaterialRecipe.md)
 - [ApplicationAccentColorManager](ApplicationAccentColorManager.md)
 - [ApplicationTheme](ApplicationTheme.md)
 - [ApplicationThemeManager](ApplicationThemeManager.md)

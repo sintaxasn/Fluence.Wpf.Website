@@ -51,6 +51,16 @@ Gets or sets the selection mode used by the tree view.
 
 ## Methods
 
+<a id="api-7f9a6e621f70"></a>
+
+### ClearContainerForItemOverride
+
+```csharp
+protected override void ClearContainerForItemOverride(DependencyObject element, object item)
+```
+
+Documentation inherited from the [`TreeView` API](https://learn.microsoft.com/dotnet/api/system.windows.controls.treeview).
+
 <a id="api-8994d81beb72"></a>
 
 ### GetContainerForItemOverride

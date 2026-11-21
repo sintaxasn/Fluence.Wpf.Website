@@ -176,6 +176,12 @@
       "provenance": "source-generated"
     },
     {
+      "path": "docs/api/Fluence.Wpf.Controls/AcrylicElement.md",
+      "kind": "reference",
+      "sha256": "747272398cc333e3d4decc02617dd4bc5c113c5e22184c719f108aaa851c9351",
+      "provenance": "source-generated"
+    },
+    {
       "path": "docs/api/Fluence.Wpf.Controls/AppBarButton.md",
       "kind": "reference",
       "sha256": "774c2a4beb8ad6b0fdf8d9aab6eaae88df796d621603ceebf489664cb0a92f45",
@@ -580,19 +586,19 @@
     {
       "path": "docs/api/Fluence.Wpf.Controls/TreeView.md",
       "kind": "reference",
-      "sha256": "a83448f831efa52aa6523f385dd6dd3fe1ffcd7d56183545fffc6ed466279747",
+      "sha256": "9696d95cab47b192ae373246372a51b5f60e6b1394877d0dba47f8a101f10620",
       "provenance": "source-generated"
     },
     {
       "path": "docs/api/Fluence.Wpf.Controls/TreeViewItem.md",
       "kind": "reference",
-      "sha256": "b593012510fb4a31c1550fd764dac2e279754c54851bfb8a4853c9afa06d44d9",
+      "sha256": "126fcaaabb1d60e8b84b3d529940bd3226b030d215b940d238c1345dd4793c0c",
       "provenance": "source-generated"
     },
     {
       "path": "docs/api/Fluence.Wpf.Controls/index.md",
       "kind": "reference",
-      "sha256": "1ef93f7c01329e26bc9bb008e4e734ddcd058706f38bf23c415c3c4ee0ddd513",
+      "sha256": "6f4e5ed3c43caa619f175c4436ba107d5afd6740879f0d70d0cce9495425d926",
       "provenance": "source-generated"
     },
     {
@@ -623,6 +629,18 @@
       "path": "docs/api/Fluence.Wpf.Markup/index.md",
       "kind": "reference",
       "sha256": "a43207050d6879785786306444c9084133d32b1a48ef8d87ff5db7645fd6797c",
+      "provenance": "source-generated"
+    },
+    {
+      "path": "docs/api/Fluence.Wpf/AcrylicBrushExtension.md",
+      "kind": "reference",
+      "sha256": "16df2adb1eab7d81bfc6b3af8436d3c532b012faba52fc421dd7a58e9933648b",
+      "provenance": "source-generated"
+    },
+    {
+      "path": "docs/api/Fluence.Wpf/AcrylicMaterialRecipe.md",
+      "kind": "reference",
+      "sha256": "798c6e130a3523fc8291fd16d76f65dbd040579a1e66c27b81e371072067279b",
       "provenance": "source-generated"
     },
     {
@@ -952,19 +970,19 @@
     {
       "path": "docs/api/Fluence.Wpf/index.md",
       "kind": "reference",
-      "sha256": "19a5ff65ab7bad6add10ad3d3895e046661818056fe5def06407244a074091a5",
+      "sha256": "ad9d0bad471937c307af06dabb976c7d77f7b5f0ffcf97e28bbd1ec8854b070a",
       "provenance": "source-generated"
     },
     {
       "path": "docs/api/index.md",
       "kind": "reference",
-      "sha256": "0f933a3b29b986e99a6679f531cf6ec2825d75625a7726d2e7b6668e685b6719",
+      "sha256": "7a661867f3dbf647875d8ae8cc1b80204639f564ee137594a7311bc68a93d5fb",
       "provenance": "source-generated"
     },
     {
       "path": "docs/controls.md",
       "kind": "reference",
-      "sha256": "390cfdceeec58917cbacb38458f63bb2a3ed1e5e6e63f831fef51b8a07782ebb",
+      "sha256": "de2b3f2aa84fe8e907d5d53cdae9062ee1365a961481902c13dc1b92479755b8",
       "provenance": "source-generated"
     },
     {
@@ -10248,13 +10266,13 @@
     {
       "path": "docs/theming.md",
       "kind": "reference",
-      "sha256": "11531d9e9cd7802cedacab91f76d8973c8ba8aa1d6166ad5c432e95bab546f4e",
+      "sha256": "bcbc2cbc4e0b6939e65097f232a48f03ce7c4c4853711e6d65465b311a8e090a",
       "provenance": "source-generated"
     },
     {
       "path": "docs/winui-parity.md",
       "kind": "reference",
-      "sha256": "deada833673c589d4f38a097ee60771cdeedefaa6e0e975620e94838782b00ee",
+      "sha256": "5c08234f99b3a379f7722f825ee95b68231d96f5ffb9cf5bdeb08f8ffbdf4246",
       "provenance": "source-generated"
     }
   ]
