@@ -108,7 +108,11 @@ Show-FluenceWindow -Xaml $xaml -Initialize {
 }
 ```
 
-`SelectedItem` returns the selected row object, so the handler reads its properties directly. The [Data page in the ControlsTour example](https://github.com/sintaxasn/Fluence.Wpf/blob/main/Fluence.Wpf.PowerShell.Module/examples/06-ControlsTour.ps1) binds five PowerShell objects to a sortable grid and reports the selected row in a shared `InfoBar`. Its event handlers capture local controls and state with `.GetNewClosure()`, including the callback that updates the status bar. See the [tour guide](../controls.md#explore-the-controlstour) for all nine categories and their Light and Dark captures.
+`SelectedItem` returns the selected row object, so the handler reads its properties directly. The [Data page in the ControlsTour example](https://github.com/sintaxasn/Fluence.Wpf/blob/main/Fluence.Wpf.PowerShell.Module/examples/06-ControlsTour.ps1) binds five PowerShell objects to a sortable grid and reports the selected row in a shared `InfoBar`. Its event handlers capture local controls and state with `.GetNewClosure()`, including the callback that updates the status bar. See the [tour guide](../controls.md#explore-the-controls-tour) for all ten categories and their Light and Dark captures.
+
+## Add an in-app acrylic surface
+
+In `Show-FluenceWindow` XAML, place a named source visual before `fluence:AcrylicElement` as an overlapping sibling. Bind the host's `BackdropSource` to that name and set `Recipe="{DynamicResource AcrylicInAppDefaultRecipe}"`. Add the controls you want to keep sharp as the host's content. The [AcrylicElement example](../../controls/acrylic-element.md#add-acrylic-behind-content) shows the layout. The [Controls Tour Acrylic page](../controls.md#explore-the-controls-tour) demonstrates moving the source and forcing a solid fill.
 
 ## Return a result
 

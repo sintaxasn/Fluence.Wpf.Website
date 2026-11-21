@@ -25,7 +25,7 @@ Default control templates live in `Themes/Controls/` and are merged by `Themes/G
 
 ## Namespaces
 
-- [Fluence.Wpf](Fluence.Wpf/index.md) (54 types)
+- [Fluence.Wpf](Fluence.Wpf/index.md) (56 types)
 - [Fluence.Wpf.Automation](Fluence.Wpf.Automation/index.md) (28 types)
-- [Fluence.Wpf.Controls](Fluence.Wpf.Controls/index.md) (69 types)
+- [Fluence.Wpf.Controls](Fluence.Wpf.Controls/index.md) (70 types)
 - [Fluence.Wpf.Markup](Fluence.Wpf.Markup/index.md) (4 types)

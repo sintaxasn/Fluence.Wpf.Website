@@ -4,7 +4,7 @@ The Fluence.Wpf Gallery is the quickest way to inspect controls, theme states, a
 
 ## Download a release
 
-For version 0.9.4, the Gallery asset is `Fluence.Wpf.Demo-v0.9.4-net472.zip`, targeting .NET Framework 4.7.2. Open the project's [GitHub Releases](https://github.com/sintaxasn/Fluence.Wpf/releases), choose a release with a Gallery asset, download and extract the archive, then run the Gallery executable included in that asset. Check the release notes for its target framework and runtime requirements. Release assets can vary, so use the instructions attached to the selected release.
+Open [Fluence.Wpf releases](https://github.com/sintaxasn/Fluence.Wpf/releases) and choose a release with a Gallery ZIP whose name starts with `Fluence.Wpf.Demo-v`. Check the target framework in the asset name, extract the ZIP, and run the Gallery executable. Use the runtime requirements and instructions for the selected release.
 
 ## Build from source
 
@@ -19,14 +19,20 @@ dotnet run --project Fluence.Wpf.Demo/Fluence.Wpf.Demo.csproj -c Release -f net1
 
 The Gallery also targets `net472`; select that target if you are developing with .NET Framework 4.7.2. Its project source is in [`Fluence.Wpf.Demo`](../../Fluence.Wpf.Demo/). Browse the page XAML and code-behind beside the running example, or follow the source links on a control guide. Build and run the app on Windows, where WPF and the Windows visual effects are available.
 
-The Gallery home page in light and dark themes:
+The home page uses a themed Fluence illustration with acrylic in the featured row above the solid control catalog. High Contrast uses solid surfaces.
 
 ![Gallery home in light mode](../screenshots/gallery/home-light.png)
 
 ![Gallery home in dark mode](../screenshots/gallery/home-dark.png)
 
-## Mica color examples
+## Compare acrylic material
 
-Backdrop materials are window-level in this WPF library; WPF does not provide WinUI's `SystemBackdropElement` for a per-element material. The Colors gallery's Layer on Mica Base Alt example makes its row and sample card transparent so the existing window backdrop shows through the canonical overlay brushes. This is a gallery-only approximation of the layered appearance, not an isolated Mica Alt material; the opaque Tertiary brush remains neutral, and the shared brushes are unchanged.
+Open **Acrylic** to compare the fixed direct brush with a host that follows a theme recipe. Switch between Default and Base or force the solid fallback. The popup sample shows the solid fallback when the source lives in the main window. [AcrylicElement guide](../controls/acrylic-element.md)
 
-The Colors gallery also includes a Mica Background group after Solid Background. Its Base and Base Alt examples use the existing solid fallback brushes, `SolidBackgroundFillColorBaseBrush` and `SolidBackgroundFillColorBaseAltBrush`, because WPF applies Mica to the whole window rather than to individual tiles. The copy actions provide the valid window settings `SystemBackdropType="Mica"` and `SystemBackdropType="Tabbed"`; they do not identify brush resources or create a per-element backdrop. The examples link to Microsoft's [SystemBackdrop](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.systembackdrop?view=windows-app-sdk-2.0) and [SystemBackdropElement](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.systembackdropelement?view=windows-app-sdk-2.0) references.
+Open **Colors > Background** to compare the Default and Base recipes in **Acrylic Background** and **Accent Acrylic Background**. Choose a different accent in **Settings** to see the accent recipes update. The adjacent swatches show the solid paint tokens.
+
+## Compare Mica colors
+
+The Colors gallery's **Layer on Mica Base Alt** example lets the existing window backdrop show through the sample's overlay brushes. Its Tertiary swatch stays opaque.
+
+The **Mica Background** swatches show the solid Base and Base Alt fallback brushes. Their copy actions provide the window settings `SystemBackdropType="Mica"` and `SystemBackdropType="Tabbed"`. See [Windows and backdrop support](requirements.md#windows-and-backdrop-support).

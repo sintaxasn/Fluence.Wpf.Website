@@ -41,6 +41,16 @@ Gets or sets whether this item is checked in a multiple-selection tree view. A `
 
 ## Methods
 
+<a id="api-5e7eafb33db7"></a>
+
+### ClearContainerForItemOverride
+
+```csharp
+protected override void ClearContainerForItemOverride(DependencyObject element, object item)
+```
+
+Documentation inherited from the [`TreeViewItem` API](https://learn.microsoft.com/dotnet/api/system.windows.controls.treeviewitem).
+
 <a id="api-c0acfc9e6d27"></a>
 
 ### GetContainerForItemOverride
@@ -107,6 +117,16 @@ Documentation inherited from the [`TreeViewItem` API](https://learn.microsoft.co
 
 ```csharp
 protected override void OnSelected(RoutedEventArgs e)
+```
+
+Documentation inherited from the [`TreeViewItem` API](https://learn.microsoft.com/dotnet/api/system.windows.controls.treeviewitem).
+
+<a id="api-c8a4a5933041"></a>
+
+### PrepareContainerForItemOverride
+
+```csharp
+protected override void PrepareContainerForItemOverride(DependencyObject element, object item)
 ```
 
 Documentation inherited from the [`TreeViewItem` API](https://learn.microsoft.com/dotnet/api/system.windows.controls.treeviewitem).

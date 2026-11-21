@@ -17,9 +17,9 @@ The [input type reference](reference/input-types.md) lists prompt types, values,
 
 For examples, use the [dialogs](how-to/dialogs.md), [forms](how-to/forms-and-validation.md), [progress](how-to/progress.md), and [custom window](how-to/windows-from-xaml.md) walkthroughs. The [ControlsTour example](https://github.com/sintaxasn/Fluence.Wpf/blob/main/Fluence.Wpf.PowerShell.Module/examples/06-ControlsTour.ps1) shows the visual surface. Browse the [control catalog](../controls.md) when you need underlying C# controls for a custom window.
 
-## Explore the ControlsTour
+## Explore the Controls Tour
 
-The [ControlsTour script](https://github.com/sintaxasn/Fluence.Wpf/blob/main/Fluence.Wpf.PowerShell.Module/examples/06-ControlsTour.ps1) opens on Inputs and uses nine category buttons to switch between two-column pages. It demonstrates the controls together with common variations and event handling. The examples are composed in a custom `FluenceWindow`; the prompt commands above remain the shorter choice when their built-in interaction fits your task.
+The [Controls Tour script](https://github.com/sintaxasn/Fluence.Wpf/blob/60a59e29ee7e9fb206003e3759e369f85f704b90/Fluence.Wpf.PowerShell.Module/examples/06-ControlsTour.ps1#L31-L37) opens on Inputs and uses ten category buttons to switch between pages. It demonstrates the controls together with common variations and event handling. The examples are composed in a custom `FluenceWindow`; the prompt commands above remain the shorter choice when their built-in interaction fits your task.
 
 | Category | Examples and variations |
 | --- | --- |
@@ -32,8 +32,11 @@ The [ControlsTour script](https://github.com/sintaxasn/Fluence.Wpf/blob/main/Flu
 | Status | Progress states, InfoBar severities, count, dot, and icon badges, and profile pictures. |
 | Surfaces | ContentDialog with Save, Discard, and Cancel actions; TeachingTip; Expander; borders; TitleBar; and FlyoutPresenter. |
 | Layout | DockPanel, StackPanel, separators, SmoothScrollViewer with themed scrollbar, icons, Image, typography, and all four Card styles. |
+| Acrylic | Moving source colors and a solid fallback switch for an in-app acrylic surface. |
 
 Use a prompt command such as `Show-FluenceDialog` when its supported prompts and result object match the interaction you need. Use `Show-FluenceWindow` when you need to arrange controls in your own XAML or create a different interaction with event handlers. The [Windows from XAML guide](how-to/windows-from-xaml.md) explains those patterns.
+
+On **Acrylic**, select **Move source colors** to see the backdrop change and **Use solid fallback** to switch it to an opaque fill. The current mode appears beside the sample. The Acrylic captures show the solid fallback selected. [Add in-app acrylic to a custom window](how-to/windows-from-xaml.md#add-an-in-app-acrylic-surface)
 
 ### Tour appearance by category
 
@@ -100,4 +103,11 @@ Each category has a Light and Dark capture. Expand a category to compare its pag
 
 ![ControlsTour Layout page in Light theme](../screenshots/powershell-layout-light.png)
 ![ControlsTour Layout page in Dark theme](../screenshots/powershell-layout-dark.png)
+</details>
+
+<details>
+<summary>Acrylic</summary>
+
+![Controls Tour acrylic fallback in Light](../screenshots/powershell-acrylic-light.png)
+![Controls Tour acrylic fallback in Dark](../screenshots/powershell-acrylic-dark.png)
 </details>

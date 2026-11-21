@@ -2,6 +2,7 @@
 
 ## Types
 
+- [AcrylicElement](AcrylicElement.md)
 - [AppBarButton](AppBarButton.md)
 - [AutoSuggestBox](AutoSuggestBox.md)
 - [Border](Border.md)

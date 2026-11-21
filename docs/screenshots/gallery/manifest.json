@@ -1700,22 +1700,155 @@
     },
     {
       "kind": "route",
+      "route": "acrylic",
+      "title": "Acrylic",
+      "theme": "dark",
+      "state": "default",
+      "requestedState": "default",
+      "file": "acrylic-dark.png",
+      "mode": "WpfRenderFallback",
+      "observedState": {
+        "selectedItem": "Acrylic",
+        "contentLoaded": true,
+        "indicatorAligned": true,
+        "indicatorCenterX": 7.5,
+        "indicatorCenterY": 470.12086839698713,
+        "selectedItemCenterX": 160,
+        "selectedItemCenterY": 472
+      },
+      "outputSha256": "3a3add8e3b6891d45b07b0abcffd4fea53c6afea8b3b0de7c2f75f8e0c00656d",
+      "pixelWidth": 1280,
+      "pixelHeight": 1080
+    },
+    {
+      "kind": "route",
+      "route": "acrylic",
+      "title": "Acrylic",
+      "theme": "light",
+      "state": "default",
+      "requestedState": "default",
+      "file": "acrylic-light.png",
+      "mode": "WpfRenderFallback",
+      "observedState": {
+        "selectedItem": "Acrylic",
+        "contentLoaded": true,
+        "indicatorAligned": true,
+        "indicatorCenterX": 7.5,
+        "indicatorCenterY": 471.86986513362666,
+        "selectedItemCenterX": 160,
+        "selectedItemCenterY": 472
+      },
+      "outputSha256": "822708d4514ee8ad9c76540356ca1c6b049e6a6a2d18beb8a25af04a5b3bc044",
+      "pixelWidth": 1280,
+      "pixelHeight": 1080
+    },
+    {
+      "kind": "card",
+      "route": "acrylic",
+      "title": "Compare a direct Border.Background brush with a bindable AcrylicElement host. The class-fixed direct recipe stays fixed; the host follows Default or Base theme resources. Text remains sharp above each material.",
+      "theme": "dark",
+      "state": "default",
+      "requestedState": "default",
+      "file": "acrylic-sample-01-dark.png",
+      "mode": "WpfRenderFallback",
+      "observedState": {
+        "selectedItem": "Acrylic",
+        "contentLoaded": true,
+        "indicatorAligned": true,
+        "indicatorCenterX": 7.5,
+        "indicatorCenterY": 472,
+        "selectedItemCenterX": 160,
+        "selectedItemCenterY": 472
+      },
+      "outputSha256": "d69d54857961e41f5449b70d399f9ba75d1fc01101f97cac7909b297e9c65427",
+      "pixelWidth": 697,
+      "pixelHeight": 316
+    },
+    {
+      "kind": "card",
+      "route": "acrylic",
+      "title": "Compare a direct Border.Background brush with a bindable AcrylicElement host. The class-fixed direct recipe stays fixed; the host follows Default or Base theme resources. Text remains sharp above each material.",
+      "theme": "light",
+      "state": "default",
+      "requestedState": "default",
+      "file": "acrylic-sample-01-light.png",
+      "mode": "WpfRenderFallback",
+      "observedState": {
+        "selectedItem": "Acrylic",
+        "contentLoaded": true,
+        "indicatorAligned": true,
+        "indicatorCenterX": 7.5,
+        "indicatorCenterY": 472,
+        "selectedItemCenterX": 160,
+        "selectedItemCenterY": 472
+      },
+      "outputSha256": "d1d03cca1d02e56737d0edab6f7d81a757e7eef1667bb944d761ae99b7ce9430",
+      "pixelWidth": 697,
+      "pixelHeight": 316
+    },
+    {
+      "kind": "card",
+      "route": "acrylic",
+      "title": "A WPF Popup has a separate HWND. Its AcrylicElement uses the main-window visual as an explicit source and displays the actual solid fallback reason instead of sampling across windows.",
+      "theme": "dark",
+      "state": "default",
+      "requestedState": "default",
+      "file": "acrylic-sample-02-dark.png",
+      "mode": "WpfRenderFallback",
+      "observedState": {
+        "selectedItem": "Acrylic",
+        "contentLoaded": true,
+        "indicatorAligned": true,
+        "indicatorCenterX": 7.5,
+        "indicatorCenterY": 472,
+        "selectedItemCenterX": 160,
+        "selectedItemCenterY": 472
+      },
+      "outputSha256": "13c6f06b1c8e323d25ddd56833c3abf52262d560b54ebb719d328606b0c7ccc4",
+      "pixelWidth": 697,
+      "pixelHeight": 268
+    },
+    {
+      "kind": "card",
+      "route": "acrylic",
+      "title": "A WPF Popup has a separate HWND. Its AcrylicElement uses the main-window visual as an explicit source and displays the actual solid fallback reason instead of sampling across windows.",
+      "theme": "light",
+      "state": "default",
+      "requestedState": "default",
+      "file": "acrylic-sample-02-light.png",
+      "mode": "WpfRenderFallback",
+      "observedState": {
+        "selectedItem": "Acrylic",
+        "contentLoaded": true,
+        "indicatorAligned": true,
+        "indicatorCenterX": 7.5,
+        "indicatorCenterY": 472,
+        "selectedItemCenterX": 160,
+        "selectedItemCenterY": 472
+      },
+      "outputSha256": "9354010a06ee2c84994604e9280a1667c7c1cb33d8f0e395f30c38ca03e5d9f5",
+      "pixelWidth": 697,
+      "pixelHeight": 268
+    },
+    {
+      "kind": "route",
       "route": "data-grid",
       "title": "DataGrid",
       "theme": "dark",
       "state": "default",
       "requestedState": "default",
       "file": "data-grid-dark.png",
+      "mode": "WpfRender",
       "observedState": {
         "selectedItem": "DataGrid",
         "contentLoaded": true,
         "indicatorAligned": true,
         "indicatorCenterX": 7.5,
-        "indicatorCenterY": 430.9579836804894,
+        "indicatorCenterY": 430.03501060258657,
         "selectedItemCenterX": 160,
         "selectedItemCenterY": 432
       },
-      "outputSha256": "e698832b2336fa7d1968b8dea4bdee063186e18d6f52bf607e8520266278ea1a",
+      "outputSha256": "9ff1a22c9021ef79b26aa8e8f72f59e9ce2d1c13a5f82f2744f5fb035497549c",
       "pixelWidth": 1280,
       "pixelHeight": 1080
     },
@@ -1727,16 +1860,17 @@
       "state": "default",
       "requestedState": "default",
       "file": "data-grid-light.png",
+      "mode": "WpfRender",
       "observedState": {
         "selectedItem": "DataGrid",
         "contentLoaded": true,
         "indicatorAligned": true,
         "indicatorCenterX": 7.5,
-        "indicatorCenterY": 430.1747515724141,
+        "indicatorCenterY": 431.6082496094592,
         "selectedItemCenterX": 160,
         "selectedItemCenterY": 432
       },
-      "outputSha256": "8b5776c498038c39e8e29a1de58596843f39520c236a4c329012b493ac322936",
+      "outputSha256": "e89bc240ac9d71d081cae1c2258cf67f40b08c61ea48b274646a362bdbc85445",
       "pixelWidth": 1280,
       "pixelHeight": 1080
     },
@@ -1748,12 +1882,13 @@
       "state": "default",
       "requestedState": "default",
       "file": "data-grid-sample-01-dark.png",
+      "mode": "WpfRender",
       "observedState": {
         "selectedItem": "DataGrid",
         "contentLoaded": true,
         "indicatorAligned": true,
         "indicatorCenterX": 7.5,
-        "indicatorCenterY": 432,
+        "indicatorCenterY": 431.9968004267376,
         "selectedItemCenterX": 160,
         "selectedItemCenterY": 432
       },
@@ -1769,12 +1904,13 @@
       "state": "default",
       "requestedState": "default",
       "file": "data-grid-sample-01-light.png",
+      "mode": "WpfRender",
       "observedState": {
         "selectedItem": "DataGrid",
         "contentLoaded": true,
         "indicatorAligned": true,
         "indicatorCenterX": 7.5,
-        "indicatorCenterY": 431.9615686151797,
+        "indicatorCenterY": 431.99956672191564,
         "selectedItemCenterX": 160,
         "selectedItemCenterY": 432
       },
@@ -1790,6 +1926,7 @@
       "state": "default",
       "requestedState": "default",
       "file": "data-grid-sample-02-dark.png",
+      "mode": "WpfRender",
       "observedState": {
         "selectedItem": "DataGrid",
         "contentLoaded": true,
@@ -1811,6 +1948,7 @@
       "state": "default",
       "requestedState": "default",
       "file": "data-grid-sample-02-light.png",
+      "mode": "WpfRender",
       "observedState": {
         "selectedItem": "DataGrid",
         "contentLoaded": true,
@@ -1832,6 +1970,7 @@
       "state": "default",
       "requestedState": "default",
       "file": "data-grid-sample-03-dark.png",
+      "mode": "WpfRender",
       "observedState": {
         "selectedItem": "DataGrid",
         "contentLoaded": true,
@@ -1853,6 +1992,7 @@
       "state": "default",
       "requestedState": "default",
       "file": "data-grid-sample-03-light.png",
+      "mode": "WpfRender",
       "observedState": {
         "selectedItem": "DataGrid",
         "contentLoaded": true,
@@ -1874,6 +2014,7 @@
       "state": "default",
       "requestedState": "default",
       "file": "selection-sample-06-dark.png",
+      "mode": "WpfRender",
       "observedState": {
         "selectedItem": "Selection",
         "contentLoaded": true,
@@ -1895,6 +2036,7 @@
       "state": "default",
       "requestedState": "default",
       "file": "selection-sample-06-light.png",
+      "mode": "WpfRender",
       "observedState": {
         "selectedItem": "Selection",
         "contentLoaded": true,

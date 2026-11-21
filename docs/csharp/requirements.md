@@ -14,4 +14,6 @@ Windows 10 version 1809 is the operating system baseline. Core controls, themes,
 
 `WindowBackdropType` records a request; Windows version, theme, and transparency settings determine the effective appearance. The library is implemented in WPF and does not require the Windows App SDK or WinUI runtime in a consuming application. Your application still needs the runtime appropriate to its target framework.
 
+For a blur over an explicit WPF visual inside the same window, use [in-app acrylic](../controls/acrylic-element.md). It uses a solid fallback in High Contrast, when transparency effects are disabled, or when hardware or the source cannot support the material.
+
 The gallery targets `net472` and .NET 10, and the MVVM sample targets .NET 10. See [known issues](../../KNOWN_ISSUES.md) for accepted platform gaps. The PowerShell module has a distinct runtime matrix documented in [its requirements](../powershell/requirements.md). Continue with [installation](installation.md).
